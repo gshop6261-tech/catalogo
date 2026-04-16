@@ -765,15 +765,7 @@
       <div class="calc-section-title">1 · Categoría del producto</div>
 
       <div class="cat-tabs" id="catTabs">
-        <button class="cat-tab active" data-cat="celular" onclick="selectCat('celular', this)">
-          <span class="ct-icon">📱</span>Celulares
-        </button>
-        <button class="cat-tab" data-cat="electronica" onclick="selectCat('electronica', this)">
-          <span class="ct-icon">🎧</span>Electrónica
-        </button>
-        <button class="cat-tab" data-cat="hogar" onclick="selectCat('hogar', this)">
-          <span class="ct-icon">🏠</span>Hogar
-        </button>
+        <!-- JS rendered -->
       </div>
 
       <!-- Subtype (changes based on category) -->
@@ -784,7 +776,7 @@
 
       <!-- USD cost input -->
       <div class="calc-section-title">3 · Costo en dólares</div>
-      <div class="usd-input-wrap">
+      <div class="usd-input-wrap" style="margin-bottom: 12px;">
         <span class="usd-prefix">$</span>
         <input
           type="number"
@@ -798,6 +790,23 @@
           inputmode="decimal"
         >
         <span class="usd-suffix">USD</span>
+      </div>
+      
+      <!-- Weight input -->
+      <div class="calc-section-title">3.1 · Peso (opcional)</div>
+      <div class="usd-input-wrap">
+        <input
+          type="number"
+          class="usd-input"
+          id="weightInput"
+          placeholder="Ej: 1.5"
+          min="0"
+          step="0.01"
+          oninput="onUsdInput()"
+          autocomplete="off"
+          inputmode="decimal"
+        >
+        <span class="usd-suffix" style="right: 14px;">kg</span>
       </div>
 
       <!-- Quick amounts -->
@@ -1117,13 +1126,14 @@ function selectCat(cat, el) {
   clearResult();
 }
 
-function renderSubtypes(cat) {
+function renderSubtypes(catName) {
   const row   = document.getElementById('subtypeRow');
   const label = document.getElementById('subtypeLabel');
-  const subs  = SUBTYPES[cat];
+  
+  const c = cats.find(x => x.name === catName);
+  const subs = (c && c.subtypes && c.subtypes.length > 0) ? c.subtypes : null;
 
   if (!subs) {
-    // Hogar: no subtype needed
     row.style.display = 'none';
     label.style.display = 'none';
     selectedSub = 'unico';
@@ -1139,9 +1149,9 @@ function renderSubtypes(cat) {
       data-sub="${s.id}"
       onclick="selectSub('${s.id}', this)"
     >
-      <span class="sb-icon">${s.icon}</span>
+      <span class="sb-icon">📦</span>
       <span>${s.label}</span>
-      <span class="sb-note">${s.note}</span>
+      <span class="sb-note"></span>
     </button>
   `).join('');
 
@@ -1185,46 +1195,55 @@ function clearInput() {
 /* ══════════════════════════════════════
    FORMULA ENGINE
 ══════════════════════════════════════ */
-function getFormula(cat, sub, usd) {
+function getFormula(catName, sub, usd, weightArg) {
   const cdSettings = JSON.parse(localStorage.getItem('cd_settings') || '{}');
-  const formulas = cdSettings.formulas || {
-    "celular_slim":         { margin: 8,  add: 6, label:"Celulares (≤ $300) - Slim" },
-    "celular_gruesa":       { margin: 10, add: 4, label:"Celulares (≤ $300) - Gruesa" },
-    "celular_slim_high":    { margin: 8,  add: 0, label:"Celulares (> $300) - Slim" },
-    "celular_gruesa_high":  { margin: 10, add: 0, label:"Celulares (> $300) - Gruesa" },
-    "electronica_chico":    { margin: 20, add: 0, label:"Electrónica/Otros - Chico" },
-    "electronica_grande":   { margin: 25, add: 0, label:"Electrónica/Otros - Grande" },
-    "hogar_unico":          { margin: 25, add: 0, label:"Hogar (General)" }
-  };
-
-  let key = 'hogar_unico';
-  if (cat === 'celular') {
-    if (usd > 300) {
-      key = 'celular_' + (sub || 'slim') + '_high';
-    } else {
-      key = 'celular_' + (sub || 'slim');
+  const catArray = cdSettings.categories || [];
+  const u = parseFloat(usd);
+  const w = parseFloat(weightArg) || 0;
+  
+  const c = catArray.find(x => x.name === catName);
+  if (!c) return { ars:0, steps:[] };
+  
+  const rules = c.rules || [];
+  let matchedRule = rules.find(r => r.subtype === 'unico'); 
+  const subtypeTarget = sub || 'unico';
+  const typeRules = rules.filter(r => r.subtype === subtypeTarget);
+  
+  for (let r of typeRules) {
+    if (r.type === 'none') { matchedRule = r; break; }
+    if (r.type === 'price') {
+       if (r.op === '<=' && u <= r.val) { matchedRule = r; break; }
+       if (r.op === '>=' && u >= r.val) { matchedRule = r; break; }
+       if (r.op === '<'  && u < r.val)  { matchedRule = r; break; }
+       if (r.op === '>'  && u > r.val)  { matchedRule = r; break; }
     }
-  } else if (cat === 'electronica') {
-    key = 'electronica_' + (sub || 'chico');
-  } else if (cat === 'hogar') {
-    key = 'hogar_unico';
+    if (r.type === 'weight') {
+       if (r.op === '<=' && w <= r.val) { matchedRule = r; break; }
+       if (r.op === '>=' && w >= r.val) { matchedRule = r; break; }
+       if (r.op === '<'  && w < r.val)  { matchedRule = r; break; }
+       if (r.op === '>'  && w > r.val)  { matchedRule = r; break; }
+    }
+  }
+  
+  if (!matchedRule) {
+     if (typeRules.length > 0) matchedRule = typeRules[0]; 
+     else matchedRule = { margin: 0, add: 0 };
   }
 
-  const rule = formulas[key];
-  const pct = 1 + (rule.margin / 100);
-  const baseUsd = (usd * pct) + rule.add;
+  const pct = 1 + (matchedRule.margin / 100);
+  const baseUsd = (u * pct) + matchedRule.add;
   const rawArs = baseUsd * dollar;
   const ars = Math.ceil(rawArs / 100) * 100;
 
   return {
     ars,
     margin: pct,
-    label: rule.label,
-    formulaStr: `((${usd} + ${rule.margin}%) + ${rule.add}) × ${Number(dollar).toLocaleString('es-AR')}`,
+    label: `${catName} - ${subtypeTarget}`,
+    formulaStr: `((${usd} + ${matchedRule.margin}%) + ${matchedRule.add}) × ${Number(dollar).toLocaleString('es-AR')}`,
     steps: [
       { k: 'Costo USD',     v: `U$D ${usd}` },
-      { k: `Margen (+${rule.margin}%)`,      v: `+ U$D ${(usd * (rule.margin/100)).toFixed(2)}` },
-      { k: `Ajuste fijo (+U$D ${rule.add})`, v: `+ U$D ${rule.add}` },
+      { k: `Margen (+${matchedRule.margin}%)`,      v: `+ U$D ${(usd * (matchedRule.margin/100)).toFixed(2)}` },
+      { k: `Ajuste fijo (+U$D ${matchedRule.add})`, v: `+ U$D ${matchedRule.add}` },
       { k: 'Base ajustada', v: `U$D ${baseUsd.toFixed(2)}` },
       { k: 'Cotización',    v: `$ ${Number(dollar).toLocaleString('es-AR')}` },
       { k: 'Subtotal ARS',  v: `$ ${Math.round(rawArs).toLocaleString('es-AR')}` },
@@ -1243,7 +1262,7 @@ function calculate() {
   if (!usd || usd < 1)   { showToast('Ingresá el costo en dólares'); return; }
   if (!dollar)            { showToast('No hay cotización disponible'); return; }
 
-  const result = getFormula(selectedCat, selectedSub, usd);
+  const result = getFormula(selectedCat, selectedSub, usd, parseFloat(document.getElementById('weightInput').value)||0);
   lastResult = { ...result, usd, name, cat: selectedCat, sub: selectedSub, dollar };
 
   // Render result card
@@ -1273,7 +1292,7 @@ function calculate() {
   addToHistory({
     ars:    result.ars,
     usd,
-    name:   name || catLabel(selectedCat) + ' U$D ' + usd,
+    name:   name || selectedCat + ' U$D ' + usd,
     cat:    selectedCat,
     sub:    selectedSub,
     dollar,
@@ -1333,7 +1352,7 @@ function renderHistory() {
       <div class="history-item" style="animation-delay:${i * 0.03}s">
         <div class="hi-left">
           <div class="hi-name">${h.name}</div>
-          <div class="hi-meta">${catLabel(h.cat)} · U$D ${h.usd} · $${Number(h.dollar).toLocaleString('es-AR')} · ${date}</div>
+          <div class="hi-meta">${h.cat} · U$D ${h.usd} · $${Number(h.dollar).toLocaleString('es-AR')} · ${date}</div>
         </div>
         <div class="hi-right">
           <div class="hi-price">$ ${Number(h.ars).toLocaleString('es-AR')}</div>
