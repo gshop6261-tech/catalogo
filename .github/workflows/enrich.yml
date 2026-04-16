@@ -1,0 +1,47 @@
+name: Enrich Products
+
+on:
+  push:
+    paths:
+      - 'data/productos.json'
+    branches:
+      - main
+  workflow_dispatch: {}
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Check for pending products
+        id: check
+        run: |
+          COUNT=$(python -c "
+          import json
+          data = json.load(open('data/productos.json'))
+          print(sum(1 for p in data.get('products',[]) if p.get('status')=='pending'))
+          ")
+          echo "pending=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Enrich products
+        if: steps.check.outputs.pending != '0'
+        run: python scripts/enrich_products.py
+
+      - name: Commit and push
+        if: steps.check.outputs.pending != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ images/
+          git diff --staged --quiet || git commit -m "bot: enrich products" && git push

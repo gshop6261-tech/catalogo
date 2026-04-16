@@ -944,8 +944,8 @@
       </div>
 
       <div class="nav-section-label" style="margin-top:8px;">Sistema</div>
-      <div class="nav-item" data-page="formulas" onclick="navTo('formulas')">
-        <span class="ni">🧮</span> Calc. de Precios
+      <div class="nav-item" data-page="categories" onclick="navTo('categories')">
+        <span class="ni">🧮</span> Categorías y Reglas
       </div>
       <div class="nav-item" data-page="settings" onclick="navTo('settings')">
         <span class="ni">⚙️</span> Configuración
@@ -1103,42 +1103,78 @@
       </div>
     </section>
 
-    <!-- ─────── FORMULAS (Calc. de Precios) ─────── -->
-    <section id="page-formulas" class="page">
+    <!-- ─────── CATEGORIAS Y REGLAS ─────── -->
+    <section id="page-categories" class="page">
       <div class="page-header">
         <div>
-          <div class="page-title">Calculadora de Precios</div>
-          <div class="page-sub">Definí los márgenes y gastos logísticos por categoría. Se aplicarán a todos los cálculos.</div>
+          <div class="page-title">Categorías y Reglas de Precio</div>
+          <div class="page-sub">Gestioná las categorías de tu catálogo y sus reglas matemáticas asociadas.</div>
         </div>
+        <button class="btn btn-green" onclick="openCategoryModal()">＋ Agregar categoría</button>
       </div>
 
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
-              <th>Categoría / Tipo de artículo</th>
-              <th width="150">Ganancia (%)</th>
-              <th width="150">Ajuste Fijo (U$D)</th>
+              <th>Categoría</th>
+              <th>Subtipos</th>
+              <th>Reglas matemáticas configuradas</th>
+              <th>Acción</th>
             </tr>
           </thead>
-          <tbody id="formulasTableBody">
+          <tbody id="categoriesTableBody">
             <!-- Rendered by JS -->
           </tbody>
         </table>
       </div>
-      <div style="margin-top:14px;display:flex;gap:10px;justify-content:flex-end">
-        <button class="btn btn-green" onclick="saveFormulas()">💾 Guardar configuración</button>
-      </div>
       
       <div style="background:var(--surface);border-radius:var(--r-md);padding:14px;border:1px solid var(--border);margin-top:20px;">
-        <h4 style="font-size:12px;margin-bottom:6px">¿Cómo funciona el cálculo automático?</h4>
-        <p style="font-size:11px;color:var(--text-3);line-height:1.5;">La fórmula de precio es: <strong>((Costo U$D + % Ganancia) + Ajuste U$D) × Dólar vigente</strong>.<br>
-        1. Se toma el Costo USD.<br>
-        2. Se le suma el % de ganancia.<br>
-        3. Se suma el Ajuste Fijo en dólares.<br>
-        4. Luego se multiplica por la cotización del dólar.</p>
+        <h4 style="font-size:12px;margin-bottom:6px">¿Cómo funcionan las reglas de precio?</h4>
+        <p style="font-size:11px;color:var(--text-3);line-height:1.5;">La fórmula base es siempre: <strong>((Costo U$D + % Ganancia) + Ajuste U$D) × Dólar vigente</strong>.<br>
+        Podés crear múltiples reglas dentro de una misma categoría que se activan según el <strong>Subtipo</strong>, el <strong>Precio USD</strong> o el <strong>Peso (kg)</strong> del producto.</p>
       </div>
     </section>
+
+    <!-- Modal de Categoría -->
+    <div class="modal-backdrop" id="categoryModal" role="dialog">
+      <div class="modal" style="max-width: 600px;">
+        <div class="modal-header">
+          <div class="modal-title" id="catModalTitle">Nueva categoría</div>
+          <button class="modal-close" onclick="closeCategoryModal()">✕</button>
+        </div>
+        <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+          <input type="hidden" id="cmId">
+          <div class="form-grid">
+            <div class="form-group form-full">
+              <label class="form-label">Nombre de Categoría <span class="req">*</span></label>
+              <input type="text" class="form-input" id="cmName" placeholder="Ej: Celulares">
+            </div>
+            <div class="form-group form-full">
+              <label class="form-label">Ícono (Emoji)</label>
+              <input type="text" class="form-input" id="cmIcon" placeholder="📱" maxlength="4">
+            </div>
+            
+            <div class="form-section form-full">📦 Subtipos (opcional)</div>
+            <div class="form-group form-full" style="padding-bottom:10px;">
+               <div id="cmSubtypesList" style="display:flex; flex-direction:column; gap:8px;"></div>
+               <button class="btn btn-ghost btn-sm" style="margin-top:10px" onclick="addCategorySubtype()">+ Agregar Subtipo</button>
+            </div>
+
+            <div class="form-section form-full">📐 Reglas de cálculo</div>
+            <div class="form-group form-full">
+               <div id="cmRulesList" style="display:flex; flex-direction:column; gap:12px;"></div>
+               <button class="btn btn-ghost btn-sm" style="margin-top:10px" onclick="addCategoryRule()">+ Agregar Regla</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-ghost" onclick="closeCategoryModal()">Cancelar</button>
+          <button class="btn btn-green" onclick="saveCategory()">💾 Guardar categoría</button>
+        </div>
+      </div>
+    </div>
+
 
     <!-- ─────── SETTINGS ─────── -->
     <section id="page-settings" class="page">
@@ -1179,7 +1215,8 @@
       <div class="settings-card">
         <div class="settings-title">📤 Exportar / Importar datos</div>
         <div style="display:flex;gap:10px;flex-wrap:wrap">
-          <button class="btn btn-ghost" onclick="exportData()">⬇️ Exportar JSON</button>
+          <button class="btn btn-ghost" onclick="exportData()">⬇️ Exportar Backup</button>
+          <button class="btn btn-green" onclick="exportToProductosJSON()">📤 Sincronizar a productos.json</button>
           <label class="btn btn-ghost" style="cursor:pointer">
             ⬆️ Importar JSON
             <input type="file" accept=".json" style="display:none" onchange="importData(event)">
@@ -1232,6 +1269,11 @@
           </select>
         </div>
         <div class="form-group">
+          <label class="form-label">Peso (kg)</label>
+          <input type="number" class="form-input" id="pmWeight" placeholder="Ej: 1.5" min="0" step="0.01" oninput="autoCalcArs(); updatePreview()">
+          <span class="form-hint">Opcional.</span>
+        </div>
+        <div class="form-group">
           <label class="form-label">Emoji (ícono)</label>
           <input type="text" class="form-input" id="pmIcon" placeholder="📱" maxlength="4" oninput="updatePreview()">
           <span class="form-hint">Se muestra si no hay imagen cargada</span>
@@ -1245,9 +1287,30 @@
           <textarea class="form-textarea" id="pmDesc" placeholder="Principales beneficios del producto..." oninput="updatePreview()"></textarea>
         </div>
         <div class="form-group form-full">
-          <label class="form-label">URL de imagen</label>
-          <input type="url" class="form-input" id="pmImg" placeholder="https://... (dejar vacío para usar emoji)" oninput="updatePreview()">
-          <span class="form-hint">URL de Cloudinary, Instagram, etc. Dejar vacío = mostrar emoji.</span>
+          <label class="form-label">Imágenes</label>
+          <div id="pmImagesWrap">
+            <div class="ref-link-row" style="display:flex;gap:6px;margin-bottom:4px">
+              <input type="url" class="form-input" placeholder="https://... URL de imagen" style="flex:1" oninput="updatePreview()">
+              <button type="button" class="btn btn-ghost" style="padding:4px 8px" onclick="addImageInput()">+</button>
+            </div>
+          </div>
+          <span class="form-hint">URLs de imágenes del producto. Se descargarán automáticamente si usás links de referencia.</span>
+        </div>
+
+        <div class="form-section form-full">🔗 Links de referencia (proveedor)</div>
+
+        <div class="form-group form-full">
+          <label class="form-label">Link principal del proveedor</label>
+          <input type="url" class="form-input" id="pmRefLink1" placeholder="https://... URL del producto en el proveedor">
+          <span class="form-hint">De este link se scrapea toda la info del producto automáticamente.</span>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Link referencia 2 (opcional)</label>
+          <input type="url" class="form-input" id="pmRefLink2" placeholder="https://... otro proveedor">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Link referencia 3 (opcional)</label>
+          <input type="url" class="form-input" id="pmRefLink3" placeholder="https://... otro proveedor">
         </div>
 
         <div class="form-section form-full">💰 Precios</div>
@@ -1417,17 +1480,11 @@ const LS_SETTINGS  = 'cd_settings';
 const LS_SESSION   = 'cd_session';
 const DEFAULT_PASS = 'GlobalShop2026';   // ← Rubén cambia esto desde Configuración
 
-const CATS = ['Celulares', 'Smart TV', 'Audio', 'Computación', 'Accesorios', 'Hogar'];
+const CATS = () => (settings.categories || []).map(c => c.name);
 
-const SUBTYPES = {
-  'Celulares': [
-    { id: 'slim', label: 'Caja slim (sin cargador)' },
-    { id: 'gruesa', label: 'Caja gruesa (con cargador)' }
-  ],
-  'Electrónica': [
-    { id: 'chico', label: 'Chico (Caja zapatilla / Accesorios)' },
-    { id: 'grande', label: 'Grande (Aspiradoras / TV / Pesados)' }
-  ]
+const SUBTYPES = (catName) => {
+  const cat = (settings.categories || []).find(c => c.name === catName);
+  return cat && cat.subtypes && cat.subtypes.length > 0 ? cat.subtypes : [{ id: 'unico', label: 'Único' }];
 };
 
 const BADGE_COLORS = [
@@ -1457,20 +1514,71 @@ const DEFAULT_BANNERS = [
   { id:4, tag:'🇦🇷 Todo Argentina',   title:'Compra',    accent:'directo',      sub:'Envíos AMBA e interior del país.',    cta:'Consultar 💬',     filter:'',          grad:'linear-gradient(135deg,#101010 0%,#1a1a1a 60%,#232323 100%)', emoji:'🛒', activo:true },
 ];
 
+const DEFAULT_CATEGORIES = [
+  {
+    id: "celulares",
+    name: "Celulares",
+    icon: "📱",
+    subtypes: [
+      { id: "slim", label: "Caja slim (sin cargador)" },
+      { id: "gruesa", label: "Caja gruesa (con cargador)" }
+    ],
+    rules: [
+      { subtype: "slim", type: "price", op: "<=", val: 300, margin: 8, add: 6 },
+      { subtype: "slim", type: "price", op: ">", val: 300, margin: 8, add: 0 },
+      { subtype: "gruesa", type: "price", op: "<=", val: 300, margin: 10, add: 4 },
+      { subtype: "gruesa", type: "price", op: ">", val: 300, margin: 10, add: 0 }
+    ]
+  },
+  {
+    id: "smart-tv",
+    name: "Smart TV",
+    icon: "📺",
+    subtypes: [
+      { id: "chico", label: "Chico" },
+      { id: "grande", label: "Grande" }
+    ],
+    rules: [
+      { subtype: "chico", type: "none", val: 0, margin: 20, add: 0 },
+      { subtype: "grande", type: "none", val: 0, margin: 25, add: 0 }
+    ]
+  },
+  {
+    id: "audio",
+    name: "Audio",
+    icon: "🎧",
+    subtypes: [{ id: "unico", label: "Único" }],
+    rules: [{ subtype: "unico", type: "none", val: 0, margin: 20, add: 0 }]
+  },
+  {
+    id: "computacion",
+    name: "Computación",
+    icon: "💻",
+    subtypes: [{ id: "unico", label: "Único" }],
+    rules: [{ subtype: "unico", type: "none", val: 0, margin: 20, add: 0 }]
+  },
+  {
+    id: "accesorios",
+    name: "Accesorios",
+    icon: "🎒",
+    subtypes: [{ id: "unico", label: "Único" }],
+    rules: [{ subtype: "unico", type: "none", val: 0, margin: 20, add: 0 }]
+  },
+  {
+    id: "hogar",
+    name: "Hogar",
+    icon: "🏠",
+    subtypes: [{ id: "unico", label: "Único" }],
+    rules: [{ subtype: "unico", type: "none", val: 0, margin: 25, add: 0 }]
+  }
+];
+
 const DEFAULT_SETTINGS = {
   whatsapp: '5491154125271',
   dollarManual: null,
   dollarAuto: null,
   dollarUpdated: null,
-  formulas: {
-    "celular_slim":         { margin: 8,  add: 6, label:"Celulares (≤ $300) - Slim" },
-    "celular_gruesa":       { margin: 10, add: 4, label:"Celulares (≤ $300) - Gruesa" },
-    "celular_slim_high":    { margin: 8,  add: 0, label:"Celulares (> $300) - Slim" },
-    "celular_gruesa_high":  { margin: 10, add: 0, label:"Celulares (> $300) - Gruesa" },
-    "electronica_chico":    { margin: 20, add: 0, label:"Electrónica/Otros - Chico" },
-    "electronica_grande":   { margin: 25, add: 0, label:"Electrónica/Otros - Grande" },
-    "hogar_unico":          { margin: 25, add: 0, label:"Hogar (General)" }
-  }
+  categories: JSON.parse(JSON.stringify(DEFAULT_CATEGORIES))
 };
 
 /* ══════════════════════════════════════
@@ -1489,13 +1597,28 @@ let editingBannerId  = null;
    STORAGE HELPERS
 ══════════════════════════════════════ */
 function save(key, val) {
-  try { localStorage.setItem(key, JSON.stringify(val)); } catch(e) {}
+  try {
+    const str = JSON.stringify(val);
+    localStorage.setItem(key, str);
+    // Verify it was saved
+    const check = localStorage.getItem(key);
+    if (!check) {
+      console.error('localStorage.setItem succeeded but getItem returned null for key:', key);
+      showToast('⚠️ Error guardando datos. Probá abrir con un servidor local (Live Server).', 'error');
+    }
+  } catch(e) {
+    console.error('localStorage save failed:', key, e);
+    showToast('⚠️ No se pudo guardar en localStorage: ' + e.message, 'error');
+  }
 }
 function load(key, def) {
   try {
     const v = localStorage.getItem(key);
     return v ? JSON.parse(v) : def;
-  } catch(e) { return def; }
+  } catch(e) {
+    console.error('localStorage load failed:', key, e);
+    return def;
+  }
 }
 
 function saveProducts()  { save(LS_PRODUCTS, products); syncCatalog(); }
@@ -1505,13 +1628,14 @@ function saveSettings()  { save(LS_SETTINGS, settings); syncCatalog(); }
 /* Sync catalog: writes a small JS override to localStorage that index.html reads */
 function syncCatalog() {
   const catalog = {
-    products: products.filter(p => p.activo).map(p => ({
+    products: products.filter(p => p.activo && p.status !== 'pending').map(p => ({
       id: p.id, cat: p.cat, name: p.name, sub: p.sub, desc: p.desc,
-      img: p.img, badge: p.badge, badgeColor: p.badgeColor, icon: p.icon,
+      img: p.img, images: p.images || [], badge: p.badge, badgeColor: p.badgeColor, icon: p.icon,
       ars: p.ars, usdSell: p.usdSell, activo: p.activo, fechaAlta: p.fechaAlta,
       // NOTE: usd and priceHistory intentionally excluded from catalog sync
     })),
     banners: banners.filter(b => b.activo),
+    categories: settings.categories || [],
     whatsapp: settings.whatsapp,
   };
   save('cd_catalog', catalog);
@@ -1571,19 +1695,58 @@ function showApp() {
   initApp();
 }
 
-function initApp() {
-  // Load data
+function isLocalStorageAvailable() {
+  try {
+    const testKey = '__ls_test__';
+    localStorage.setItem(testKey, '1');
+    const val = localStorage.getItem(testKey);
+    localStorage.removeItem(testKey);
+    return val === '1';
+  } catch(e) {
+    return false;
+  }
+}
+
+function loadDataFromLocalStorage() {
+  if (!isLocalStorageAvailable()) {
+    showToast('⚠️ localStorage no disponible. Usá http://localhost o Live Server.', 'error');
+  }
   products = load(LS_PRODUCTS, null);
   if (!products) {
     products = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
     save(LS_PRODUCTS, products);
   }
-  banners  = load(LS_BANNERS,  null);
+  banners = load(LS_BANNERS, null);
   if (!banners) {
     banners = JSON.parse(JSON.stringify(DEFAULT_BANNERS));
     save(LS_BANNERS, banners);
   }
   settings = load(LS_SETTINGS, DEFAULT_SETTINGS);
+}
+
+function exportToProductosJSON() {
+  const data = {
+    products,
+    banners,
+    settings: { categories: settings.categories, whatsapp: settings.whatsapp },
+    lastSync: new Date().toISOString(),
+    lastPriceCheck: null,
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'productos.json';
+  a.click();
+  showToast('✅ Exportado como productos.json — reemplazá data/productos.json en el repo.');
+}
+
+function initApp() {
+  // Always load from localStorage — it's the source of truth for admin
+  loadDataFromLocalStorage();
+  if (settings.formulas && !settings.categories) {
+    settings.categories = JSON.parse(JSON.stringify(DEFAULT_CATEGORIES));
+    saveSettings();
+  }
 
   // Populate cat dropdowns
   populateCatDropdowns();
@@ -1600,10 +1763,9 @@ function initApp() {
   // Settings fields
   document.getElementById('settWaNumber').value = settings.whatsapp || '';
 
-  // Ensure formulas exist for backwards comp if previous settings existed
-  if (!settings.formulas) settings.formulas = JSON.parse(JSON.stringify(DEFAULT_SETTINGS.formulas));
+  if (!settings.categories) settings.categories = JSON.parse(JSON.stringify(DEFAULT_CATEGORIES));
 
-  renderFormulasTable();
+  renderCategoriesTable();
 
   // Sync catalog on load
   syncCatalog();
@@ -1614,7 +1776,7 @@ function populateCatDropdowns() {
     const el = document.getElementById(id);
     if (!el) return;
     while (el.children.length > 1) el.removeChild(el.lastChild);
-    CATS.forEach(c => {
+    CATS().forEach(c => {
       const opt = document.createElement('option');
       opt.value = c; opt.textContent = c;
       el.appendChild(opt);
@@ -1640,7 +1802,7 @@ function navTo(page) {
     case 'products':  renderProdTable(); break;
     case 'prices':    renderPricesTable(); break;
     case 'banners':   renderBannerList(); break;
-    case 'formulas':  renderFormulasTable(); break;
+    case 'categories':  renderCategoriesTable(); break;
     case 'settings':  break;
   }
 }
@@ -1729,7 +1891,7 @@ function renderDashboard() {
 
   // Stats per category
   const byCat = {};
-  CATS.forEach(c => {
+  CATS().forEach(c => {
     byCat[c] = products.filter(p => p.activo && p.cat === c).length;
   });
 
@@ -1755,7 +1917,7 @@ function renderDashboard() {
       <div class="stat-val">${banners.filter(b=>b.activo).length}</div>
       <div class="stat-label">Banners activos</div>
     </div>
-    ${CATS.map(c => `
+    ${CATS().map(c => `
       <div class="stat-card">
         <div class="stat-icon">${catEmoji(c)}</div>
         <div class="stat-val">${byCat[c]}</div>
@@ -1811,6 +1973,8 @@ function renderProdTable() {
         <td class="prod-name-cell">
           <div class="pn">${p.name}</div>
           <div class="pc">${p.cat}</div>
+          ${p.status === 'pending' ? '<span class="badge-pill" style="background:#FF9500;font-size:10px">⏳ Pendiente</span>' : ''}
+          ${p.status === 'error' ? '<span class="badge-pill" style="background:#FF3B30;font-size:10px">❌ Error</span>' : ''}
           ${p.badge ? `<span class="badge-pill" style="background:${p.badgeColor}">${p.badge}</span>` : ''}
         </td>
         <td class="hide-sm">
@@ -1884,6 +2048,21 @@ function selectBadgeColor(hex, el) {
   updatePreview();
 }
 
+function populateImageInputs(urls) {
+  const wrap = document.getElementById('pmImagesWrap');
+  wrap.innerHTML = '';
+  const list = urls.length ? urls : [''];
+  list.forEach((url, i) => {
+    const row = document.createElement('div');
+    row.className = 'ref-link-row';
+    row.style.cssText = 'display:flex;gap:6px;margin-bottom:4px';
+    const canRemove = i > 0 || list.length > 1;
+    row.innerHTML = `<input type="url" class="form-input" placeholder="https://... URL de imagen" style="flex:1" value="${url || ''}" oninput="updatePreview()">` +
+      (canRemove ? `<button type="button" class="btn btn-ghost" style="padding:4px 8px" onclick="this.parentElement.remove(); updatePreview()">−</button>` : `<button type="button" class="btn btn-ghost" style="padding:4px 8px" onclick="addImageInput()">+</button>`);
+    wrap.appendChild(row);
+  });
+}
+
 function openProductModal(id) {
   editingProductId = id || null;
   const modal = document.getElementById('productModal');
@@ -1892,7 +2071,7 @@ function openProductModal(id) {
   // Populate cat select
   const catSel = document.getElementById('pmCat');
   while (catSel.children.length > 1) catSel.removeChild(catSel.lastChild);
-  CATS.forEach(c => {
+  CATS().forEach(c => {
     const o = document.createElement('option');
     o.value = c; o.textContent = c;
     catSel.appendChild(o);
@@ -1910,20 +2089,30 @@ function openProductModal(id) {
     document.getElementById('pmIcon').value      = p.icon;
     document.getElementById('pmSub').value       = p.sub;
     document.getElementById('pmDesc').value      = p.desc;
-    document.getElementById('pmImg').value       = p.img || '';
+    populateImageInputs(p.images || (p.img ? [p.img] : []));
     document.getElementById('pmArs').value       = p.ars || '';
     document.getElementById('pmUsd').value       = p.usd || '';
+    document.getElementById('pmWeight').value    = p.weight || '';
     document.getElementById('pmUsdSell').value   = p.usdSell || '';
     document.getElementById('pmBadge').value     = p.badge || '';
     selectedBadgeColor = p.badgeColor || '#25D366';
     document.getElementById('pmBadgeColor').value = selectedBadgeColor;
     renderBadgeColors();
     document.getElementById('pmCalcHint').textContent = 'Solo visible en el panel.';
+    // Reference links
+    const refs = p.referenceLinks || [];
+    document.getElementById('pmRefLink1').value = (refs[0] && refs[0].url) || '';
+    document.getElementById('pmRefLink2').value = (refs[1] && refs[1].url) || '';
+    document.getElementById('pmRefLink3').value = (refs[2] && refs[2].url) || '';
   } else {
     title.textContent = 'Nuevo producto';
-    ['pmId','pmName','pmSub','pmDesc','pmImg','pmArs','pmUsd','pmUsdSell','pmBadge'].forEach(elId => {
+    ['pmId','pmName','pmSub','pmDesc','pmArs','pmUsd','pmWeight','pmUsdSell','pmBadge'].forEach(elId => {
       document.getElementById(elId).value = '';
     });
+    populateImageInputs([]);
+    document.getElementById('pmRefLink1').value = '';
+    document.getElementById('pmRefLink2').value = '';
+    document.getElementById('pmRefLink3').value = '';
     document.getElementById('pmCat').value  = '';
     updateSubtypeOptions();
     document.getElementById('pmIcon').value = '📦';
@@ -1950,7 +2139,8 @@ function updatePreview() {
   const ars   = document.getElementById('pmArs').value;
   const badge = document.getElementById('pmBadge').value;
   const col   = document.getElementById('pmBadgeColor').value || '#25D366';
-  const img   = document.getElementById('pmImg').value;
+  const imgInputs = document.querySelectorAll('#pmImagesWrap input[type="url"]');
+  const img   = imgInputs.length ? imgInputs[0].value : '';
 
   document.getElementById('prevName').textContent  = name;
   document.getElementById('prevCat').textContent   = cat;
@@ -1985,6 +2175,32 @@ function updatePreview() {
   }
 }
 
+function collectImages() {
+  const inputs = document.querySelectorAll('#pmImagesWrap input[type="url"]');
+  return Array.from(inputs).map(i => i.value.trim()).filter(Boolean);
+}
+
+function collectReferenceLinks() {
+  const links = [];
+  for (let i = 1; i <= 3; i++) {
+    const el = document.getElementById('pmRefLink' + i);
+    if (el && el.value.trim()) {
+      links.push({ url: el.value.trim(), price: null, currency: 'USD', isPrimary: i === 1 });
+    }
+  }
+  return links;
+}
+
+function addImageInput() {
+  const wrap = document.getElementById('pmImagesWrap');
+  const row = document.createElement('div');
+  row.className = 'ref-link-row';
+  row.style.cssText = 'display:flex;gap:6px;margin-bottom:4px';
+  row.innerHTML = `<input type="url" class="form-input" placeholder="https://... URL de imagen" style="flex:1" oninput="updatePreview()">
+    <button type="button" class="btn btn-ghost" style="padding:4px 8px" onclick="this.parentElement.remove(); updatePreview()">−</button>`;
+  wrap.appendChild(row);
+}
+
 function saveProduct() {
   const name  = document.getElementById('pmName').value.trim();
   const cat   = document.getElementById('pmCat').value;
@@ -1992,15 +2208,21 @@ function saveProduct() {
   const icon  = document.getElementById('pmIcon').value.trim() || '📦';
   const sub   = document.getElementById('pmSub').value.trim();
   const desc  = document.getElementById('pmDesc').value.trim();
-  const img   = document.getElementById('pmImg').value.trim() || null;
+  const images = collectImages();
+  const img   = images[0] || null;
   const ars   = document.getElementById('pmArs').value.trim() || null;
   const usd   = parseFloat(document.getElementById('pmUsd').value) || null;
+  const weight= parseFloat(document.getElementById('pmWeight').value) || null;
   const usdSell = parseFloat(document.getElementById('pmUsdSell').value) || null;
   const badge = document.getElementById('pmBadge').value.trim() || null;
   const badgeColor = document.getElementById('pmBadgeColor').value || '#25D366';
+  const referenceLinks = collectReferenceLinks();
 
   if (!name) return showToast('El nombre es obligatorio.', 'error');
   if (!cat)  return showToast('Seleccioná una categoría.', 'error');
+
+  const hasPrimaryLink = referenceLinks.some(l => l.isPrimary);
+  const status = hasPrimaryLink ? 'pending' : 'enriched';
 
   const today = new Date().toISOString().slice(0,10);
 
@@ -2010,9 +2232,11 @@ function saveProduct() {
     if (!p) return;
     const prevArs = p.ars;
     p.name  = name; p.cat   = cat;   p.calcSub = calcSub; p.icon  = icon;
-    p.sub   = sub;  p.desc  = desc;  p.img   = img;
-    p.ars   = ars;  p.usd   = usd;   p.usdSell = usdSell; p.badge = badge;
+    p.sub   = sub;  p.desc  = desc;  p.img   = img; p.images = images;
+    p.ars   = ars;  p.usd   = usd;   p.weight = weight; p.usdSell = usdSell; p.badge = badge;
     p.badgeColor = badgeColor;
+    p.referenceLinks = referenceLinks;
+    if (hasPrimaryLink && p.status !== 'pending') p.status = p.status || 'enriched';
     // Log price change
     if (ars && ars !== prevArs) {
       if (!p.priceHistory) p.priceHistory = [];
@@ -2023,12 +2247,13 @@ function saveProduct() {
     // New
     const newId = products.length ? Math.max(...products.map(p=>p.id)) + 1 : 1;
     const newP = {
-      id: newId, cat, calcSub, name, sub, desc, img, badge, badgeColor, icon,
-      ars, usd, usdSell, activo: true, fechaAlta: today,
+      id: newId, cat, calcSub, name, sub, desc, img, images, badge, badgeColor, icon,
+      ars, usd, weight, usdSell, activo: true, fechaAlta: today,
       priceHistory: ars ? [{ ars, date: today }] : [],
+      referenceLinks, status, enrichError: null,
     };
     products.push(newP);
-    showToast(`✅ Producto "${name}" agregado.`);
+    showToast(`✅ Producto "${name}" agregado.` + (status === 'pending' ? ' Pendiente de enriquecimiento.' : ''));
   }
 
   saveProducts();
@@ -2041,32 +2266,48 @@ function saveProduct() {
 /* ══════════════════════════════════════
    CALCULATION ENGINE
 ══════════════════════════════════════ */
-function getCalculationResult(cat, sub, usdCost) {
-  if (!settings.formulas) return null;
+function getCalculationResult(catName, sub, usdCost, weightArg) {
+  if (!settings.categories) return null;
   const u = parseFloat(usdCost);
+  const w = parseFloat(weightArg) || 0;
   if (!u || u <= 0 || !dollar) return null;
   
-  let key = 'hogar_unico'; 
+  const c = settings.categories.find(x => x.name === catName);
+  if (!c) return null;
   
-  if (cat === 'Celulares') {
-    if (u > 300) {
-      key = 'celular_' + (sub || 'slim') + '_high';
-    } else {
-      key = 'celular_' + (sub || 'slim');
+  const rules = c.rules || [];
+  
+  let matchedRule = rules.find(r => r.subtype === 'unico'); 
+  const subtypeTarget = sub || 'unico';
+  const typeRules = rules.filter(r => r.subtype === subtypeTarget);
+  
+  for (let r of typeRules) {
+    if (r.type === 'none') { matchedRule = r; break; }
+    if (r.type === 'price') {
+       if (r.op === '<=' && u <= r.val) { matchedRule = r; break; }
+       if (r.op === '>=' && u >= r.val) { matchedRule = r; break; }
+       if (r.op === '<'  && u < r.val)  { matchedRule = r; break; }
+       if (r.op === '>'  && u > r.val)  { matchedRule = r; break; }
     }
-  } else if (cat === 'Electrónica' || ['Audio', 'Accesorios', 'Computación', 'Smart TV'].includes(cat)) {
-    key = 'electronica_' + (sub || 'chico');
+    if (r.type === 'weight') {
+       if (r.op === '<=' && w <= r.val) { matchedRule = r; break; }
+       if (r.op === '>=' && w >= r.val) { matchedRule = r; break; }
+       if (r.op === '<'  && w < r.val)  { matchedRule = r; break; }
+       if (r.op === '>'  && w > r.val)  { matchedRule = r; break; }
+    }
+  }
+  
+  if (!matchedRule) {
+     if (typeRules.length > 0) matchedRule = typeRules[0]; 
+     else return null;
   }
 
-  const rule = settings.formulas[key];
-  if (!rule) return null;
-  
-  const pct = 1 + (rule.margin / 100);
-  const baseUsd = (u * pct) + rule.add;
+  const pct = 1 + (matchedRule.margin / 100);
+  const baseUsd = (u * pct) + matchedRule.add;
   const rawArs = baseUsd * dollar;
   const ars = Math.ceil(rawArs / 100) * 100;
   
-  return { ars, baseUsd, rule, key };
+  return { ars, baseUsd, rule: matchedRule, key: catName + '_' + subtypeTarget };
 }
 
 function updateSubtypeOptions() {
@@ -2076,14 +2317,7 @@ function updateSubtypeOptions() {
   
   while (subSel.children.length > 0) subSel.removeChild(subSel.lastChild);
   
-  let options = [];
-  if (cat === 'Celulares') {
-    options = SUBTYPES.Celulares;
-  } else if (['Electrónica', 'Audio', 'Accesorios', 'Computación', 'Smart TV'].includes(cat)) {
-    options = SUBTYPES.Electrónica;
-  } else {
-    options = [{ id: 'unico', label: '-' }];
-  }
+  let options = SUBTYPES(cat);
   
   options.forEach(o => {
     const opt = document.createElement('option');
@@ -2098,6 +2332,7 @@ function autoCalcArs() {
   const cat = document.getElementById('pmCat').value;
   const sub = document.getElementById('pmCalcSub')?.value;
   const usd = document.getElementById('pmUsd').value;
+  const weight = document.getElementById('pmWeight')?.value || 0;
   const hint = document.getElementById('pmCalcHint');
   
   if (!usd || !cat) {
@@ -2105,7 +2340,7 @@ function autoCalcArs() {
     return;
   }
   
-  const res = getCalculationResult(cat, sub, usd);
+  const res = getCalculationResult(cat, sub, usd, weight);
   if (res) {
     document.getElementById('pmUsdSell').value = res.baseUsd.toFixed(2);
     document.getElementById('pmArs').value = res.ars;
@@ -2115,7 +2350,7 @@ function autoCalcArs() {
   }
 }
 
-function renderFormulasTable() {
+function renderFormulasTable_OLD() {
   const tbody = document.getElementById('formulasTableBody');
   if(!tbody || !settings.formulas) return;
   const forms = settings.formulas;
@@ -2140,16 +2375,165 @@ function renderFormulasTable() {
   }).join('');
 }
 
-function saveFormulas() {
-  Object.keys(settings.formulas).forEach(key => {
-    const m = parseFloat(document.getElementById('f_margin_'+key).value) || 0;
-    const a = parseFloat(document.getElementById('f_add_'+key).value) || 0;
-    settings.formulas[key].margin = m;
-    settings.formulas[key].add = a;
-  });
-  saveSettings();
-  showToast('✅ Fórmulas actualizadas correctamente.');
+function renderCategoriesTable() {
+  const tbody = document.getElementById('categoriesTableBody');
+  if(!tbody || !settings.categories) return;
+  const cats = settings.categories;
+  
+  tbody.innerHTML = cats.map(c => {
+    const rulesSummary = (c.rules || []).map(r => {
+       const opText = r.type === 'none' ? 'Siempre' : `${r.type==='price'?'Precio':'Peso'} ${r.op} ${r.val}`;
+       return `[${r.subtype}] ${opText} ➜ +${r.margin}% +$${r.add}`;
+    }).join('<br>');
+    const subsSummary = (c.subtypes || []).map(s => s.label).join(', ') || 'Único';
+    
+    return `
+      <tr>
+        <td style="font-weight:700;font-size:13px">${c.icon} ${c.name}</td>
+        <td style="font-size:11px;color:var(--text-2);max-width:200px;">${subsSummary}</td>
+        <td style="font-size:10px;color:var(--text-3);line-height:1.4">${rulesSummary || 'Sin reglas'}</td>
+        <td>
+          <button class="btn btn-ghost btn-sm btn-icon" onclick="openCategoryModal('${c.id}')" title="Editar">✏️</button>
+          <button class="btn btn-ghost btn-sm btn-icon" onclick="deleteCategory('${c.id}')" title="Eliminar" style="color:var(--red)">🗑</button>
+        </td>
+      </tr>
+    `;
+  }).join('');
 }
+
+function deleteCategory(id) {
+   showConfirm('🗑 Eliminar Categoría', `¿Seguro que deseas eliminarla?`, () => {
+      settings.categories = settings.categories.filter(c => c.id !== id);
+      saveSettings();
+      renderCategoriesTable();
+      populateCatDropdowns();
+   });
+}
+
+function openCategoryModal(id) {
+  const mo = document.getElementById('categoryModal');
+  const cat = settings.categories.find(c => c.id === id);
+  document.getElementById('cmId').value = id || '';
+  
+  window._tempSubtypes = cat ? JSON.parse(JSON.stringify(cat.subtypes || [])) : [];
+  window._tempRules = cat ? JSON.parse(JSON.stringify(cat.rules || [])) : [];
+  
+  document.getElementById('cmName').value = cat ? cat.name : '';
+  document.getElementById('cmIcon').value = cat ? (cat.icon || '📦') : '📦';
+  document.getElementById('catModalTitle').textContent = cat ? 'Editar Categoría' : 'Nueva Categoría';
+  
+  renderCmSubtypes();
+  renderCmRules();
+  
+  mo.classList.add('show');
+}
+
+function renderCmSubtypes() {
+   const ls = document.getElementById('cmSubtypesList');
+   ls.innerHTML = window._tempSubtypes.map((s, i) => `
+     <div style="display:flex;gap:8px;align-items:center;background:var(--surf-2);padding:10px;border-radius:var(--r-sm);border:1px solid var(--border)">
+       <input type="text" class="form-input" placeholder="ID (ej: slim)" style="width:80px" value="${s.id}" onchange="window._tempSubtypes[${i}].id=this.value; renderCmRules();">
+       <input type="text" class="form-input" placeholder="Label visible" style="flex:1" value="${s.label}" onchange="window._tempSubtypes[${i}].label=this.value">
+       <button class="btn btn-ghost btn-sm btn-icon text-red" onclick="window._tempSubtypes.splice(${i},1); renderCmSubtypes(); renderCmRules();">✕</button>
+     </div>
+   `).join('');
+}
+
+function renderCmRules() {
+   const ls = document.getElementById('cmRulesList');
+   const subOpts = window._tempSubtypes.length > 0 ? window._tempSubtypes : [{id:'unico', label:'Único'}];
+   
+   ls.innerHTML = window._tempRules.map((r, i) => {
+      const typeOpts = `
+         <option value="none" ${r.type==='none'?'selected':''}>Siempre</option>
+         <option value="price" ${r.type==='price'?'selected':''}>Precio (U$D)</option>
+         <option value="weight" ${r.type==='weight'?'selected':''}>Peso (kg)</option>
+      `;
+      const opOpts = `
+         <option value="<=" ${r.op==='<='?'selected':''}>&le;</option>
+         <option value=">=" ${r.op==='>='?'selected':''}>&ge;</option>
+         <option value="<" ${r.op==='<'?'selected':''}>&lt;</option>
+         <option value=">" ${r.op==='>'?'selected':''}>&gt;</option>
+      `;
+      const sOpts = subOpts.map(so => `<option value="${so.id}" ${r.subtype===so.id?'selected':''}>${so.id}</option>`).join('');
+      
+      return `
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--surf-2);padding:10px;border-radius:var(--r-sm);border:1px solid var(--border)">
+         <div>
+            <div style="font-size:10px;color:var(--text-3);margin-bottom:2px">Aplica a:</div>
+            <select class="form-select" style="padding:6px;font-size:12px;height:auto" onchange="window._tempRules[${i}].subtype=this.value">${sOpts}</select>
+         </div>
+         <div>
+            <div style="font-size:10px;color:var(--text-3);margin-bottom:2px">Condición:</div>
+            <div style="display:flex;gap:4px">
+               <select class="form-select" style="padding:6px;font-size:12px;height:auto;width:95px" onchange="window._tempRules[${i}].type=this.value; renderCmRules()">${typeOpts}</select>
+               ${r.type !== 'none' ? `
+               <select class="form-select" style="padding:6px;font-size:12px;height:auto;width:50px" onchange="window._tempRules[${i}].op=this.value">${opOpts}</select>
+               <input type="number" class="form-input" style="padding:6px;font-size:12px;height:auto;width:60px" value="${r.val||0}" onchange="window._tempRules[${i}].val=parseFloat(this.value)">
+               ` : ''}
+            </div>
+         </div>
+         <div>
+            <div style="font-size:10px;color:var(--text-3);margin-bottom:2px">Margen (+%)</div>
+            <input type="number" class="form-input" style="padding:6px;font-size:12px;height:auto;width:70px" value="${r.margin}" onchange="window._tempRules[${i}].margin=parseFloat(this.value)||0">
+         </div>
+         <div>
+            <div style="font-size:10px;color:var(--text-3);margin-bottom:2px">Cargo (+USD)</div>
+            <input type="number" class="form-input" style="padding:6px;font-size:12px;height:auto;width:70px" value="${r.add}" onchange="window._tempRules[${i}].add=parseFloat(this.value)||0">
+         </div>
+         <button class="btn btn-ghost btn-sm btn-icon text-red" style="margin-top:14px" onclick="window._tempRules.splice(${i},1); renderCmRules();">✕</button>
+      </div>`
+   }).join('');
+}
+
+function addCategorySubtype() {
+   window._tempSubtypes.push({id:'', label:''});
+   renderCmSubtypes();
+}
+
+function addCategoryRule() {
+   const st = window._tempSubtypes.length ? window._tempSubtypes[0].id : 'unico';
+   window._tempRules.push({subtype:st, type:'none', op:'<=', val:0, margin:0, add:0});
+   renderCmRules();
+}
+
+function closeCategoryModal() {
+   document.getElementById('categoryModal').classList.remove('show');
+}
+
+function saveCategory() {
+   const cmId = document.getElementById('cmId').value;
+   const name = document.getElementById('cmName').value.trim();
+   const icon = document.getElementById('cmIcon').value.trim() || '📦';
+   
+   if (!name) return showToast('El nombre de categoría es obligatorio', 'error');
+   
+   const newId = cmId || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g,'');
+   
+   // Clean up sub/rules empty
+   const validSubs = window._tempSubtypes.filter(s => s.id && s.label);
+   
+   const newCat = {
+      id: newId,
+      name, icon,
+      subtypes: validSubs,
+      rules: window._tempRules
+   };
+   
+   if (cmId) {
+      const idx = settings.categories.findIndex(c => c.id === cmId);
+      if (idx !== -1) settings.categories[idx] = newCat;
+   } else {
+      settings.categories.push(newCat);
+   }
+   
+   saveSettings();
+   closeCategoryModal();
+   renderCategoriesTable();
+   populateCatDropdowns();
+   showToast('✅ Categoría guardada');
+}
+
 
 /* ══════════════════════════════════════
    PRICES TABLE
@@ -2228,7 +2612,7 @@ function recalcAllPrices() {
   let count = 0;
   products.forEach(p => {
     if (!p.usd) return;
-    const res = getCalculationResult(p.cat, p.calcSub, p.usd);
+    const res = getCalculationResult(p.cat, p.calcSub, p.usd, p.weight);
     if (res) {
       if (p.usdSell !== res.baseUsd) { p.usdSell = res.baseUsd; }
       const newArs = String(res.ars);
@@ -2325,7 +2709,7 @@ function openBannerModal(id) {
   // Populate filter dropdown
   const fs = document.getElementById('bmFilter');
   while (fs.children.length > 1) fs.removeChild(fs.lastChild);
-  CATS.forEach(c => {
+  CATS().forEach(c => {
     const o = document.createElement('option');
     o.value = c; o.textContent = c;
     fs.appendChild(o);

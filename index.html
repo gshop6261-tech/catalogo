@@ -921,6 +921,55 @@
       font-size: 110px;
       filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4));
     }
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform .3s ease;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      font-size: 28px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .carousel-prev { left: 8px; }
+    .carousel-next { right: 8px; }
+    .carousel-btn:hover { background: rgba(0,0,0,0.8); }
+    .carousel-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 5;
+    }
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .carousel-dot.active {
+      background: #fff;
+    }
     .modal-badge {
       position: absolute;
       top: 16px; left: 16px;
@@ -1313,8 +1362,7 @@
 'use strict';
 
 /* ─── CONFIGURACIÓN GLOBAL ─────────────────────── */
-// Carga configuración desde admin panel (localStorage) si existe
-const _catalog = (() => {
+let _catalog = (() => {
   try { return JSON.parse(localStorage.getItem('cd_catalog')) || {}; } catch(e) { return {}; }
 })();
 
@@ -1323,8 +1371,10 @@ const CFG = {
   nombre:   'Compra Directa · Global Shop',
 };
 
-/* ─── CATEGORÍAS ────────────────────────────────── */
-const CATS = ['Todos', 'Celulares', 'Smart TV', 'Audio', 'Computación', 'Accesorios', 'Hogar'];
+let _dollarLive = null;
+
+const DEFAULT_CATS = ['Celulares', 'Smart TV', 'Audio', 'Computación', 'Accesorios', 'Hogar'];
+let CATS = ['Todos'].concat((_catalog.categories && _catalog.categories.length > 0 ? _catalog.categories : DEFAULT_CATS).map(c => typeof c === 'string' ? c : c.name));
 
 /* ─── WHATSAPP SVG (reutilizable) ───────────────── */
 const WA_SVG = `<svg class="wb" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
@@ -1428,7 +1478,7 @@ const FALLBACK_PRODUCTOS = [
 ];
 
 /* Usa productos del admin si existen, sino los de ejemplo */
-const PRODUCTOS = (_catalog.products && _catalog.products.length)
+let PRODUCTOS = (_catalog.products && _catalog.products.length)
   ? _catalog.products
   : FALLBACK_PRODUCTOS;
 
@@ -1452,6 +1502,61 @@ function waUrl(product) {
 function formatARS(val) {
   if (!val) return null;
   return '$ ' + parseInt(val).toLocaleString('es-AR');
+}
+
+function calcLiveARS(p) {
+  if (_dollarLive && p.usdSell) {
+    const raw = p.usdSell * _dollarLive;
+    return Math.ceil(raw / 100) * 100;
+  }
+  return p.ars ? parseInt(p.ars) : null;
+}
+
+async function fetchDollarLive() {
+  const cached = sessionStorage.getItem('_dollarCache');
+  if (cached) {
+    try {
+      const c = JSON.parse(cached);
+      if (Date.now() - c.ts < 5 * 60 * 1000) {
+        _dollarLive = c.rate;
+        return;
+      }
+    } catch(e) {}
+  }
+  try {
+    const res = await fetch('https://dolarapi.com/v1/dolares/blue');
+    const data = await res.json();
+    _dollarLive = data.venta;
+  } catch(e) {
+    try {
+      const res2 = await fetch('https://api.bluelytics.com.ar/v2/latest');
+      const d2 = await res2.json();
+      _dollarLive = d2.blue.value_sell;
+    } catch(e2) {
+      _dollarLive = null;
+    }
+  }
+  if (_dollarLive) {
+    sessionStorage.setItem('_dollarCache', JSON.stringify({ rate: _dollarLive, ts: Date.now() }));
+  }
+}
+
+async function tryLoadProductosJSON() {
+  try {
+    const res = await fetch('data/productos.json');
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data.products && data.products.length) {
+      PRODUCTOS = data.products.filter(p => p.activo && p.status !== 'pending');
+      if (data.settings) {
+        CFG.whatsapp = data.settings.whatsapp || CFG.whatsapp;
+        const cats = data.settings.categories;
+        if (cats && cats.length) {
+          CATS = ['Todos'].concat(cats.map(c => c.name));
+        }
+      }
+    }
+  } catch(e) {}
 }
 
 /* ─── HERO CAROUSEL ──────────────────────────── */
@@ -1577,12 +1682,14 @@ function renderProducts() {
 }
 
 function cardHTML(p, idx) {
-  const price = formatARS(p.ars);
+  const liveArs = calcLiveARS(p);
+  const price = liveArs ? formatARS(String(liveArs)) : formatARS(p.ars);
   const link  = waUrl(p);
   const delay = (idx * 40) + 'ms';
 
-  const imgPart = p.img
-    ? `<img src="${p.img}" alt="${p.name}" loading="lazy">`
+  const mainImg = (p.images && p.images.length) ? p.images[0] : p.img;
+  const imgPart = mainImg
+    ? `<img src="${mainImg}" alt="${p.name}" loading="lazy">`
     : `<span class="card-emoji" aria-hidden="true">${p.icon}</span>`;
 
   const badgePart = p.badge
@@ -1632,14 +1739,25 @@ function cardHTML(p, idx) {
 function openDetailModal(id) {
   const p = PRODUCTOS.find(x => x.id === id);
   if (!p) return;
-  
+
   const imgCont = document.getElementById('mdlImgContainer');
-  if (p.img) {
-    imgCont.innerHTML = `<img src="${p.img}" alt="${p.name}">`;
+  const imgs = (p.images && p.images.length) ? p.images : (p.img ? [p.img] : []);
+  if (imgs.length > 1) {
+    imgCont.innerHTML = `
+      <div class="carousel" data-idx="0">
+        <div class="carousel-track" style="display:flex;transition:transform .3s ease;width:${imgs.length * 100}%">
+          ${imgs.map(src => `<div style="flex:0 0 ${100/imgs.length}%;"><img src="${src}" alt="${p.name}" style="width:100%;height:auto;display:block"></div>`).join('')}
+        </div>
+        <button class="carousel-btn carousel-prev" onclick="carouselMove(-1)" aria-label="Anterior">&#8249;</button>
+        <button class="carousel-btn carousel-next" onclick="carouselMove(1)" aria-label="Siguiente">&#8250;</button>
+        <div class="carousel-dots">${imgs.map((_, i) => `<span class="carousel-dot${i===0?' active':''}" onclick="carouselGo(${i})"></span>`).join('')}</div>
+      </div>`;
+  } else if (imgs.length === 1) {
+    imgCont.innerHTML = `<img src="${imgs[0]}" alt="${p.name}">`;
   } else {
     imgCont.innerHTML = `<div class="modal-emoji">${p.icon}</div>`;
   }
-  
+
   const badge = document.getElementById('mdlBadge');
   if (p.badge) {
     badge.style.display = 'block';
@@ -1648,14 +1766,15 @@ function openDetailModal(id) {
   } else {
     badge.style.display = 'none';
   }
-  
+
   document.getElementById('mdlCat').textContent = p.cat;
   document.getElementById('mdlName').textContent = p.name;
   document.getElementById('mdlSub').textContent = p.sub || '';
   document.getElementById('mdlDesc').textContent = p.desc || '';
-  
+
   const priceArea = document.getElementById('mdlPriceArea');
-  const arPrice = formatARS(p.ars);
+  const liveArs = calcLiveARS(p);
+  const arPrice = liveArs ? formatARS(String(liveArs)) : formatARS(p.ars);
   if (arPrice) {
     let pricesHtml = '';
     if (p.usdSell) {
@@ -1700,8 +1819,26 @@ function initPWA() {
   }
 }
 
+/* ─── CAROUSEL HELPERS ───────────────────────── */
+function carouselMove(dir) {
+  const c = document.querySelector('.carousel');
+  if (!c) return;
+  const idx = parseInt(c.dataset.idx || 0);
+  const total = c.querySelectorAll('.carousel-track > div').length;
+  carouselGo(((idx + dir) % total + total) % total);
+}
+function carouselGo(i) {
+  const c = document.querySelector('.carousel');
+  if (!c) return;
+  c.dataset.idx = i;
+  const total = c.querySelectorAll('.carousel-track > div').length;
+  c.querySelector('.carousel-track').style.transform = `translateX(-${i * (100/total)}%)`;
+  c.querySelectorAll('.carousel-dot').forEach((d, j) => d.classList.toggle('active', j === i));
+}
+
 /* ─── BOOT ───────────────────────────────────── */
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await Promise.all([fetchDollarLive(), tryLoadProductosJSON()]);
   initCats();
   initSearch();
   renderProducts();
