@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Compra Directa by Global Shop — Tecnología y electrodomésticos premium. Importación directa, precios reales. Envíos a todo Argentina.">
+  <meta name="theme-color" content="#111111">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="CompraDirect">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Compra Directa · Global Shop">
+  <meta property="og:description" content="Tecnología premium importada directo. Celulares, Smart TV, Audio, Computación y más. Enviamos a todo Argentina.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <title>Compra Directa · Global Shop</title>
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================
+       RESET & BASE
+    ============================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      /* Colors */
+      --bg:           #f5f5f7;
+      --surface:      #ffffff;
+      --surface-alt:  #f8f8f8;
+      --border:       #e8e8e8;
+      --border-light: #f0f0f0;
+      --text:         #111111;
+      --text-2:       #555555;
+      --text-3:       #888888;
+      --text-4:       #bbbbbb;
+      --green:        #25D366;
+      --green-dark:   #1da851;
+      --green-light:  #e8faf0;
+      --yellow:       #FFD600;
+      --yellow-dark:  #e6c200;
+      /* Radii */
+      --r-sm:  8px;
+      --r-md:  12px;
+      --r-lg:  16px;
+      --r-xl:  22px;
+      /* Shadows */
+      --sh-sm: 0 1px 4px rgba(0,0,0,.06);
+      --sh-md: 0 4px 20px rgba(0,0,0,.09);
+      --sh-lg: 0 10px 40px rgba(0,0,0,.14);
+      /* Typography */
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      /* Motion */
+      --ease: cubic-bezier(.4,0,.2,1);
+      --t:    .2s;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      font-family: var(--font);
+      color: var(--text);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    button { font-family: var(--font); cursor: pointer; border: none; outline: none; background: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ============================================
+       HERO CAROUSEL
+    ============================================ */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      background: #111;
+      user-select: none;
+    }
+    @media (min-width: 600px)  { .hero { height: 320px; } }
+    @media (min-width: 900px)  { .hero { height: 420px; } }
+
+    .hero-track {
+      display: flex;
+      height: 100%;
+      transition: transform .65s var(--ease);
+      will-change: transform;
+    }
+
+    .hero-slide {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      overflow: hidden;
+    }
+    @media (min-width: 600px) { .hero-slide { padding: 0 36px; } }
+    @media (min-width: 900px) { .hero-slide { padding: 0 56px; } }
+
+    /* Gradient overlay so text is always legible */
+    .hero-slide::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.35) 55%, rgba(0,0,0,.05) 100%);
+      z-index: 1;
+    }
+
+    .hero-deco {
+      position: absolute;
+      right: -16px;
+      bottom: -8px;
+      font-size: clamp(90px, 22vw, 190px);
+      opacity: .18;
+      z-index: 1;
+      pointer-events: none;
+      transform: rotate(-8deg);
+      line-height: 1;
+      filter: drop-shadow(0 0 40px rgba(255,255,255,.1));
+    }
+    @media (min-width: 600px) { .hero-deco { opacity: .25; right: 30px; bottom: 10px; } }
+    @media (min-width: 900px) { .hero-deco { opacity: .32; right: 60px; } }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: clamp(240px, 55vw, 500px);
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--green);
+      color: #fff;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 11px;
+    }
+
+    .hero-title {
+      font-size: clamp(23px, 6vw, 44px);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.04;
+      margin-bottom: 8px;
+      letter-spacing: -1.5px;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--yellow);
+    }
+
+    .hero-sub {
+      font-size: clamp(11px, 2.8vw, 14px);
+      color: rgba(255,255,255,.62);
+      line-height: 1.55;
+      margin-bottom: 18px;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--yellow);
+      color: #000;
+      font-weight: 800;
+      font-size: clamp(11px, 2.5vw, 13px);
+      padding: 11px 20px;
+      border-radius: var(--r-md);
+      transition: background var(--t) var(--ease), transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
+      box-shadow: 0 4px 16px rgba(255,214,0,.45);
+      white-space: nowrap;
+    }
+    .hero-cta:hover {
+      background: var(--yellow-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(255,214,0,.55);
+    }
+
+    /* Arrows */
+    .hero-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      background: rgba(255,255,255,.11);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1.5px solid rgba(255,255,255,.18);
+      color: #fff;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      transition: background var(--t), transform var(--t);
+    }
+    .hero-arrow:hover {
+      background: rgba(255,255,255,.28);
+    }
+    .hero-arrow.prev { left: 12px; }
+    .hero-arrow.prev:hover { transform: translateY(-50%) translateX(-1px); }
+    .hero-arrow.next { right: 12px; }
+    .hero-arrow.next:hover { transform: translateY(-50%) translateX(1px); }
+
+    /* Dots */
+    .hero-dots {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+      z-index: 10;
+    }
+    .hero-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.33);
+      transition: all .35s var(--ease);
+    }
+    .hero-dot.active {
+      background: var(--yellow);
+      width: 20px;
+    }
+
+    /* ============================================
+       TRUST BAR
+    ============================================ */
+    .trust {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 0;
+      overflow: hidden;
+    }
+    .trust-inner {
+      display: flex;
+      gap: 40px;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+    .trust:hover .trust-inner { animation-play-state: paused; }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-2);
+      white-space: nowrap;
+    }
+    .trust-item .ti { font-size: 14px; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ============================================
+       HEADER
+    ============================================ */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: rgba(245,245,247,.93);
+      backdrop-filter: blur(22px) saturate(180%);
+      -webkit-backdrop-filter: blur(22px) saturate(180%);
+      border-bottom: 1px solid rgba(232,232,232,.75);
+      padding: 12px 16px 10px;
+    }
+    @media (min-width: 900px) { .header { padding: 14px 28px 12px; } }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 11px;
+      gap: 10px;
+    }
+
+    .logo {
+      font-size: clamp(17px, 4.5vw, 22px);
+      font-weight: 900;
+      letter-spacing: -1.2px;
+      line-height: 1;
+      color: var(--text);
+    }
+    .logo em { font-style: italic; color: var(--green); }
+    .logo-sub {
+      font-size: 9px;
+      color: var(--text-3);
+      font-weight: 500;
+      margin-top: 2px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .header-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--green);
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 9px 15px;
+      border-radius: var(--r-md);
+      transition: background var(--t) var(--ease), transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
+      box-shadow: 0 2px 12px rgba(37,211,102,.28);
+      flex-shrink: 0;
+    }
+    .header-wa:hover {
+      background: var(--green-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(37,211,102,.4);
+    }
+    .header-wa .wa-icon { width: 14px; height: 14px; fill: #fff; }
+
+    /* Search */
+    .search-wrap {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    .search-ico {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      pointer-events: none;
+      color: var(--text-3);
+    }
+    .search-input {
+      width: 100%;
+      padding: 10px 12px 10px 37px;
+      font-size: 14px;
+      font-family: var(--font);
+      color: var(--text);
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-md);
+      outline: none;
+      transition: border-color var(--t), box-shadow var(--t);
+    }
+    .search-input::placeholder { color: var(--text-4); }
+    .search-input:focus {
+      border-color: var(--text);
+      box-shadow: 0 0 0 3px rgba(17,17,17,.07);
+    }
+
+    /* Category pills */
+    .cats {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 1px;
+    }
+    .cats::-webkit-scrollbar { display: none; }
+    .cat-pill {
+      font-family: var(--font);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+      color: var(--text-2);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all var(--t) var(--ease);
+    }
+    .cat-pill:hover {
+      border-color: var(--text);
+      color: var(--text);
+    }
+    .cat-pill.active {
+      background: var(--text);
+      color: var(--surface);
+      border-color: var(--text);
+    }
+
+    /* ============================================
+       MAIN / GRID
+    ============================================ */
+    .main-content {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 16px 12px 110px;
+    }
+    @media (min-width: 900px) { .main-content { padding: 24px 24px 110px; } }
+
+    .grid-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .grid-count { font-size: 12px; color: var(--text-3); font-weight: 500; }
+    .grid-count strong { color: var(--text); font-weight: 800; }
+    .grid-badge {
+      font-size: 11px;
+      color: var(--green);
+      font-weight: 700;
+      background: var(--green-light);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+      gap: 12px;
+    }
+    @media (min-width: 600px) { .products-grid { gap: 16px; } }
+
+    /* ============================================
+       PRODUCT CARD
+    ============================================ */
+    .card {
+      background: var(--surface);
+      border-radius: var(--r-lg);
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: box-shadow var(--t) var(--ease), transform var(--t) var(--ease), border-color var(--t);
+    }
+    .card:hover {
+      box-shadow: var(--sh-md);
+      transform: translateY(-3px);
+      border-color: var(--border);
+    }
+
+    .card-img-wrap {
+      height: 158px;
+      background: var(--surface-alt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 12px;
+      transition: transform var(--t) var(--ease);
+    }
+    .card:hover .card-img-wrap img { transform: scale(1.05); }
+
+    .card-emoji {
+      font-size: 64px;
+      line-height: 1;
+      transition: transform var(--t) var(--ease);
+      user-select: none;
+    }
+    .card:hover .card-emoji { transform: scale(1.08); }
+
+    .card-badge {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      z-index: 2;
+      font-size: 9px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 20px;
+      color: #fff;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(0,0,0,.18);
+    }
+
+    .card-body {
+      padding: 10px 12px 12px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .card-cat {
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--text-4);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .card-name {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.22;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-sub {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-3);
+      line-height: 1.3;
+    }
+    .card-desc {
+      font-size: 10px;
+      color: var(--text-4);
+      line-height: 1.5;
+      flex: 1;
+      margin-top: 2px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-divider {
+      height: 1px;
+      background: var(--border-light);
+      margin: 8px 0;
+    }
+    .card-price-label {
+      font-size: 9px;
+      color: var(--text-4);
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    .card-price {
+      font-size: clamp(17px, 4vw, 20px);
+      font-weight: 900;
+      color: var(--text);
+      letter-spacing: -.6px;
+      line-height: 1;
+    }
+    .card-price.consultar {
+      font-size: 13px;
+      color: var(--text-3);
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+    .card-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--green);
+      color: #fff;
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: 11px;
+      padding: 10px;
+      border-radius: var(--r-sm);
+      text-decoration: none;
+      margin-top: 8px;
+      transition: background var(--t) var(--ease), transform var(--t) var(--ease);
+    }
+    .card-btn:hover {
+      background: var(--green-dark);
+      transform: translateY(-1px);
+    }
+    .card-btn .wb { width: 13px; height: 13px; fill: #fff; flex-shrink: 0; }
+
+    /* Empty state */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 56px 20px;
+    }
+    .empty-icon { font-size: 52px; margin-bottom: 14px; }
+    .empty-title { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
+    .empty-text { font-size: 13px; color: var(--text-3); line-height: 1.5; }
+
+    /* ============================================
+       INFO SECTIONS
+    ============================================ */
+    .section {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 32px 20px;
+    }
+    .section.alt { background: var(--surface-alt); }
+    @media (min-width: 600px) { .section { padding: 40px 32px; } }
+
+    .section-inner {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .section-head { margin-bottom: 22px; }
+    .section-label {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      margin-bottom: 4px;
+    }
+    .section-title {
+      font-size: clamp(18px, 4vw, 24px);
+      font-weight: 900;
+      letter-spacing: -.8px;
+    }
+    .section-sub {
+      font-size: 13px;
+      color: var(--text-3);
+      margin-top: 5px;
+      line-height: 1.55;
+    }
+
+    /* Steps — Cómo funciona */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+      gap: 10px;
+    }
+    .step {
+      background: var(--surface-alt);
+      border-radius: var(--r-lg);
+      padding: 16px 13px;
+      text-align: center;
+      border: 1px solid var(--border-light);
+      transition: box-shadow var(--t);
+    }
+    .step:hover { box-shadow: var(--sh-sm); }
+    .step-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 8px;
+    }
+    .step-icon { font-size: 22px; margin-bottom: 6px; }
+    .step-name { font-size: 12px; font-weight: 800; margin-bottom: 4px; }
+    .step-desc { font-size: 10px; color: var(--text-2); line-height: 1.5; }
+
+    /* Payment */
+    .payment-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .payment-chip {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 10px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-2);
+      transition: all var(--t);
+    }
+    .payment-chip:hover { border-color: var(--text); color: var(--text); }
+    .payment-chip .pe { font-size: 20px; }
+    .payment-note {
+      margin-top: 12px;
+      font-size: 11px;
+      color: var(--text-3);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Shipping */
+    .ship-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .ship-card {
+      background: var(--surface);
+      border-radius: var(--r-lg);
+      padding: 18px 16px;
+      border-left: 3px solid var(--green);
+      border-right: 1px solid var(--border-light);
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+    .ship-icon { font-size: 24px; margin-bottom: 8px; }
+    .ship-title { font-size: 13px; font-weight: 800; margin-bottom: 5px; }
+    .ship-text { font-size: 11px; color: var(--text-2); line-height: 1.6; }
+
+    /* Guarantee */
+    .guar-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    @media (min-width: 600px) { .guar-grid { grid-template-columns: repeat(3, 1fr); } }
+    .guar-card {
+      background: var(--surface);
+      border-radius: var(--r-lg);
+      padding: 16px;
+      border: 1px solid var(--border-light);
+      transition: box-shadow var(--t);
+    }
+    .guar-card:hover { box-shadow: var(--sh-sm); }
+    .guar-icon { font-size: 22px; margin-bottom: 7px; }
+    .guar-title { font-size: 12px; font-weight: 800; margin-bottom: 4px; }
+    .guar-text { font-size: 10px; color: var(--text-2); line-height: 1.55; }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .footer {
+      background: #111;
+      color: #fff;
+      padding: 32px 20px 36px;
+      text-align: center;
+    }
+    .footer-inner { max-width: 980px; margin: 0 auto; }
+    .footer-logo {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 4px;
+    }
+    .footer-logo em { font-style: italic; color: var(--green); }
+    .footer-tagline {
+      font-size: 12px;
+      color: rgba(255,255,255,.4);
+      margin-bottom: 20px;
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .footer-link {
+      font-size: 13px;
+      color: rgba(255,255,255,.65);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      transition: color var(--t);
+    }
+    .footer-link:hover { color: var(--green); }
+    .footer-hr { height: 1px; background: rgba(255,255,255,.08); margin: 16px 0; }
+    .footer-copy { font-size: 10px; color: rgba(255,255,255,.28); }
+
+    /* ============================================
+       STICKY BOTTOM BAR
+    ============================================ */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 300;
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border-top: 1px solid var(--border);
+      padding: 10px 16px;
+      padding-bottom: max(10px, env(safe-area-inset-bottom, 10px));
+    }
+    .sticky-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .sticky-label { font-size: 13px; font-weight: 800; }
+    .sticky-sub { font-size: 10px; color: var(--text-3); margin-top: 1px; }
+    .sticky-cta {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--green);
+      color: #fff;
+      font-family: var(--font);
+      font-weight: 800;
+      font-size: 13px;
+      padding: 12px 20px;
+      border-radius: var(--r-md);
+      text-decoration: none;
+      transition: background var(--t), transform var(--t), box-shadow var(--t);
+      flex-shrink: 0;
+      box-shadow: 0 4px 16px rgba(37,211,102,.38);
+    }
+    .sticky-cta:hover {
+      background: var(--green-dark);
+      transform: translateY(-2px);
+    }
+    .sticky-cta .wb { width: 16px; height: 16px; fill: #fff; }
+
+    /* ============================================
+       SCROLL TO TOP
+    ============================================ */
+    .scroll-top {
+      position: fixed;
+      bottom: 78px;
+      right: 14px;
+      z-index: 250;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      box-shadow: var(--sh-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all var(--t) var(--ease);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(6px);
+    }
+    .scroll-top.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    .scroll-top:hover {
+      background: var(--text);
+      color: var(--surface);
+      transform: translateY(-2px);
+    }
+
+    /* ============================================
+       ANIMATIONS
+    ============================================ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .card { animation: fadeUp .3s var(--ease) both; }
+  </style>
+</head>
+<body>
+
+<!-- ===== HERO CAROUSEL ===== -->
+<section class="hero" id="hero" aria-label="Banners de productos">
+  <button class="hero-arrow prev" id="heroPrev" aria-label="Banner anterior">&#8592;</button>
+  <button class="hero-arrow next" id="heroNext" aria-label="Banner siguiente">&#8594;</button>
+
+  <div class="hero-track" id="heroTrack">
+    <!-- Slide 1: Celulares -->
+    <div class="hero-slide" style="background: linear-gradient(135deg,#080e1e 0%,#0d1b3e 60%,#162960 100%)">
+      <span class="hero-deco" aria-hidden="true">📱</span>
+      <div class="hero-content">
+        <span class="hero-tag">✨ Importación directa</span>
+        <h2 class="hero-title">Celulares<br><em>premium</em></h2>
+        <p class="hero-sub">iPhone, Samsung y más.<br>Originales garantizados, precio real.</p>
+        <a href="#catalogo" class="hero-cta" data-filter="Celulares">Ver celulares ↓</a>
+      </div>
+    </div>
+    <!-- Slide 2: Smart TV -->
+    <div class="hero-slide" style="background: linear-gradient(135deg,#080f0a 0%,#0c2212 60%,#103a1a 100%)">
+      <span class="hero-deco" aria-hidden="true">📺</span>
+      <div class="hero-content">
+        <span class="hero-tag">🔥 Los más pedidos</span>
+        <h2 class="hero-title">Smart TV<br><em>4K Ultra HD</em></h2>
+        <p class="hero-sub">Samsung, LG y Hisense.<br>55", 65" y más tamaños disponibles.</p>
+        <a href="#catalogo" class="hero-cta" data-filter="Smart TV">Ver Smart TVs ↓</a>
+      </div>
+    </div>
+    <!-- Slide 3: Audio -->
+    <div class="hero-slide" style="background: linear-gradient(135deg,#130828 0%,#220e45 60%,#31186a 100%)">
+      <span class="hero-deco" aria-hidden="true">🎧</span>
+      <div class="hero-content">
+        <span class="hero-tag">🎵 Audio premium</span>
+        <h2 class="hero-title">Sonido que<br><em>enamora</em></h2>
+        <p class="hero-sub">AirPods, JBL y headphones premium.<br>Para todos los gustos.</p>
+        <a href="#catalogo" class="hero-cta" data-filter="Audio">Ver Audio ↓</a>
+      </div>
+    </div>
+    <!-- Slide 4: General -->
+    <div class="hero-slide" style="background: linear-gradient(135deg,#101010 0%,#1a1a1a 60%,#232323 100%)">
+      <span class="hero-deco" aria-hidden="true">🛒</span>
+      <div class="hero-content">
+        <span class="hero-tag">🇦🇷 Todo Argentina</span>
+        <h2 class="hero-title">Compra<br><em>directo</em></h2>
+        <p class="hero-sub">Envíos AMBA e interior del país.<br>Consulta gratis por WhatsApp.</p>
+        <a href="https://wa.me/5491154125271?text=Hola!%20Quiero%20consultar%20el%20cat%C3%A1logo%20%F0%9F%9B%92" target="_blank" rel="noopener" class="hero-cta">Consultar ahora 💬</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots" role="tablist" aria-label="Slides del carousel">
+    <button class="hero-dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
+    <button class="hero-dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
+    <button class="hero-dot" role="tab" aria-label="Slide 3" aria-selected="false"></button>
+    <button class="hero-dot" role="tab" aria-label="Slide 4" aria-selected="false"></button>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust" aria-hidden="true">
+  <div class="trust-inner" id="trustInner">
+    <span class="trust-item"><span class="ti">🚚</span> Envíos a todo el país</span>
+    <span class="trust-item"><span class="ti">✅</span> Productos originales</span>
+    <span class="trust-item"><span class="ti">💬</span> Atención por WhatsApp</span>
+    <span class="trust-item"><span class="ti">⚡</span> 5 días hábiles</span>
+    <span class="trust-item"><span class="ti">🔒</span> Compra segura</span>
+    <span class="trust-item"><span class="ti">🌎</span> Importación directa</span>
+    <span class="trust-item"><span class="ti">🔄</span> Cambio directo en garantía</span>
+    <span class="trust-item"><span class="ti">📸</span> Foto del embalaje incluida</span>
+    <span class="trust-item"><span class="ti">💵</span> Efectivo · Transferencia · MP · USDT</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="trust-item"><span class="ti">🚚</span> Envíos a todo el país</span>
+    <span class="trust-item"><span class="ti">✅</span> Productos originales</span>
+    <span class="trust-item"><span class="ti">💬</span> Atención por WhatsApp</span>
+    <span class="trust-item"><span class="ti">⚡</span> 5 días hábiles</span>
+    <span class="trust-item"><span class="ti">🔒</span> Compra segura</span>
+    <span class="trust-item"><span class="ti">🌎</span> Importación directa</span>
+    <span class="trust-item"><span class="ti">🔄</span> Cambio directo en garantía</span>
+    <span class="trust-item"><span class="ti">📸</span> Foto del embalaje incluida</span>
+    <span class="trust-item"><span class="ti">💵</span> Efectivo · Transferencia · MP · USDT</span>
+  </div>
+</div>
+
+<!-- ===== STICKY HEADER ===== -->
+<header class="header" id="mainHeader">
+  <div class="header-top">
+    <div>
+      <div class="logo">Compra<em>Directa</em></div>
+      <div class="logo-sub">by Global Shop</div>
+    </div>
+    <a
+      href="https://wa.me/5491154125271?text=Hola!%20Quiero%20consultar%20el%20cat%C3%A1logo%20%F0%9F%9B%92"
+      target="_blank" rel="noopener"
+      class="header-wa"
+      id="headerWaBtn"
+      aria-label="Consultar por WhatsApp"
+    >
+      <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Consultar
+    </a>
+  </div>
+
+  <div class="search-wrap">
+    <span class="search-ico" aria-hidden="true">🔍</span>
+    <input
+      type="search"
+      class="search-input"
+      id="searchInput"
+      placeholder="Buscar productos..."
+      aria-label="Buscar productos"
+      autocomplete="off"
+      spellcheck="false"
+    >
+  </div>
+
+  <nav class="cats" id="catPills" role="tablist" aria-label="Filtrar por categoría">
+    <!-- Rendered by JS -->
+  </nav>
+</header>
+
+<!-- ===== PRODUCT CATALOG ===== -->
+<main class="main-content" id="catalogo">
+  <div class="grid-meta">
+    <span class="grid-count"><strong id="productCount">0</strong> productos</span>
+    <span class="grid-badge" id="gridBadge">✅ En stock</span>
+  </div>
+  <div class="products-grid" id="productsGrid" role="list" aria-label="Productos disponibles">
+    <!-- Rendered by JS -->
+  </div>
+</main>
+
+<!-- ===== CÓMO FUNCIONA ===== -->
+<section class="section" id="como-funciona" aria-labelledby="h-como">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-label">Proceso de compra</div>
+      <h2 class="section-title" id="h-como">¿Cómo funciona?</h2>
+      <p class="section-sub">Simple, directo y seguro — desde tu celular en minutos.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-icon">🛍️</div>
+        <div class="step-num">1</div>
+        <div class="step-name">Elegís</div>
+        <div class="step-desc">Explorás el catálogo y encontrás lo que querés</div>
+      </div>
+      <div class="step">
+        <div class="step-icon">💬</div>
+        <div class="step-num">2</div>
+        <div class="step-name">Consultás</div>
+        <div class="step-desc">Nos escribís por WhatsApp y confirmamos precio y stock</div>
+      </div>
+      <div class="step">
+        <div class="step-icon">💳</div>
+        <div class="step-num">3</div>
+        <div class="step-name">Pagás</div>
+        <div class="step-desc">Efectivo, transferencia, MercadoPago o USDT</div>
+      </div>
+      <div class="step">
+        <div class="step-icon">⚙️</div>
+        <div class="step-num">4</div>
+        <div class="step-name">Procesamos</div>
+        <div class="step-desc">Tu pedido queda listo en 5 días hábiles</div>
+      </div>
+      <div class="step">
+        <div class="step-icon">📸</div>
+        <div class="step-num">5</div>
+        <div class="step-name">Foto del embalaje</div>
+        <div class="step-desc">Te enviamos foto antes del despacho como respaldo</div>
+      </div>
+      <div class="step">
+        <div class="step-icon">🚚</div>
+        <div class="step-num">6</div>
+        <div class="step-name">Recibís</div>
+        <div class="step-desc">A domicilio en AMBA o por correo al interior</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FORMAS DE PAGO ===== -->
+<section class="section alt" id="formas-pago" aria-labelledby="h-pago">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-label">Sin sorpresas</div>
+      <h2 class="section-title" id="h-pago">Formas de pago</h2>
+      <p class="section-sub">Sin recargos ni descuentos por método de pago.</p>
+    </div>
+    <div class="payment-row">
+      <div class="payment-chip"><span class="pe">💵</span> Efectivo</div>
+      <div class="payment-chip"><span class="pe">🏦</span> Transferencia bancaria</div>
+      <div class="payment-chip"><span class="pe">📲</span> MercadoPago</div>
+      <div class="payment-chip"><span class="pe">🪙</span> USDT (cripto)</div>
+    </div>
+    <p class="payment-note">ℹ️ Tarjetas de crédito/débito no disponibles por el momento.</p>
+  </div>
+</section>
+
+<!-- ===== ENVÍOS ===== -->
+<section class="section" id="envios" aria-labelledby="h-envio">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-label">Cobertura nacional</div>
+      <h2 class="section-title" id="h-envio">Envíos</h2>
+      <p class="section-sub">Llegamos a todo el país. El costo de envío es a cargo del comprador.</p>
+    </div>
+    <div class="ship-grid">
+      <div class="ship-card">
+        <div class="ship-icon">🏙️</div>
+        <div class="ship-title">AMBA</div>
+        <div class="ship-text">Entrega a domicilio o en punto de encuentro según la zona. Coordinamos por WhatsApp.</div>
+      </div>
+      <div class="ship-card">
+        <div class="ship-icon">🗺️</div>
+        <div class="ship-title">Interior del país</div>
+        <div class="ship-text">Envío por correo o encomienda. Se abona en destino o en sucursal.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GARANTÍA ===== -->
+<section class="section alt" id="garantia" aria-labelledby="h-garantia">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-label">Tu tranquilidad primero</div>
+      <h2 class="section-title" id="h-garantia">Garantía y devoluciones</h2>
+      <p class="section-sub">Resolvemos primero, siempre.</p>
+    </div>
+    <div class="guar-grid">
+      <div class="guar-card">
+        <div class="guar-icon">🔄</div>
+        <div class="guar-title">Devoluciones</div>
+        <div class="guar-text">3 días hábiles desde la recepción. En las mismas condiciones que fue entregado. Flete no incluido.</div>
+      </div>
+      <div class="guar-card">
+        <div class="guar-icon">🛡️</div>
+        <div class="guar-title">Garantía por falla</div>
+        <div class="guar-text">90 días desde la entrega. Cubre defectos de fábrica únicamente. Cambio directo.</div>
+      </div>
+      <div class="guar-card">
+        <div class="guar-icon">📸</div>
+        <div class="guar-title">Respaldo fotográfico</div>
+        <div class="guar-text">La foto del embalaje es el registro oficial del estado en el momento de entrega.</div>
+      </div>
+      <div class="guar-card">
+        <div class="guar-icon">🍎</div>
+        <div class="guar-title">Marcas con garantía oficial</div>
+        <div class="guar-text">Apple, Samsung y otras: gestionamos con el centro de servicio autorizado.</div>
+      </div>
+      <div class="guar-card">
+        <div class="guar-icon">🔬</div>
+        <div class="guar-title">Evaluación técnica</div>
+        <div class="guar-text">Nuestro departamento técnico evalúa cada caso. Nosotros resolvemos primero.</div>
+      </div>
+      <div class="guar-card">
+        <div class="guar-icon">❌</div>
+        <div class="guar-title">No cubre</div>
+        <div class="guar-text">Daños por uso, golpes o signos de utilización. Solo defectos de fábrica confirmados.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Compra<em>Directa</em></div>
+    <div class="footer-tagline">by Global Shop Argentina · Importación directa de tecnología</div>
+    <div class="footer-links">
+      <a href="https://wa.me/5491154125271" target="_blank" rel="noopener" class="footer-link">
+        💬 +54 9 11 5412-5271
+      </a>
+      <a href="https://wa.me/5491154125271?text=Hola!%20Quiero%20consultar%20el%20cat%C3%A1logo%20%F0%9F%9B%92" target="_blank" rel="noopener" class="footer-link">
+        🛒 Consultar por WhatsApp
+      </a>
+    </div>
+    <div class="footer-hr"></div>
+    <div class="footer-copy">© 2026 Global Shop · Todos los derechos reservados · Argentina</div>
+  </div>
+</footer>
+
+<!-- ===== STICKY BAR ===== -->
+<div class="sticky-bar" id="stickyBar" role="complementary" aria-label="Barra de consulta">
+  <div class="sticky-inner">
+    <div>
+      <div class="sticky-label">🛒 ¿Te interesa algo?</div>
+      <div class="sticky-sub">Consultá sin compromiso</div>
+    </div>
+    <a
+      href="https://wa.me/5491154125271?text=Hola!%20Quiero%20consultar%20el%20cat%C3%A1logo%20%F0%9F%9B%92"
+      target="_blank" rel="noopener"
+      class="sticky-cta"
+      id="stickyWaBtn"
+      aria-label="Consultar por WhatsApp"
+    >
+      <svg class="wb" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Consultar por WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTopBtn" aria-label="Volver al inicio">↑</button>
+
+<!-- ===================================================
+     SCRIPT
+=================================================== -->
+<script>
+'use strict';
+
+/* ─── CONFIGURACIÓN GLOBAL ─────────────────────── */
+// Carga configuración desde admin panel (localStorage) si existe
+const _catalog = (() => {
+  try { return JSON.parse(localStorage.getItem('cd_catalog')) || {}; } catch(e) { return {}; }
+})();
+
+const CFG = {
+  whatsapp: (_catalog.whatsapp) || '5491154125271',
+  nombre:   'Compra Directa · Global Shop',
+};
+
+/* ─── CATEGORÍAS ────────────────────────────────── */
+const CATS = ['Todos', 'Celulares', 'Smart TV', 'Audio', 'Computación', 'Accesorios', 'Hogar'];
+
+/* ─── WHATSAPP SVG (reutilizable) ───────────────── */
+const WA_SVG = `<svg class="wb" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
+
+/* ─── PRODUCTOS ──────────────────────────────────
+   Si hay datos del panel admin en localStorage, se usan esos.
+   Si no, se usan los productos de ejemplo hardcodeados abajo.
+   El panel admin (admin.html) escribe en 'cd_catalog' automáticamente.
+─────────────────────────────────────────────── */
+const FALLBACK_PRODUCTOS = [
+  {
+    id: 1,
+    cat: 'Celulares',
+    name: 'iPhone 15 Pro 256GB',
+    sub: '256GB · Titanio · 6.1" · USB-C',
+    desc: 'Chip A17 Pro, cámara 48 MP con zoom óptico 3x, Dynamic Island, diseño en titanio.',
+    img: null,
+    badge: 'Top ventas',
+    badgeColor: '#25D366',
+    icon: '📱',
+    ars: '1450000',
+    activo: true,
+    fechaAlta: '2026-04-01',
+  },
+  {
+    id: 2,
+    cat: 'Celulares',
+    name: 'Samsung Galaxy S24 128GB',
+    sub: '128GB · Phantom Black · 6.2" · IP68',
+    desc: 'Galaxy AI integrada, cámara 50 MP ProVisual, Snapdragon 8 Gen 3, resistencia al agua.',
+    img: null,
+    badge: 'Nuevo',
+    badgeColor: '#5856D6',
+    icon: '📲',
+    ars: '980000',
+    activo: true,
+    fechaAlta: '2026-04-05',
+  },
+  {
+    id: 3,
+    cat: 'Smart TV',
+    name: 'Smart TV Samsung 55" 4K QLED',
+    sub: '55" · 4K UHD · QLED · WiFi · Tizen',
+    desc: 'Crystal Processor 4K, HDR10+, 3 HDMI, acceso nativo a Netflix, YouTube y Prime.',
+    img: null,
+    badge: 'Oferta',
+    badgeColor: '#FF3B30',
+    icon: '📺',
+    ars: '650000',
+    activo: true,
+    fechaAlta: '2026-03-20',
+  },
+  {
+    id: 4,
+    cat: 'Audio',
+    name: 'AirPods Pro 2da Gen (USB-C)',
+    sub: 'USB-C · ANC adaptativo · MagSafe',
+    desc: 'Cancelación activa de ruido, modo ambiente adaptativo, chip H2, hasta 30h de batería total.',
+    img: null,
+    badge: 'Premium',
+    badgeColor: '#FF9500',
+    icon: '🎧',
+    ars: '320000',
+    activo: true,
+    fechaAlta: '2026-04-01',
+  },
+  {
+    id: 5,
+    cat: 'Computación',
+    name: 'MacBook Air M2 8GB/256GB',
+    sub: 'M2 · 8GB RAM · 256GB SSD · 13.6"',
+    desc: 'Chip Apple M2, pantalla Liquid Retina, batería de 18 horas, sin ventiladores, ultradelgado.',
+    img: null,
+    badge: 'Destacado',
+    badgeColor: '#007AFF',
+    icon: '💻',
+    ars: null,
+    activo: true,
+    fechaAlta: '2026-04-10',
+  },
+  {
+    id: 6,
+    cat: 'Hogar',
+    name: 'Robot Aspirador Xiaomi S10',
+    sub: '4000 Pa · LiDAR · Trapeado húmedo',
+    desc: 'Navegación LiDAR inteligente, 4000 Pa de succión, trapeado simultáneo, control por app Mi Home.',
+    img: null,
+    badge: 'Nuevo',
+    badgeColor: '#34C759',
+    icon: '🤖',
+    ars: '280000',
+    activo: true,
+    fechaAlta: '2026-04-12',
+  },
+];
+
+/* Usa productos del admin si existen, sino los de ejemplo */
+const PRODUCTOS = (_catalog.products && _catalog.products.length)
+  ? _catalog.products
+  : FALLBACK_PRODUCTOS;
+
+/* ─── ESTADO ─────────────────────────────────── */
+const state = {
+  slide: 0,
+  total: 4,
+  timer: null,
+  cat: 'Todos',
+  query: '',
+};
+
+/* ─── HELPERS ────────────────────────────────── */
+function waUrl(product) {
+  const msg = product
+    ? `Hola! Me interesa ${product.name}. ¿Cuál es el precio y disponibilidad?`
+    : 'Hola! Quiero consultar el catálogo 🛒';
+  return `https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent(msg)}`;
+}
+
+function formatARS(val) {
+  if (!val) return null;
+  return '$ ' + parseInt(val).toLocaleString('es-AR');
+}
+
+/* ─── HERO CAROUSEL ──────────────────────────── */
+function goTo(n) {
+  const track = document.getElementById('heroTrack');
+  const dots  = document.querySelectorAll('.hero-dot');
+  state.slide = ((n % state.total) + state.total) % state.total;
+  track.style.transform = `translateX(-${state.slide * 100}%)`;
+  dots.forEach((d, i) => {
+    const active = i === state.slide;
+    d.classList.toggle('active', active);
+    d.setAttribute('aria-selected', active ? 'true' : 'false');
+  });
+}
+
+function startTimer() {
+  state.timer = setInterval(() => goTo(state.slide + 1), 4500);
+}
+function stopTimer() { clearInterval(state.timer); }
+function bump(dir) { stopTimer(); goTo(state.slide + dir); startTimer(); }
+
+function initHero() {
+  document.getElementById('heroPrev').addEventListener('click', () => bump(-1));
+  document.getElementById('heroNext').addEventListener('click', () => bump(1));
+
+  document.querySelectorAll('.hero-dot').forEach((dot, i) => {
+    dot.addEventListener('click', () => { stopTimer(); goTo(i); startTimer(); });
+  });
+
+  // Touch swipe
+  let sx = 0;
+  const hero = document.getElementById('hero');
+  hero.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
+  hero.addEventListener('touchend', e => {
+    const dx = sx - e.changedTouches[0].clientX;
+    if (Math.abs(dx) > 40) bump(dx > 0 ? 1 : -1);
+  }, { passive: true });
+
+  // Hero CTA filter clicks
+  document.querySelectorAll('.hero-cta[data-filter]').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      const f = btn.dataset.filter;
+      if (f) {
+        setCategory(f);
+        document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  startTimer();
+}
+
+/* ─── CATEGORY PILLS ─────────────────────────── */
+function initCats() {
+  const nav = document.getElementById('catPills');
+  CATS.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'cat-pill' + (cat === 'Todos' ? ' active' : '');
+    btn.textContent = cat;
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-selected', cat === 'Todos' ? 'true' : 'false');
+    btn.id = `cat-${cat.replace(/\s/g, '-')}`;
+    btn.addEventListener('click', () => setCategory(cat));
+    nav.appendChild(btn);
+  });
+}
+
+function setCategory(cat) {
+  state.cat = cat;
+  document.querySelectorAll('.cat-pill').forEach(btn => {
+    const active = btn.textContent === cat;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-selected', active ? 'true' : 'false');
+  });
+  renderProducts();
+}
+
+/* ─── SEARCH ─────────────────────────────────── */
+function initSearch() {
+  let t;
+  document.getElementById('searchInput').addEventListener('input', e => {
+    clearTimeout(t);
+    t = setTimeout(() => {
+      state.query = e.target.value.trim().toLowerCase();
+      renderProducts();
+    }, 180);
+  });
+}
+
+/* ─── RENDER PRODUCTS ────────────────────────── */
+function renderProducts() {
+  const grid = document.getElementById('productsGrid');
+  const countEl = document.getElementById('productCount');
+
+  let list = PRODUCTOS.filter(p => p.activo);
+  if (state.cat !== 'Todos') list = list.filter(p => p.cat === state.cat);
+  if (state.query) {
+    list = list.filter(p =>
+      p.name.toLowerCase().includes(state.query) ||
+      p.cat.toLowerCase().includes(state.query) ||
+      (p.sub  && p.sub.toLowerCase().includes(state.query)) ||
+      (p.desc && p.desc.toLowerCase().includes(state.query))
+    );
+  }
+
+  countEl.textContent = list.length;
+
+  if (!list.length) {
+    grid.innerHTML = `
+      <div class="empty-state" role="status">
+        <div class="empty-icon">🔍</div>
+        <h3 class="empty-title">Sin resultados</h3>
+        <p class="empty-text">
+          No encontramos "${state.query || state.cat}".<br>
+          Probá con otra búsqueda o consultanos por WhatsApp.
+        </p>
+      </div>`;
+    return;
+  }
+
+  grid.innerHTML = list.map((p, idx) => cardHTML(p, idx)).join('');
+}
+
+function cardHTML(p, idx) {
+  const price = formatARS(p.ars);
+  const link  = waUrl(p);
+  const delay = (idx * 40) + 'ms';
+
+  const imgPart = p.img
+    ? `<img src="${p.img}" alt="${p.name}" loading="lazy">`
+    : `<span class="card-emoji" aria-hidden="true">${p.icon}</span>`;
+
+  const badgePart = p.badge
+    ? `<span class="card-badge" style="background:${p.badgeColor}">${p.badge}</span>`
+    : '';
+
+  const pricePart = price
+    ? `<div class="card-price-label">Precio en pesos</div><div class="card-price">${price}</div>`
+    : `<div class="card-price consultar">Consultar precio</div>`;
+
+  return `
+    <article class="card" role="listitem" aria-label="${p.name}" style="animation-delay:${delay}">
+      <div class="card-img-wrap">
+        ${badgePart}
+        ${imgPart}
+      </div>
+      <div class="card-body">
+        <div class="card-cat">${p.cat}</div>
+        <div class="card-name">${p.name}</div>
+        <div class="card-sub">${p.sub}</div>
+        <div class="card-desc">${p.desc}</div>
+        <div class="card-divider"></div>
+        ${pricePart}
+        <a
+          href="${link}"
+          target="_blank"
+          rel="noopener"
+          class="card-btn"
+          id="wa-prod-${p.id}"
+          aria-label="Consultar ${p.name} por WhatsApp"
+        >${WA_SVG} Quiero este producto</a>
+      </div>
+    </article>`;
+}
+
+/* ─── SCROLL TO TOP ──────────────────────────── */
+function initScrollTop() {
+  const btn = document.getElementById('scrollTopBtn');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('show', window.scrollY > 420);
+  }, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+
+/* ─── PWA ────────────────────────────────────── */
+function initPWA() {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    });
+  }
+}
+
+/* ─── BOOT ───────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  initCats();
+  initSearch();
+  renderProducts();
+  initHero();
+  initScrollTop();
+  initPWA();
+});
+</script>
+</body>
+</html>

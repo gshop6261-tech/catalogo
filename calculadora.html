@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Calculadora · Global Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0c0c0f;
+      --bg2:      #141418;
+      --surface:  #1c1c22;
+      --surf2:    #242430;
+      --border:   rgba(255,255,255,.09);
+      --bord-lt:  rgba(255,255,255,.05);
+      --text:     #f0f0f4;
+      --text2:    #9898a8;
+      --text3:    #5a5a6e;
+      --green:    #25D366;
+      --green-dk: #1da851;
+      --green-gl: rgba(37,211,102,.12);
+      --yellow:   #FFD600;
+      --yellow-gl:rgba(255,214,0,.1);
+      --red:      #FF453A;
+      --red-gl:   rgba(255,69,58,.1);
+      --blue:     #0A84FF;
+      --blue-gl:  rgba(10,132,255,.1);
+      --purple:   #BF5AF2;
+      --orange:   #FF9F0A;
+      --r-sm: 10px;
+      --r-md: 14px;
+      --r-lg: 18px;
+      --r-xl: 22px;
+      --sh: 0 8px 32px rgba(0,0,0,.4);
+      --font: 'Inter', -apple-system, sans-serif;
+      --t: .18s cubic-bezier(.4,0,.2,1);
+    }
+
+    html, body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    button, input, select { font-family: var(--font); }
+    button { cursor: pointer; border: none; outline: none; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ══════════════════════════════════════
+       LOGIN
+    ══════════════════════════════════════ */
+    #loginScreen {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: radial-gradient(ellipse at 50% 0%, rgba(37,211,102,.12) 0%, transparent 60%), var(--bg);
+    }
+
+    .login-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-xl);
+      padding: 36px 28px;
+      width: 100%;
+      max-width: 360px;
+      box-shadow: var(--sh);
+      text-align: center;
+    }
+
+    .login-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--green-gl);
+      border: 1px solid rgba(37,211,102,.2);
+      color: var(--green);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    .login-logo {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+    }
+    .login-logo em { font-style: italic; color: var(--green); }
+    .login-sub {
+      font-size: 11px;
+      color: var(--text3);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .login-label {
+      display: block;
+      text-align: left;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text2);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .login-input {
+      width: 100%;
+      padding: 12px 14px;
+      font-size: 15px;
+      background: var(--surf2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-md);
+      color: var(--text);
+      outline: none;
+      margin-bottom: 12px;
+      transition: border-color var(--t), box-shadow var(--t);
+    }
+    .login-input:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(37,211,102,.15);
+    }
+    .login-btn {
+      width: 100%;
+      padding: 13px;
+      background: var(--green);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 800;
+      border-radius: var(--r-md);
+      transition: all var(--t);
+      box-shadow: 0 4px 20px rgba(37,211,102,.25);
+    }
+    .login-btn:hover { background: var(--green-dk); transform: translateY(-1px); }
+    .login-error {
+      display: none;
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--red);
+      font-weight: 600;
+      padding: 8px 12px;
+      background: var(--red-gl);
+      border-radius: var(--r-sm);
+    }
+
+    /* ══════════════════════════════════════
+       APP SHELL
+    ══════════════════════════════════════ */
+    #appShell { display: none; }
+
+    /* Top bar */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px 12px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg2);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      gap: 10px;
+    }
+
+    .topbar-logo { font-size: 16px; font-weight: 900; letter-spacing: -.6px; }
+    .topbar-logo em { font-style: italic; color: var(--green); }
+    .topbar-logo span { font-size: 11px; color: var(--text3); font-weight: 500; margin-left: 5px; }
+
+    .topbar-right { display: flex; align-items: center; gap: 8px; }
+    .dollar-chip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surf2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: border-color var(--t);
+    }
+    .dollar-chip:hover { border-color: rgba(37,211,102,.3); }
+    .dollar-chip .dc { font-size: 10px; color: var(--text3); font-weight: 500; }
+    .dollar-chip .dv { color: var(--green); }
+    .dollar-chip .dl { font-size: 9px; }
+
+    .logout-btn {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--surf2);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      color: var(--text2);
+      transition: all var(--t);
+    }
+    .logout-btn:hover { background: var(--red-gl); border-color: var(--red); color: var(--red); }
+
+    /* Main layout */
+    .app-body {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 20px 16px 100px;
+    }
+
+    /* ══════════════════════════════════════
+       DOLLAR BAR
+    ══════════════════════════════════════ */
+    .dollar-bar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .dollar-bar-left { flex: 1; min-width: 120px; }
+    .dollar-bar-label { font-size: 10px; font-weight: 700; color: var(--text3); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 3px; }
+    .dollar-bar-val { font-size: 24px; font-weight: 900; color: var(--green); letter-spacing: -.8px; }
+    .dollar-bar-sub { font-size: 10px; color: var(--text3); margin-top: 1px; }
+
+    .dollar-manual-wrap {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .dollar-manual-wrap input {
+      width: 110px;
+      padding: 8px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      background: var(--surf2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-sm);
+      color: var(--text);
+      outline: none;
+      text-align: right;
+      transition: border-color var(--t);
+    }
+    .dollar-manual-wrap input:focus { border-color: var(--green); }
+    .dollar-manual-wrap button {
+      padding: 7px 12px;
+      background: var(--green-gl);
+      border: 1px solid rgba(37,211,102,.25);
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 800;
+      border-radius: var(--r-sm);
+      transition: all var(--t);
+    }
+    .dollar-manual-wrap button:hover { background: var(--green); color: #fff; }
+    .dollar-refresh-btn {
+      display: flex; align-items: center; gap: 4px;
+      background: transparent;
+      color: var(--text3);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 6px 8px;
+      border-radius: var(--r-sm);
+      transition: color var(--t);
+    }
+    .dollar-refresh-btn:hover { color: var(--green); }
+
+    /* ══════════════════════════════════════
+       CALC CARD
+    ══════════════════════════════════════ */
+    .calc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-xl);
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .calc-section-title {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--text3);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    /* Tabs: categoría */
+    .cat-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+      margin-bottom: 16px;
+    }
+    .cat-tab {
+      padding: 9px 4px;
+      background: var(--surf2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-sm);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text2);
+      text-align: center;
+      cursor: pointer;
+      transition: all var(--t);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .cat-tab .ct-icon { font-size: 20px; }
+    .cat-tab:hover { border-color: rgba(255,255,255,.2); color: var(--text); }
+    .cat-tab.active {
+      background: var(--green-gl);
+      border-color: rgba(37,211,102,.4);
+      color: var(--green);
+    }
+
+    /* Subtipo (slim/gruesa, chico/grande) */
+    .subtype-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .subtype-btn {
+      padding: 10px 8px;
+      background: var(--surf2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-sm);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text2);
+      text-align: center;
+      cursor: pointer;
+      transition: all var(--t);
+      line-height: 1.3;
+    }
+    .subtype-btn .sb-icon { font-size: 16px; display: block; margin-bottom: 3px; }
+    .subtype-btn .sb-note { font-size: 9px; font-weight: 500; color: var(--text3); display: block; margin-top: 2px; }
+    .subtype-btn:hover { border-color: rgba(255,255,255,.2); color: var(--text); }
+    .subtype-btn.active {
+      background: var(--yellow-gl);
+      border-color: rgba(255,214,0,.4);
+      color: var(--yellow);
+    }
+
+    /* USD Input */
+    .usd-input-wrap {
+      position: relative;
+      margin-bottom: 16px;
+    }
+    .usd-prefix {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text3);
+      pointer-events: none;
+    }
+    .usd-input {
+      width: 100%;
+      padding: 15px 14px 15px 48px;
+      font-size: 28px;
+      font-weight: 900;
+      font-family: var(--font);
+      color: var(--text);
+      background: var(--surf2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-md);
+      outline: none;
+      letter-spacing: -.5px;
+      transition: border-color var(--t), box-shadow var(--t);
+    }
+    .usd-input::placeholder { color: var(--text3); }
+    .usd-input:focus {
+      border-color: rgba(255,255,255,.25);
+      box-shadow: 0 0 0 3px rgba(255,255,255,.04);
+    }
+    .usd-suffix {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text3);
+    }
+
+    /* Quick amounts */
+    .quick-btns {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .quick-btn {
+      padding: 5px 10px;
+      background: var(--surf2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text2);
+      transition: all var(--t);
+    }
+    .quick-btn:hover { border-color: rgba(255,255,255,.2); color: var(--text); }
+
+    /* Calc button */
+    .calc-btn {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, var(--green) 0%, var(--green-dk) 100%);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+      border-radius: var(--r-md);
+      transition: all var(--t);
+      box-shadow: 0 4px 24px rgba(37,211,102,.3);
+      letter-spacing: -.2px;
+    }
+    .calc-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(37,211,102,.4); }
+    .calc-btn:active { transform: translateY(0); }
+    .calc-btn:disabled {
+      background: var(--surf2);
+      color: var(--text3);
+      box-shadow: none;
+      transform: none;
+    }
+
+    /* ══════════════════════════════════════
+       RESULT CARD
+    ══════════════════════════════════════ */
+    .result-card {
+      display: none;
+      background: linear-gradient(135deg, #0a1f0d 0%, #0d2a10 60%, #112e14 100%);
+      border: 1px solid rgba(37,211,102,.25);
+      border-radius: var(--r-xl);
+      padding: 22px 20px;
+      margin-bottom: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .result-card::before {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 140px; height: 140px;
+      background: radial-gradient(circle, rgba(37,211,102,.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .result-card.show { display: block; animation: slideUp .3s cubic-bezier(.4,0,.2,1) both; }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-label { font-size: 10px; font-weight: 700; color: rgba(37,211,102,.6); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+    .result-price {
+      font-size: clamp(38px, 10vw, 52px);
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -2px;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .result-usd { font-size: 13px; color: rgba(255,255,255,.5); margin-bottom: 14px; }
+
+    .result-detail {
+      background: rgba(0,0,0,.3);
+      border-radius: var(--r-sm);
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      padding: 4px 0;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+      gap: 8px;
+    }
+    .detail-row:last-child { border-bottom: none; }
+    .dr-label { color: rgba(255,255,255,.45); }
+    .dr-val { color: rgba(255,255,255,.8); font-weight: 700; text-align: right; }
+    .dr-formula { color: var(--green); font-size: 10px; font-family: 'Courier New', monospace; text-align: right; }
+
+    .result-actions {
+      display: flex;
+      gap: 8px;
+    }
+    .result-copy {
+      flex: 1;
+      padding: 10px;
+      background: rgba(37,211,102,.15);
+      border: 1px solid rgba(37,211,102,.25);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      border-radius: var(--r-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: all var(--t);
+    }
+    .result-copy:hover { background: rgba(37,211,102,.25); }
+    .result-wa {
+      flex: 1;
+      padding: 10px;
+      background: var(--green);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+      border-radius: var(--r-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: all var(--t);
+      text-decoration: none;
+    }
+    .result-wa:hover { background: var(--green-dk); }
+
+    /* ══════════════════════════════════════
+       FORMULA CARD (reference)
+    ══════════════════════════════════════ */
+    .formula-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .formula-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+    }
+    .formula-toggle-title { font-size: 12px; font-weight: 800; color: var(--text2); }
+    .formula-toggle-icon { font-size: 14px; color: var(--text3); transition: transform var(--t); }
+    .formula-toggle-icon.open { transform: rotate(180deg); }
+    .formula-body { display: none; margin-top: 14px; }
+    .formula-body.open { display: block; }
+
+    .formula-group { margin-bottom: 14px; }
+    .formula-group:last-child { margin-bottom: 0; }
+    .fg-title {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--text3);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--bord-lt);
+    }
+    .fg-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--bord-lt);
+      font-size: 12px;
+    }
+    .fg-row:last-child { border-bottom: none; }
+    .fg-type { color: var(--text2); font-weight: 600; flex: 1; }
+    .fg-formula { color: var(--yellow); font-family: monospace; font-size: 10px; text-align: right; }
+    .fg-margin {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--yellow-gl);
+      border: 1px solid rgba(255,214,0,.2);
+      color: var(--yellow);
+      font-size: 9px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 20px;
+    }
+
+    /* ══════════════════════════════════════
+       HISTORY
+    ══════════════════════════════════════ */
+    .history-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .history-title { font-size: 13px; font-weight: 800; color: var(--text2); }
+    .history-clear {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text3);
+      background: transparent;
+      padding: 3px 8px;
+      border-radius: var(--r-sm);
+      transition: color var(--t);
+    }
+    .history-clear:hover { color: var(--red); }
+
+    .history-list { display: flex; flex-direction: column; gap: 7px; }
+
+    .history-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 11px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      animation: slideUp .2s cubic-bezier(.4,0,.2,1) both;
+    }
+    .hi-left { flex: 1; min-width: 0; }
+    .hi-name { font-size: 12px; font-weight: 700; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .hi-meta { font-size: 10px; color: var(--text3); margin-top: 1px; }
+    .hi-right { text-align: right; }
+    .hi-price { font-size: 16px; font-weight: 900; color: var(--green); letter-spacing: -.5px; }
+    .hi-usd { font-size: 10px; color: var(--text3); }
+
+    .empty-history {
+      text-align: center;
+      padding: 24px;
+      color: var(--text3);
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* ══════════════════════════════════════
+       TOAST
+    ══════════════════════════════════════ */
+    .toast {
+      position: fixed;
+      bottom: 24px; left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      z-index: 999;
+      background: rgba(255,255,255,.95);
+      color: #111;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 8px 30px rgba(0,0,0,.4);
+      white-space: nowrap;
+      opacity: 0;
+      transition: all .28s cubic-bezier(.4,0,.2,1);
+      pointer-events: none;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* spinner */
+    .spin {
+      width: 14px; height: 14px;
+      border: 2px solid rgba(37,211,102,.3);
+      border-top-color: var(--green);
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Horizontal sep */
+    .sep { height: 1px; background: var(--border); margin: 20px 0; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     LOGIN
+══════════════════════════════════════ -->
+<div id="loginScreen">
+  <div class="login-card">
+    <div class="login-badge">🔒 Uso interno</div>
+    <div class="login-logo">Compra<em>Directa</em></div>
+    <div class="login-sub">Calculadora de precios</div>
+
+    <label class="login-label" for="calcPassword">Contraseña del equipo</label>
+    <input
+      type="password"
+      class="login-input"
+      id="calcPassword"
+      placeholder="Ingresá tu contraseña"
+      autocomplete="current-password"
+    >
+    <button class="login-btn" onclick="doLogin()">Ingresar</button>
+    <div class="login-error" id="loginError">❌ Contraseña incorrecta</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     APP
+══════════════════════════════════════ -->
+<div id="appShell">
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div>
+      <div class="topbar-logo">Compra<em>Directa</em> <span>Calculadora</span></div>
+    </div>
+    <div class="topbar-right">
+      <div class="dollar-chip" onclick="fetchDollar(true)" title="Actualizar cotización">
+        <span class="dc">U$D</span>
+        <span class="dv" id="topDollar">—</span>
+        <span class="dl" id="dollarStatus">🔄</span>
+      </div>
+      <button class="logout-btn" onclick="doLogout()" title="Cerrar sesión">🚪</button>
+    </div>
+  </div>
+
+  <div class="app-body">
+
+    <!-- Dollar bar -->
+    <div class="dollar-bar">
+      <div class="dollar-bar-left">
+        <div class="dollar-bar-label">💵 Dólar actual</div>
+        <div class="dollar-bar-val" id="dollarVal">$ —</div>
+        <div class="dollar-bar-sub" id="dollarSub">Actualizando...</div>
+      </div>
+      <div class="dollar-manual-wrap">
+        <input
+          type="number"
+          id="manualDollar"
+          placeholder="Manual"
+          min="1"
+          step="1"
+          title="Ingresá cotización manual"
+        >
+        <button onclick="applyManualDollar()">✓ Usar</button>
+        <button class="dollar-refresh-btn" onclick="fetchDollar(true)">🔄</button>
+      </div>
+    </div>
+
+    <!-- Calculator form -->
+    <div class="calc-card">
+      <div class="calc-section-title">1 · Categoría del producto</div>
+
+      <div class="cat-tabs" id="catTabs">
+        <button class="cat-tab active" data-cat="celular" onclick="selectCat('celular', this)">
+          <span class="ct-icon">📱</span>Celulares
+        </button>
+        <button class="cat-tab" data-cat="electronica" onclick="selectCat('electronica', this)">
+          <span class="ct-icon">🎧</span>Electrónica
+        </button>
+        <button class="cat-tab" data-cat="hogar" onclick="selectCat('hogar', this)">
+          <span class="ct-icon">🏠</span>Hogar
+        </button>
+      </div>
+
+      <!-- Subtype (changes based on category) -->
+      <div class="calc-section-title" id="subtypeLabel">2 · Tipo de caja</div>
+      <div class="subtype-row" id="subtypeRow">
+        <!-- rendered by JS -->
+      </div>
+
+      <!-- USD cost input -->
+      <div class="calc-section-title">3 · Costo en dólares</div>
+      <div class="usd-input-wrap">
+        <span class="usd-prefix">$</span>
+        <input
+          type="number"
+          class="usd-input"
+          id="usdInput"
+          placeholder="0"
+          min="1"
+          step="1"
+          oninput="onUsdInput()"
+          autocomplete="off"
+          inputmode="decimal"
+        >
+        <span class="usd-suffix">USD</span>
+      </div>
+
+      <!-- Quick amounts -->
+      <div class="quick-btns" id="quickBtns">
+        <button class="quick-btn" onclick="addQuick(50)">+50</button>
+        <button class="quick-btn" onclick="addQuick(100)">+100</button>
+        <button class="quick-btn" onclick="addQuick(200)">+200</button>
+        <button class="quick-btn" onclick="addQuick(300)">+300</button>
+        <button class="quick-btn" onclick="addQuick(500)">+500</button>
+        <button class="quick-btn" onclick="clearInput()">✕</button>
+      </div>
+
+      <!-- Product name (optional) -->
+      <div class="calc-section-title" style="margin-top:4px">4 · Nombre del producto <span style="color:var(--text3);font-size:9px">(opcional, para historial)</span></div>
+      <input
+        type="text"
+        style="width:100%;padding:10px 12px;font-size:13px;background:var(--surf2);border:1.5px solid var(--border);border-radius:var(--r-sm);color:var(--text);outline:none;margin-bottom:16px;font-family:var(--font);transition:border-color var(--t)"
+        id="productName"
+        placeholder="Ej: iPhone 15 Pro 256GB"
+        onfocus="this.style.borderColor='rgba(255,255,255,.25)'"
+        onblur="this.style.borderColor='var(--border)'"
+      >
+
+      <button class="calc-btn" id="calcBtn" onclick="calculate()" disabled>
+        Calcular precio →
+      </button>
+    </div>
+
+    <!-- RESULT -->
+    <div class="result-card" id="resultCard">
+      <div class="result-label">Precio de venta en pesos</div>
+      <div class="result-price" id="resultPrice">$ 0</div>
+      <div class="result-usd" id="resultUsd"></div>
+
+      <div class="result-detail" id="resultDetail">
+        <!-- filled by JS -->
+      </div>
+
+      <div class="result-actions">
+        <button class="result-copy" id="copyBtn" onclick="copyPrice()">📋 Copiar precio</button>
+        <a class="result-wa" id="waBtn" href="#" target="_blank" rel="noopener">
+          💬 Enviar por WA
+        </a>
+      </div>
+    </div>
+
+    <!-- Fórmulas de referencia -->
+    <div class="formula-card">
+      <div class="formula-toggle" onclick="toggleFormulas()" id="formulaToggle">
+        <div class="formula-toggle-title">📐 Ver fórmulas de cálculo</div>
+        <div class="formula-toggle-icon" id="toggleIcon">▼</div>
+      </div>
+      <div class="formula-body" id="formulaBody">
+
+        <div class="formula-group">
+          <div class="fg-title">📱 Celulares ≤ U$D 300</div>
+          <div class="fg-row">
+            <span class="fg-type">Caja slim <span style="font-size:9px;color:var(--text3)">(sin cargador)</span></span>
+            <span class="fg-formula">(costo + 6) × dólar × 1.08</span>
+            <span class="fg-margin">+8%</span>
+          </div>
+          <div class="fg-row">
+            <span class="fg-type">Caja gruesa <span style="font-size:9px;color:var(--text3)">(con cargador)</span></span>
+            <span class="fg-formula">(costo + 4) × dólar × 1.10</span>
+            <span class="fg-margin">+10%</span>
+          </div>
+        </div>
+
+        <div class="formula-group">
+          <div class="fg-title">📱 Celulares > U$D 300</div>
+          <div class="fg-row">
+            <span class="fg-type">Caja slim</span>
+            <span class="fg-formula">costo × dólar × 1.08</span>
+            <span class="fg-margin">+8%</span>
+          </div>
+          <div class="fg-row">
+            <span class="fg-type">Caja gruesa</span>
+            <span class="fg-formula">costo × dólar × 1.10</span>
+            <span class="fg-margin">+10%</span>
+          </div>
+        </div>
+
+        <div class="formula-group">
+          <div class="fg-title">🎧 Electrónica / Audio / Accesorios</div>
+          <div class="fg-row">
+            <span class="fg-type">Chico <span style="font-size:9px;color:var(--text3)">(caja zapatilla)</span></span>
+            <span class="fg-formula">costo × dólar × 1.20</span>
+            <span class="fg-margin">+20%</span>
+          </div>
+          <div class="fg-row">
+            <span class="fg-type">Grande <span style="font-size:9px;color:var(--text3)">(robot vacuum+)</span></span>
+            <span class="fg-formula">costo × dólar × 1.25</span>
+            <span class="fg-margin">+25%</span>
+          </div>
+        </div>
+
+        <div class="formula-group">
+          <div class="fg-title">🏠 Hogar</div>
+          <div class="fg-row">
+            <span class="fg-type">Todos los productos</span>
+            <span class="fg-formula">costo × dólar × 1.25</span>
+            <span class="fg-margin">+25%</span>
+          </div>
+        </div>
+
+        <div style="background:var(--surf2);border-radius:var(--r-sm);padding:10px 12px;margin-top:10px;font-size:10px;color:var(--text3);line-height:1.6">
+          ⚠️ Los porcentajes ya incluyen flete + ganancia. No se aplica ningún factor adicional.<br>
+          El precio final se redondea al <strong style="color:var(--text2)">100 más cercano hacia arriba</strong>.
+        </div>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <!-- History -->
+    <div class="history-header">
+      <div class="history-title">🕐 Historial de cálculos</div>
+      <button class="history-clear" onclick="clearHistory()">Borrar todo</button>
+    </div>
+    <div class="history-list" id="historyList">
+      <div class="empty-history">No hay cálculos recientes</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- ══════════════════════════════════════
+     SCRIPT
+══════════════════════════════════════ -->
+<script>
+'use strict';
+
+/* ══════════════════════════════════════
+   CONSTANTS
+══════════════════════════════════════ */
+const LS_PASS    = 'cd_admin_pass';
+const LS_SESSION = 'cd_calc_session';
+const LS_HIST    = 'cd_calc_history';
+const LS_DOLLAR  = 'cd_calc_dollar';
+const DEFAULT_PASS = 'GlobalShop2026';
+
+const WA_NUMBER = (() => {
+  try {
+    const c = JSON.parse(localStorage.getItem('cd_catalog'));
+    return c?.whatsapp || '5491154125271';
+  } catch(e) { return '5491154125271'; }
+})();
+
+/* ══════════════════════════════════════
+   STATE
+══════════════════════════════════════ */
+let dollar       = null;
+let selectedCat  = 'celular';
+let selectedSub  = 'slim';
+let calcHistory  = [];
+let lastResult   = null;
+
+/* Subtype definitions per category */
+const SUBTYPES = {
+  celular: [
+    { id: 'slim',   label: 'Caja slim',  note: 'Sin cargador', icon: '📦' },
+    { id: 'gruesa', label: 'Caja gruesa', note: 'Con cargador', icon: '📫' },
+  ],
+  electronica: [
+    { id: 'chico',  label: 'Chico',  note: 'Caja zapatilla',  icon: '📦' },
+    { id: 'grande', label: 'Grande', note: 'Robot vacuum+',   icon: '📦' },
+  ],
+  hogar: null, // no subtype
+};
+
+/* ══════════════════════════════════════
+   AUTH
+══════════════════════════════════════ */
+function getPass() {
+  try { return JSON.parse(localStorage.getItem(LS_PASS)) || DEFAULT_PASS; } catch(e) { return DEFAULT_PASS; }
+}
+
+function doLogin() {
+  const val = document.getElementById('calcPassword').value;
+  if (val === getPass()) {
+    localStorage.setItem(LS_SESSION, JSON.stringify({ ts: Date.now() }));
+    showApp();
+  } else {
+    const err = document.getElementById('loginError');
+    err.style.display = 'block';
+    document.getElementById('calcPassword').value = '';
+    document.getElementById('calcPassword').focus();
+    setTimeout(() => err.style.display = 'none', 3000);
+  }
+}
+
+function doLogout() {
+  localStorage.removeItem(LS_SESSION);
+  location.reload();
+}
+
+function checkSession() {
+  try {
+    const s = JSON.parse(localStorage.getItem(LS_SESSION));
+    if (s && (Date.now() - s.ts) < 12 * 60 * 60 * 1000) {
+      showApp();
+      return;
+    }
+  } catch(e) {}
+}
+
+/* ══════════════════════════════════════
+   APP INIT
+══════════════════════════════════════ */
+function showApp() {
+  document.getElementById('loginScreen').style.display = 'none';
+  document.getElementById('appShell').style.display = 'block';
+  initApp();
+}
+
+function initApp() {
+  // Load history
+  try { calcHistory = JSON.parse(localStorage.getItem(LS_HIST)) || []; } catch(e) { calcHistory = []; }
+
+  // Load saved dollar
+  try {
+    const sd = JSON.parse(localStorage.getItem(LS_DOLLAR));
+    if (sd && (Date.now() - sd.ts) < 5 * 60 * 1000) {
+      dollar = sd.val;
+      renderDollarUI();
+    }
+  } catch(e) {}
+
+  // Render initial subtype
+  renderSubtypes('celular');
+  selectedSub = 'slim';
+
+  // Render history
+  renderHistory();
+
+  // Fetch dollar
+  fetchDollar(false);
+}
+
+/* ══════════════════════════════════════
+   DOLLAR
+══════════════════════════════════════ */
+async function fetchDollar(force) {
+  // Cache 5min
+  if (!force) {
+    try {
+      const sd = JSON.parse(localStorage.getItem(LS_DOLLAR));
+      if (sd && (Date.now() - sd.ts) < 5 * 60 * 1000) {
+        dollar = sd.val;
+        renderDollarUI();
+        return;
+      }
+    } catch(e) {}
+  }
+
+  setDollarStatus('🔄');
+  try {
+    const r = await fetch('https://dolarapi.com/v1/dolares/blue');
+    const d = await r.json();
+    dollar = d.venta;
+  } catch(e) {
+    try {
+      const r2 = await fetch('https://api.bluelytics.com.ar/v2/latest');
+      const d2 = await r2.json();
+      dollar = d2.blue.value_sell;
+    } catch(e2) {
+      dollar = null;
+    }
+  }
+
+  if (dollar) {
+    localStorage.setItem(LS_DOLLAR, JSON.stringify({ val: dollar, ts: Date.now() }));
+    setDollarStatus('✅');
+  } else {
+    setDollarStatus('⚠️');
+  }
+
+  renderDollarUI();
+}
+
+function setDollarStatus(icon) {
+  document.getElementById('dollarStatus').textContent = icon;
+}
+
+function renderDollarUI() {
+  const fmt = dollar ? `$ ${Number(dollar).toLocaleString('es-AR')}` : '$ —';
+  const now = new Date().toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' });
+  document.getElementById('dollarVal').textContent   = fmt;
+  document.getElementById('topDollar').textContent   = dollar ? Number(dollar).toLocaleString('es-AR') : '—';
+  document.getElementById('dollarSub').textContent   = dollar ? `Actualizado ${now} · Dólar blue` : 'Sin conexión — ingresá cotización manual';
+
+  // Autofill manual field
+  if (dollar) document.getElementById('manualDollar').placeholder = Number(dollar).toLocaleString('es-AR');
+  updateCalcBtn();
+}
+
+function applyManualDollar() {
+  const v = parseFloat(document.getElementById('manualDollar').value);
+  if (!v || v < 1) { showToast('Ingresá un valor válido'); return; }
+  dollar = v;
+  localStorage.setItem(LS_DOLLAR, JSON.stringify({ val: dollar, ts: Date.now() }));
+  renderDollarUI();
+  showToast(`✅ Cotización manual: $ ${v.toLocaleString('es-AR')}`);
+}
+
+/* ══════════════════════════════════════
+   CATEGORY & SUBTYPE
+══════════════════════════════════════ */
+function selectCat(cat, el) {
+  selectedCat = cat;
+  document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  renderSubtypes(cat);
+  clearResult();
+}
+
+function renderSubtypes(cat) {
+  const row   = document.getElementById('subtypeRow');
+  const label = document.getElementById('subtypeLabel');
+  const subs  = SUBTYPES[cat];
+
+  if (!subs) {
+    // Hogar: no subtype needed
+    row.style.display = 'none';
+    label.style.display = 'none';
+    selectedSub = 'unico';
+    return;
+  }
+
+  row.style.display = 'grid';
+  label.style.display = 'block';
+
+  row.innerHTML = subs.map((s, i) => `
+    <button
+      class="subtype-btn ${i === 0 ? 'active' : ''}"
+      data-sub="${s.id}"
+      onclick="selectSub('${s.id}', this)"
+    >
+      <span class="sb-icon">${s.icon}</span>
+      <span>${s.label}</span>
+      <span class="sb-note">${s.note}</span>
+    </button>
+  `).join('');
+
+  selectedSub = subs[0].id;
+}
+
+function selectSub(sub, el) {
+  selectedSub = sub;
+  document.querySelectorAll('.subtype-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  clearResult();
+}
+
+/* ══════════════════════════════════════
+   USD INPUT
+══════════════════════════════════════ */
+function onUsdInput() {
+  updateCalcBtn();
+  clearResult();
+}
+
+function updateCalcBtn() {
+  const v = parseFloat(document.getElementById('usdInput').value);
+  document.getElementById('calcBtn').disabled = !(v > 0 && dollar);
+}
+
+function addQuick(n) {
+  const inp = document.getElementById('usdInput');
+  const cur = parseFloat(inp.value) || 0;
+  inp.value = cur + n;
+  onUsdInput();
+}
+
+function clearInput() {
+  document.getElementById('usdInput').value = '';
+  document.getElementById('productName').value = '';
+  onUsdInput();
+  clearResult();
+}
+
+/* ══════════════════════════════════════
+   FORMULA ENGINE
+══════════════════════════════════════ */
+function getFormula(cat, sub, usd) {
+  const cdSettings = JSON.parse(localStorage.getItem('cd_settings') || '{}');
+  const formulas = cdSettings.formulas || {
+    "celular_slim":         { margin: 8,  add: 6, label:"Celulares (≤ $300) - Slim" },
+    "celular_gruesa":       { margin: 10, add: 4, label:"Celulares (≤ $300) - Gruesa" },
+    "celular_slim_high":    { margin: 8,  add: 0, label:"Celulares (> $300) - Slim" },
+    "celular_gruesa_high":  { margin: 10, add: 0, label:"Celulares (> $300) - Gruesa" },
+    "electronica_chico":    { margin: 20, add: 0, label:"Electrónica/Otros - Chico" },
+    "electronica_grande":   { margin: 25, add: 0, label:"Electrónica/Otros - Grande" },
+    "hogar_unico":          { margin: 25, add: 0, label:"Hogar (General)" }
+  };
+
+  let key = 'hogar_unico';
+  if (cat === 'celular') {
+    if (usd > 300) {
+      key = 'celular_' + (sub || 'slim') + '_high';
+    } else {
+      key = 'celular_' + (sub || 'slim');
+    }
+  } else if (cat === 'electronica') {
+    key = 'electronica_' + (sub || 'chico');
+  } else if (cat === 'hogar') {
+    key = 'hogar_unico';
+  }
+
+  const rule = formulas[key];
+  const pct = 1 + (rule.margin / 100);
+  const baseUsd = (usd * pct) + rule.add;
+  const rawArs = baseUsd * dollar;
+  const ars = Math.ceil(rawArs / 100) * 100;
+
+  return {
+    ars,
+    margin: pct,
+    label: rule.label,
+    formulaStr: `((${usd} + ${rule.margin}%) + ${rule.add}) × ${Number(dollar).toLocaleString('es-AR')}`,
+    steps: [
+      { k: 'Costo USD',     v: `U$D ${usd}` },
+      { k: `Margen (+${rule.margin}%)`,      v: `+ U$D ${(usd * (rule.margin/100)).toFixed(2)}` },
+      { k: `Ajuste fijo (+U$D ${rule.add})`, v: `+ U$D ${rule.add}` },
+      { k: 'Base ajustada', v: `U$D ${baseUsd.toFixed(2)}` },
+      { k: 'Cotización',    v: `$ ${Number(dollar).toLocaleString('es-AR')}` },
+      { k: 'Subtotal ARS',  v: `$ ${Math.round(rawArs).toLocaleString('es-AR')}` },
+      { k: 'Redondeo ↑100', v: `$ ${ars.toLocaleString('es-AR')}` },
+    ]
+  };
+}
+
+/* ══════════════════════════════════════
+   CALCULATE
+══════════════════════════════════════ */
+function calculate() {
+  const usd  = parseFloat(document.getElementById('usdInput').value);
+  const name = document.getElementById('productName').value.trim();
+
+  if (!usd || usd < 1)   { showToast('Ingresá el costo en dólares'); return; }
+  if (!dollar)            { showToast('No hay cotización disponible'); return; }
+
+  const result = getFormula(selectedCat, selectedSub, usd);
+  lastResult = { ...result, usd, name, cat: selectedCat, sub: selectedSub, dollar };
+
+  // Render result card
+  document.getElementById('resultPrice').textContent = `$ ${result.ars.toLocaleString('es-AR')}`;
+  document.getElementById('resultUsd').textContent   = `U$D ${usd} · Dólar $ ${Number(dollar).toLocaleString('es-AR')} · ${result.label}`;
+
+  document.getElementById('resultDetail').innerHTML = result.steps.map(s => `
+    <div class="detail-row">
+      <span class="dr-label">${s.k}</span>
+      <span class="${s.formula ? 'dr-formula' : 'dr-val'}">${s.v}</span>
+    </div>
+  `).join('');
+
+  // WA button
+  const waMsg = name
+    ? `💰 Precio ${name}: $ ${result.ars.toLocaleString('es-AR')} (U$D ${usd} × $${Number(dollar).toLocaleString('es-AR')})`
+    : `💰 Precio de producto: $ ${result.ars.toLocaleString('es-AR')} (U$D ${usd} × $${Number(dollar).toLocaleString('es-AR')})`;
+  document.getElementById('waBtn').href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waMsg)}`;
+
+  const card = document.getElementById('resultCard');
+  card.className = 'result-card show';
+
+  // Scroll to result
+  setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+
+  // Save to history
+  addToHistory({
+    ars:    result.ars,
+    usd,
+    name:   name || catLabel(selectedCat) + ' U$D ' + usd,
+    cat:    selectedCat,
+    sub:    selectedSub,
+    dollar,
+    ts:     Date.now(),
+  });
+}
+
+function clearResult() {
+  document.getElementById('resultCard').className = 'result-card';
+  lastResult = null;
+}
+
+/* ══════════════════════════════════════
+   COPY
+══════════════════════════════════════ */
+function copyPrice() {
+  if (!lastResult) return;
+  const text = `$ ${lastResult.ars.toLocaleString('es-AR')}`;
+  navigator.clipboard.writeText(text).then(() => {
+    showToast(`✅ Copiado: ${text}`);
+  }).catch(() => {
+    // fallback
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.focus(); ta.select();
+    try { document.execCommand('copy'); showToast(`✅ Copiado: ${text}`); } catch(e) {}
+    document.body.removeChild(ta);
+  });
+}
+
+/* ══════════════════════════════════════
+   HISTORY
+══════════════════════════════════════ */
+function addToHistory(item) {
+  calcHistory.unshift(item);
+  if (calcHistory.length > 30) calcHistory = calcHistory.slice(0, 30);
+  localStorage.setItem(LS_HIST, JSON.stringify(calcHistory));
+  renderHistory();
+}
+
+function renderHistory() {
+  const list = document.getElementById('historyList');
+  if (!calcHistory.length) {
+    list.innerHTML = '<div class="empty-history">📋 No hay cálculos recientes</div>';
+    return;
+  }
+
+  list.innerHTML = calcHistory.slice(0, 15).map((h, i) => {
+    const date = new Date(h.ts).toLocaleString('es-AR', {
+      month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit',
+    });
+    return `
+      <div class="history-item" style="animation-delay:${i * 0.03}s">
+        <div class="hi-left">
+          <div class="hi-name">${h.name}</div>
+          <div class="hi-meta">${catLabel(h.cat)} · U$D ${h.usd} · $${Number(h.dollar).toLocaleString('es-AR')} · ${date}</div>
+        </div>
+        <div class="hi-right">
+          <div class="hi-price">$ ${Number(h.ars).toLocaleString('es-AR')}</div>
+          <div class="hi-usd">U$D ${h.usd}</div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function clearHistory() {
+  calcHistory = [];
+  localStorage.removeItem(LS_HIST);
+  renderHistory();
+  showToast('🗑 Historial borrado');
+}
+
+function catLabel(cat) {
+  return { celular: 'Celulares', electronica: 'Electrónica', hogar: 'Hogar' }[cat] || cat;
+}
+
+/* ══════════════════════════════════════
+   FORMULA PANEL TOGGLE
+══════════════════════════════════════ */
+function toggleFormulas() {
+  const body = document.getElementById('formulaBody');
+  const icon = document.getElementById('toggleIcon');
+  const isOpen = body.classList.toggle('open');
+  icon.classList.toggle('open', isOpen);
+}
+
+/* ══════════════════════════════════════
+   TOAST
+══════════════════════════════════════ */
+let toastTimer;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+/* ══════════════════════════════════════
+   KEYBOARD
+══════════════════════════════════════ */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    if (document.getElementById('loginScreen').style.display !== 'none') { doLogin(); return; }
+    if (!document.getElementById('calcBtn').disabled) calculate();
+  }
+});
+
+/* Auto-refresh dollar every 5min */
+setInterval(() => {
+  if (document.getElementById('appShell').style.display !== 'none') fetchDollar(true);
+}, 5 * 60 * 1000);
+
+/* ══════════════════════════════════════
+   BOOT
+══════════════════════════════════════ */
+checkSession();
+</script>
+</body>
+</html>
