@@ -1198,6 +1198,47 @@
       </div>
 
       <div class="settings-card">
+        <div class="settings-title">👥 Vendedores — Catálogos personalizados</div>
+        <p style="font-size:12px;color:var(--text-2);margin-bottom:12px;">
+          Cada vendedor tiene su propio enlace con su WhatsApp. Ejemplo:
+          <code style="background:var(--surf-2);padding:1px 5px;border-radius:4px">index.html?v=juan</code>
+        </p>
+        <div class="table-wrap" style="margin-bottom:14px">
+          <table>
+            <thead>
+              <tr>
+                <th>ID (URL)</th>
+                <th>Nombre</th>
+                <th>WhatsApp</th>
+                <th>Link del catálogo</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody id="vendedoresTableBody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;align-items:end">
+          <div class="form-group" style="margin:0">
+            <label class="form-label">ID <span class="req">*</span></label>
+            <input type="text" class="form-input" id="vId" placeholder="ej: juan" autocomplete="off" oninput="this.value=this.value.toLowerCase().replace(/[^a-z0-9_-]/g,'')">
+            <span class="form-hint">Solo letras/números, sin espacios</span>
+          </div>
+          <div class="form-group" style="margin:0">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-input" id="vNombre" placeholder="ej: Juan García" autocomplete="off">
+          </div>
+          <div class="form-group" style="margin:0">
+            <label class="form-label">WhatsApp <span class="req">*</span></label>
+            <input type="tel" class="form-input" id="vWhatsapp" placeholder="5491122334455" autocomplete="off">
+            <span class="form-hint">Sin + ni espacios</span>
+          </div>
+          <button class="btn btn-primary" onclick="addVendedor()" style="margin-bottom:18px">＋ Agregar</button>
+        </div>
+      </div>
+
+      <div class="settings-card">
         <div class="settings-title">🔑 Cambiar contraseña</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
           <div class="form-group">
@@ -1749,7 +1790,11 @@ function _buildProductosJSONData() {
   return {
     products,
     banners,
-    settings: { categories: settings.categories, whatsapp: settings.whatsapp },
+    settings: {
+      categories: settings.categories,
+      whatsapp:   settings.whatsapp,
+      vendedores: settings.vendedores || [],
+    },
     lastSync: new Date().toISOString(),
     lastPriceCheck: null,
   };
@@ -1846,6 +1891,57 @@ function saveGhSettings() {
   showToast('✅ Configuración GitHub guardada.');
 }
 
+/* ══════════════════════════════════════
+   VENDEDORES
+══════════════════════════════════════ */
+function renderVendedoresTable() {
+  const tbody = document.getElementById('vendedoresTableBody');
+  if (!tbody) return;
+  const vendedores = settings.vendedores || [];
+  if (!vendedores.length) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-3);font-size:12px;padding:14px">Sin vendedores configurados</td></tr>';
+    return;
+  }
+  const base = window.location.href.replace('admin.html', 'index.html').split('?')[0];
+  tbody.innerHTML = vendedores.map(v => `
+    <tr>
+      <td style="font-weight:700;font-size:13px">${v.id}</td>
+      <td>${v.nombre || '—'}</td>
+      <td style="font-family:monospace;font-size:12px">${v.whatsapp}</td>
+      <td style="font-size:11px">
+        <a href="${base}?v=${v.id}" target="_blank" style="color:var(--primary);word-break:break-all">${base}?v=${v.id}</a>
+      </td>
+      <td>
+        <button class="btn btn-ghost btn-sm btn-icon" onclick="deleteVendedor('${v.id}')" title="Eliminar" style="color:var(--red)">🗑</button>
+      </td>
+    </tr>
+  `).join('');
+}
+
+function addVendedor() {
+  const id       = document.getElementById('vId').value.trim();
+  const nombre   = document.getElementById('vNombre').value.trim();
+  const whatsapp = document.getElementById('vWhatsapp').value.trim();
+  if (!id || !whatsapp) return showToast('ID y WhatsApp son obligatorios.', 'error');
+  if (!settings.vendedores) settings.vendedores = [];
+  if (settings.vendedores.find(v => v.id === id)) return showToast(`Ya existe un vendedor con ID "${id}".`, 'error');
+  settings.vendedores.push({ id, nombre, whatsapp });
+  saveSettings();
+  renderVendedoresTable();
+  document.getElementById('vId').value       = '';
+  document.getElementById('vNombre').value   = '';
+  document.getElementById('vWhatsapp').value = '';
+  showToast('✅ Vendedor agregado. Publicá en GitHub para que tome efecto en el catálogo.');
+}
+
+function deleteVendedor(id) {
+  showConfirm('🗑 Eliminar Vendedor', `¿Eliminás al vendedor "${id}"?`, () => {
+    settings.vendedores = (settings.vendedores || []).filter(v => v.id !== id);
+    saveSettings();
+    renderVendedoresTable();
+  });
+}
+
 function initApp() {
   // Always load from localStorage — it's the source of truth for admin
   loadDataFromLocalStorage();
@@ -1875,6 +1971,7 @@ function initApp() {
   if (!settings.categories) settings.categories = JSON.parse(JSON.stringify(DEFAULT_CATEGORIES));
 
   renderCategoriesTable();
+  renderVendedoresTable();
 
   // Sync catalog on load
   syncCatalog();
@@ -1912,7 +2009,7 @@ function navTo(page) {
     case 'prices':    renderPricesTable(); break;
     case 'banners':   renderBannerList(); break;
     case 'categories':  renderCategoriesTable(); break;
-    case 'settings':  break;
+    case 'settings':  renderVendedoresTable(); break;
   }
 }
 

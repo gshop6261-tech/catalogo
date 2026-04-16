@@ -1549,7 +1549,18 @@ async function tryLoadProductosJSON() {
     if (data.products && data.products.length) {
       PRODUCTOS = data.products.filter(p => p.activo && p.status !== 'pending');
       if (data.settings) {
-        CFG.whatsapp = data.settings.whatsapp || CFG.whatsapp;
+        // Resolver vendedor por parámetro ?v= en la URL
+        const vParam = new URLSearchParams(window.location.search).get('v');
+        if (vParam && data.settings.vendedores && data.settings.vendedores.length) {
+          const vendedor = data.settings.vendedores.find(v => v.id === vParam);
+          if (vendedor) {
+            CFG.whatsapp = vendedor.whatsapp;
+            CFG.vendedorNombre = vendedor.nombre || null;
+          }
+        }
+        if (!CFG.vendedorNombre) {
+          CFG.whatsapp = data.settings.whatsapp || CFG.whatsapp;
+        }
         const cats = data.settings.categories;
         if (cats && cats.length) {
           CATS = ['Todos'].concat(cats.map(c => c.name));
@@ -1557,6 +1568,13 @@ async function tryLoadProductosJSON() {
       }
     }
   } catch(e) {}
+}
+
+function updateWaLinks() {
+  // Actualiza todos los href estáticos que apunten a wa.me con el número resuelto
+  document.querySelectorAll('a[href*="wa.me/"]').forEach(a => {
+    a.href = a.href.replace(/wa\.me\/\d+/, `wa.me/${CFG.whatsapp}`);
+  });
 }
 
 /* ─── HERO CAROUSEL ──────────────────────────── */
@@ -1839,6 +1857,7 @@ function carouselGo(i) {
 /* ─── BOOT ───────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', async () => {
   await Promise.all([fetchDollarLive(), tryLoadProductosJSON()]);
+  updateWaLinks();
   initCats();
   initSearch();
   renderProducts();
