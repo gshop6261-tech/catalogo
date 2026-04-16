@@ -1435,9 +1435,17 @@ function cardHTML(p, idx) {
     ? `<span class="card-badge" style="background:${p.badgeColor}">${p.badge}</span>`
     : '';
 
-  const pricePart = price
-    ? `<div class="card-price-label">Precio en pesos</div><div class="card-price">${price}</div>`
-    : `<div class="card-price consultar">Consultar precio</div>`;
+  let pricePart = '';
+  if (price) {
+    if (p.usdSell) {
+      pricePart += `<div class="card-price-label">Precio en dólares</div>
+                    <div class="card-price" style="margin-bottom: 6px; color: var(--green);">U$D ${p.usdSell.toFixed(2)}</div>`;
+    }
+    pricePart += `<div class="card-price-label">Precio en pesos</div>
+                  <div class="card-price">${price}</div>`;
+  } else {
+    pricePart = `<div class="card-price consultar">Consultar precio</div>`;
+  }
 
   return `
     <article class="card" role="listitem" aria-label="${p.name}" style="animation-delay:${delay}">

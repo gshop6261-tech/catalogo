@@ -1253,14 +1253,19 @@
         <div class="form-section form-full">💰 Precios</div>
 
         <div class="form-group">
+          <label class="form-label">Costo interno en USD 🔒</label>
+          <input type="number" class="form-input" id="pmUsd" placeholder="Ej: 450" min="0" step="0.01" oninput="autoCalcArs(); updatePreview()">
+          <span class="form-hint" id="pmCalcHint">Solo visible en el panel. Nunca se muestra al cliente.</span>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Precio de Venta en USD</label>
+          <input type="number" class="form-input" id="pmUsdSell" placeholder="Ej: 495" min="0" step="0.01" oninput="updatePreview()">
+          <span class="form-hint">Precio final al público en dólares</span>
+        </div>
+        <div class="form-group" style="margin-top:8px">
           <label class="form-label">Precio en pesos (ARS)</label>
           <input type="number" class="form-input" id="pmArs" placeholder="Ej: 1450000" min="0" oninput="updatePreview()">
           <span class="form-hint">Dejar vacío → mostrará "Consultar"</span>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Costo en USD 🔒 <small style="font-size:9px;color:var(--text-4)">(interno)</small></label>
-          <input type="number" class="form-input" id="pmUsd" placeholder="Ej: 450" min="0" step="0.01" oninput="autoCalcArs(); updatePreview()">
-          <span class="form-hint" id="pmCalcHint">Solo visible en el panel. Nunca se muestra al cliente.</span>
         </div>
 
         <div class="form-section form-full">🏷 Badge (etiqueta)</div>
@@ -1908,6 +1913,7 @@ function openProductModal(id) {
     document.getElementById('pmImg').value       = p.img || '';
     document.getElementById('pmArs').value       = p.ars || '';
     document.getElementById('pmUsd').value       = p.usd || '';
+    document.getElementById('pmUsdSell').value   = p.usdSell || '';
     document.getElementById('pmBadge').value     = p.badge || '';
     selectedBadgeColor = p.badgeColor || '#25D366';
     document.getElementById('pmBadgeColor').value = selectedBadgeColor;
@@ -1915,7 +1921,7 @@ function openProductModal(id) {
     document.getElementById('pmCalcHint').textContent = 'Solo visible en el panel.';
   } else {
     title.textContent = 'Nuevo producto';
-    ['pmId','pmName','pmSub','pmDesc','pmImg','pmArs','pmUsd','pmBadge'].forEach(elId => {
+    ['pmId','pmName','pmSub','pmDesc','pmImg','pmArs','pmUsd','pmUsdSell','pmBadge'].forEach(elId => {
       document.getElementById(elId).value = '';
     });
     document.getElementById('pmCat').value  = '';
@@ -1989,6 +1995,7 @@ function saveProduct() {
   const img   = document.getElementById('pmImg').value.trim() || null;
   const ars   = document.getElementById('pmArs').value.trim() || null;
   const usd   = parseFloat(document.getElementById('pmUsd').value) || null;
+  const usdSell = parseFloat(document.getElementById('pmUsdSell').value) || null;
   const badge = document.getElementById('pmBadge').value.trim() || null;
   const badgeColor = document.getElementById('pmBadgeColor').value || '#25D366';
 
@@ -2004,7 +2011,7 @@ function saveProduct() {
     const prevArs = p.ars;
     p.name  = name; p.cat   = cat;   p.calcSub = calcSub; p.icon  = icon;
     p.sub   = sub;  p.desc  = desc;  p.img   = img;
-    p.ars   = ars;  p.usd   = usd;   p.badge = badge;
+    p.ars   = ars;  p.usd   = usd;   p.usdSell = usdSell; p.badge = badge;
     p.badgeColor = badgeColor;
     // Log price change
     if (ars && ars !== prevArs) {
@@ -2017,7 +2024,7 @@ function saveProduct() {
     const newId = products.length ? Math.max(...products.map(p=>p.id)) + 1 : 1;
     const newP = {
       id: newId, cat, calcSub, name, sub, desc, img, badge, badgeColor, icon,
-      ars, usd, activo: true, fechaAlta: today,
+      ars, usd, usdSell, activo: true, fechaAlta: today,
       priceHistory: ars ? [{ ars, date: today }] : [],
     };
     products.push(newP);
@@ -2059,7 +2066,7 @@ function getCalculationResult(cat, sub, usdCost) {
   const rawArs = baseUsd * dollar;
   const ars = Math.ceil(rawArs / 100) * 100;
   
-  return { ars, rule, key };
+  return { ars, baseUsd, rule, key };
 }
 
 function updateSubtypeOptions() {
@@ -2100,6 +2107,7 @@ function autoCalcArs() {
   
   const res = getCalculationResult(cat, sub, usd);
   if (res) {
+    document.getElementById('pmUsdSell').value = res.baseUsd.toFixed(2);
     document.getElementById('pmArs').value = res.ars;
     if (hint) hint.innerHTML = `<span style="color:var(--green);font-weight:700">Auto-calculado: +${res.rule.margin}% ganancia y +U$D ${res.rule.add} flete</span>`;
   } else {
@@ -2158,7 +2166,14 @@ function renderPricesTable() {
           <div style="font-weight:700;font-size:13px">${p.name}</div>
           <div style="font-size:10px;color:var(--text-3)">${p.cat}</div>
         </td>
-        <td class="usd-cell">${p.usd ? `U$D ${p.usd}` : '—'}</td>
+        <td class="usd-cell" style="text-align:center">
+          <div style="font-size:9px;color:var(--text-4)">Costo USD</div>
+          <div>${p.usd ? `U$D ${p.usd}` : '—'}</div>
+        </td>
+        <td class="usd-cell" style="text-align:center">
+          <div style="font-size:9px;color:var(--green)">Venta USD</div>
+          <div>${p.usdSell ? `U$D ${p.usdSell}` : '—'}</div>
+        </td>
         <td class="${p.ars ? 'price-cell' : 'price-cell consultar'}" style="font-size:13px">${cur}</td>
         <td>
           <input
@@ -2215,6 +2230,7 @@ function recalcAllPrices() {
     if (!p.usd) return;
     const res = getCalculationResult(p.cat, p.calcSub, p.usd);
     if (res) {
+      if (p.usdSell !== res.baseUsd) { p.usdSell = res.baseUsd; }
       const newArs = String(res.ars);
       if (newArs !== p.ars) {
         if (!p.priceHistory) p.priceHistory = [];
