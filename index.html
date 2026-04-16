@@ -847,6 +847,132 @@
       to   { opacity: 1; transform: translateY(0); }
     }
     .card { animation: fadeUp .3s var(--ease) both; }
+    /* ============================================
+       MODAL DE PRODUCTO
+    ============================================ */
+    .modal-backdrop {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    .modal-backdrop.show {
+      opacity: 1; visibility: visible;
+    }
+    .modal-content {
+      background: var(--surface);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 440px;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      transform: translateY(20px) scale(0.95);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-backdrop.show .modal-content {
+      transform: translateY(0) scale(1);
+    }
+    .modal-close {
+      position: absolute;
+      top: 12px; right: 12px;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      font-size: 14px;
+      backdrop-filter: blur(4px);
+      transition: background 0.2s;
+    }
+    .modal-close:hover { background: rgba(0,0,0,0.8); }
+    
+    .modal-img-wrap {
+      width: 100%;
+      aspect-ratio: 1;
+      background: var(--surface-2);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px 20px 0 0;
+      overflow: hidden;
+    }
+    .modal-img-wrap img {
+      width: 100%; height: 100%;
+      object-fit: contain;
+    }
+    .modal-emoji {
+      font-size: 110px;
+      filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4));
+    }
+    .modal-badge {
+      position: absolute;
+      top: 16px; left: 16px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #fff;
+      z-index: 5;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .modal-body {
+      padding: 24px;
+      display: flex; flex-direction: column;
+    }
+    .modal-cat {
+      font-size: 10px;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .modal-name {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--text-1);
+      margin: 0 0 6px 0;
+      line-height: 1.15;
+    }
+    .modal-sub {
+      font-size: 14px;
+      color: var(--text-2);
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+    .modal-desc {
+      font-size: 15px;
+      color: var(--text-3);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    
+    .modal-content::-webkit-scrollbar { width: 6px; }
+    .modal-content::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
+
+    .card { cursor: pointer; transition: transform var(--t) var(--ease), border-color var(--t); }
+    .card:hover { border-color: rgba(255,255,255,0.15); transform: translateY(-3px); }
+    
   </style>
 </head>
 <body>
@@ -1158,6 +1284,28 @@
 <!-- Scroll to top -->
 <button class="scroll-top" id="scrollTopBtn" aria-label="Volver al inicio">↑</button>
 
+<!-- ===== DETALLE DE PRODUCTO MODAL ===== -->
+<div class="modal-backdrop" id="productModal" role="dialog" aria-modal="true" onclick="closeDetailModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeDetailModal()" aria-label="Cerrar">✕</button>
+    <div class="modal-img-wrap">
+      <span class="modal-badge" id="mdlBadge" style="display:none"></span>
+      <div id="mdlImgContainer" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-cat" id="mdlCat"></div>
+      <h2 class="modal-name" id="mdlName"></h2>
+      <div class="modal-sub" id="mdlSub"></div>
+      <div class="modal-desc" id="mdlDesc"></div>
+      <div class="card-divider" style="margin: 0 0 20px 0;"></div>
+      <div id="mdlPriceArea"></div>
+      <a href="#" class="card-btn" id="mdlWaBtn" target="_blank" rel="noopener" style="margin-top:20px; font-size: 15px; padding: 14px;">
+        ${WA_SVG} Quiero este producto
+      </a>
+    </div>
+  </div>
+</div>
+
 <!-- ===================================================
      SCRIPT
 =================================================== -->
@@ -1454,7 +1602,7 @@ function cardHTML(p, idx) {
   }
 
   return `
-    <article class="card" role="listitem" aria-label="${p.name}" style="animation-delay:${delay}">
+    <article class="card" role="listitem" aria-label="${p.name}" style="animation-delay:${delay}" onclick="openDetailModal(${p.id})">
       <div class="card-img-wrap">
         ${badgePart}
         ${imgPart}
@@ -1468,6 +1616,7 @@ function cardHTML(p, idx) {
         ${pricePart}
         <a
           href="${link}"
+          onclick="event.stopPropagation()"
           target="_blank"
           rel="noopener"
           class="card-btn"
@@ -1479,6 +1628,61 @@ function cardHTML(p, idx) {
 }
 
 /* ─── SCROLL TO TOP ──────────────────────────── */
+// Modal handlers
+function openDetailModal(id) {
+  const p = PRODUCTOS.find(x => x.id === id);
+  if (!p) return;
+  
+  const imgCont = document.getElementById('mdlImgContainer');
+  if (p.img) {
+    imgCont.innerHTML = `<img src="${p.img}" alt="${p.name}">`;
+  } else {
+    imgCont.innerHTML = `<div class="modal-emoji">${p.icon}</div>`;
+  }
+  
+  const badge = document.getElementById('mdlBadge');
+  if (p.badge) {
+    badge.style.display = 'block';
+    badge.style.background = p.badgeColor;
+    badge.textContent = p.badge;
+  } else {
+    badge.style.display = 'none';
+  }
+  
+  document.getElementById('mdlCat').textContent = p.cat;
+  document.getElementById('mdlName').textContent = p.name;
+  document.getElementById('mdlSub').textContent = p.sub || '';
+  document.getElementById('mdlDesc').textContent = p.desc || '';
+  
+  const priceArea = document.getElementById('mdlPriceArea');
+  const arPrice = formatARS(p.ars);
+  if (arPrice) {
+    let pricesHtml = '';
+    if (p.usdSell) {
+      pricesHtml += `<div class="card-price-label">Precio en dólares</div>
+                     <div class="card-price" style="margin-bottom: 8px; color: var(--green); font-size: 24px;">U$D ${p.usdSell.toFixed(2)}</div>`;
+    }
+    pricesHtml += `<div class="card-price-label">Precio en pesos</div>
+                   <div class="card-price" style="font-size: 24px;">${arPrice}</div>`;
+    priceArea.innerHTML = pricesHtml;
+  } else {
+    priceArea.innerHTML = `<div class="card-price consultar" style="font-size: 20px;">Consultar precio</div>`;
+  }
+  
+  const waBtn = document.getElementById('mdlWaBtn');
+  waBtn.href = waUrl(p);
+  
+  document.getElementById('productModal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDetailModal(e) {
+  if (e && e.target !== e.currentTarget && e.target.id !== 'productModal') return;
+  document.getElementById('productModal').classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+// Scroll To Top
 function initScrollTop() {
   const btn = document.getElementById('scrollTopBtn');
   window.addEventListener('scroll', () => {
