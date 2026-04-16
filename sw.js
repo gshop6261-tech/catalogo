@@ -3,7 +3,7 @@
 // Versión: 1.0
 // ============================================
 
-const CACHE_NAME = 'compra-directa-v1';
+const CACHE_NAME = 'compra-directa-v1.1';
 const CACHE_ASSETS = [
   './index.html',
   './manifest.json',
