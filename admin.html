@@ -1508,7 +1508,7 @@ function syncCatalog() {
     products: products.filter(p => p.activo).map(p => ({
       id: p.id, cat: p.cat, name: p.name, sub: p.sub, desc: p.desc,
       img: p.img, badge: p.badge, badgeColor: p.badgeColor, icon: p.icon,
-      ars: p.ars, activo: p.activo, fechaAlta: p.fechaAlta,
+      ars: p.ars, usdSell: p.usdSell, activo: p.activo, fechaAlta: p.fechaAlta,
       // NOTE: usd and priceHistory intentionally excluded from catalog sync
     })),
     banners: banners.filter(b => b.activo),
