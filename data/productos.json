@@ -151,7 +151,7 @@
       "calcSub": "unico",
       "name": "Perfume Orientica Imperial Jade Extrait de Parfum Unissex 80ml",
       "sub": "Perfume Orientica Imperial Jade Extrait de Parfum Unissex 80ml",
-      "desc": "O Orientica Imperial Jade é uma fragrância que personifica a opulência e o frescor em um equilíbrio perfeito. Esta joia da perfumaria árabe abre com uma explosão cítrica revigorante de bergamota e limão, que rapidamente se funde a um coração frutado e floral delicado. Sua base é rica em âmbar e baun",
+      "desc": "Orientica Imperial Jade es una fragancia que encarna la opulencia y la frescura en un equilibrio perfecto. Esta joya de la perfumería árabe abre con una explosión cítrica vigorizante de bergamota y limón, que rápidamente se funde con un corazón frutal y floral delicado. Su fondo es rico en ámbar y v",
       "img": "images/productos/7/main.jpg",
       "images": [
         "images/productos/7/main.jpg"
@@ -172,7 +172,7 @@
           "price": 48.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-16T22:25:34.869722+00:00"
+          "lastChecked": "2026-04-16T22:45:35.466227+00:00"
         }
       ],
       "status": "enriched",
@@ -397,6 +397,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-16T22:25:37.387380+00:00",
+  "lastSync": "2026-04-16T22:45:37.453932+00:00",
   "lastPriceCheck": "2026-04-16T21:26:32.365410+00:00"
 }
