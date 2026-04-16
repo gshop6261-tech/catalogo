@@ -144,39 +144,6 @@
       "referenceLinks": [],
       "status": "enriched",
       "enrichError": null
-    },
-    {
-      "id": 7,
-      "cat": "Accesorios",
-      "calcSub": "unico",
-      "name": "Perfume Orientica Imperial Jade Extrait de Parfum Unissex 80ml",
-      "sub": "Perfume Orientica Imperial Jade Extrait de Parfum Unissex 80ml",
-      "desc": "Orientica Imperial Jade es una fragancia que encarna la opulencia y la frescura en un equilibrio perfecto. Esta joya de la perfumería árabe abre con una explosión cítrica vigorizante de bergamota y limón, que rápidamente se funde con un corazón frutal y floral delicado. Su fondo es rico en ámbar y v",
-      "img": "images/productos/7/main.jpg",
-      "images": [
-        "images/productos/7/main.jpg"
-      ],
-      "badge": null,
-      "badgeColor": "#25D366",
-      "icon": "🧴",
-      "ars": null,
-      "usd": 48.0,
-      "weight": null,
-      "usdSell": 57.6,
-      "activo": true,
-      "fechaAlta": "2026-04-16",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/perfumes/perfume-orientica-imperial-jade-extrait-de-parfum-unissex-80ml/1354300",
-          "price": 48.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-16T22:56:23.514695+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null
     }
   ],
   "banners": [
@@ -230,10 +197,6 @@
     }
   ],
   "settings": {
-    "whatsapp": "5491154125271",
-    "dollarManual": null,
-    "dollarAuto": null,
-    "dollarUpdated": null,
     "categories": [
       {
         "id": "celulares",
@@ -395,8 +358,9 @@
           }
         ]
       }
-    ]
+    ],
+    "whatsapp": "5491154125271"
   },
-  "lastSync": "2026-04-16T22:45:37.453932+00:00",
-  "lastPriceCheck": "2026-04-16T22:56:24.065302+00:00"
+  "lastSync": "2026-04-16T23:20:23.111Z",
+  "lastPriceCheck": null
 }
