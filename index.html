@@ -1569,14 +1569,16 @@ async function tryLoadProductosJSON() {
 
   if (data.settings) {
     const vParam = new URLSearchParams(window.location.search).get('v');
+    let vendedorMatched = false;
     if (vParam && data.settings.vendedores && data.settings.vendedores.length) {
       const vendedor = data.settings.vendedores.find(v => v.id === vParam);
       if (vendedor) {
         CFG.whatsapp = vendedor.whatsapp;
         CFG.vendedorNombre = vendedor.nombre || null;
+        vendedorMatched = true;
       }
     }
-    if (!CFG.vendedorNombre) {
+    if (!vendedorMatched) {
       CFG.whatsapp = data.settings.whatsapp || CFG.whatsapp;
     }
     const cats = data.settings.categories;
