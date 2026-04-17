@@ -272,16 +272,16 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 70.0,
+      "usd": 70,
       "weight": null,
-      "usdSell": 84.0,
+      "usdSell": 84,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/mouse-apple-magic-2-mrme2zma-spacegray-deslativo/1356588",
-          "price": 70.0,
+          "price": 70,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T12:38:33.873498+00:00"
@@ -505,8 +505,14 @@
       }
     ],
     "whatsapp": "5491154125271",
-    "vendedores": []
+    "vendedores": [
+      {
+        "id": "1154870326",
+        "nombre": "",
+        "whatsapp": "5491154870326"
+      }
+    ]
   },
-  "lastSync": "2026-04-17T12:38:34.708236+00:00",
+  "lastSync": "2026-04-17T12:50:51.653Z",
   "lastPriceCheck": null
 }
