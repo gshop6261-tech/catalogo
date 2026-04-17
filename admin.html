@@ -1786,6 +1786,62 @@ function loadDataFromLocalStorage() {
   settings = load(LS_SETTINGS, DEFAULT_SETTINGS);
 }
 
+async function loadDataFromRepo() {
+  const localSettings = load(LS_SETTINGS, null) || {};
+  const token  = localSettings.ghToken;
+  const repo   = localSettings.ghRepo;
+  const branch = localSettings.ghBranch || 'main';
+
+  let data = null;
+
+  if (token && repo) {
+    try {
+      const apiUrl = `https://api.github.com/repos/${repo}/contents/data/productos.json?ref=${branch}`;
+      const res = await fetch(apiUrl, {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Accept': 'application/vnd.github+json',
+        },
+        cache: 'no-store',
+      });
+      if (res.ok) {
+        const meta = await res.json();
+        const decoded = decodeURIComponent(escape(atob(meta.content.replace(/\s/g, ''))));
+        data = JSON.parse(decoded);
+      }
+    } catch(e) { console.warn('Fetch via GitHub API falló:', e); }
+  }
+
+  if (!data) {
+    try {
+      const res = await fetch(`data/productos.json?t=${Date.now()}`, { cache: 'no-store' });
+      if (res.ok) data = await res.json();
+    } catch(e) { console.warn('Fetch de data/productos.json falló:', e); }
+  }
+
+  if (!data || !Array.isArray(data.products)) return false;
+
+  products = data.products;
+  save(LS_PRODUCTS, products);
+
+  if (Array.isArray(data.banners)) {
+    banners = data.banners;
+    save(LS_BANNERS, banners);
+  } else {
+    banners = load(LS_BANNERS, null) || JSON.parse(JSON.stringify(DEFAULT_BANNERS));
+  }
+
+  settings = { ...DEFAULT_SETTINGS, ...localSettings };
+  if (data.settings) {
+    if (data.settings.categories)  settings.categories  = data.settings.categories;
+    if (data.settings.whatsapp)    settings.whatsapp    = data.settings.whatsapp;
+    if (data.settings.vendedores)  settings.vendedores  = data.settings.vendedores;
+  }
+  save(LS_SETTINGS, settings);
+
+  return true;
+}
+
 function _buildProductosJSONData() {
   return {
     products,
@@ -1942,9 +1998,12 @@ function deleteVendedor(id) {
   });
 }
 
-function initApp() {
-  // Always load from localStorage — it's the source of truth for admin
-  loadDataFromLocalStorage();
+async function initApp() {
+  const loadedFromRepo = await loadDataFromRepo();
+  if (!loadedFromRepo) {
+    loadDataFromLocalStorage();
+    showToast('⚠️ No se pudo sincronizar con el repo. Trabajando con datos locales.', 'error');
+  }
   if (settings.formulas && !settings.categories) {
     settings.categories = JSON.parse(JSON.stringify(DEFAULT_CATEGORIES));
     saveSettings();
