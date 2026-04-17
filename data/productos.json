@@ -6,28 +6,37 @@
       "calcSub": "unico",
       "name": "Headset Gamer Redragon Ares H120 RGB P2 + Adaptador 3.5mm - Negro",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El Redragon Ares H120 RGB es un headset gamer accesible y cómodo, ideal para largas sesiones de juego. Equipado con drivers de 40 mm, ofrece un sonido equilibrado e inmersivo. El micrófono integrado capta la voz con claridad, mientras que el control de volumen facilita los ajustes rápidos. La conexión P2 (3,5 mm) y USB garantiza compatibilidad con diversos dispositivos. Con iluminación RGB, aporta un diseño moderno para completar tu setup gamer.",
+      "img": "images/productos/1/main.jpg",
+      "images": [
+        "images/productos/1/main.jpg",
+        "images/productos/1/2.jpg",
+        "images/productos/1/3.jpg",
+        "images/productos/1/4.jpg",
+        "images/productos/1/5.jpg",
+        "images/productos/1/6.jpg",
+        "images/productos/1/7.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 15.9,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 19.08,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-redragon-ares-h120-rgb-p2-adaptador-35mm-preto/1167597",
-          "price": null,
+          "price": 15.9,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:13:55.733641+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -36,28 +45,36 @@
       "calcSub": "unico",
       "name": "Headset Redragon Cronus H211W-RGB - Blanco",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "Vive una experiencia de sonido inmersiva con los auriculares Redragon Cronus! Equipado con controladores de 40 mm para unos agudos nítidos y unos graves potentes, ofrece un sonido envolvente envolvente. Su micrófono unidireccional garantiza una comunicación nítida, mientras que la diadema ajustable y las almohadillas de espuma viscoelástica brindan comodidad duradera. Además, su construcción robusta y su iluminación RGB dinámica elevan tu estilo mientras juegas.",
+      "img": "images/productos/2/main.jpg",
+      "images": [
+        "images/productos/2/main.jpg",
+        "images/productos/2/2.jpg",
+        "images/productos/2/3.jpg",
+        "images/productos/2/4.jpg",
+        "images/productos/2/5.jpg",
+        "images/productos/2/6.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 16.9,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 20.28,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-redragon-cronus-h211w-rgb-branco/1003987",
-          "price": null,
+          "price": 16.9,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:13:56.978838+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -66,28 +83,35 @@
       "calcSub": "unico",
       "name": "Headset Gamer Razer Blackshark V2 X RZ04-03240100-R3U1 P2 - Negro",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "Audio competitivo con enfoque en precisión sonora desde el primer uso. El headset gamer Razer BlackShark V2 X incorpora drivers Razer TriForce de 50 mm que separan graves, medios y agudos para detectar pasos, disparos y detalles con mayor claridad. El micrófono cardioide brinda una voz clara y reduce ruidos del entorno en juegos y llamadas. La conexión P2 3.5 mm asegura amplia compatibilidad con PC, consolas y dispositivos móviles. Ideal para juegos competitivos, estudio y comunicación diaria.",
+      "img": "images/productos/3/main.jpg",
+      "images": [
+        "images/productos/3/main.jpg",
+        "images/productos/3/2.jpg",
+        "images/productos/3/3.jpg",
+        "images/productos/3/4.jpg",
+        "images/productos/3/5.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 41.0,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 49.2,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-razer-blackshark-v2-x-rz04-03240100-r3u1-p2-preto/712125",
-          "price": null,
+          "price": 41.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:13:58.543772+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -96,28 +120,32 @@
       "calcSub": "unico",
       "name": "Speaker Portátil JBL Go 5 - Negro",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El JBL GO 5 esta nueva generación ha sido mejorada con el sonido JBL Pro, entregando graves más profundos y una nitidez superior para su tamaño. Con certificación IP67, es totalmente resistente al agua y al polvo, lo que lo hace ideal para cualquier entorno, desde la oficina hasta el borde de la piscina. Destaca por la inclusión de la tecnología Auracast, que permite el emparejamiento con otros altavoces JBL compatibles, y por el modo Playtime Boost, que ofrece 2 horas extras de batería para prolongar su experiencia musical.",
+      "img": "images/productos/4/main.jpg",
+      "images": [
+        "images/productos/4/main.jpg",
+        "images/productos/4/2.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 40.0,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 48.0,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-preto/1354058",
-          "price": null,
+          "price": 40.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:13:59.429215+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -126,28 +154,36 @@
       "calcSub": "unico",
       "name": "Speaker Portátil JBL Flip 7 Bluetooth - Camuflaje",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El JBL Flip 7 es la nueva generación de la línea de altavoces portátiles, que ofrece 35 W RMS de potencia con un sonido aún más dinámico. Cuenta con Bluetooth 5.4 para una conexión rápida y estable, además de una autonomía de hasta 14 horas, ampliable hasta 2 horas con el modo Playtime Boost. AI Sound Boost optimiza automáticamente el rendimiento del sonido. Cuenta con 1 woofer de 45 x 80 mm y 1 tweeter de 16 mm, garantizando graves potentes y agudos claros para cualquier entorno.",
+      "img": "images/productos/5/main.jpg",
+      "images": [
+        "images/productos/5/main.jpg",
+        "images/productos/5/2.jpg",
+        "images/productos/5/3.jpg",
+        "images/productos/5/4.jpg",
+        "images/productos/5/5.jpg",
+        "images/productos/5/6.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 79.0,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 94.8,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-flip-7-bluetooth-camuflado/1213874",
-          "price": null,
+          "price": 79.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:14:00.192612+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -156,28 +192,36 @@
       "calcSub": "unico",
       "name": "JBL CLIP 5 BLACK",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El JBL Clip 5 es el altavoz portátil ideal para acompañar todas tus aventuras. Con su tamaño compacto, es perfecto para llevar la música a cualquier lugar sin ocupar demasiado espacio. Ofrece hasta 12 horas de duración de la batería, lo que te permite disfrutar de tus listas de reproducción. Certificado con IP67, es completamente resistente al agua y al polvo. Su potente controlador garantiza unos graves mejorados, proporcionando una calidad de sonido excepcional.",
+      "img": "images/productos/6/main.jpg",
+      "images": [
+        "images/productos/6/main.jpg",
+        "images/productos/6/2.jpg",
+        "images/productos/6/3.jpg",
+        "images/productos/6/4.jpg",
+        "images/productos/6/5.jpg",
+        "images/productos/6/6.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 37.5,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 45.0,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/speaker-jbl-clip-5-black/1080087",
-          "price": null,
+          "price": 37.5,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:14:02.086769+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -186,28 +230,36 @@
       "calcSub": "chico",
       "name": "Proyector Xiaomi Wanbo X5 LCD 1100 Lúmenes HDMI - Azul",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El proyector Wanbo X5 Pro ofrece 1100 imágenes de brillo de lúmenes y tamaño ajustable de 40 a 180 pulgadas, ideal para entretenimiento en el hogar. Tiene enfoque y corrección automática de Kerystone para centralizar y alinear fácilmente la proyección. Equipado con altavoces 5W con HIFI DSP, entrega luz y sonido inmersivo. Tiene interfaz HDMI y USB, conectividad Wi-Fi y Bluetooth, así como la compatibilidad de Google TV para la transmisión integrada.",
+      "img": "images/productos/7/main.jpg",
+      "images": [
+        "images/productos/7/main.jpg",
+        "images/productos/7/2.jpg",
+        "images/productos/7/3.jpg",
+        "images/productos/7/4.jpg",
+        "images/productos/7/5.jpg",
+        "images/productos/7/6.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 225.0,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 270.0,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/projetores/projetor-xiaomi-wanbo-x5-lcd-1100-lumens-hdmi-azul/1179026",
-          "price": null,
+          "price": 225.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:14:03.000208+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -216,28 +268,36 @@
       "calcSub": "Unico",
       "name": "Cámara de Acción GoPro Max 360 CHDHZ-203-RW 18MP WiFi - Negro",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "Captura todo desde cualquier ángulo con la GoPro Max 360 CHDHZ-203-RW. Sus lentes duales capturan video 6K y fotos de 18 MP con estabilización Max HyperSmooth. Cuenta con audio de 360° de 6 micrófonos, modos creativos como TimeWarp y PowerPano, es sumergible hasta 5 m y cuenta con una pantalla táctil de 1.7\\\" con Wi-Fi y Bluetooth para un fácil control mediante la app GoPro.",
+      "img": "images/productos/8/main.jpg",
+      "images": [
+        "images/productos/8/main.jpg",
+        "images/productos/8/2.jpg",
+        "images/productos/8/3.jpg",
+        "images/productos/8/4.jpg",
+        "images/productos/8/5.jpg",
+        "images/productos/8/6.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 278.0,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 333.6,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-gopro-max-360-chdhz-203-rw-18mp-wifi-preto/1220391",
-          "price": null,
+          "price": 278.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:14:04.717539+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -246,14 +306,20 @@
       "calcSub": "Chico",
       "name": "Máquina de Hielo Smartfy Crystal Ice Supreme MG01W 85W 1.5L 220V - Blanco",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "La máquina de hielo Smartfy Crystal Ice Supreme MG01B es perfecta para quienes buscan hielo de calidad de manera rápida y eficiente. Con una potencia de 85W, produce hasta 12 kg de hielo en 24 horas, adecuada para uso doméstico o pequeños eventos. Su depósito de agua tiene una capacidad de 1,5 litros, y la función de autolimpieza facilita el mantenimiento. La cesta removible y el indicador LED ofrecen practicidad en el uso diario. Disponible en color negro y voltaje de 220V.",
+      "img": "images/productos/9/main.jpg",
+      "images": [
+        "images/productos/9/main.jpg",
+        "images/productos/9/2.jpg",
+        "images/productos/9/3.jpg",
+        "images/productos/9/4.jpg",
+        "images/productos/9/5.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 75.0,
       "weight": null,
       "usdSell": null,
       "activo": true,
@@ -262,12 +328,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": null,
+          "price": 75.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:14:05.727443+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -276,14 +343,21 @@
       "calcSub": "Chico",
       "name": "Dispenser de Jabón Automático Xiaomi Mi 1S BHR8853GL - Blanco",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El Dispensador de Jabón Xiaomi Mi 1S combina comodidad e higiene con activación automática por sensor infrarrojo, dispensando espuma densa en solo 0,25 segundos. Su batería recargable por USB-C ofrece hasta 180 días de autonomía. Su diseño minimalista se adapta a cualquier espacio y la certificación IPX5 asegura resistencia al agua, ideal para baños y cocinas. También incorpora un recordatorio de 20 segundos para promover una correcta higiene de manos.\\ \\",
+      "img": "images/productos/10/main.jpg",
+      "images": [
+        "images/productos/10/main.jpg",
+        "images/productos/10/2.jpg",
+        "images/productos/10/3.jpg",
+        "images/productos/10/4.jpg",
+        "images/productos/10/5.jpg",
+        "images/productos/10/6.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 12.75,
       "weight": null,
       "usdSell": null,
       "activo": true,
@@ -292,12 +366,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/utensilios/dispenser-de-sabonete-automatico-xiaomi-mi-1s-bhr8853gl-branco/1207866",
-          "price": null,
+          "price": 12.75,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:14:06.508883+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -306,14 +381,19 @@
       "calcSub": "Chico",
       "name": "Hervidor Eléctrico Xiaomi Mi Electric Kettle 2 MJDSH04YM 1.7L 220V - Blanco",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El Xiaomi Mi Electric Kettle 2 es la combinación perfecta entre seguridad y practicidad. Con una capacidad de 1,7L y un asa vertical integrada, es fácil de manejar. Su diseño libre de BPA garantiza la seguridad alimentaria. Además, cuenta con apagado automático después de hervir y protección contra quema en seco, lo que la convierte en la opción ideal para quienes buscan comodidad y seguridad en el día a día.",
+      "img": "images/productos/12/main.jpg",
+      "images": [
+        "images/productos/12/main.jpg",
+        "images/productos/12/2.jpg",
+        "images/productos/12/3.jpg",
+        "images/productos/12/4.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 22.0,
       "weight": null,
       "usdSell": null,
       "activo": true,
@@ -322,12 +402,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/chaleira-eletrica-xiaomi-mi-electric-kettle-2-mjdsh04ym-17l-220v-branco/976893",
-          "price": null,
+          "price": 22.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:14:07.368624+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -336,28 +417,36 @@
       "calcSub": "unico",
       "name": "Kit Gamer Redragon S143W Teclado K617RGBW SP + Ratón M724",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El kit Redragon S143W ofrece versatilidad y estilo con teclado mecánico K617 con interruptores rojos rojos de 61 llaves, diseño 60% compacto y construcción de plástico ABS resistente. Tiene iluminación RGB vibrante y conexión USB-C. El mouse M724 incluido tiene un sensor óptico Pixart P3327 con hasta 12,400 ppp, 5 botones programables y diseño ergonómico para la precisión de los juegos. Ideal para configuraciones de jugadores que valoran la eficiencia y la visual.",
+      "img": "images/productos/13/main.jpg",
+      "images": [
+        "images/productos/13/main.jpg",
+        "images/productos/13/2.jpg",
+        "images/productos/13/3.jpg",
+        "images/productos/13/4.jpg",
+        "images/productos/13/5.jpg",
+        "images/productos/13/6.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 47.9,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 57.48,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/teclados/kit-gamer-redragon-s143w-teclado-k617rgbw-sp-mouse-m724/1191561",
-          "price": null,
+          "price": 47.9,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:14:08.172713+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -629,6 +718,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-17T18:13:42.396Z",
+  "lastSync": "2026-04-17T18:14:09.085921+00:00",
   "lastPriceCheck": null
 }
