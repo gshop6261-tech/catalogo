@@ -904,8 +904,7 @@
     
     .modal-img-wrap {
       width: 100%;
-      min-height: 300px;
-      max-height: 45vh;
+      height: 320px;
       background: var(--surface-2);
       position: relative;
       display: flex;
@@ -916,9 +915,10 @@
       flex-shrink: 0;
     }
     .modal-img-wrap img {
-      max-width: 100%;
-      max-height: 100%;
+      width: 100%;
+      height: 100%;
       object-fit: contain;
+      padding: 16px;
     }
     .modal-emoji {
       font-size: 110px;
@@ -1359,7 +1359,7 @@
       <div class="card-divider" style="margin: 0 0 20px 0;"></div>
       <div id="mdlPriceArea"></div>
       <a href="#" class="card-btn" id="mdlWaBtn" target="_blank" rel="noopener" style="margin-top:20px; font-size: 15px; padding: 14px;">
-        ${WA_SVG} Quiero este producto
+        Quiero este producto
       </a>
     </div>
   </div>
@@ -1780,14 +1780,14 @@ function openDetailModal(id) {
     imgCont.innerHTML = `
       <div class="carousel" data-idx="0">
         <div class="carousel-track" style="width:${imgs.length * 100}%">
-          ${imgs.map(src => `<div style="flex:0 0 ${100/imgs.length}%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--surface-2)"><img src="${src}" alt="${p.name}" style="max-width:100%;max-height:100%;object-fit:contain;display:block"></div>`).join('')}
+          ${imgs.map(src => `<div style="flex:0 0 ${100/imgs.length}%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--surface-2);padding:16px;box-sizing:border-box"><img src="${src}" alt="${p.name}" style="width:100%;height:100%;object-fit:contain;display:block"></div>`).join('')}
         </div>
         <button class="carousel-btn carousel-prev" onclick="carouselMove(-1)" aria-label="Anterior">&#8249;</button>
         <button class="carousel-btn carousel-next" onclick="carouselMove(1)" aria-label="Siguiente">&#8250;</button>
         <div class="carousel-dots">${imgs.map((_, i) => `<span class="carousel-dot${i===0?' active':''}" onclick="carouselGo(${i})"></span>`).join('')}</div>
       </div>`;
   } else if (imgs.length === 1) {
-    imgCont.innerHTML = `<img src="${imgs[0]}" alt="${p.name}" style="max-width:100%;max-height:100%;object-fit:contain;">`;
+    imgCont.innerHTML = `<img src="${imgs[0]}" alt="${p.name}">`;
   } else {
     imgCont.innerHTML = `<div class="modal-emoji">${p.icon}</div>`;
   }
@@ -1824,6 +1824,7 @@ function openDetailModal(id) {
   
   const waBtn = document.getElementById('mdlWaBtn');
   waBtn.href = waUrl(p);
+  waBtn.innerHTML = WA_SVG + ' Quiero este producto';
   
   document.getElementById('productModal').classList.add('show');
   document.body.style.overflow = 'hidden';
