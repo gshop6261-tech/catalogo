@@ -535,8 +535,8 @@
           "isPrimary": true
         }
       ],
-      "status": "error",
-      "enrichError": "Scrape failed: 404 Client Error: Not Found for url: https://www.mobilezone.com.py/product/1122596/"
+      "status": "pending",
+      "enrichError": null
     }
   ],
   "banners": [
@@ -806,6 +806,6 @@
     "dollarUpdated": "2026-04-17T21:32:33.245Z",
     "dollarManual": null
   },
-  "lastSync": "2026-04-17T22:20:18.632Z",
+  "lastSync": "2026-04-17T22:21:57.310Z",
   "lastPriceCheck": null
 }
