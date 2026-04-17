@@ -1649,6 +1649,8 @@ const DEFAULT_SETTINGS = {
 let products = [];
 let banners  = [];
 let settings = {};
+const _dirty = { products:false, banners:false, categories:false, whatsapp:false, vendedores:false };
+function _resetDirty() { for (const k in _dirty) _dirty[k] = false; }
 let dollar   = null;
 let currentPage = 'dashboard';
 let selectedBadgeColor = '#25D366';
@@ -1683,8 +1685,8 @@ function load(key, def) {
   }
 }
 
-function saveProducts()  { save(LS_PRODUCTS, products); syncCatalog(); }
-function saveBanners()   { save(LS_BANNERS,  banners);  syncCatalog(); }
+function saveProducts()  { save(LS_PRODUCTS, products); syncCatalog(); _dirty.products = true; }
+function saveBanners()   { save(LS_BANNERS,  banners);  syncCatalog(); _dirty.banners  = true; }
 function saveSettings()  { save(LS_SETTINGS, settings); syncCatalog(); }
 
 /* Sync catalog: writes a small JS override to localStorage that index.html reads */
@@ -1784,6 +1786,7 @@ function loadDataFromLocalStorage() {
     save(LS_BANNERS, banners);
   }
   settings = load(LS_SETTINGS, DEFAULT_SETTINGS);
+  _resetDirty();
 }
 
 async function loadDataFromRepo() {
@@ -1839,6 +1842,7 @@ async function loadDataFromRepo() {
   }
   save(LS_SETTINGS, settings);
 
+  _resetDirty();
   return true;
 }
 
@@ -1880,11 +1884,6 @@ async function exportToProductosJSON(opts = {}) {
   if (btn) { btn.disabled = true; btn.textContent = '⏳ Publicando...'; }
 
   try {
-    const data    = _buildProductosJSONData();
-    const json    = JSON.stringify(data, null, 2);
-    // btoa no soporta UTF-8 directamente → encodeURIComponent + unescape trick
-    const content = btoa(unescape(encodeURIComponent(json)));
-
     const apiUrl  = `https://api.github.com/repos/${repo}/contents/data/productos.json`;
     const headers = {
       'Authorization': `Bearer ${token}`,
@@ -1893,19 +1892,42 @@ async function exportToProductosJSON(opts = {}) {
       'Content-Type': 'application/json',
     };
 
-    // 1. Obtener SHA del archivo actual (necesario para actualizar)
+    // 1. Obtener SHA + contenido actual del archivo (para merge conservador)
     let sha = null;
+    let remoteData = null;
     const getResp = await fetch(`${apiUrl}?ref=${branch}`, { headers });
     if (getResp.ok) {
       const fileData = await getResp.json();
       sha = fileData.sha;
+      try {
+        const decoded = decodeURIComponent(escape(atob((fileData.content || '').replace(/\s/g,''))));
+        remoteData = JSON.parse(decoded);
+      } catch(e) { console.warn('No pude parsear remoto:', e); }
     } else if (getResp.status !== 404) {
       const err = await getResp.json().catch(() => ({}));
       throw new Error(err.message || `HTTP ${getResp.status} al leer archivo`);
     }
 
-    // 2. Commit
-    const pending = products.filter(p => p.status === 'pending').length;
+    // 2. Merge conservador: solo pisa lo que el usuario editó en esta sesión.
+    const local = _buildProductosJSONData();
+    const rs = (remoteData && remoteData.settings) || {};
+    const data = {
+      products: _dirty.products ? local.products : (remoteData && remoteData.products ? remoteData.products : local.products),
+      banners:  _dirty.banners  ? local.banners  : (remoteData && remoteData.banners  ? remoteData.banners  : local.banners),
+      settings: {
+        categories: _dirty.categories ? local.settings.categories : (rs.categories || local.settings.categories),
+        whatsapp:   _dirty.whatsapp   ? local.settings.whatsapp   : (rs.whatsapp   || local.settings.whatsapp),
+        vendedores: _dirty.vendedores ? local.settings.vendedores : (rs.vendedores || local.settings.vendedores || []),
+      },
+      lastSync: local.lastSync,
+      lastPriceCheck: local.lastPriceCheck,
+    };
+    const json    = JSON.stringify(data, null, 2);
+    // btoa no soporta UTF-8 directamente → encodeURIComponent + unescape trick
+    const content = btoa(unescape(encodeURIComponent(json)));
+
+    // 3. Commit
+    const pending = data.products.filter(p => p.status === 'pending').length;
     const msg = pending > 0
       ? `sync: ${pending} producto${pending !== 1 ? 's' : ''} pendiente${pending !== 1 ? 's' : ''}`
       : 'sync: actualizar catálogo';
@@ -1923,6 +1945,17 @@ async function exportToProductosJSON(opts = {}) {
       const err = await putResp.json().catch(() => ({}));
       throw new Error(err.message || `HTTP ${putResp.status}`);
     }
+
+    // Sincronizar estado local con lo que acabamos de publicar
+    products = data.products;
+    banners  = data.banners;
+    settings.categories = data.settings.categories;
+    settings.whatsapp   = data.settings.whatsapp;
+    settings.vendedores = data.settings.vendedores;
+    save(LS_PRODUCTS, products);
+    save(LS_BANNERS,  banners);
+    save(LS_SETTINGS, settings);
+    _resetDirty();
 
     if (!silent) {
       if (pending > 0) {
@@ -1993,6 +2026,7 @@ function addVendedor() {
   if (!settings.vendedores) settings.vendedores = [];
   if (settings.vendedores.find(v => v.id === id)) return showToast(`Ya existe un vendedor con ID "${id}".`, 'error');
   settings.vendedores.push({ id, nombre, whatsapp });
+  _dirty.vendedores = true;
   saveSettings();
   renderVendedoresTable();
   document.getElementById('vId').value       = '';
@@ -2009,6 +2043,7 @@ function addVendedor() {
 function deleteVendedor(id) {
   showConfirm('🗑 Eliminar Vendedor', `¿Eliminás al vendedor "${id}"?`, () => {
     settings.vendedores = (settings.vendedores || []).filter(v => v.id !== id);
+    _dirty.vendedores = true;
     saveSettings();
     renderVendedoresTable();
     exportToProductosJSON({ silent: true }).then(ok => {
@@ -2688,6 +2723,7 @@ function renderCategoriesTable() {
 function deleteCategory(id) {
    showConfirm('🗑 Eliminar Categoría', `¿Seguro que deseas eliminarla?`, () => {
       settings.categories = settings.categories.filter(c => c.id !== id);
+      _dirty.categories = true;
       saveSettings();
       renderCategoriesTable();
       populateCatDropdowns();
@@ -2810,7 +2846,7 @@ function saveCategory() {
    } else {
       settings.categories.push(newCat);
    }
-   
+   _dirty.categories = true;
    saveSettings();
    closeCategoryModal();
    renderCategoriesTable();
@@ -3075,6 +3111,7 @@ function saveWaNumber() {
   const v = document.getElementById('settWaNumber').value.replace(/\D/g,'');
   if (!v || v.length < 10) return showToast('Número inválido. Ingresá solo números.', 'error');
   settings.whatsapp = v;
+  _dirty.whatsapp = true;
   saveSettings();
   exportToProductosJSON({ silent: true }).then(ok => {
     showToast(ok
