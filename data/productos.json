@@ -96,7 +96,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 41.0,
+      "usd": 41,
       "weight": null,
       "usdSell": 49.2,
       "activo": true,
@@ -105,7 +105,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-razer-blackshark-v2-x-rz04-03240100-r3u1-p2-preto/712125",
-          "price": 41.0,
+          "price": 41,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T18:13:58.543772+00:00"
@@ -130,16 +130,16 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 40.0,
+      "usd": 40,
       "weight": null,
-      "usdSell": 48.0,
+      "usdSell": 48,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-preto/1354058",
-          "price": 40.0,
+          "price": 40,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T18:13:59.429215+00:00"
@@ -168,7 +168,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 79.0,
+      "usd": 79,
       "weight": null,
       "usdSell": 94.8,
       "activo": true,
@@ -177,7 +177,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-flip-7-bluetooth-camuflado/1213874",
-          "price": 79.0,
+          "price": 79,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T18:14:00.192612+00:00"
@@ -208,7 +208,7 @@
       "ars": null,
       "usd": 37.5,
       "weight": null,
-      "usdSell": 45.0,
+      "usdSell": 45,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
@@ -244,16 +244,16 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 225.0,
+      "usd": 225,
       "weight": null,
-      "usdSell": 270.0,
+      "usdSell": 270,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/projetores/projetor-xiaomi-wanbo-x5-lcd-1100-lumens-hdmi-azul/1179026",
-          "price": 225.0,
+          "price": 225,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T18:14:03.000208+00:00"
@@ -282,7 +282,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 278.0,
+      "usd": 278,
       "weight": null,
       "usdSell": 333.6,
       "activo": true,
@@ -291,7 +291,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-gopro-max-360-chdhz-203-rw-18mp-wifi-preto/1220391",
-          "price": 278.0,
+          "price": 278,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T18:14:04.717539+00:00"
@@ -319,7 +319,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 75.0,
+      "usd": 75,
       "weight": null,
       "usdSell": null,
       "activo": true,
@@ -328,10 +328,9 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": 75.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T18:14:05.727443+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -393,7 +392,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 22.0,
+      "usd": 22,
       "weight": null,
       "usdSell": null,
       "activo": true,
@@ -402,7 +401,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/chaleira-eletrica-xiaomi-mi-electric-kettle-2-mjdsh04ym-17l-220v-branco/976893",
-          "price": 22.0,
+          "price": 22,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T18:14:07.368624+00:00"
@@ -689,17 +688,13 @@
         "icon": "📦",
         "subtypes": [
           {
-            "id": "Hogar",
-            "label": "Hogar"
-          },
-          {
             "id": "Chico",
             "label": "Chico"
           }
         ],
         "rules": [
           {
-            "subtype": "Hogar",
+            "subtype": "Chico",
             "type": "none",
             "op": "<=",
             "val": 0,
@@ -718,6 +713,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-17T18:14:09.085921+00:00",
+  "lastSync": "2026-04-17T18:17:00.993Z",
   "lastPriceCheck": null
 }
