@@ -47,10 +47,8 @@ def enrich_product(product: dict, categories: list[dict]) -> None:
         product["enrichError"] = f"Scrape failed: {e}"
         return
 
-    if info.get("name") and not product.get("sub"):
-        product["sub"] = info["name"][:100]
     if info.get("description") and not product.get("desc"):
-        product["desc"] = info["description"][:300]
+        product["desc"] = info["description"][:2000]
 
     if info.get("price") is not None:
         primary["price"] = info["price"]

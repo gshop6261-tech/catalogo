@@ -925,10 +925,13 @@
       position: relative;
       overflow: hidden;
       border-radius: 16px;
+      width: 100%;
+      height: 100%;
     }
     .carousel-track {
       display: flex;
       transition: transform .3s ease;
+      height: 100%;
     }
     .carousel-btn {
       position: absolute;
@@ -1014,6 +1017,7 @@
       color: var(--text-3);
       line-height: 1.6;
       margin-bottom: 24px;
+      white-space: pre-line;
     }
     
     .modal-content::-webkit-scrollbar { width: 6px; }
@@ -1763,15 +1767,15 @@ function openDetailModal(id) {
   if (imgs.length > 1) {
     imgCont.innerHTML = `
       <div class="carousel" data-idx="0">
-        <div class="carousel-track" style="display:flex;transition:transform .3s ease;width:${imgs.length * 100}%">
-          ${imgs.map(src => `<div style="flex:0 0 ${100/imgs.length}%;"><img src="${src}" alt="${p.name}" style="width:100%;height:auto;display:block"></div>`).join('')}
+        <div class="carousel-track" style="width:${imgs.length * 100}%">
+          ${imgs.map(src => `<div style="flex:0 0 ${100/imgs.length}%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--surface-2)"><img src="${src}" alt="${p.name}" style="width:100%;height:100%;object-fit:contain;display:block"></div>`).join('')}
         </div>
         <button class="carousel-btn carousel-prev" onclick="carouselMove(-1)" aria-label="Anterior">&#8249;</button>
         <button class="carousel-btn carousel-next" onclick="carouselMove(1)" aria-label="Siguiente">&#8250;</button>
         <div class="carousel-dots">${imgs.map((_, i) => `<span class="carousel-dot${i===0?' active':''}" onclick="carouselGo(${i})"></span>`).join('')}</div>
       </div>`;
   } else if (imgs.length === 1) {
-    imgCont.innerHTML = `<img src="${imgs[0]}" alt="${p.name}">`;
+    imgCont.innerHTML = `<img src="${imgs[0]}" alt="${p.name}" style="width:100%;height:100%;object-fit:contain;">`;
   } else {
     imgCont.innerHTML = `<div class="modal-emoji">${p.icon}</div>`;
   }
@@ -1788,7 +1792,7 @@ function openDetailModal(id) {
   document.getElementById('mdlCat').textContent = p.cat;
   document.getElementById('mdlName').textContent = p.name;
   document.getElementById('mdlSub').textContent = p.sub || '';
-  document.getElementById('mdlDesc').textContent = p.desc || '';
+  document.getElementById('mdlDesc').innerHTML = formatDesc(p.desc || '');
 
   const priceArea = document.getElementById('mdlPriceArea');
   const liveArs = calcLiveARS(p);
@@ -1835,6 +1839,22 @@ function initPWA() {
       navigator.serviceWorker.register('./sw.js').catch(() => {});
     });
   }
+}
+
+/* ─── DESC FORMATTER ────────────────────────── */
+function formatDesc(text) {
+  if (!text) return '';
+  const safe = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  // If text already has newlines (from rich scrape), respect them
+  if (safe.includes('\n')) {
+    return safe
+      .split('\n')
+      .map(l => l.startsWith('• ') ? `<span style="display:block;margin-bottom:4px">${l}</span>` : `<span style="display:block;margin-bottom:8px">${l}</span>`)
+      .filter(l => l.replace(/<[^>]+>/g,'').trim())
+      .join('');
+  }
+  // Plain OG description: split into paragraphs at sentence boundaries
+  return safe.replace(/\. ([A-ZÁÉÍÓÚÑÜA-Z])/g, '.<br><br>$1');
 }
 
 /* ─── CAROUSEL HELPERS ───────────────────────── */

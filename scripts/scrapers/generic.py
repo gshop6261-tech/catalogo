@@ -96,6 +96,78 @@ def _extract_price_from_meta(soup: BeautifulSoup) -> tuple[float | None, str]:
     return None, "USD"
 
 
+def _extract_rich_description(soup: BeautifulSoup) -> str | None:
+    """Extract structured description from common product page patterns.
+    Preserves paragraphs and bullet points using \\n separators."""
+    selectors = [
+        '[itemprop="description"]',
+        '.product-description',
+        '#product-description',
+        '.description',
+        '#description',
+        '.product-details',
+        '.product-info-description',
+        '.tab-description',
+        '[data-tab="description"]',
+        '.product_description',
+        'section.description',
+        '.product-long-description',
+    ]
+    for sel in selectors:
+        el = soup.select_one(sel)
+        if el:
+            text = _html_block_to_text(el).strip()
+            if len(text) >= 80:
+                return text[:2000]
+    return None
+
+
+def _html_block_to_text(el) -> str:
+    """Convert an HTML element to plain text preserving paragraph/list structure."""
+    parts = []
+
+    def _walk(node):
+        if not hasattr(node, 'name'):
+            # text node
+            t = str(node)
+            if t.strip():
+                parts.append(t.strip())
+            return
+        tag = node.name
+        if tag in ('script', 'style', 'noscript'):
+            return
+        if tag in ('p', 'h2', 'h3', 'h4', 'h5'):
+            text = node.get_text(separator=' ', strip=True)
+            if text:
+                if parts and not parts[-1].endswith('\n'):
+                    parts.append('\n')
+                parts.append(text)
+                parts.append('\n')
+        elif tag in ('ul', 'ol'):
+            if parts and not parts[-1].endswith('\n'):
+                parts.append('\n')
+            for li in node.find_all('li', recursive=False):
+                text = li.get_text(separator=' ', strip=True)
+                if text:
+                    parts.append(f'• {text}')
+                    parts.append('\n')
+        elif tag == 'br':
+            parts.append('\n')
+        elif tag == 'li':
+            pass  # handled by ul/ol above
+        else:
+            for child in node.children:
+                _walk(child)
+
+    for child in el.children:
+        _walk(child)
+
+    # Collapse excessive blank lines
+    text = ''.join(parts)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    return text.strip()
+
+
 def _extract_images(soup: BeautifulSoup, base_url: str) -> list[str]:
     images = []
     seen = set()
@@ -155,6 +227,11 @@ class GenericScraper(BaseScraper):
             ld = jsonld[0]
             name = name or ld.get("name")
             description = description or ld.get("description")
+
+        # Try to get a richer description with paragraphs/bullets from the page HTML
+        rich_desc = _extract_rich_description(soup)
+        if rich_desc:
+            description = rich_desc
 
         if not name:
             title_tag = soup.find("title")

@@ -126,14 +126,14 @@
       "cat": "Smart TV",
       "calcSub": "grande",
       "name": "Smart TV JVC 43KM358 43\" Full HD Google TV - Negro",
-      "sub": "Smart TV JVC 43KM358 43\" Full HD Google TV - Preto",
-      "desc": "Imagen clara y experiencia inteligente en 43\\\". La Smart TV JVC 43KM358 brinda resolución Full HD con buen nivel de detalle, colores equilibrados y contraste definido para películas y juegos. El sistema Google TV organiza apps y recomienda contenidos según tus preferencias, con navegación fluida. In",
+      "sub": null,
+      "desc": "Imagen clara y experiencia inteligente en 43\\\". La Smart TV JVC 43KM358 brinda resolución Full HD con buen nivel de detalle, colores equilibrados y contraste definido para películas y juegos. El sistema Google TV organiza apps y recomienda contenidos según tus preferencias, con navegación fluida. Incluye puertos HDMI, USB y Wi-Fi integrado para consolas y streaming. Perfecta para sala, dormitorio u oficina en casa, mejorando tu entretenimiento diario.",
       "img": "images/productos/8/main.jpg",
       "images": [
         "images/productos/8/main.jpg",
         "images/productos/8/2.jpg",
         "images/productos/8/3.jpg",
-        "images/productos/8/4.jpg",
+        "images/productos/8/4.webp",
         "images/productos/8/5.jpg"
       ],
       "badge": null,
@@ -152,7 +152,7 @@
           "price": 179.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T00:53:53.913049+00:00"
+          "lastChecked": "2026-04-17T01:13:36.748517+00:00"
         }
       ],
       "status": "enriched",
@@ -163,8 +163,8 @@
       "cat": "Smart TV",
       "calcSub": "grande",
       "name": "Smart TV JVC 40N5165U 40\" Full HD WhaleTV WiFi - Negro",
-      "sub": "Smart TV JVC 40N5165U 40\" Full HD WhaleTV WiFi - Preto",
-      "desc": "La TV JVC 40\\\" LT-40N5165U ofrece el equilibrio perfecto entre tamaño y rendimiento, presentando una resolución Full HD que garantiza imágenes claras y detalladas. Equipada con el sistema Whale OS, proporciona una interfaz intuitiva para acceder rápidamente a aplicaciones esenciales de streaming. Co",
+      "sub": null,
+      "desc": "La TV JVC 40\\\" LT-40N5165U ofrece el equilibrio perfecto entre tamaño y rendimiento, presentando una resolución Full HD que garantiza imágenes claras y detalladas. Equipada con el sistema Whale OS, proporciona una interfaz intuitiva para acceder rápidamente a aplicaciones esenciales de streaming. Con un diferencial de 3 puertos USB y 3 puertos HDMI, este modelo ofrece una conectividad excepcional para todos sus periféricos, manteniendo un diseño elegante y compacto.",
       "img": "images/productos/9/main.jpg",
       "images": [
         "images/productos/9/main.jpg",
@@ -186,7 +186,7 @@
           "price": 145.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T00:53:54.869933+00:00"
+          "lastChecked": "2026-04-17T01:13:42.479534+00:00"
         }
       ],
       "status": "enriched",
@@ -197,8 +197,8 @@
       "cat": "Celulares",
       "calcSub": "slim",
       "name": "Smartphone Samsung Galaxy A14 SM-A145P 128GB 4GB RAM Dual SIM Pantalla 6.6\" - Negro (Caja Slim)",
-      "sub": "Smartphone Samsung Galaxy A14 SM-A145P 128GB 4GB RAM Dual SIM Tela 6.6\" - Preto (Caixa Slim)",
-      "desc": "El celular Samsung Galaxy A14 ofrece batería de 5000 mAh para uso prolongado, junto a pantalla FHD+ LCD PLS de 6,6\\\" para visualización cómoda. Equipado con procesador Helio G80, 4 GB de RAM y 128 GB ampliables vía microSD, permite manejo fluido de aplicaciones básicas. Su cámara triple (50 MP + ult",
+      "sub": null,
+      "desc": "El celular Samsung Galaxy A14 ofrece batería de 5000 mAh para uso prolongado, junto a pantalla FHD+ LCD PLS de 6,6\\\" para visualización cómoda. Equipado con procesador Helio G80, 4 GB de RAM y 128 GB ampliables vía microSD, permite manejo fluido de aplicaciones básicas. Su cámara triple (50 MP + ultrawide + macro) y la conexión 4G con dos ranuras SIM lo hacen ideal para el día a día.\\ \\ \\ \\",
       "img": "images/productos/10/main.jpg",
       "images": [
         "images/productos/10/main.jpg",
@@ -224,78 +224,7 @@
           "price": 104.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T00:53:55.624137+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null
-    },
-    {
-      "id": 11,
-      "cat": "Hogar",
-      "calcSub": "unico",
-      "name": "Máquina de Hielo Smartfy Crystal Ice Supreme MG01W 85W 1.5L 220V - Blanco",
-      "sub": "Máquina de Gelo Smartfy Crystal Ice Supreme MG01W 85W 1.5L 220V - Branco",
-      "desc": "La máquina de hielo Smartfy Crystal Ice Supreme MG01B es perfecta para quienes buscan hielo de calidad de manera rápida y eficiente. Con una potencia de 85W, produce hasta 12 kg de hielo en 24 horas, adecuada para uso doméstico o pequeños eventos. Su depósito de agua tiene una capacidad de 1,5 litro",
-      "img": "images/productos/11/main.jpg",
-      "images": [
-        "images/productos/11/main.jpg",
-        "images/productos/11/2.jpg",
-        "images/productos/11/3.jpg",
-        "images/productos/11/4.jpg",
-        "images/productos/11/5.jpg"
-      ],
-      "badge": null,
-      "badgeColor": "#25D366",
-      "icon": "📦",
-      "ars": null,
-      "usd": 75.0,
-      "weight": null,
-      "usdSell": 93.75,
-      "activo": true,
-      "fechaAlta": "2026-04-17",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": 75.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T00:53:56.681921+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null
-    },
-    {
-      "id": 12,
-      "cat": "Audio",
-      "calcSub": "unico",
-      "name": "Speaker Portátil JBL Go 5 - Azul",
-      "sub": "Speaker Portátil JBL Go 5 - Azul",
-      "desc": "El JBL GO 5 Blue es el compañero ultraportátil definitivo para quienes no renuncian a la calidad sonora en cualquier lugar. Esta nueva generación ofrece el sonido JBL Pro con graves sorprendentemente potentes para su tamaño reducido. Totalmente a prueba de agua y polvo con certificación IP67, es per",
-      "img": "images/productos/12/main.jpg",
-      "images": [
-        "images/productos/12/main.jpg",
-        "images/productos/12/2.jpg"
-      ],
-      "badge": null,
-      "badgeColor": "#25D366",
-      "icon": "📦",
-      "ars": null,
-      "usd": 40.0,
-      "weight": null,
-      "usdSell": 48.0,
-      "activo": true,
-      "fechaAlta": "2026-04-17",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-azul/1354065",
-          "price": 40.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T00:53:58.030629+00:00"
+          "lastChecked": "2026-04-17T01:13:46.845227+00:00"
         }
       ],
       "status": "enriched",
@@ -518,6 +447,6 @@
     "whatsapp": "5491154125271",
     "vendedores": []
   },
-  "lastSync": "2026-04-17T00:53:58.896431+00:00",
+  "lastSync": "2026-04-17T01:13:53.584261+00:00",
   "lastPriceCheck": null
 }
