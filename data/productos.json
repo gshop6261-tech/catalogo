@@ -126,29 +126,36 @@
       "cat": "Smart TV",
       "calcSub": "grande",
       "name": "Smart TV JVC 43KM358 43\" Full HD Google TV - Negro",
-      "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "sub": "Smart TV JVC 43KM358 43\" Full HD Google TV - Preto",
+      "desc": "Imagen clara y experiencia inteligente en 43\\\". La Smart TV JVC 43KM358 brinda resolución Full HD con buen nivel de detalle, colores equilibrados y contraste definido para películas y juegos. El sistema Google TV organiza apps y recomienda contenidos según tus preferencias, con navegación fluida. In",
+      "img": "images/productos/8/main.jpg",
+      "images": [
+        "images/productos/8/main.jpg",
+        "images/productos/8/2.jpg",
+        "images/productos/8/3.jpg",
+        "images/productos/8/4.jpg",
+        "images/productos/8/5.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 179.0,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 223.75,
       "activo": true,
       "fechaAlta": "2026-04-16",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/tv-led-43-jvc-43km358-full-hdsmartgoogle-tvbluetoothhdmi/1329353",
-          "price": null,
+          "price": 179.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T00:46:01.204368+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -156,29 +163,33 @@
       "cat": "Smart TV",
       "calcSub": "grande",
       "name": "Smart TV JVC 40N5165U 40\" Full HD WhaleTV WiFi - Negro",
-      "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "sub": "Smart TV JVC 40N5165U 40\" Full HD WhaleTV WiFi - Preto",
+      "desc": "La TV JVC 40\\\" LT-40N5165U ofrece el equilibrio perfecto entre tamaño y rendimiento, presentando una resolución Full HD que garantiza imágenes claras y detalladas. Equipada con el sistema Whale OS, proporciona una interfaz intuitiva para acceder rápidamente a aplicaciones esenciales de streaming. Co",
+      "img": "images/productos/9/main.jpg",
+      "images": [
+        "images/productos/9/main.jpg",
+        "images/productos/9/2.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 145.0,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 181.25,
       "activo": true,
       "fechaAlta": "2026-04-16",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/smart-tv-jvc-40n5165u-40-full-hd-whaletv-wifi-preto/1347821",
-          "price": null,
+          "price": 145.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T00:46:07.618238+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -186,29 +197,37 @@
       "cat": "Celulares",
       "calcSub": "slim",
       "name": "Smartphone Samsung Galaxy A14 SM-A145P 128GB 4GB RAM Dual SIM Pantalla 6.6\" - Negro (Caja Slim)",
-      "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "sub": "Smartphone Samsung Galaxy A14 SM-A145P 128GB 4GB RAM Dual SIM Tela 6.6\" - Preto (Caixa Slim)",
+      "desc": "El celular Samsung Galaxy A14 ofrece batería de 5000 mAh para uso prolongado, junto a pantalla FHD+ LCD PLS de 6,6\\\" para visualización cómoda. Equipado con procesador Helio G80, 4 GB de RAM y 128 GB ampliables vía microSD, permite manejo fluido de aplicaciones básicas. Su cámara triple (50 MP + ult",
+      "img": "images/productos/10/main.jpg",
+      "images": [
+        "images/productos/10/main.jpg",
+        "images/productos/10/2.jpg",
+        "images/productos/10/3.webp",
+        "images/productos/10/4.jpg",
+        "images/productos/10/5.jpg",
+        "images/productos/10/6.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 104.0,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 118.32,
       "activo": true,
       "fechaAlta": "2026-04-16",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a14-sm-a145p-128gb-4gb-ram-dual-sim-tela-66-preto-caixa-slim/1233711",
-          "price": null,
+          "price": 104.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T00:46:10.711893+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -428,6 +447,6 @@
     "whatsapp": "5491154125271",
     "vendedores": []
   },
-  "lastSync": "2026-04-17T00:30:28.167Z",
+  "lastSync": "2026-04-17T00:46:16.533999+00:00",
   "lastPriceCheck": null
 }
