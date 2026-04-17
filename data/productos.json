@@ -20,20 +20,25 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "27000",
       "usd": 15.9,
       "weight": null,
       "usdSell": 19.08,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "27000",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-redragon-ares-h120-rgb-p2-adaptador-35mm-preto/1167597",
           "price": 15.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:52.241910+00:00"
+          "lastChecked": "2026-04-17T18:13:55.733641+00:00"
         }
       ],
       "status": "enriched",
@@ -58,20 +63,25 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "28600",
       "usd": 16.9,
       "weight": null,
       "usdSell": 20.28,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "28600",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-redragon-cronus-h211w-rgb-branco/1003987",
           "price": 16.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:52.791284+00:00"
+          "lastChecked": "2026-04-17T18:13:56.978838+00:00"
         }
       ],
       "status": "enriched",
@@ -95,20 +105,25 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "69400",
       "usd": 41,
       "weight": null,
       "usdSell": 49.2,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "69400",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-razer-blackshark-v2-x-rz04-03240100-r3u1-p2-preto/712125",
           "price": 41,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:53.346800+00:00"
+          "lastChecked": "2026-04-17T18:13:58.543772+00:00"
         }
       ],
       "status": "enriched",
@@ -129,20 +144,25 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "67700",
       "usd": 40,
       "weight": null,
       "usdSell": 48,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "67700",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-preto/1354058",
           "price": 40,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:53.826877+00:00"
+          "lastChecked": "2026-04-17T18:13:59.429215+00:00"
         }
       ],
       "status": "enriched",
@@ -167,20 +187,25 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "133700",
       "usd": 79,
       "weight": null,
       "usdSell": 94.8,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "133700",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-flip-7-bluetooth-camuflado/1213874",
           "price": 79,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:54.348922+00:00"
+          "lastChecked": "2026-04-17T18:14:00.192612+00:00"
         }
       ],
       "status": "enriched",
@@ -205,20 +230,25 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "63500",
       "usd": 37.5,
       "weight": null,
       "usdSell": 45,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "63500",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/speaker-jbl-clip-5-black/1080087",
           "price": 37.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:55.017637+00:00"
+          "lastChecked": "2026-04-17T18:14:02.086769+00:00"
         }
       ],
       "status": "enriched",
@@ -243,20 +273,25 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "380700",
       "usd": 225,
       "weight": null,
       "usdSell": 270,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "380700",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/projetores/projetor-xiaomi-wanbo-x5-lcd-1100-lumens-hdmi-azul/1179026",
           "price": 225,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:55.404275+00:00"
+          "lastChecked": "2026-04-17T18:14:03.000208+00:00"
         }
       ],
       "status": "enriched",
@@ -281,20 +316,25 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "470400",
       "usd": 278,
       "weight": null,
       "usdSell": 333.6,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "470400",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-gopro-max-360-chdhz-203-rw-18mp-wifi-preto/1220391",
           "price": 278,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:55.902327+00:00"
+          "lastChecked": "2026-04-17T18:14:04.717539+00:00"
         }
       ],
       "status": "enriched",
@@ -318,20 +358,24 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "126900",
       "usd": 75,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 90,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "126900",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": 75.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:56.438079+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -356,20 +400,25 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "21600",
       "usd": 12.75,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 15.3,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "21600",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/utensilios/dispenser-de-sabonete-automatico-xiaomi-mi-1s-bhr8853gl-branco/1207866",
           "price": 12.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:57.103375+00:00"
+          "lastChecked": "2026-04-17T18:14:06.508883+00:00"
         }
       ],
       "status": "enriched",
@@ -392,20 +441,25 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "37300",
       "usd": 22,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 26.4,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "37300",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/chaleira-eletrica-xiaomi-mi-electric-kettle-2-mjdsh04ym-17l-220v-branco/976893",
           "price": 22,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:57.523255+00:00"
+          "lastChecked": "2026-04-17T18:14:07.368624+00:00"
         }
       ],
       "status": "enriched",
@@ -430,23 +484,58 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "81100",
       "usd": 47.9,
       "weight": null,
       "usdSell": 57.48,
       "activo": true,
       "fechaAlta": "2026-04-17",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "81100",
+          "date": "2026-04-17"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/teclados/kit-gamer-redragon-s143w-teclado-k617rgbw-sp-mouse-m724/1191561",
           "price": 47.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:37:57.919572+00:00"
+          "lastChecked": "2026-04-17T18:14:08.172713+00:00"
         }
       ],
       "status": "enriched",
+      "enrichError": null
+    },
+    {
+      "id": 14,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Fuji Instax 10 Pack Film para Instax Square Sunset",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://www.mobilezone.com.py/product/1122596",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -712,8 +801,11 @@
         "nombre": "Carlos",
         "whatsapp": "5491154870326"
       }
-    ]
+    ],
+    "dollarAuto": 1410,
+    "dollarUpdated": "2026-04-17T21:32:33.245Z",
+    "dollarManual": null
   },
-  "lastSync": "2026-04-17T18:17:00.993Z",
-  "lastPriceCheck": "2026-04-17T18:37:58.408606+00:00"
+  "lastSync": "2026-04-17T21:37:22.536Z",
+  "lastPriceCheck": null
 }
