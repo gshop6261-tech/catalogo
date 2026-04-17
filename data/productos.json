@@ -31,7 +31,7 @@
           "price": 179.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T06:24:37.329260+00:00"
+          "lastChecked": "2026-04-17T11:16:01.457977+00:00"
         }
       ],
       "status": "enriched",
@@ -65,7 +65,7 @@
           "price": 145.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T06:24:37.824661+00:00"
+          "lastChecked": "2026-04-17T11:16:01.833188+00:00"
         }
       ],
       "status": "enriched",
@@ -103,7 +103,7 @@
           "price": 104.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T06:24:38.350160+00:00"
+          "lastChecked": "2026-04-17T11:16:02.472971+00:00"
         }
       ],
       "status": "enriched",
@@ -140,7 +140,7 @@
           "price": 75.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T06:24:38.856444+00:00"
+          "lastChecked": "2026-04-17T11:16:02.880556+00:00"
         }
       ],
       "status": "enriched",
@@ -174,7 +174,7 @@
           "price": 40.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T06:24:39.316068+00:00"
+          "lastChecked": "2026-04-17T11:16:03.509786+00:00"
         }
       ],
       "status": "enriched",
@@ -212,7 +212,7 @@
           "price": 55.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T06:24:39.807181+00:00"
+          "lastChecked": "2026-04-17T11:16:03.963952+00:00"
         }
       ],
       "status": "enriched",
@@ -250,7 +250,7 @@
           "price": 579.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T06:24:40.373520+00:00"
+          "lastChecked": "2026-04-17T11:16:04.378665+00:00"
         }
       ],
       "status": "enriched",
@@ -474,5 +474,5 @@
     "vendedores": []
   },
   "lastSync": "2026-04-17T03:23:44.711822+00:00",
-  "lastPriceCheck": "2026-04-17T06:24:40.868705+00:00"
+  "lastPriceCheck": "2026-04-17T11:16:04.782704+00:00"
 }
