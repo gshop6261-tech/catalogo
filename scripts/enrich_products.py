@@ -15,7 +15,6 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from scrapers.registry import get_scraper
 from utils.images import download_images
 from utils.pricing import average_cost, calculate_sell_price
-from utils.git_ops import git_commit_and_push
 
 
 def load_data() -> dict:
@@ -121,8 +120,7 @@ def main():
     error_count = sum(1 for p in pending if p.get("status") == "error")
     print(f"\nDone: {enriched_count} enriched, {error_count} errors")
 
-    if enriched_count > 0:
-        git_commit_and_push(ROOT, f"bot: enrich {enriched_count} product(s)")
+    # Git commit/push is handled by the GitHub Actions workflow step
 
 
 if __name__ == "__main__":

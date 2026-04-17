@@ -15,7 +15,6 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from scrapers.registry import get_scraper
 from utils.pricing import average_cost, calculate_sell_price
-from utils.git_ops import git_commit_and_push
 
 
 def load_data() -> dict:
@@ -116,8 +115,7 @@ def main():
 
     print(f"\nDone: {changes} product(s) with price changes out of {len(candidates)}")
 
-    if changes > 0:
-        git_commit_and_push(ROOT, f"bot: price update ({changes} product(s))", ["data/"])
+    # Git commit/push is handled by the GitHub Actions workflow step
 
 
 if __name__ == "__main__":
