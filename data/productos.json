@@ -1,327 +1,363 @@
 {
   "products": [
     {
-      "id": 8,
-      "cat": "Smart TV",
-      "calcSub": "grande",
-      "name": "Smart TV JVC 43KM358 43\" Full HD Google TV - Negro",
+      "id": 1,
+      "cat": "Audio",
+      "calcSub": "unico",
+      "name": "Headset Gamer Redragon Ares H120 RGB P2 + Adaptador 3.5mm - Negro",
       "sub": "",
-      "desc": "Imagen clara y experiencia inteligente en 43\\\". La Smart TV JVC 43KM358 brinda resolución Full HD con buen nivel de detalle, colores equilibrados y contraste definido para películas y juegos. El sistema Google TV organiza apps y recomienda contenidos según tus preferencias, con navegación fluida. Incluye puertos HDMI, USB y Wi-Fi integrado para consolas y streaming. Perfecta para sala, dormitorio u oficina en casa, mejorando tu entretenimiento diario.",
-      "img": "images/productos/8/main.jpg",
-      "images": [
-        "images/productos/8/main.jpg",
-        "images/productos/8/2.jpg",
-        "images/productos/8/3.jpg",
-        "images/productos/8/4.jpg",
-        "images/productos/8/5.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 179,
+      "usd": null,
       "weight": null,
-      "usdSell": 223.75,
+      "usdSell": null,
       "activo": true,
-      "fechaAlta": "2026-04-16",
+      "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
-          "url": "https://atacadoconnect.com/produto/geral/tv-led-43-jvc-43km358-full-hdsmartgoogle-tvbluetoothhdmi/1329353",
-          "price": 179,
+          "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-redragon-ares-h120-rgb-p2-adaptador-35mm-preto/1167597",
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T15:41:21.948267+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 2,
+      "cat": "Audio",
+      "calcSub": "unico",
+      "name": "Headset Redragon Cronus H211W-RGB - Blanco",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/headsets/headset-redragon-cronus-h211w-rgb-branco/1003987",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 3,
+      "cat": "Audio",
+      "calcSub": "unico",
+      "name": "Headset Gamer Razer Blackshark V2 X RZ04-03240100-R3U1 P2 - Negro",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-razer-blackshark-v2-x-rz04-03240100-r3u1-p2-preto/712125",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 4,
+      "cat": "Audio",
+      "calcSub": "unico",
+      "name": "Speaker Portátil JBL Go 5 - Negro",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-preto/1354058",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 5,
+      "cat": "Audio",
+      "calcSub": "unico",
+      "name": "Speaker Portátil JBL Flip 7 Bluetooth - Camuflaje",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-flip-7-bluetooth-camuflado/1213874",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 6,
+      "cat": "Audio",
+      "calcSub": "unico",
+      "name": "JBL CLIP 5 BLACK",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/geral/speaker-jbl-clip-5-black/1080087",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 7,
+      "cat": "Smart TV - Proyectores",
+      "calcSub": "chico",
+      "name": "Proyector Xiaomi Wanbo X5 LCD 1100 Lúmenes HDMI - Azul",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/projetores/projetor-xiaomi-wanbo-x5-lcd-1100-lumens-hdmi-azul/1179026",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 8,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Cámara de Acción GoPro Max 360 CHDHZ-203-RW 18MP WiFi - Negro",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-gopro-max-360-chdhz-203-rw-18mp-wifi-preto/1220391",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
       "enrichError": null
     },
     {
       "id": 9,
-      "cat": "Smart TV",
-      "calcSub": "grande",
-      "name": "Smart TV JVC 40N5165U 40\" Full HD WhaleTV WiFi - Negro",
-      "sub": "",
-      "desc": "La TV JVC 40\\\" LT-40N5165U ofrece el equilibrio perfecto entre tamaño y rendimiento, presentando una resolución Full HD que garantiza imágenes claras y detalladas. Equipada con el sistema Whale OS, proporciona una interfaz intuitiva para acceder rápidamente a aplicaciones esenciales de streaming. Con un diferencial de 3 puertos USB y 3 puertos HDMI, este modelo ofrece una conectividad excepcional para todos sus periféricos, manteniendo un diseño elegante y compacto.",
-      "img": "images/productos/9/main.jpg",
-      "images": [
-        "images/productos/9/main.jpg",
-        "images/productos/9/2.jpg"
-      ],
-      "badge": null,
-      "badgeColor": "#25D366",
-      "icon": "📦",
-      "ars": null,
-      "usd": 145,
-      "weight": null,
-      "usdSell": 181.25,
-      "activo": true,
-      "fechaAlta": "2026-04-16",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/smart-tv/smart-tv-jvc-40n5165u-40-full-hd-whaletv-wifi-preto/1347821",
-          "price": 145,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T15:41:22.346991+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null
-    },
-    {
-      "id": 10,
-      "cat": "Celulares",
-      "calcSub": "slim",
-      "name": "Smartphone Samsung Galaxy A14 SM-A145P 128GB 4GB RAM Dual SIM Pantalla 6.6\" - Negro (Caja Slim)",
-      "sub": "",
-      "desc": "El celular Samsung Galaxy A14 ofrece batería de 5000 mAh para uso prolongado, junto a pantalla FHD+ LCD PLS de 6,6\\\" para visualización cómoda. Equipado con procesador Helio G80, 4 GB de RAM y 128 GB ampliables vía microSD, permite manejo fluido de aplicaciones básicas. Su cámara triple (50 MP + ultrawide + macro) y la conexión 4G con dos ranuras SIM lo hacen ideal para el día a día.\\ \\ \\ \\",
-      "img": "images/productos/10/main.jpg",
-      "images": [
-        "images/productos/10/main.jpg",
-        "images/productos/10/2.jpg",
-        "images/productos/10/3.jpg",
-        "images/productos/10/4.jpg",
-        "images/productos/10/5.jpg",
-        "images/productos/10/6.jpg"
-      ],
-      "badge": null,
-      "badgeColor": "#25D366",
-      "icon": "📦",
-      "ars": null,
-      "usd": 104,
-      "weight": null,
-      "usdSell": 118.32,
-      "activo": true,
-      "fechaAlta": "2026-04-16",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a14-sm-a145p-128gb-4gb-ram-dual-sim-tela-66-preto-caixa-slim/1233711",
-          "price": 104,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T15:41:22.747811+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null
-    },
-    {
-      "id": 11,
-      "cat": "Hogar",
-      "calcSub": "unico",
+      "cat": "Hogar y Cocina",
+      "calcSub": "Chico",
       "name": "Máquina de Hielo Smartfy Crystal Ice Supreme MG01W 85W 1.5L 220V - Blanco",
       "sub": "",
-      "desc": "La máquina de hielo Smartfy Crystal Ice Supreme MG01B es perfecta para quienes buscan hielo de calidad de manera rápida y eficiente. Con una potencia de 85W, produce hasta 12 kg de hielo en 24 horas, adecuada para uso doméstico o pequeños eventos. Su depósito de agua tiene una capacidad de 1,5 litros, y la función de autolimpieza facilita el mantenimiento. La cesta removible y el indicador LED ofrecen practicidad en el uso diario. Disponible en color negro y voltaje de 220V.",
-      "img": "images/productos/11/main.jpg",
-      "images": [
-        "images/productos/11/main.jpg",
-        "images/productos/11/2.jpg",
-        "images/productos/11/3.jpg",
-        "images/productos/11/4.jpg",
-        "images/productos/11/5.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 75,
+      "usd": null,
       "weight": null,
-      "usdSell": 93.75,
+      "usdSell": null,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": 75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T15:41:23.075704+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 10,
+      "cat": "Hogar y Cocina",
+      "calcSub": "Chico",
+      "name": "Dispenser de Jabón Automático Xiaomi Mi 1S BHR8853GL - Blanco",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/utensilios/dispenser-de-sabonete-automatico-xiaomi-mi-1s-bhr8853gl-branco/1207866",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
       "enrichError": null
     },
     {
       "id": 12,
-      "cat": "Audio",
-      "calcSub": "unico",
-      "name": "Speaker Portátil JBL Go 5 - Azul",
+      "cat": "Hogar y Cocina",
+      "calcSub": "Chico",
+      "name": "Hervidor Eléctrico Xiaomi Mi Electric Kettle 2 MJDSH04YM 1.7L 220V - Blanco",
       "sub": "",
-      "desc": "El JBL GO 5 Blue es el compañero ultraportátil definitivo para quienes no renuncian a la calidad sonora en cualquier lugar. Esta nueva generación ofrece el sonido JBL Pro con graves sorprendentemente potentes para su tamaño reducido. Totalmente a prueba de agua y polvo con certificación IP67, es perfecto para la playa o la piscina. El gran diferencial de esta versión es la tecnología Auracast, que permite conectar múltiples altavoces JBL compatibles. Su batería mejorada ofrece hasta 7 horas de reproducción, con un adicional de 2 horas mediante el modo Playtime Boost.",
-      "img": "images/productos/12/main.jpg",
-      "images": [
-        "images/productos/12/main.jpg",
-        "images/productos/12/2.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 40,
+      "usd": null,
       "weight": null,
-      "usdSell": 48,
+      "usdSell": null,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
-          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-azul/1354065",
-          "price": 40,
+          "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/chaleira-eletrica-xiaomi-mi-electric-kettle-2-mjdsh04ym-17l-220v-branco/976893",
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T15:41:23.449164+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null
     },
     {
       "id": 13,
-      "cat": "Audio",
+      "cat": "Computación",
       "calcSub": "unico",
-      "name": "Speaker Portátil JBL Grip Bluetooth - Blanco",
+      "name": "Kit Gamer Redragon S143W Teclado K617RGBW SP + Ratón M724",
       "sub": "",
-      "desc": "Potencia sonora que llevás a todas partes. El JBL Grip ofrece sonido JBL Pro con bajos potentes, luz ambiente integrada en la parte trasera y hasta 14 horas de reproducción. Con diseño resistente certificado IP68, soporta agua, polvo y caídas, perfecto para la playa, piscina o salidas al aire libre. Conectalo por Bluetooth, sincronizá dos unidades para estéreo y usá el modo “Playtime Boost” para prolongar la diversión. Compacto, moderno y listo para acompañarte.",
-      "img": "images/productos/13/main.jpg",
-      "images": [
-        "images/productos/13/main.jpg",
-        "images/productos/13/2.jpg",
-        "images/productos/13/3.jpg",
-        "images/productos/13/4.jpg",
-        "images/productos/13/5.jpg",
-        "images/productos/13/6.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 55,
+      "usd": null,
       "weight": null,
-      "usdSell": 66,
+      "usdSell": null,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
-          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-grip-bluetooth-branco/1300642",
-          "price": 55,
+          "url": "https://atacadoconnect.com/produto/teclados/kit-gamer-redragon-s143w-teclado-k617rgbw-sp-mouse-m724/1191561",
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T15:41:23.830695+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
-      "enrichError": null
-    },
-    {
-      "id": 14,
-      "cat": "Hogar",
-      "calcSub": "unico",
-      "name": "Consola Sony PlayStation 5 Slim CFI-2115 4K Edición Digital 825GB SSD",
-      "sub": "",
-      "desc": "La PlayStation 5 Slim es una consola compacta y moderna, con un rápido inicio de juegos y del sistema gracias al SSD. Sumérgete en mundos detallados con gráficos ultrarrealistas y sombreado avanzado gracias a la tecnología Ray Tracing. El controlador Dualsense con retroalimentación háptica y disparadores adaptativos aumenta la inmersión y ofrece un juego fluido y receptivo. Diseño único con disipador térmico mejorado para una experiencia de juego eficiente.",
-      "img": "images/productos/14/main.jpg",
-      "images": [
-        "images/productos/14/main.jpg",
-        "images/productos/14/2.jpg",
-        "images/productos/14/3.jpg",
-        "images/productos/14/4.jpg",
-        "images/productos/14/5.jpg",
-        "images/productos/14/6.jpg"
-      ],
-      "badge": null,
-      "badgeColor": "#25D366",
-      "icon": "📦",
-      "ars": null,
-      "usd": 579,
-      "weight": null,
-      "usdSell": 723.75,
-      "activo": true,
-      "fechaAlta": "2026-04-17",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/playstation/console-sony-playstation-5-slim-cfi-2115-4k-edicao-digital-825gb-ssd/1301458",
-          "price": 579,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T15:41:24.199832+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null
-    },
-    {
-      "id": 15,
-      "cat": "Accesorios",
-      "calcSub": "unico",
-      "name": "MOUSE APPLE MAGIC 2 MRME2ZM/A SPACE/GRAY DESL.ATIVO",
-      "sub": "",
-      "desc": "El Apple Magic Mouse 2 destaca por su diseño elegante y su avanzada tecnología de superficie Multi-Touch. Al eliminar la necesidad de pilas tradicionales, incorpora una batería interna recargable que ofrece una autonomía excepcional y una estructura más ligera y resistente. Su superficie permite realizar gestos sencillos como desplazarse por documentos o deslizarse entre páginas web con total fluidez. Se empareja automáticamente con dispositivos Mac, garantizando una conexión estable y una experiencia de usuario optimizada desde el primer segundo.",
-      "img": "images/productos/15/main.jpg",
-      "images": [
-        "images/productos/15/main.jpg",
-        "images/productos/15/2.jpg"
-      ],
-      "badge": null,
-      "badgeColor": "#25D366",
-      "icon": "📦",
-      "ars": null,
-      "usd": 70,
-      "weight": null,
-      "usdSell": 84,
-      "activo": true,
-      "fechaAlta": "2026-04-17",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/geral/mouse-apple-magic-2-mrme2zma-spacegray-deslativo/1356588",
-          "price": 70,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T15:41:24.511578+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null
-    },
-    {
-      "id": 16,
-      "cat": "Accesorios",
-      "calcSub": "unico",
-      "name": "RELOGIO GARMIN VENU 3S 010-02785-00 GRAY",
-      "sub": "",
-      "desc": "Compre RELOGIO GARMIN VENU 3S 010-02785-00 GRAY no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
-      "img": "images/productos/16/main.jpg",
-      "images": [
-        "images/productos/16/main.jpg",
-        "images/productos/16/2.jpg"
-      ],
-      "badge": null,
-      "badgeColor": "#25D366",
-      "icon": "📦",
-      "ars": null,
-      "usd": 365,
-      "weight": null,
-      "usdSell": 438,
-      "activo": true,
-      "fechaAlta": "2026-04-17",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/geral/relogio-garmin-venu-3s-010-02785-00-gray/1357462",
-          "price": 365,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-17T15:41:24.896748+00:00"
-        }
-      ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -428,7 +464,7 @@
       },
       {
         "id": "smart-tv",
-        "name": "Smart TV",
+        "name": "Smart TV - Proyectores",
         "icon": "📺",
         "subtypes": [
           {
@@ -536,6 +572,52 @@
             "add": 0
           }
         ]
+      },
+      {
+        "id": "fotografia-y-video",
+        "name": "Fotografia y Video",
+        "icon": "📦",
+        "subtypes": [
+          {
+            "id": "Unico",
+            "label": "Unico"
+          }
+        ],
+        "rules": [
+          {
+            "subtype": "Unico",
+            "type": "none",
+            "op": "<=",
+            "val": 0,
+            "margin": 20,
+            "add": 0
+          }
+        ]
+      },
+      {
+        "id": "hogar-y-cocina",
+        "name": "Hogar y Cocina",
+        "icon": "📦",
+        "subtypes": [
+          {
+            "id": "Hogar",
+            "label": "Hogar"
+          },
+          {
+            "id": "Chico",
+            "label": "Chico"
+          }
+        ],
+        "rules": [
+          {
+            "subtype": "Hogar",
+            "type": "none",
+            "op": "<=",
+            "val": 0,
+            "margin": 20,
+            "add": 0
+          }
+        ]
       }
     ],
     "whatsapp": "111111111111",
@@ -547,6 +629,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-17T13:20:39.721Z",
-  "lastPriceCheck": "2026-04-17T15:41:25.792064+00:00"
+  "lastSync": "2026-04-17T18:13:42.396Z",
+  "lastPriceCheck": null
 }
