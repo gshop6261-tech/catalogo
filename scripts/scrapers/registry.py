@@ -5,9 +5,11 @@ from urllib.parse import urlparse
 from .base import BaseScraper
 from .atacado import AtacadoScraper
 from .generic import GenericScraper
+from .mobilezone import MobilezoneScraper
 
 _REGISTRY: list[type[BaseScraper]] = [
     AtacadoScraper,
+    MobilezoneScraper,
 ]
 
 _fallback = GenericScraper()

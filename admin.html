@@ -1649,7 +1649,7 @@ const DEFAULT_SETTINGS = {
 let products = [];
 let banners  = [];
 let settings = {};
-const _dirty = { products:false, banners:false, categories:false, whatsapp:false, vendedores:false };
+const _dirty = { products:false, banners:false, categories:false, whatsapp:false, vendedores:false, dollarManual:false };
 function _resetDirty() { for (const k in _dirty) _dirty[k] = false; }
 let dollar   = null;
 let currentPage = 'dashboard';
@@ -1839,6 +1839,9 @@ async function loadDataFromRepo() {
     if (data.settings.categories)  settings.categories  = data.settings.categories;
     if (data.settings.whatsapp)    settings.whatsapp    = data.settings.whatsapp;
     if (data.settings.vendedores)  settings.vendedores  = data.settings.vendedores;
+    if (data.settings.dollarAuto    != null) settings.dollarAuto    = data.settings.dollarAuto;
+    if (data.settings.dollarUpdated != null) settings.dollarUpdated = data.settings.dollarUpdated;
+    if (data.settings.dollarManual  != null) settings.dollarManual  = data.settings.dollarManual;
   }
   save(LS_SETTINGS, settings);
 
@@ -1851,9 +1854,12 @@ function _buildProductosJSONData() {
     products,
     banners,
     settings: {
-      categories: settings.categories,
-      whatsapp:   settings.whatsapp,
-      vendedores: settings.vendedores || [],
+      categories:    settings.categories,
+      whatsapp:      settings.whatsapp,
+      vendedores:    settings.vendedores || [],
+      dollarAuto:    settings.dollarAuto    ?? null,
+      dollarManual:  settings.dollarManual  ?? null,
+      dollarUpdated: settings.dollarUpdated ?? null,
     },
     lastSync: new Date().toISOString(),
     lastPriceCheck: null,
@@ -1915,9 +1921,12 @@ async function exportToProductosJSON(opts = {}) {
       products: _dirty.products ? local.products : (remoteData && remoteData.products ? remoteData.products : local.products),
       banners:  _dirty.banners  ? local.banners  : (remoteData && remoteData.banners  ? remoteData.banners  : local.banners),
       settings: {
-        categories: _dirty.categories ? local.settings.categories : (rs.categories || local.settings.categories),
-        whatsapp:   _dirty.whatsapp   ? local.settings.whatsapp   : (rs.whatsapp   || local.settings.whatsapp),
-        vendedores: _dirty.vendedores ? local.settings.vendedores : (rs.vendedores || local.settings.vendedores || []),
+        categories:    _dirty.categories ? local.settings.categories : (rs.categories || local.settings.categories),
+        whatsapp:      _dirty.whatsapp   ? local.settings.whatsapp   : (rs.whatsapp   || local.settings.whatsapp),
+        vendedores:    _dirty.vendedores ? local.settings.vendedores : (rs.vendedores || local.settings.vendedores || []),
+        dollarAuto:    rs.dollarAuto    ?? local.settings.dollarAuto    ?? null,
+        dollarUpdated: rs.dollarUpdated ?? local.settings.dollarUpdated ?? null,
+        dollarManual:  _dirty.dollarManual ? local.settings.dollarManual : (rs.dollarManual ?? local.settings.dollarManual ?? null),
       },
       lastSync: local.lastSync,
       lastPriceCheck: local.lastPriceCheck,
@@ -2073,7 +2082,21 @@ async function initApp() {
   navTo('dashboard');
 
   // Fetch dollar
-  fetchDollar(false);
+  await fetchDollar(false);
+
+  // Auto-recalc si hay productos con costo pero sin precio de venta
+  const pendingRecalc = products.some(p => p.usd && !p.usdSell);
+  if (pendingRecalc) {
+    const r = recalcAllPrices({ silent: true });
+    if (r.count) {
+      let msg = `🔄 ${r.count} productos recalculados autom\u00e1ticamente`;
+      if (r.skippedNoRule) msg += ` · ${r.skippedNoRule} sin regla aplicable (ver consola)`;
+      showToast(msg, r.skippedNoRule ? 'error' : 'success');
+      if (r.skippedNoRule && r.noRuleList.length) {
+        console.warn('Productos sin regla aplicable:\n' + r.noRuleList.join('\n'));
+      }
+    }
+  }
 
   // Settings fields
   document.getElementById('settWaNumber').value = settings.whatsapp || '';
@@ -2139,31 +2162,39 @@ function closeSidebar() {
 /* ══════════════════════════════════════
    DOLLAR FETCH
 ══════════════════════════════════════ */
+function _parseDollarUpdated(v) {
+  if (!v) return 0;
+  if (typeof v === 'number') return v;
+  const t = Date.parse(v);
+  return isNaN(t) ? 0 : t;
+}
+
 async function fetchDollar(force) {
-  // Auto rate: 5min cache
-  if (!force && settings.dollarUpdated && (Date.now() - settings.dollarUpdated < 5 * 60 * 1000)) {
+  // Cache 30min: el cron del repo actualiza cada 30min, no hace falta pegarle más seguido
+  const lastUpdate = _parseDollarUpdated(settings.dollarUpdated);
+  if (!force && settings.dollarAuto && lastUpdate && (Date.now() - lastUpdate < 30 * 60 * 1000)) {
     dollar = settings.dollarAuto;
     renderDollarWidgets();
     return;
   }
 
   try {
-    const res = await fetch('https://dolarapi.com/v1/dolares/blue');
+    const res = await fetch('https://dolarapi.com/v1/dolares/blue', { cache: 'no-store' });
     const data = await res.json();
     dollar = data.venta;
   } catch(e) {
     try {
-      const res2 = await fetch('https://api.bluelytics.com.ar/v2/latest');
+      const res2 = await fetch('https://api.bluelytics.com.ar/v2/latest', { cache: 'no-store' });
       const d2 = await res2.json();
       dollar = d2.blue.value_sell;
     } catch(e2) {
-      dollar = settings.dollarManual || null;
+      dollar = settings.dollarAuto || settings.dollarManual || null;
     }
   }
 
   if (dollar) {
     settings.dollarAuto = dollar;
-    settings.dollarUpdated = Date.now();
+    settings.dollarUpdated = new Date().toISOString();
     saveSettings();
   }
 
@@ -2173,8 +2204,9 @@ async function fetchDollar(force) {
 function renderDollarWidgets() {
   const val = dollar || settings.dollarManual || null;
   const fmt = val ? `$ ${Number(val).toLocaleString('es-AR')}` : '$ —';
-  const sub = settings.dollarUpdated
-    ? 'Actualizado ' + new Date(settings.dollarUpdated).toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'})
+  const tsMs = _parseDollarUpdated(settings.dollarUpdated);
+  const sub = tsMs
+    ? 'Actualizado ' + new Date(tsMs).toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'})
     : 'Sin conexión — usar cotización manual';
 
   ['dollarVal','pricesDollarVal'].forEach(id => {
@@ -2192,7 +2224,8 @@ function applyManualDollar() {
   if (!v || v < 1) return showToast('Ingresá un valor válido.', 'error');
   dollar = v;
   settings.dollarManual = v;
-  settings.dollarUpdated = Date.now();
+  settings.dollarUpdated = new Date().toISOString();
+  _dirty.dollarManual = true;
   saveSettings();
   renderDollarWidgets();
   showToast(`✅ Cotización manual: $ ${v.toLocaleString('es-AR')}`);
@@ -2589,17 +2622,17 @@ function getCalculationResult(catName, sub, usdCost, weightArg) {
   if (!settings.categories) return null;
   const u = parseFloat(usdCost);
   const w = parseFloat(weightArg) || 0;
-  if (!u || u <= 0 || !dollar) return null;
-  
+  if (!u || u <= 0) return null;
+
   const c = settings.categories.find(x => x.name === catName);
   if (!c) return null;
-  
+
   const rules = c.rules || [];
-  
-  let matchedRule = rules.find(r => r.subtype === 'unico'); 
+
+  let matchedRule = rules.find(r => r.subtype === 'unico');
   const subtypeTarget = sub || 'unico';
   const typeRules = rules.filter(r => r.subtype === subtypeTarget);
-  
+
   for (let r of typeRules) {
     if (r.type === 'none') { matchedRule = r; break; }
     if (r.type === 'price') {
@@ -2615,17 +2648,16 @@ function getCalculationResult(catName, sub, usdCost, weightArg) {
        if (r.op === '>'  && w > r.val)  { matchedRule = r; break; }
     }
   }
-  
+
   if (!matchedRule) {
-     if (typeRules.length > 0) matchedRule = typeRules[0]; 
+     if (typeRules.length > 0) matchedRule = typeRules[0];
      else return null;
   }
 
   const pct = 1 + (matchedRule.margin / 100);
   const baseUsd = (u * pct) + matchedRule.add;
-  const rawArs = baseUsd * dollar;
-  const ars = Math.ceil(rawArs / 100) * 100;
-  
+  const ars = dollar ? Math.ceil((baseUsd * dollar) / 100) * 100 : null;
+
   return { ars, baseUsd, rule: matchedRule, key: catName + '_' + subtypeTarget };
 }
 
@@ -2851,7 +2883,15 @@ function saveCategory() {
    closeCategoryModal();
    renderCategoriesTable();
    populateCatDropdowns();
-   showToast('✅ Categoría guardada');
+
+   const r = recalcAllPrices({ silent: true });
+   let msg = `✅ Categoría guardada · ${r.count} productos recalculados`;
+   if (r.skippedNoUsd) msg += ` · ${r.skippedNoUsd} sin costo USD`;
+   if (r.skippedNoRule) msg += ` · ${r.skippedNoRule} sin regla aplicable (ver consola)`;
+   showToast(msg, r.skippedNoRule ? 'error' : 'success');
+   if (r.skippedNoRule && r.noRuleList.length) {
+     console.warn('Productos sin regla aplicable:\n' + r.noRuleList.join('\n'));
+   }
 }
 
 
@@ -2927,26 +2967,43 @@ function setConsultar(id) {
   showToast(`↩️ "${p.name}" ahora muestra "Consultar".`);
 }
 
-function recalcAllPrices() {
-  if (!dollar) return showToast('No hay cotización disponible. Actualizá el dólar primero.', 'error');
-  let count = 0;
+function recalcAllPrices(opts = {}) {
+  const silent = !!opts.silent;
+  let count = 0, skippedNoUsd = 0, skippedNoRule = 0;
+  const noRuleList = [];
   products.forEach(p => {
-    if (!p.usd) return;
+    if (!p.usd) { skippedNoUsd++; return; }
     const res = getCalculationResult(p.cat, p.calcSub, p.usd, p.weight);
-    if (res) {
-      if (p.usdSell !== res.baseUsd) { p.usdSell = res.baseUsd; }
+    if (!res) {
+      skippedNoRule++;
+      noRuleList.push(`#${p.id} ${p.name || ''} (${p.cat}/${p.calcSub || 'unico'})`);
+      return;
+    }
+    const roundedSell = Math.round(res.baseUsd * 100) / 100;
+    if (p.usdSell !== roundedSell) p.usdSell = roundedSell;
+    if (res.ars != null) {
       const newArs = String(res.ars);
       if (newArs !== p.ars) {
         if (!p.priceHistory) p.priceHistory = [];
         p.priceHistory.push({ ars: newArs, date: new Date().toISOString().slice(0,10) });
         p.ars = newArs;
-        count++;
       }
     }
+    count++;
   });
   saveProducts();
-  renderPricesTable();
-  showToast(`✅ ${count} precios recalculados con parámetros automáticos a $ ${Number(dollar).toLocaleString('es-AR')}`);
+  if (typeof renderPricesTable === 'function') renderPricesTable();
+  if (silent) return { count, skippedNoUsd, skippedNoRule, noRuleList };
+
+  const dollarLabel = dollar ? `a $ ${Number(dollar).toLocaleString('es-AR')}` : '(sin cotización: solo USD)';
+  let msg = `✅ ${count} productos recalculados ${dollarLabel}`;
+  if (skippedNoUsd) msg += ` · ${skippedNoUsd} sin costo USD`;
+  if (skippedNoRule) msg += ` · ${skippedNoRule} sin regla que los cubra`;
+  showToast(msg, skippedNoRule ? 'error' : 'success');
+  if (skippedNoRule && noRuleList.length) {
+    console.warn('Productos sin regla aplicable:\n' + noRuleList.join('\n'));
+  }
+  return { count, skippedNoUsd, skippedNoRule, noRuleList };
 }
 
 /* ══════════════════════════════════════

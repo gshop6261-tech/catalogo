@@ -1306,9 +1306,6 @@
     <div class="footer-logo">Compra<em>Directa</em></div>
     <div class="footer-tagline">by Global Shop Argentina · Importación directa de tecnología</div>
     <div class="footer-links">
-      <a href="https://wa.me/5491154125271" target="_blank" rel="noopener" class="footer-link">
-        💬 +54 9 11 5412-5271
-      </a>
       <a href="https://wa.me/5491154125271?text=Hola!%20Quiero%20consultar%20el%20cat%C3%A1logo%20%F0%9F%9B%92" target="_blank" rel="noopener" class="footer-link">
         🛒 Consultar por WhatsApp
       </a>
@@ -1520,50 +1517,56 @@ function calcLiveARS(p) {
   return p.ars ? parseInt(p.ars) : null;
 }
 
-async function fetchDollarLive() {
-  const cached = sessionStorage.getItem('_dollarCache');
-  if (cached) {
-    try {
-      const c = JSON.parse(cached);
-      if (Date.now() - c.ts < 5 * 60 * 1000) {
-        _dollarLive = c.rate;
-        return;
-      }
-    } catch(e) {}
+async function fetchDollarLive(settingsData) {
+  const MAX_AGE_MS = 35 * 60 * 1000;
+  if (settingsData && settingsData.dollarAuto && settingsData.dollarUpdated) {
+    const ts = Date.parse(settingsData.dollarUpdated);
+    if (!isNaN(ts) && Date.now() - ts < MAX_AGE_MS) {
+      _dollarLive = parseFloat(settingsData.dollarAuto);
+      return;
+    }
   }
   try {
-    const res = await fetch('https://dolarapi.com/v1/dolares/blue');
+    const res = await fetch('https://dolarapi.com/v1/dolares/blue', { cache: 'no-store' });
     const data = await res.json();
     _dollarLive = data.venta;
   } catch(e) {
     try {
-      const res2 = await fetch('https://api.bluelytics.com.ar/v2/latest');
+      const res2 = await fetch('https://api.bluelytics.com.ar/v2/latest', { cache: 'no-store' });
       const d2 = await res2.json();
       _dollarLive = d2.blue.value_sell;
     } catch(e2) {
-      _dollarLive = null;
+      _dollarLive = settingsData && settingsData.dollarAuto ? parseFloat(settingsData.dollarAuto) : null;
     }
-  }
-  if (_dollarLive) {
-    sessionStorage.setItem('_dollarCache', JSON.stringify({ rate: _dollarLive, ts: Date.now() }));
   }
 }
 
 async function tryLoadProductosJSON() {
   let data = null;
+  const isLocalhost = ['localhost', '127.0.0.1'].includes(location.hostname);
 
   // 1. Intentar fetch desde data/productos.json (fuente de verdad en GitHub Pages)
   try {
-    const res = await fetch('data/productos.json');
+    const res = await fetch('data/productos.json?t=' + Date.now(), { cache: 'no-store' });
     if (res.ok) data = await res.json();
   } catch(e) {}
 
-  // 2. Fallback: localStorage (desarrollo local / offline)
+  // 2. En localhost: si el admin escribi\u00f3 productos en localStorage, usarlos como override
+  //    (sino, al publicar ver\u00edas los cambios reci\u00e9n despu\u00e9s del sync a GitHub)
+  if (isLocalhost && _catalog.products && _catalog.products.length) {
+    if (data) {
+      data.products = _catalog.products;
+    } else {
+      data = { products: _catalog.products, settings: _catalog };
+    }
+  }
+
+  // 3. Fallback final: localStorage (offline)
   if (!data && _catalog.products && _catalog.products.length) {
     data = { products: _catalog.products, settings: _catalog };
   }
 
-  if (!data || !data.products || !data.products.length) return;
+  if (!data || !data.products || !data.products.length) return null;
 
   PRODUCTOS = data.products.filter(p => p.activo && p.status !== 'pending');
 
@@ -1586,6 +1589,8 @@ async function tryLoadProductosJSON() {
       CATS = ['Todos'].concat(cats.map(c => c.name));
     }
   }
+
+  return data.settings || null;
 }
 
 function updateWaLinks() {
@@ -1891,7 +1896,8 @@ function carouselGo(i) {
 
 /* ─── BOOT ───────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', async () => {
-  await Promise.all([fetchDollarLive(), tryLoadProductosJSON()]);
+  const settingsData = await tryLoadProductosJSON();
+  await fetchDollarLive(settingsData);
   updateWaLinks();
   initCats();
   initSearch();
