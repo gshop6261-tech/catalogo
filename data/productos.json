@@ -33,7 +33,7 @@
           "price": 15.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:13:55.733641+00:00"
+          "lastChecked": "2026-04-17T18:37:52.241910+00:00"
         }
       ],
       "status": "enriched",
@@ -71,7 +71,7 @@
           "price": 16.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:13:56.978838+00:00"
+          "lastChecked": "2026-04-17T18:37:52.791284+00:00"
         }
       ],
       "status": "enriched",
@@ -108,7 +108,7 @@
           "price": 41,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:13:58.543772+00:00"
+          "lastChecked": "2026-04-17T18:37:53.346800+00:00"
         }
       ],
       "status": "enriched",
@@ -142,7 +142,7 @@
           "price": 40,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:13:59.429215+00:00"
+          "lastChecked": "2026-04-17T18:37:53.826877+00:00"
         }
       ],
       "status": "enriched",
@@ -180,7 +180,7 @@
           "price": 79,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:14:00.192612+00:00"
+          "lastChecked": "2026-04-17T18:37:54.348922+00:00"
         }
       ],
       "status": "enriched",
@@ -218,7 +218,7 @@
           "price": 37.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:14:02.086769+00:00"
+          "lastChecked": "2026-04-17T18:37:55.017637+00:00"
         }
       ],
       "status": "enriched",
@@ -256,7 +256,7 @@
           "price": 225,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:14:03.000208+00:00"
+          "lastChecked": "2026-04-17T18:37:55.404275+00:00"
         }
       ],
       "status": "enriched",
@@ -294,7 +294,7 @@
           "price": 278,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:14:04.717539+00:00"
+          "lastChecked": "2026-04-17T18:37:55.902327+00:00"
         }
       ],
       "status": "enriched",
@@ -328,9 +328,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": null,
+          "price": 75.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T18:37:56.438079+00:00"
         }
       ],
       "status": "enriched",
@@ -368,7 +369,7 @@
           "price": 12.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:14:06.508883+00:00"
+          "lastChecked": "2026-04-17T18:37:57.103375+00:00"
         }
       ],
       "status": "enriched",
@@ -404,7 +405,7 @@
           "price": 22,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:14:07.368624+00:00"
+          "lastChecked": "2026-04-17T18:37:57.523255+00:00"
         }
       ],
       "status": "enriched",
@@ -442,7 +443,7 @@
           "price": 47.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-17T18:14:08.172713+00:00"
+          "lastChecked": "2026-04-17T18:37:57.919572+00:00"
         }
       ],
       "status": "enriched",
@@ -714,5 +715,5 @@
     ]
   },
   "lastSync": "2026-04-17T18:17:00.993Z",
-  "lastPriceCheck": null
+  "lastPriceCheck": "2026-04-17T18:37:58.408606+00:00"
 }
