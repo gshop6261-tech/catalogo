@@ -19,11 +19,7 @@
           "ars": "1450000",
           "date": "2026-04-01"
         }
-      ],
-      "images": [],
-      "referenceLinks": [],
-      "status": "enriched",
-      "enrichError": null
+      ]
     },
     {
       "id": 2,
@@ -44,11 +40,7 @@
           "ars": "980000",
           "date": "2026-04-05"
         }
-      ],
-      "images": [],
-      "referenceLinks": [],
-      "status": "enriched",
-      "enrichError": null
+      ]
     },
     {
       "id": 3,
@@ -69,11 +61,7 @@
           "ars": "650000",
           "date": "2026-03-20"
         }
-      ],
-      "images": [],
-      "referenceLinks": [],
-      "status": "enriched",
-      "enrichError": null
+      ]
     },
     {
       "id": 4,
@@ -94,11 +82,7 @@
           "ars": "320000",
           "date": "2026-04-01"
         }
-      ],
-      "images": [],
-      "referenceLinks": [],
-      "status": "enriched",
-      "enrichError": null
+      ]
     },
     {
       "id": 5,
@@ -114,11 +98,7 @@
       "usd": 780,
       "activo": true,
       "fechaAlta": "2026-04-10",
-      "priceHistory": [],
-      "images": [],
-      "referenceLinks": [],
-      "status": "enriched",
-      "enrichError": null
+      "priceHistory": []
     },
     {
       "id": 6,
@@ -139,10 +119,96 @@
           "ars": "280000",
           "date": "2026-04-12"
         }
-      ],
+      ]
+    },
+    {
+      "id": 8,
+      "cat": "Smart TV",
+      "calcSub": "grande",
+      "name": "Smart TV JVC 43KM358 43\" Full HD Google TV - Negro",
+      "sub": "",
+      "desc": "",
+      "img": null,
       "images": [],
-      "referenceLinks": [],
-      "status": "enriched",
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-16",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/geral/tv-led-43-jvc-43km358-full-hdsmartgoogle-tvbluetoothhdmi/1329353",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 9,
+      "cat": "Smart TV",
+      "calcSub": "grande",
+      "name": "Smart TV JVC 40N5165U 40\" Full HD WhaleTV WiFi - Negro",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-16",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smart-tv/smart-tv-jvc-40n5165u-40-full-hd-whaletv-wifi-preto/1347821",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 10,
+      "cat": "Celulares",
+      "calcSub": "slim",
+      "name": "Smartphone Samsung Galaxy A14 SM-A145P 128GB 4GB RAM Dual SIM Pantalla 6.6\" - Negro (Caja Slim)",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-16",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a14-sm-a145p-128gb-4gb-ram-dual-sim-tela-66-preto-caixa-slim/1233711",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -359,8 +425,9 @@
         ]
       }
     ],
-    "whatsapp": "5491154125271"
+    "whatsapp": "5491154125271",
+    "vendedores": []
   },
-  "lastSync": "2026-04-16T23:20:23.111Z",
+  "lastSync": "2026-04-17T00:30:28.167Z",
   "lastPriceCheck": null
 }
