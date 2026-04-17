@@ -289,6 +289,36 @@
       ],
       "status": "enriched",
       "enrichError": null
+    },
+    {
+      "id": 16,
+      "cat": "Accesorios",
+      "calcSub": "unico",
+      "name": "RELOGIO GARMIN VENU 3S 010-02785-00 GRAY",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/geral/relogio-garmin-venu-3s-010-02785-00-gray/1357462",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
     }
   ],
   "banners": [
@@ -505,14 +535,8 @@
       }
     ],
     "whatsapp": "5491154125271",
-    "vendedores": [
-      {
-        "id": "1154870326",
-        "nombre": "",
-        "whatsapp": "5491154870326"
-      }
-    ]
+    "vendedores": []
   },
-  "lastSync": "2026-04-17T12:50:51.653Z",
+  "lastSync": "2026-04-17T13:01:26.046Z",
   "lastPriceCheck": null
 }
