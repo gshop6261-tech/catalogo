@@ -262,28 +262,32 @@
       "calcSub": "unico",
       "name": "MOUSE APPLE MAGIC 2 MRME2ZM/A SPACE/GRAY DESL.ATIVO",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El Apple Magic Mouse 2 destaca por su diseño elegante y su avanzada tecnología de superficie Multi-Touch. Al eliminar la necesidad de pilas tradicionales, incorpora una batería interna recargable que ofrece una autonomía excepcional y una estructura más ligera y resistente. Su superficie permite realizar gestos sencillos como desplazarse por documentos o deslizarse entre páginas web con total fluidez. Se empareja automáticamente con dispositivos Mac, garantizando una conexión estable y una experiencia de usuario optimizada desde el primer segundo.",
+      "img": "images/productos/15/main.jpg",
+      "images": [
+        "images/productos/15/main.jpg",
+        "images/productos/15/2.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 70.0,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 84.0,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/mouse-apple-magic-2-mrme2zma-spacegray-deslativo/1356588",
-          "price": null,
+          "price": 70.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T12:38:33.873498+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -503,6 +507,6 @@
     "whatsapp": "5491154125271",
     "vendedores": []
   },
-  "lastSync": "2026-04-17T12:38:20.771Z",
+  "lastSync": "2026-04-17T12:38:34.708236+00:00",
   "lastPriceCheck": null
 }
