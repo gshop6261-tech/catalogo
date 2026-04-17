@@ -514,28 +514,31 @@
       "calcSub": "Unico",
       "name": "Fuji Instax 10 Pack Film para Instax Square Sunset",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "Características:\n• Marca: FUJIFILM\n• Modelo: Square Sunset\n• Cantidad: 10 Pack",
+      "img": "images/productos/14/main.jpg",
+      "images": [
+        "images/productos/14/main.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": null,
+      "usd": 17.0,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 20.4,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://www.mobilezone.com.py/product/1122596",
-          "price": null,
+          "price": 17.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-17T22:22:08.080755+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -806,6 +809,6 @@
     "dollarUpdated": "2026-04-17T21:32:33.245Z",
     "dollarManual": null
   },
-  "lastSync": "2026-04-17T22:21:57.310Z",
+  "lastSync": "2026-04-17T22:22:09.519145+00:00",
   "lastPriceCheck": null
 }
