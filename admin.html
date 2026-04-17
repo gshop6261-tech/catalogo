@@ -1856,13 +1856,15 @@ function _buildProductosJSONData() {
   };
 }
 
-async function exportToProductosJSON() {
+async function exportToProductosJSON(opts = {}) {
+  const silent = opts.silent === true;
   const token  = settings.ghToken;
   const repo   = settings.ghRepo;
   const branch = settings.ghBranch || 'main';
 
-  // Si no hay token/repo configurado → descarga el archivo como antes
+  // Si no hay token/repo configurado
   if (!token || !repo) {
+    if (silent) return false;
     const data = _buildProductosJSONData();
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const a = document.createElement('a');
@@ -1870,11 +1872,11 @@ async function exportToProductosJSON() {
     a.download = 'productos.json';
     a.click();
     showToast('⚠️ Token GitHub no configurado — archivo descargado localmente.');
-    return;
+    return false;
   }
 
   // Con token → commit directo vía GitHub API
-  const btn = document.getElementById('btnSyncGH');
+  const btn = silent ? null : document.getElementById('btnSyncGH');
   if (btn) { btn.disabled = true; btn.textContent = '⏳ Publicando...'; }
 
   try {
@@ -1922,14 +1924,18 @@ async function exportToProductosJSON() {
       throw new Error(err.message || `HTTP ${putResp.status}`);
     }
 
-    if (pending > 0) {
-      showToast(`✅ Publicado en GitHub — ${pending} producto${pending !== 1 ? 's' : ''} en enriquecimiento (~1 min).`);
-    } else {
-      showToast('✅ Catálogo publicado en GitHub.');
+    if (!silent) {
+      if (pending > 0) {
+        showToast(`✅ Publicado en GitHub — ${pending} producto${pending !== 1 ? 's' : ''} en enriquecimiento (~1 min).`);
+      } else {
+        showToast('✅ Catálogo publicado en GitHub.');
+      }
     }
+    return true;
   } catch (e) {
     console.error('GitHub sync error:', e);
-    showToast(`❌ Error al publicar: ${e.message}`, 'error');
+    if (!silent) showToast(`❌ Error al publicar: ${e.message}`, 'error');
+    return false;
   } finally {
     if (btn) { btn.disabled = false; btn.textContent = '🚀 Publicar en GitHub'; }
   }
@@ -1958,7 +1964,12 @@ function renderVendedoresTable() {
     tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-3);font-size:12px;padding:14px">Sin vendedores configurados</td></tr>';
     return;
   }
-  const base = window.location.href.replace('admin.html', 'index.html').split('?')[0];
+  const base = (() => {
+    const u = new URL(window.location.href);
+    u.search = ''; u.hash = '';
+    u.pathname = u.pathname.replace(/\/(admin|admin\.html)\/?$/, '/');
+    return u.origin + u.pathname;
+  })();
   tbody.innerHTML = vendedores.map(v => `
     <tr>
       <td style="font-weight:700;font-size:13px">${v.id}</td>
@@ -1987,7 +1998,12 @@ function addVendedor() {
   document.getElementById('vId').value       = '';
   document.getElementById('vNombre').value   = '';
   document.getElementById('vWhatsapp').value = '';
-  showToast('✅ Vendedor agregado. Publicá en GitHub para que tome efecto en el catálogo.');
+  exportToProductosJSON({ silent: true }).then(ok => {
+    showToast(ok
+      ? '✅ Vendedor agregado y publicado en GitHub.'
+      : '⚠️ Vendedor guardado local. Configurá token GitHub para publicar.',
+      ok ? 'success' : 'error');
+  });
 }
 
 function deleteVendedor(id) {
@@ -1995,6 +2011,9 @@ function deleteVendedor(id) {
     settings.vendedores = (settings.vendedores || []).filter(v => v.id !== id);
     saveSettings();
     renderVendedoresTable();
+    exportToProductosJSON({ silent: true }).then(ok => {
+      if (ok) showToast('✅ Vendedor eliminado y publicado en GitHub.');
+    });
   });
 }
 
@@ -3057,7 +3076,12 @@ function saveWaNumber() {
   if (!v || v.length < 10) return showToast('Número inválido. Ingresá solo números.', 'error');
   settings.whatsapp = v;
   saveSettings();
-  showToast(`✅ Número actualizado: ${v}`);
+  exportToProductosJSON({ silent: true }).then(ok => {
+    showToast(ok
+      ? `✅ Número actualizado y publicado: ${v}`
+      : `⚠️ Número guardado local (${v}). Configurá token GitHub para publicar.`,
+      ok ? 'success' : 'error');
+  });
 }
 
 function exportData() {
