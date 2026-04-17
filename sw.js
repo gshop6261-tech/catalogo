@@ -3,7 +3,7 @@
 // Versión: 1.0
 // ============================================
 
-const CACHE_NAME = 'compra-directa-v1.8';
+const CACHE_NAME = 'compra-directa-v2.0';
 const CACHE_ASSETS = [
   './index.html',
   './manifest.json',
@@ -32,22 +32,39 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
-// Fetch: sirve desde cache, fallback a red
+// Fetch: network-first para HTML/JSON, cache-first para assets estáticos
 self.addEventListener('fetch', event => {
-  // Solo manejar GETs
   if (event.request.method !== 'GET') return;
 
-  event.respondWith(
-    caches.match(event.request).then(cached => {
-      if (cached) return cached;
-      return fetch(event.request).then(response => {
-        // Cachea respuestas válidas
-        if (response && response.status === 200 && response.type === 'basic') {
+  const url = new URL(event.request.url);
+  const isPage = event.request.mode === 'navigate'
+    || url.pathname.endsWith('.html')
+    || url.pathname.endsWith('.json');
+
+  if (isPage) {
+    // Network first: siempre intenta traer la última versión
+    event.respondWith(
+      fetch(event.request).then(response => {
+        if (response && response.status === 200) {
           const clone = response.clone();
           caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
         }
         return response;
-      }).catch(() => cached);
-    })
-  );
+      }).catch(() => caches.match(event.request))
+    );
+  } else {
+    // Cache first para fonts, imágenes, etc.
+    event.respondWith(
+      caches.match(event.request).then(cached => {
+        if (cached) return cached;
+        return fetch(event.request).then(response => {
+          if (response && response.status === 200 && response.type === 'basic') {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          }
+          return response;
+        }).catch(() => cached);
+      })
+    );
+  }
 });
