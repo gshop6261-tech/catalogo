@@ -19,7 +19,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 179.0,
+      "usd": 179,
       "weight": null,
       "usdSell": 223.75,
       "activo": true,
@@ -28,7 +28,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/tv-led-43-jvc-43km358-full-hdsmartgoogle-tvbluetoothhdmi/1329353",
-          "price": 179.0,
+          "price": 179,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T11:16:01.457977+00:00"
@@ -53,7 +53,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 145.0,
+      "usd": 145,
       "weight": null,
       "usdSell": 181.25,
       "activo": true,
@@ -62,7 +62,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/smart-tv-jvc-40n5165u-40-full-hd-whaletv-wifi-preto/1347821",
-          "price": 145.0,
+          "price": 145,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T11:16:01.833188+00:00"
@@ -91,7 +91,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 104.0,
+      "usd": 104,
       "weight": null,
       "usdSell": 118.32,
       "activo": true,
@@ -100,7 +100,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a14-sm-a145p-128gb-4gb-ram-dual-sim-tela-66-preto-caixa-slim/1233711",
-          "price": 104.0,
+          "price": 104,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T11:16:02.472971+00:00"
@@ -128,7 +128,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 75.0,
+      "usd": 75,
       "weight": null,
       "usdSell": 93.75,
       "activo": true,
@@ -137,7 +137,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": 75.0,
+          "price": 75,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T11:16:02.880556+00:00"
@@ -162,16 +162,16 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 40.0,
+      "usd": 40,
       "weight": null,
-      "usdSell": 48.0,
+      "usdSell": 48,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-azul/1354065",
-          "price": 40.0,
+          "price": 40,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T11:16:03.509786+00:00"
@@ -200,16 +200,16 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 55.0,
+      "usd": 55,
       "weight": null,
-      "usdSell": 66.0,
+      "usdSell": 66,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-grip-bluetooth-branco/1300642",
-          "price": 55.0,
+          "price": 55,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T11:16:03.963952+00:00"
@@ -238,7 +238,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 579.0,
+      "usd": 579,
       "weight": null,
       "usdSell": 723.75,
       "activo": true,
@@ -247,13 +247,43 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/playstation/console-sony-playstation-5-slim-cfi-2115-4k-edicao-digital-825gb-ssd/1301458",
-          "price": 579.0,
+          "price": 579,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-17T11:16:04.378665+00:00"
         }
       ],
       "status": "enriched",
+      "enrichError": null
+    },
+    {
+      "id": 15,
+      "cat": "Accesorios",
+      "calcSub": "unico",
+      "name": "MOUSE APPLE MAGIC 2 MRME2ZM/A SPACE/GRAY DESL.ATIVO",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-17",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/geral/mouse-apple-magic-2-mrme2zma-spacegray-deslativo/1356588",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -473,6 +503,6 @@
     "whatsapp": "5491154125271",
     "vendedores": []
   },
-  "lastSync": "2026-04-17T03:23:44.711822+00:00",
-  "lastPriceCheck": "2026-04-17T11:16:04.782704+00:00"
+  "lastSync": "2026-04-17T12:38:20.771Z",
+  "lastPriceCheck": null
 }
