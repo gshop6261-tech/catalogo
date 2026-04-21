@@ -533,12 +533,48 @@
       "referenceLinks": [
         {
           "url": "https://www.mobilezone.com.py/product/1122596",
+          "price": 17,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T11:44:45.857660+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null
+    },
+    {
+      "id": 15,
+      "cat": "Accesorios",
+      "calcSub": "unico",
+      "name": "Compresor de Aire Xiaomi Mi Portátil Electric Air 2 Pro MJCQB07PQW - Negro",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "53300",
+      "usd": 31.5,
+      "weight": 0.5,
+      "usdSell": 37.8,
+      "activo": true,
+      "fechaAlta": "2026-04-21",
+      "priceHistory": [
+        {
+          "ars": "53300",
+          "date": "2026-04-21"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-xiaomi-mi-portatil-electric-air-2-pro-mjcqb07pqw-preto/1151114",
           "price": null,
           "currency": "USD",
           "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -809,6 +845,6 @@
     "dollarUpdated": "2026-04-21T10:51:53.928764+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T14:29:48.091Z",
+  "lastSync": "2026-04-21T14:46:03.525Z",
   "lastPriceCheck": null
 }
