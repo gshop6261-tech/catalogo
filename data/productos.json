@@ -938,16 +938,22 @@
       "calcSub": "32 pulgadas",
       "name": "Smart TV JVC 32\" HD Google TV 32KM158 Negro",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "Formato compacto con funciones inteligentes. La Smart TV JVC 32KM158 32\\\" ofrece imagen clara y colores equilibrados para películas y contenido diario. Con Google TV, organiza aplicaciones y recomendaciones en una interfaz fácil de usar. La conexión Wi-Fi permite acceso directo a plataformas de streaming, y sus puertos HDMI y USB facilitan conectar consolas y otros dispositivos. Ideal para dormitorios u espacios reducidos con entretenimiento práctico y completo.",
+      "img": "images/productos/24/main.jpg",
+      "images": [
+        "images/productos/24/main.jpg",
+        "images/productos/24/2.jpg",
+        "images/productos/24/3.jpg",
+        "images/productos/24/4.jpg",
+        "images/productos/24/5.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "213000",
-      "usd": 110,
+      "usd": 120.0,
       "weight": null,
-      "usdSell": 151,
+      "usdSell": 162.0,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -959,12 +965,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/tv-led-32-jvc-32km158-hdsmartgoogle-tvblutetoohhdmi/1329322",
-          "price": null,
+          "price": 120.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T20:29:58.807788+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -973,16 +980,19 @@
       "calcSub": "42/43 pulgadas",
       "name": "Smart TV Xiaomi 43\" 2026 4K Ultra HD L43MB-AFPH Negro",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "La  Xiaomi TV A 43\\\" 2026  ofrece una experiencia visual inmersiva con su pantalla  Full HD  de diseño ultra delgado y sin marcos. Equipada con el sistema  Google TV , centraliza tus aplicaciones y suscripciones de manera inteligente. Su sonido premium con soporte para  Dolby Audio  y  DTS Virtual:X  proporciona una claridad de audio cinematográfica, mientras que el control remoto Bluetooth de 360° permite operar el dispositivo desde cualquier ángulo.",
+      "img": "images/productos/25/main.jpg",
+      "images": [
+        "images/productos/25/main.jpg",
+        "images/productos/25/2.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "335600",
-      "usd": 180,
+      "usd": 185.0,
       "weight": null,
-      "usdSell": 238,
+      "usdSell": 243.5,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -994,12 +1004,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/smart-tv-xiaomi-l43mb-afph-2026-43-4k-ultra-hd-preto/1317572",
-          "price": null,
+          "price": 185.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T20:30:00.368773+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -1008,16 +1019,19 @@
       "calcSub": "unico",
       "name": "Mascarilla Capilar Karseell Maca Power 500ml",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "Tratamiento profundo para cabello seco y dañado. La Karseell Hair Mask trabaja directamente en la fibra capilar, ayudando a recuperar suavidad, brillo y elasticidad desde la primera aplicación. Su fórmula nutritiva aporta hidratación duradera, reduce el frizz y mejora la manejabilidad en el uso diario. Ideal para cuidados semanales, facilita el desenredo y deja el cabello con un aspecto más sano, alineado y nutrido por más tiempo.",
+      "img": "images/productos/26/main.jpg",
+      "images": [
+        "images/productos/26/main.jpg",
+        "images/productos/26/2.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "7700",
-      "usd": 4.5,
+      "usd": 4.75,
       "weight": null,
-      "usdSell": 5.4,
+      "usdSell": 5.7,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1029,12 +1043,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/mascara-capilar-karseell-maca-power-500ml/1314793",
-          "price": null,
+          "price": 4.75,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T20:30:01.433912+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -1043,16 +1058,19 @@
       "calcSub": "unico",
       "name": "Cera Capilar Karseell Maca Hair Style Wax 100g",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "Definición que perdura todo el día. La Karseell Maca Hair Style Wax ofrece fijación fuerte y brillo intenso, permitiendo moldear el cabello con control total. Su fórmula ligera no carga ni deja sensación grasosa, ideal para peinados definidos en cabellos medianos a cortos. Aporta textura y firmeza duradera. Perfecta para estructurar estilos complejos o looks con efecto moldeado.",
+      "img": "images/productos/27/main.jpg",
+      "images": [
+        "images/productos/27/main.jpg",
+        "images/productos/27/2.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "5500",
-      "usd": 3.24,
+      "usd": 3.5,
       "weight": null,
-      "usdSell": 3.89,
+      "usdSell": 4.2,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1064,12 +1082,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/cera-capilar-karseell-maca-hair-style-wax-100g/1286113",
-          "price": null,
+          "price": 3.5,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T20:30:02.344221+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -1370,6 +1389,6 @@
     "dollarUpdated": "2026-04-21T19:54:32.889203+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T20:29:46.271Z",
+  "lastSync": "2026-04-21T20:30:03.411837+00:00",
   "lastPriceCheck": null
 }
