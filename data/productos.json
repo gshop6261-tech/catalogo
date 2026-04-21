@@ -582,6 +582,41 @@
       ],
       "status": "enriched",
       "enrichError": null
+    },
+    {
+      "id": 16,
+      "cat": "Audio",
+      "calcSub": "unico",
+      "name": "Caja de Sonido Redragon Surge GS817 RGB Bluetooth 3.5mm - Negro",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "101600",
+      "usd": 60,
+      "weight": 1.42,
+      "usdSell": 72,
+      "activo": true,
+      "fechaAlta": "2026-04-21",
+      "priceHistory": [
+        {
+          "ars": "101600",
+          "date": "2026-04-21"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/caixa-de-som/caixa-de-som-redragon-surge-gs817-rgb-bluetooth-35mm-preto/1157741",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
     }
   ],
   "banners": [
@@ -851,6 +886,6 @@
     "dollarUpdated": "2026-04-21T10:51:53.928764+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T14:50:35.852Z",
+  "lastSync": "2026-04-21T15:12:16.704Z",
   "lastPriceCheck": null
 }
