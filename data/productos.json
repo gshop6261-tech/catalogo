@@ -373,7 +373,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": 75.0,
+          "price": 75,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-21T11:44:44.163739+00:00"
@@ -524,7 +524,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": null,
-      "usd": 17.0,
+      "usd": 17,
       "weight": null,
       "usdSell": 20.4,
       "activo": true,
@@ -533,10 +533,9 @@
       "referenceLinks": [
         {
           "url": "https://www.mobilezone.com.py/product/1122596",
-          "price": 17.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:45.857660+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -806,10 +805,10 @@
         "whatsapp": "5491154870326"
       }
     ],
-    "dollarAuto": 1410.0,
+    "dollarAuto": 1410,
     "dollarUpdated": "2026-04-21T10:51:53.928764+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-17T22:22:09.519145+00:00",
-  "lastPriceCheck": "2026-04-21T11:44:46.426120+00:00"
+  "lastSync": "2026-04-21T14:29:48.091Z",
+  "lastPriceCheck": null
 }
