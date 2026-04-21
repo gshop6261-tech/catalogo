@@ -566,7 +566,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "53300",
-      "usd": 49.0,
+      "usd": 49,
       "weight": 0.5,
       "usdSell": 58.8,
       "activo": true,
@@ -577,14 +577,14 @@
           "date": "2026-04-21"
         },
         {
-          "usd": 49.0,
+          "usd": 49,
           "date": "2026-04-21"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-xiaomi-mi-portatil-electric-air-2-pro-mjcqb07pqw-preto/1151114",
-          "price": 49.0,
+          "price": 49,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-21T16:19:35.386826+00:00"
@@ -700,7 +700,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "143900",
-      "usd": 89.0,
+      "usd": 89,
       "weight": null,
       "usdSell": 106.8,
       "activo": true,
@@ -711,20 +711,55 @@
           "date": "2026-04-21"
         },
         {
-          "usd": 89.0,
+          "usd": 89,
           "date": "2026-04-21"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-30-aniversario-edicao-limitada-para-ps5-wireless-japao-cinza/1182422",
-          "price": 89.0,
+          "price": 89,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-21T16:19:36.570195+00:00"
         }
       ],
       "status": "enriched",
+      "enrichError": null
+    },
+    {
+      "id": 20,
+      "cat": "Accesorios",
+      "calcSub": "unico",
+      "name": "Control Dualshock para PS4 Wireless PPP Argentina Messi",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "18700",
+      "usd": 11,
+      "weight": null,
+      "usdSell": 13.2,
+      "activo": true,
+      "fechaAlta": "2026-04-21",
+      "priceHistory": [
+        {
+          "ars": "18700",
+          "date": "2026-04-21"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/controles/controle-dualshock-para-ps4-wireless-ppp-argentina-messi/1243864",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -1007,6 +1042,6 @@
     "dollarUpdated": "2026-04-21T15:55:28.493786+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T16:15:09.641Z",
-  "lastPriceCheck": "2026-04-21T16:19:37.060250+00:00"
+  "lastSync": "2026-04-21T18:05:46.398Z",
+  "lastPriceCheck": null
 }
