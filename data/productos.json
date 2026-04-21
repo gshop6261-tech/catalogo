@@ -858,10 +858,10 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
+      "ars": "197400",
       "usd": 100,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 140,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -876,6 +876,10 @@
         {
           "ars": "183300",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "197400",
+          "date": "2026-04-21"
         }
       ],
       "referenceLinks": [],
@@ -888,36 +892,33 @@
       "calcSub": "32 pulgadas",
       "name": "TV Smart Xiaomi A Series L32M8-P2PH 32\" HD Google TV Negro",
       "sub": "",
-      "desc": "Imagen de calidad y tecnología inteligente para tu entretenimiento. El Smart TV Xiaomi Serie A de 32\\\" cuenta con un panel LED HD y Google TV, ofreciendo fácil acceso a una variedad de contenidos. Su procesador Quad A55 garantiza fluidez, mientras que el amplio ángulo de visión de 178° mantiene la calidad de la imagen desde cualquier posición. Con conexiones HDMI, USB, Ethernet y entrada de audio, es la opción ideal para una experiencia conectada.",
-      "img": "images/productos/23/main.jpg",
-      "images": [
-        "images/productos/23/main.jpg",
-        "images/productos/23/2.jpg",
-        "images/productos/23/3.jpg",
-        "images/productos/23/4.jpg",
-        "images/productos/23/5.jpg",
-        "images/productos/23/6.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": null,
-      "usd": 117.0,
+      "ars": "228500",
+      "usd": 120,
       "weight": null,
-      "usdSell": null,
+      "usdSell": 162,
       "activo": true,
       "fechaAlta": "2026-04-21",
-      "priceHistory": [],
+      "priceHistory": [
+        {
+          "ars": "228500",
+          "date": "2026-04-21"
+        }
+      ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/tv-smart-xiaomi-a-series-l32m8-p2ph-32-hd-google-tv-preto/1181081",
-          "price": 117.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T19:45:47.337049+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -1038,8 +1039,9 @@
         ],
         "rules": [
           {
-            "subtype": "chico",
+            "subtype": "32 pulgadas",
             "type": "none",
+            "op": "<=",
             "val": 0,
             "margin": 10,
             "add": 30
@@ -1047,6 +1049,7 @@
           {
             "subtype": "42/43 pulgadas",
             "type": "none",
+            "op": "<=",
             "val": 0,
             "margin": 10,
             "add": 40
@@ -1200,6 +1203,6 @@
     "dollarUpdated": "2026-04-21T15:55:28.493786+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T19:45:48.696430+00:00",
+  "lastSync": "2026-04-21T19:48:07.300Z",
   "lastPriceCheck": null
 }
