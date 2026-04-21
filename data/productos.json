@@ -641,16 +641,24 @@
       "calcSub": "unico",
       "name": "Control Joystick Sony Dualsense Wireless para PS5 Rojo",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El controlador Sony DualSense redefine la experiencia de juego con tecnologías inmersivas y un diseño innovador. Equipado con retroalimentación háptica y disparadores adaptativos, ofrece retroalimentación receptiva que eleva la interacción en cada partido. Tiene una entrada de micrófono incorporada para auriculares, lo que permite una comunicación práctica durante el juego. Su diseño moderno con distribución ergonómica proporciona comodidad incluso durante largas sesiones.",
+      "img": "images/productos/17/main.jpg",
+      "images": [
+        "images/productos/17/main.jpg",
+        "images/productos/17/2.jpg",
+        "images/productos/17/3.jpg",
+        "images/productos/17/4.jpg",
+        "images/productos/17/5.jpg",
+        "images/productos/17/6.jpg",
+        "images/productos/17/7.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "101600",
-      "usd": 60,
+      "usd": 60.0,
       "weight": null,
-      "usdSell": 72,
+      "usdSell": 72.0,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -662,12 +670,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-wireless-para-ps5-vermelho/777018",
-          "price": null,
+          "price": 60.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T15:57:42.480078+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -950,6 +959,6 @@
     "dollarUpdated": "2026-04-21T15:55:28.493786+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T15:57:31.259Z",
+  "lastSync": "2026-04-21T15:57:43.611100+00:00",
   "lastPriceCheck": null
 }
