@@ -38,7 +38,7 @@
           "price": 15.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:19.393427+00:00"
+          "lastChecked": "2026-04-21T11:44:40.555980+00:00"
         }
       ],
       "status": "enriched",
@@ -81,7 +81,7 @@
           "price": 16.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:19.779993+00:00"
+          "lastChecked": "2026-04-21T11:44:41.008225+00:00"
         }
       ],
       "status": "enriched",
@@ -123,7 +123,7 @@
           "price": 41,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:20.111483+00:00"
+          "lastChecked": "2026-04-21T11:44:41.561978+00:00"
         }
       ],
       "status": "enriched",
@@ -162,7 +162,7 @@
           "price": 40,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:20.503987+00:00"
+          "lastChecked": "2026-04-21T11:44:42.072722+00:00"
         }
       ],
       "status": "enriched",
@@ -205,7 +205,7 @@
           "price": 79,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:20.882833+00:00"
+          "lastChecked": "2026-04-21T11:44:42.467094+00:00"
         }
       ],
       "status": "enriched",
@@ -248,7 +248,7 @@
           "price": 37.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:21.272296+00:00"
+          "lastChecked": "2026-04-21T11:44:42.861703+00:00"
         }
       ],
       "status": "enriched",
@@ -291,7 +291,7 @@
           "price": 225,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:21.653109+00:00"
+          "lastChecked": "2026-04-21T11:44:43.228739+00:00"
         }
       ],
       "status": "enriched",
@@ -334,7 +334,7 @@
           "price": 278,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:21.965598+00:00"
+          "lastChecked": "2026-04-21T11:44:43.728903+00:00"
         }
       ],
       "status": "enriched",
@@ -376,7 +376,7 @@
           "price": 75.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:22.318459+00:00"
+          "lastChecked": "2026-04-21T11:44:44.163739+00:00"
         }
       ],
       "status": "enriched",
@@ -419,7 +419,7 @@
           "price": 12.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:22.608554+00:00"
+          "lastChecked": "2026-04-21T11:44:44.596366+00:00"
         }
       ],
       "status": "enriched",
@@ -460,7 +460,7 @@
           "price": 22,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:22.897020+00:00"
+          "lastChecked": "2026-04-21T11:44:44.968388+00:00"
         }
       ],
       "status": "enriched",
@@ -503,7 +503,7 @@
           "price": 47.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:23.228954+00:00"
+          "lastChecked": "2026-04-21T11:44:45.482749+00:00"
         }
       ],
       "status": "enriched",
@@ -536,7 +536,7 @@
           "price": 17.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T06:24:23.518545+00:00"
+          "lastChecked": "2026-04-21T11:44:45.857660+00:00"
         }
       ],
       "status": "enriched",
@@ -811,5 +811,5 @@
     "dollarManual": null
   },
   "lastSync": "2026-04-17T22:22:09.519145+00:00",
-  "lastPriceCheck": "2026-04-21T06:24:23.937502+00:00"
+  "lastPriceCheck": "2026-04-21T11:44:46.426120+00:00"
 }
