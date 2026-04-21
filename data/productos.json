@@ -695,9 +695,9 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "143900",
-      "usd": 89.0,
+      "usd": 85,
       "weight": null,
-      "usdSell": 106.8,
+      "usdSell": 102,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -709,10 +709,9 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-30-aniversario-edicao-limitada-para-ps5-wireless-japao-cinza/1182422",
-          "price": 89.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T16:10:54.167912+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -998,6 +997,6 @@
     "dollarUpdated": "2026-04-21T15:55:28.493786+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T16:10:55.808021+00:00",
+  "lastSync": "2026-04-21T16:15:09.641Z",
   "lastPriceCheck": null
 }
