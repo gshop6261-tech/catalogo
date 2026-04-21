@@ -273,16 +273,24 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "380700",
+      "ars": "359600",
       "usd": 225,
       "weight": null,
-      "usdSell": 270,
+      "usdSell": 255,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
         {
           "ars": "380700",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "391300",
+          "date": "2026-04-21"
+        },
+        {
+          "ars": "359600",
+          "date": "2026-04-21"
         }
       ],
       "referenceLinks": [
@@ -565,7 +573,7 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "53300",
+      "ars": "83000",
       "usd": 49,
       "weight": 0.5,
       "usdSell": 58.8,
@@ -578,6 +586,10 @@
         },
         {
           "usd": 49,
+          "date": "2026-04-21"
+        },
+        {
+          "ars": "83000",
           "date": "2026-04-21"
         }
       ],
@@ -656,15 +668,19 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "105800",
+      "ars": "110900",
       "usd": 62.9,
       "weight": null,
-      "usdSell": 78.62,
+      "usdSell": 78.63,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
         {
           "ars": "105800",
+          "date": "2026-04-21"
+        },
+        {
+          "ars": "110900",
           "date": "2026-04-21"
         }
       ],
@@ -699,7 +715,7 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "143900",
+      "ars": "150600",
       "usd": 89,
       "weight": null,
       "usdSell": 106.8,
@@ -712,6 +728,10 @@
         },
         {
           "usd": 89,
+          "date": "2026-04-21"
+        },
+        {
+          "ars": "150600",
           "date": "2026-04-21"
         }
       ],
@@ -744,7 +764,7 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "18700",
+      "ars": "19900",
       "usd": 11.75,
       "weight": null,
       "usdSell": 14.1,
@@ -753,6 +773,10 @@
       "priceHistory": [
         {
           "ars": "18700",
+          "date": "2026-04-21"
+        },
+        {
+          "ars": "19900",
           "date": "2026-04-21"
         }
       ],
@@ -765,6 +789,81 @@
           "lastChecked": "2026-04-21T18:06:01.715250+00:00"
         }
       ],
+      "status": "enriched",
+      "enrichError": null
+    },
+    {
+      "id": 21,
+      "cat": "Accesorios",
+      "calcSub": "unico",
+      "name": "Control Microsoft EP2-29922/21 Inalámbrico para Xbox Series",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "79600",
+      "usd": 47,
+      "weight": null,
+      "usdSell": 56.4,
+      "activo": true,
+      "fechaAlta": "2026-04-21",
+      "priceHistory": [
+        {
+          "ars": "79600",
+          "date": "2026-04-21"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/controles/controle-microsoft-ep2-2992221-sem-fio-para-xbox-series/1314076",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
+    },
+    {
+      "id": 22,
+      "cat": "Smart TV - Proyectores",
+      "calcSub": "32 pulgadas",
+      "name": "TV JVC 32\" LT-32N3165U FHD/SMART/3HDMI/2USB/WHALE TV",
+      "sub": "",
+      "desc": "El JVC LT-32N3165U es un televisor inteligente de 32 pulgadas con pantalla LED Full HD, ideal para espacios pequeños que buscan calidad de imagen y funciones avanzadas.\n\nModelo: LT-32N3165U\n• Pantalla: LED 32\"\n• SO: Whale\n• Tecnología: SMART TV\n• Resolución: 1360 x 720 HD (soporta FHD)\n• Contraste: 3000:1\n• Brillo: 180 cd/m2\n• TV digital: Si\n• Almacenamiento: 8GB\n• Memoria Ram: 1GB\n• Audio: 02 x Altavoces de 10W\nConexiones\n• RJ45\n• Salida de audio óptico\n• Puertos AV (audio y video)\n• 2 x Puertos USB 2.0\n• 3 x Puertos HDMI\n• Salida de auricular\n• Bluetooth\n• Coaxial",
+      "img": "https://firebasestorage.googleapis.com/v0/b/eccomerce-jmcomputer.firebasestorage.app/o/products%2F28fe9de7-99b1-416d-b175-64b294b235cb_image.png?alt=media&token=741afbe4-a44c-4722-8db1-b915d858d1e1",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/eccomerce-jmcomputer.firebasestorage.app/o/products%2F28fe9de7-99b1-416d-b175-64b294b235cb_image.png?alt=media&token=741afbe4-a44c-4722-8db1-b915d858d1e1",
+        "https://firebasestorage.googleapis.com/v0/b/eccomerce-jmcomputer.firebasestorage.app/o/products%2Ff78436c8-2c28-4bc8-b775-b55dec2e1107_image.png?alt=media&token=633d9190-dbfe-469f-b5c1-0b06bf563ef7",
+        "https://firebasestorage.googleapis.com/v0/b/eccomerce-jmcomputer.firebasestorage.app/o/products%2F5041deaf-8462-4923-ab09-4c86c871f119_image.png?alt=media&token=9ab011a0-6b85-4062-b42d-21a133fb93d6"
+      ],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "183300",
+      "usd": 100,
+      "weight": null,
+      "usdSell": 143,
+      "activo": true,
+      "fechaAlta": "2026-04-21",
+      "priceHistory": [
+        {
+          "ars": "169200",
+          "date": "2026-04-21"
+        },
+        {
+          "ars": "197400",
+          "date": "2026-04-21"
+        },
+        {
+          "ars": "183300",
+          "date": "2026-04-21"
+        }
+      ],
+      "referenceLinks": [],
       "status": "enriched",
       "enrichError": null
     }
@@ -876,12 +975,12 @@
         "icon": "📺",
         "subtypes": [
           {
-            "id": "chico",
-            "label": "Chico"
+            "id": "32 pulgadas",
+            "label": "32 pulgadas"
           },
           {
-            "id": "grande",
-            "label": "Grande"
+            "id": "42/43 pulgadas",
+            "label": "42/43 pulgadas"
           }
         ],
         "rules": [
@@ -889,15 +988,15 @@
             "subtype": "chico",
             "type": "none",
             "val": 0,
-            "margin": 20,
-            "add": 0
+            "margin": 0,
+            "add": 30
           },
           {
-            "subtype": "grande",
+            "subtype": "42/43 pulgadas",
             "type": "none",
             "val": 0,
-            "margin": 25,
-            "add": 0
+            "margin": 0,
+            "add": 40
           }
         ]
       },
@@ -1048,6 +1147,6 @@
     "dollarUpdated": "2026-04-21T15:55:28.493786+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T18:06:03.477214+00:00",
+  "lastSync": "2026-04-21T19:17:37.266Z",
   "lastPriceCheck": null
 }
