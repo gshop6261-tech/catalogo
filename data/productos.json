@@ -905,7 +905,7 @@
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "228500",
+      "ars": "223800",
       "usd": 117,
       "weight": null,
       "usdSell": 158.7,
@@ -914,6 +914,10 @@
       "priceHistory": [
         {
           "ars": "228500",
+          "date": "2026-04-21"
+        },
+        {
+          "ars": "223800",
           "date": "2026-04-21"
         }
       ],
@@ -934,22 +938,16 @@
       "calcSub": "32 pulgadas",
       "name": "Smart TV JVC 32\" HD Google TV 32KM158 Negro",
       "sub": "",
-      "desc": "Formato compacto con funciones inteligentes. La Smart TV JVC 32KM158 32\\\" ofrece imagen clara y colores equilibrados para películas y contenido diario. Con Google TV, organiza aplicaciones y recomendaciones en una interfaz fácil de usar. La conexión Wi-Fi permite acceso directo a plataformas de streaming, y sus puertos HDMI y USB facilitan conectar consolas y otros dispositivos. Ideal para dormitorios u espacios reducidos con entretenimiento práctico y completo.",
-      "img": "images/productos/24/main.jpg",
-      "images": [
-        "images/productos/24/main.jpg",
-        "images/productos/24/2.jpg",
-        "images/productos/24/3.jpg",
-        "images/productos/24/4.jpg",
-        "images/productos/24/5.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "213000",
-      "usd": 120.0,
+      "usd": 110,
       "weight": null,
-      "usdSell": 162.0,
+      "usdSell": 151,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -961,13 +959,12 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/tv-led-32-jvc-32km158-hdsmartgoogle-tvblutetoohhdmi/1329322",
-          "price": 120.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T20:19:10.498664+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null
     },
     {
@@ -976,19 +973,16 @@
       "calcSub": "42/43 pulgadas",
       "name": "Smart TV Xiaomi 43\" 2026 4K Ultra HD L43MB-AFPH Negro",
       "sub": "",
-      "desc": "La  Xiaomi TV A 43\\\" 2026  ofrece una experiencia visual inmersiva con su pantalla  Full HD  de diseño ultra delgado y sin marcos. Equipada con el sistema  Google TV , centraliza tus aplicaciones y suscripciones de manera inteligente. Su sonido premium con soporte para  Dolby Audio  y  DTS Virtual:X  proporciona una claridad de audio cinematográfica, mientras que el control remoto Bluetooth de 360° permite operar el dispositivo desde cualquier ángulo.",
-      "img": "images/productos/25/main.jpg",
-      "images": [
-        "images/productos/25/main.jpg",
-        "images/productos/25/2.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "335600",
-      "usd": 185.0,
+      "usd": 180,
       "weight": null,
-      "usdSell": 243.5,
+      "usdSell": 238,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1000,13 +994,12 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/smart-tv-xiaomi-l43mb-afph-2026-43-4k-ultra-hd-preto/1317572",
-          "price": 185.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T20:19:11.741031+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -1277,6 +1270,22 @@
             "add": 0
           }
         ]
+      },
+      {
+        "id": "belleza",
+        "name": "Belleza",
+        "icon": "📦",
+        "subtypes": [],
+        "rules": [
+          {
+            "subtype": "unico",
+            "type": "none",
+            "op": "<=",
+            "val": 0,
+            "margin": 20,
+            "add": 0
+          }
+        ]
       }
     ],
     "whatsapp": "111111111111",
@@ -1291,6 +1300,6 @@
     "dollarUpdated": "2026-04-21T19:54:32.889203+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T20:19:12.565967+00:00",
+  "lastSync": "2026-04-21T20:24:40.291Z",
   "lastPriceCheck": null
 }
