@@ -881,6 +881,36 @@
       "referenceLinks": [],
       "status": "enriched",
       "enrichError": null
+    },
+    {
+      "id": 23,
+      "cat": "Smart TV - Proyectores",
+      "calcSub": "32 pulgadas",
+      "name": "TV Smart Xiaomi A Series L32M8-P2PH 32\" HD Google TV Negro",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": null,
+      "usd": 120,
+      "weight": null,
+      "usdSell": null,
+      "activo": true,
+      "fechaAlta": "2026-04-21",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smart-tv/tv-smart-xiaomi-a-series-l32m8-p2ph-32-hd-google-tv-preto/1181081",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
     }
   ],
   "banners": [
@@ -1162,6 +1192,6 @@
     "dollarUpdated": "2026-04-21T15:55:28.493786+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T19:38:36.962Z",
+  "lastSync": "2026-04-21T19:45:35.112Z",
   "lastPriceCheck": null
 }
