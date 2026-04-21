@@ -1140,16 +1140,19 @@
       "calcSub": "Chico",
       "name": "Cafetera Xiaomi Semi-automatic Espresso Machine BHR9798EU 220V - Plata",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "La máquina de espresso semiautomática Xiaomi ofrece practicidad y calidad con una construcción de acero inoxidable y un diseño moderno. Cuenta con una pantalla táctil para un funcionamiento intuitivo y tecnología de preinfusión a baja presión que realza el sabor del café. La varilla de vapor giratoria crea una espuma de leche densa y cremosa. Con opciones de 40 ml y 80 ml, sirve porciones individuales o dobles. Dispone de un calentador de tazas y un depósito de agua extraíble de 0,9 L.",
+      "img": "images/productos/29/main.jpg",
+      "images": [
+        "images/productos/29/main.jpg",
+        "images/productos/29/2.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "128600",
-      "usd": 76,
+      "usd": 86.75,
       "weight": null,
-      "usdSell": 91.2,
+      "usdSell": 104.1,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1161,12 +1164,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/cafeteira-xiaomi-semi-automatic-espresso-machine-bhr9798eu-220v-prata/1197112",
-          "price": null,
+          "price": 86.75,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T22:42:53.247811+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -1467,6 +1471,6 @@
     "dollarUpdated": "2026-04-21T22:11:13.865607+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T22:42:41.809Z",
+  "lastSync": "2026-04-21T22:42:54.718050+00:00",
   "lastPriceCheck": null
 }
