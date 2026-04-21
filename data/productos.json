@@ -906,7 +906,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "228500",
-      "usd": 117.0,
+      "usd": 117,
       "weight": null,
       "usdSell": 158.7,
       "activo": true,
@@ -920,13 +920,48 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/tv-smart-xiaomi-a-series-l32m8-p2ph-32-hd-google-tv-preto/1181081",
-          "price": 117.0,
+          "price": 117,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-21T19:48:18.122497+00:00"
         }
       ],
       "status": "enriched",
+      "enrichError": null
+    },
+    {
+      "id": 24,
+      "cat": "Smart TV - Proyectores",
+      "calcSub": "32 pulgadas",
+      "name": "Smart TV JVC 32KM158 32\" HD Google TV Negro",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "213000",
+      "usd": 110,
+      "weight": null,
+      "usdSell": 151,
+      "activo": true,
+      "fechaAlta": "2026-04-21",
+      "priceHistory": [
+        {
+          "ars": "213000",
+          "date": "2026-04-21"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/geral/tv-led-32-jvc-32km158-hdsmartgoogle-tvblutetoohhdmi/1329322",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -1207,10 +1242,10 @@
         "whatsapp": "5491154870326"
       }
     ],
-    "dollarAuto": 1410.0,
+    "dollarAuto": 1410,
     "dollarUpdated": "2026-04-21T19:54:32.889203+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T19:48:19.308274+00:00",
+  "lastSync": "2026-04-21T19:58:04.264Z",
   "lastPriceCheck": null
 }
