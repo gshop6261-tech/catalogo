@@ -935,16 +935,22 @@
       "calcSub": "32 pulgadas",
       "name": "Smart TV JVC 32KM158 32\" HD Google TV Negro",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "Formato compacto con funciones inteligentes. La Smart TV JVC 32KM158 32\\\" ofrece imagen clara y colores equilibrados para películas y contenido diario. Con Google TV, organiza aplicaciones y recomendaciones en una interfaz fácil de usar. La conexión Wi-Fi permite acceso directo a plataformas de streaming, y sus puertos HDMI y USB facilitan conectar consolas y otros dispositivos. Ideal para dormitorios u espacios reducidos con entretenimiento práctico y completo.",
+      "img": "images/productos/24/main.jpg",
+      "images": [
+        "images/productos/24/main.jpg",
+        "images/productos/24/2.jpg",
+        "images/productos/24/3.jpg",
+        "images/productos/24/4.jpg",
+        "images/productos/24/5.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "213000",
-      "usd": 110,
+      "usd": 120.0,
       "weight": null,
-      "usdSell": 151,
+      "usdSell": 162.0,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -956,12 +962,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/tv-led-32-jvc-32km158-hdsmartgoogle-tvblutetoohhdmi/1329322",
-          "price": null,
+          "price": 120.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T19:58:16.084096+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -1246,6 +1253,6 @@
     "dollarUpdated": "2026-04-21T19:54:32.889203+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T19:58:04.264Z",
+  "lastSync": "2026-04-21T19:58:17.781484+00:00",
   "lastPriceCheck": null
 }
