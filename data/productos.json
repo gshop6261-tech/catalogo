@@ -924,7 +924,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/tv-smart-xiaomi-a-series-l32m8-p2ph-32-hd-google-tv-preto/1181081",
-          "price": 117.0,
+          "price": 117,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-21T22:25:54.334955+00:00"
@@ -1111,7 +1111,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "276800",
-      "usd": 162.0,
+      "usd": 162,
       "weight": null,
       "usdSell": 202.5,
       "activo": true,
@@ -1125,13 +1125,48 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/aspiradores/robo-aspirador-xiaomi-robot-vacuum-s40-bhr084aeu-branco/1251340",
-          "price": 162.0,
+          "price": 162,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-21T22:25:56.640297+00:00"
         }
       ],
       "status": "enriched",
+      "enrichError": null
+    },
+    {
+      "id": 29,
+      "cat": "Hogar y Cocina",
+      "calcSub": "Chico",
+      "name": "Cafetera Xiaomi Semi-automatic Espresso Machine BHR9798EU 220V - Plata",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "128600",
+      "usd": 76,
+      "weight": null,
+      "usdSell": 91.2,
+      "activo": true,
+      "fechaAlta": "2026-04-21",
+      "priceHistory": [
+        {
+          "ars": "128600",
+          "date": "2026-04-21"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/cafeteira-xiaomi-semi-automatic-espresso-machine-bhr9798eu-220v-prata/1197112",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -1432,6 +1467,6 @@
     "dollarUpdated": "2026-04-21T22:11:13.865607+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T22:24:33.855981+00:00",
-  "lastPriceCheck": "2026-04-21T22:25:57.111298+00:00"
+  "lastSync": "2026-04-21T22:42:41.809Z",
+  "lastPriceCheck": null
 }
