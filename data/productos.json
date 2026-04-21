@@ -38,7 +38,7 @@
           "price": 15.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:40.555980+00:00"
+          "lastChecked": "2026-04-21T16:19:30.163804+00:00"
         }
       ],
       "status": "enriched",
@@ -81,7 +81,7 @@
           "price": 16.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:41.008225+00:00"
+          "lastChecked": "2026-04-21T16:19:30.934343+00:00"
         }
       ],
       "status": "enriched",
@@ -123,7 +123,7 @@
           "price": 41,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:41.561978+00:00"
+          "lastChecked": "2026-04-21T16:19:31.387530+00:00"
         }
       ],
       "status": "enriched",
@@ -162,7 +162,7 @@
           "price": 40,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:42.072722+00:00"
+          "lastChecked": "2026-04-21T16:19:31.768844+00:00"
         }
       ],
       "status": "enriched",
@@ -205,7 +205,7 @@
           "price": 79,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:42.467094+00:00"
+          "lastChecked": "2026-04-21T16:19:32.138835+00:00"
         }
       ],
       "status": "enriched",
@@ -248,7 +248,7 @@
           "price": 37.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:42.861703+00:00"
+          "lastChecked": "2026-04-21T16:19:32.591297+00:00"
         }
       ],
       "status": "enriched",
@@ -291,7 +291,7 @@
           "price": 225,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:43.228739+00:00"
+          "lastChecked": "2026-04-21T16:19:32.953224+00:00"
         }
       ],
       "status": "enriched",
@@ -334,7 +334,7 @@
           "price": 278,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:43.728903+00:00"
+          "lastChecked": "2026-04-21T16:19:33.343230+00:00"
         }
       ],
       "status": "enriched",
@@ -376,7 +376,7 @@
           "price": 75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:44.163739+00:00"
+          "lastChecked": "2026-04-21T16:19:33.698195+00:00"
         }
       ],
       "status": "enriched",
@@ -419,7 +419,7 @@
           "price": 12.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:44.596366+00:00"
+          "lastChecked": "2026-04-21T16:19:34.012598+00:00"
         }
       ],
       "status": "enriched",
@@ -460,7 +460,7 @@
           "price": 22,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:44.968388+00:00"
+          "lastChecked": "2026-04-21T16:19:34.401587+00:00"
         }
       ],
       "status": "enriched",
@@ -503,7 +503,7 @@
           "price": 47.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T11:44:45.482749+00:00"
+          "lastChecked": "2026-04-21T16:19:34.734882+00:00"
         }
       ],
       "status": "enriched",
@@ -566,23 +566,28 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "53300",
-      "usd": 31.5,
+      "usd": 49.0,
       "weight": 0.5,
-      "usdSell": 37.8,
+      "usdSell": 58.8,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
         {
           "ars": "53300",
           "date": "2026-04-21"
+        },
+        {
+          "usd": 49.0,
+          "date": "2026-04-21"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-xiaomi-mi-portatil-electric-air-2-pro-mjcqb07pqw-preto/1151114",
-          "price": null,
+          "price": 49.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T16:19:35.386826+00:00"
         }
       ],
       "status": "enriched",
@@ -626,7 +631,7 @@
           "price": 60,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T15:57:42.480078+00:00"
+          "lastChecked": "2026-04-21T16:19:35.693507+00:00"
         }
       ],
       "status": "enriched",
@@ -669,7 +674,7 @@
           "price": 62.9,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-21T16:10:53.206818+00:00"
+          "lastChecked": "2026-04-21T16:19:36.022993+00:00"
         }
       ],
       "status": "enriched",
@@ -695,23 +700,28 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "143900",
-      "usd": 85,
+      "usd": 89.0,
       "weight": null,
-      "usdSell": 102,
+      "usdSell": 106.8,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
         {
           "ars": "143900",
           "date": "2026-04-21"
+        },
+        {
+          "usd": 89.0,
+          "date": "2026-04-21"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-30-aniversario-edicao-limitada-para-ps5-wireless-japao-cinza/1182422",
-          "price": null,
+          "price": 89.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T16:19:36.570195+00:00"
         }
       ],
       "status": "enriched",
@@ -998,5 +1008,5 @@
     "dollarManual": null
   },
   "lastSync": "2026-04-21T16:15:09.641Z",
-  "lastPriceCheck": null
+  "lastPriceCheck": "2026-04-21T16:19:37.060250+00:00"
 }
