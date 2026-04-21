@@ -548,16 +548,22 @@
       "calcSub": "unico",
       "name": "Compresor de Aire Xiaomi Mi Portátil Electric Air 2 Pro MJCQB07PQW - Negro",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El Xiaomi Electric Air Compressor 2 Pro es una solución práctica y eficiente para inflar neumáticos y otros objetos. Con interfaz de carga USB-C, ofrece comodidad y modernidad. Su autonomía permite inflar hasta 2,5 neumáticos aproximadamente con una sola carga, mientras que el tiempo de recarga ronda las 3,5 horas. Equipado con dos baterías de 2000 mAh, proporciona potencia constante y una presión máxima de 150 PSI, ideal para diferentes aplicaciones.",
+      "img": "images/productos/15/main.jpg",
+      "images": [
+        "images/productos/15/main.jpg",
+        "images/productos/15/2.jpg",
+        "images/productos/15/3.jpg",
+        "images/productos/15/4.jpg",
+        "images/productos/15/5.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "53300",
-      "usd": 31.5,
+      "usd": 49.0,
       "weight": 0.5,
-      "usdSell": 37.8,
+      "usdSell": 58.8,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -569,12 +575,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-xiaomi-mi-portatil-electric-air-2-pro-mjcqb07pqw-preto/1151114",
-          "price": null,
+          "price": 49.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T14:46:22.821919+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -845,6 +852,6 @@
     "dollarUpdated": "2026-04-21T10:51:53.928764+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T14:46:03.525Z",
+  "lastSync": "2026-04-21T14:46:23.803964+00:00",
   "lastPriceCheck": null
 }
