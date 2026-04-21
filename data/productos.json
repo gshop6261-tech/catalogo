@@ -798,16 +798,22 @@
       "calcSub": "unico",
       "name": "Control Microsoft EP2-29922/21 Inalámbrico para Xbox Series",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El Xbox Wireless Controller es un control inalámbrico compatible con Xbox Series X, Series S, Xbox One y dispositivos con Windows/Android/iOS, con el diseño moderno del Xbox Wireless Controller en color Robot White. Ofrece conexión Xbox Wireless y Bluetooth, botones texturizados y un pad direccional preciso para comodidad durante largas sesiones de juego, además de un botón Share para capturar y compartir contenido fácilmente.",
+      "img": "images/productos/21/main.jpg",
+      "images": [
+        "images/productos/21/main.jpg",
+        "images/productos/21/2.jpg",
+        "images/productos/21/3.jpg",
+        "images/productos/21/4.jpg",
+        "images/productos/21/5.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "79600",
-      "usd": 47,
+      "usd": 47.5,
       "weight": null,
-      "usdSell": 56.4,
+      "usdSell": 57.0,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -819,12 +825,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-microsoft-ep2-2992221-sem-fio-para-xbox-series/1314076",
-          "price": null,
+          "price": 47.5,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T19:17:51.426292+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     },
     {
@@ -1147,6 +1154,6 @@
     "dollarUpdated": "2026-04-21T15:55:28.493786+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T19:17:37.266Z",
+  "lastSync": "2026-04-21T19:17:52.851867+00:00",
   "lastPriceCheck": null
 }
