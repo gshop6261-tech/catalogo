@@ -733,16 +733,21 @@
       "calcSub": "unico",
       "name": "Control Dualshock para PS4 Wireless PPP Argentina Messi",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El Control PS4 Wireless brinda respuesta rápida y estable sin necesidad de cables. Incluye gatillos analógicos sensibles, vibración inmersiva y panel táctil central para más funciones. Su batería recargable permite largas horas de uso, perfecto para disfrutar con total libertad de movimiento.",
+      "img": "images/productos/20/main.jpg",
+      "images": [
+        "images/productos/20/main.jpg",
+        "images/productos/20/2.jpg",
+        "images/productos/20/3.jpg",
+        "images/productos/20/4.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "18700",
-      "usd": 11,
+      "usd": 11.75,
       "weight": null,
-      "usdSell": 13.2,
+      "usdSell": 14.1,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -754,12 +759,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-dualshock-para-ps4-wireless-ppp-argentina-messi/1243864",
-          "price": null,
+          "price": 11.75,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T18:06:01.715250+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -1042,6 +1048,6 @@
     "dollarUpdated": "2026-04-21T15:55:28.493786+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T18:05:46.398Z",
+  "lastSync": "2026-04-21T18:06:03.477214+00:00",
   "lastPriceCheck": null
 }
