@@ -892,16 +892,23 @@
       "calcSub": "32 pulgadas",
       "name": "TV Smart Xiaomi A Series L32M8-P2PH 32\" HD Google TV Negro",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "Imagen de calidad y tecnología inteligente para tu entretenimiento. El Smart TV Xiaomi Serie A de 32\\\" cuenta con un panel LED HD y Google TV, ofreciendo fácil acceso a una variedad de contenidos. Su procesador Quad A55 garantiza fluidez, mientras que el amplio ángulo de visión de 178° mantiene la calidad de la imagen desde cualquier posición. Con conexiones HDMI, USB, Ethernet y entrada de audio, es la opción ideal para una experiencia conectada.",
+      "img": "images/productos/23/main.jpg",
+      "images": [
+        "images/productos/23/main.jpg",
+        "images/productos/23/2.jpg",
+        "images/productos/23/3.jpg",
+        "images/productos/23/4.jpg",
+        "images/productos/23/5.jpg",
+        "images/productos/23/6.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "228500",
-      "usd": 120,
+      "usd": 117.0,
       "weight": null,
-      "usdSell": 162,
+      "usdSell": 158.7,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -913,12 +920,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/tv-smart-xiaomi-a-series-l32m8-p2ph-32-hd-google-tv-preto/1181081",
-          "price": null,
+          "price": 117.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T19:48:18.122497+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -1203,6 +1211,6 @@
     "dollarUpdated": "2026-04-21T15:55:28.493786+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T19:48:07.300Z",
+  "lastSync": "2026-04-21T19:48:19.308274+00:00",
   "lastPriceCheck": null
 }
