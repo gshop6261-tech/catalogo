@@ -951,9 +951,9 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "213000",
-      "usd": 120.0,
+      "usd": 120,
       "weight": null,
-      "usdSell": 162.0,
+      "usdSell": 162,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -965,7 +965,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/tv-led-32-jvc-32km158-hdsmartgoogle-tvblutetoohhdmi/1329322",
-          "price": 120.0,
+          "price": 120,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-21T20:29:58.807788+00:00"
@@ -990,7 +990,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "335600",
-      "usd": 185.0,
+      "usd": 185,
       "weight": null,
       "usdSell": 243.5,
       "activo": true,
@@ -1004,7 +1004,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/smart-tv-xiaomi-l43mb-afph-2026-43-4k-ultra-hd-preto/1317572",
-          "price": 185.0,
+          "price": 185,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-21T20:30:00.368773+00:00"
@@ -1089,6 +1089,41 @@
         }
       ],
       "status": "enriched",
+      "enrichError": null
+    },
+    {
+      "id": 28,
+      "cat": "Hogar",
+      "calcSub": "unico",
+      "name": "Robot Aspirador Xiaomi Robot Vacuum S40 BHR084AEU Blanco",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "276800",
+      "usd": 157,
+      "weight": null,
+      "usdSell": 196.25,
+      "activo": true,
+      "fechaAlta": "2026-04-21",
+      "priceHistory": [
+        {
+          "ars": "276800",
+          "date": "2026-04-21"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/aspiradores/robo-aspirador-xiaomi-robot-vacuum-s40-bhr084aeu-branco/1251340",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
       "enrichError": null
     }
   ],
@@ -1385,10 +1420,10 @@
         "whatsapp": "5491154870326"
       }
     ],
-    "dollarAuto": 1410.0,
+    "dollarAuto": 1410,
     "dollarUpdated": "2026-04-21T22:11:13.865607+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T20:30:03.411837+00:00",
+  "lastSync": "2026-04-21T22:24:22.317Z",
   "lastPriceCheck": null
 }
