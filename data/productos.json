@@ -634,6 +634,41 @@
       ],
       "status": "enriched",
       "enrichError": null
+    },
+    {
+      "id": 17,
+      "cat": "Accesorios",
+      "calcSub": "unico",
+      "name": "Control Joystick Sony Dualsense Wireless para PS5 Rojo",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "101600",
+      "usd": 60,
+      "weight": null,
+      "usdSell": 72,
+      "activo": true,
+      "fechaAlta": "2026-04-21",
+      "priceHistory": [
+        {
+          "ars": "101600",
+          "date": "2026-04-21"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-wireless-para-ps5-vermelho/777018",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null
     }
   ],
   "banners": [
@@ -911,10 +946,10 @@
         "whatsapp": "5491154870326"
       }
     ],
-    "dollarAuto": 1410.0,
+    "dollarAuto": 1410,
     "dollarUpdated": "2026-04-21T15:55:28.493786+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T15:23:36.524342+00:00",
+  "lastSync": "2026-04-21T15:57:31.259Z",
   "lastPriceCheck": null
 }
