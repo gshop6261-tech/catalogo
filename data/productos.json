@@ -561,9 +561,9 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "53300",
-      "usd": 49.0,
+      "usd": 31.5,
       "weight": 0.5,
-      "usdSell": 58.8,
+      "usdSell": 37.8,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -575,10 +575,9 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-xiaomi-mi-portatil-electric-air-2-pro-mjcqb07pqw-preto/1151114",
-          "price": 49.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T14:46:22.821919+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -852,6 +851,6 @@
     "dollarUpdated": "2026-04-21T10:51:53.928764+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T14:46:23.803964+00:00",
+  "lastSync": "2026-04-21T14:50:35.852Z",
   "lastPriceCheck": null
 }
