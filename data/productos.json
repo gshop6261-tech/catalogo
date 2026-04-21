@@ -594,16 +594,23 @@
       "calcSub": "Grande",
       "name": "Caja de Sonido Redragon Surge GS817 RGB Bluetooth 3.5mm - Negro",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El altavoz Redragon Surge combina potencia y estilo en un diseño moderno. Con conexión inalámbrica Bluetooth 5.3 e interfaz AUX de 3,5 mm, ofrece flexibilidad para diferentes dispositivos. Sus controladores duales de 15 W y 2 diafragmas de graves ofrecen un sonido potente y graves profundos, con un total de 30 W de potencia en un sistema estéreo 2.0. La iluminación RGB añade un toque visual vibrante, lo que la hace ideal para jugadores y amantes de la música.",
+      "img": "images/productos/16/main.jpg",
+      "images": [
+        "images/productos/16/main.jpg",
+        "images/productos/16/2.jpg",
+        "images/productos/16/3.jpg",
+        "images/productos/16/4.jpg",
+        "images/productos/16/5.jpg",
+        "images/productos/16/6.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "105800",
-      "usd": 60,
+      "usd": 62.9,
       "weight": 1.42,
-      "usdSell": 75,
+      "usdSell": 78.62,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -619,12 +626,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixa-de-som/caixa-de-som-redragon-surge-gs817-rgb-bluetooth-35mm-preto/1157741",
-          "price": null,
+          "price": 62.9,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-21T15:23:35.286956+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null
     }
   ],
@@ -907,6 +915,6 @@
     "dollarUpdated": "2026-04-21T10:51:53.928764+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T15:23:18.175Z",
+  "lastSync": "2026-04-21T15:23:36.524342+00:00",
   "lastPriceCheck": null
 }
