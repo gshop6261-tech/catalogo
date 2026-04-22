@@ -96,7 +96,9 @@ def main():
 
     candidates = [
         p for p in products
-        if p.get("status") == "enriched" and p.get("referenceLinks")
+        if p.get("status") == "enriched"
+        and p.get("referenceLinks")
+        and p.get("verifyPrice", True)
     ]
 
     if not candidates:

@@ -56,8 +56,21 @@ def calculate_sell_price(
     if not matched:
         return None
 
-    pct = 1 + (matched["margin"] / 100)
-    return (usd_cost * pct) + matched.get("add", 0)
+    steps = matched.get("steps")
+    if not steps:
+        steps = [
+            {"kind": "percent", "value": matched.get("margin", 0)},
+            {"kind": "usd",     "value": matched.get("add", 0)},
+        ]
+    v = usd_cost
+    for s in steps:
+        kind = s.get("kind")
+        value = s.get("value", 0) or 0
+        if kind == "percent":
+            v = v * (1 + value / 100)
+        elif kind == "usd":
+            v = v + value
+    return v
 
 
 def average_cost(reference_links: list[dict]) -> float | None:

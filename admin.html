@@ -1393,6 +1393,14 @@
           <span class="form-hint">Dejar vacío → mostrará "Consultar"</span>
         </div>
 
+        <div class="form-group form-full" style="margin-top:8px">
+          <label class="form-label" style="display:flex;align-items:center;gap:8px;cursor:pointer">
+            <input type="checkbox" id="pmVerifyPrice" checked>
+            <span>Verificar precio automáticamente</span>
+          </label>
+          <span class="form-hint">Si está tildado, el bot actualiza el costo USD cuando detecta cambios en los links de referencia. Si no, el costo queda congelado.</span>
+        </div>
+
         <div class="form-section form-full">🏷 Badge (etiqueta)</div>
 
         <div class="form-group">
@@ -1597,10 +1605,10 @@ const DEFAULT_CATEGORIES = [
       { id: "gruesa", label: "Caja gruesa (con cargador)" }
     ],
     rules: [
-      { subtype: "slim", type: "price", op: "<=", val: 300, margin: 8, add: 6 },
-      { subtype: "slim", type: "price", op: ">", val: 300, margin: 8, add: 0 },
-      { subtype: "gruesa", type: "price", op: "<=", val: 300, margin: 10, add: 4 },
-      { subtype: "gruesa", type: "price", op: ">", val: 300, margin: 10, add: 0 }
+      { subtype: "slim", type: "price", op: "<=", val: 300, steps: [{kind:"percent", value:8}, {kind:"usd", value:6}] },
+      { subtype: "slim", type: "price", op: ">", val: 300, steps: [{kind:"percent", value:8}, {kind:"usd", value:0}] },
+      { subtype: "gruesa", type: "price", op: "<=", val: 300, steps: [{kind:"percent", value:10}, {kind:"usd", value:4}] },
+      { subtype: "gruesa", type: "price", op: ">", val: 300, steps: [{kind:"percent", value:10}, {kind:"usd", value:0}] }
     ]
   },
   {
@@ -1612,8 +1620,8 @@ const DEFAULT_CATEGORIES = [
       { id: "grande", label: "Grande" }
     ],
     rules: [
-      { subtype: "chico", type: "none", val: 0, margin: 20, add: 0 },
-      { subtype: "grande", type: "none", val: 0, margin: 25, add: 0 }
+      { subtype: "chico", type: "none", val: 0, steps: [{kind:"percent", value:20}, {kind:"usd", value:0}] },
+      { subtype: "grande", type: "none", val: 0, steps: [{kind:"percent", value:25}, {kind:"usd", value:0}] }
     ]
   },
   {
@@ -1621,28 +1629,28 @@ const DEFAULT_CATEGORIES = [
     name: "Audio",
     icon: "🎧",
     subtypes: [{ id: "unico", label: "Único" }],
-    rules: [{ subtype: "unico", type: "none", val: 0, margin: 20, add: 0 }]
+    rules: [{ subtype: "unico", type: "none", val: 0, steps: [{kind:"percent", value:20}, {kind:"usd", value:0}] }]
   },
   {
     id: "computacion",
     name: "Computación",
     icon: "💻",
     subtypes: [{ id: "unico", label: "Único" }],
-    rules: [{ subtype: "unico", type: "none", val: 0, margin: 20, add: 0 }]
+    rules: [{ subtype: "unico", type: "none", val: 0, steps: [{kind:"percent", value:20}, {kind:"usd", value:0}] }]
   },
   {
     id: "accesorios",
     name: "Accesorios",
     icon: "🎒",
     subtypes: [{ id: "unico", label: "Único" }],
-    rules: [{ subtype: "unico", type: "none", val: 0, margin: 20, add: 0 }]
+    rules: [{ subtype: "unico", type: "none", val: 0, steps: [{kind:"percent", value:20}, {kind:"usd", value:0}] }]
   },
   {
     id: "hogar",
     name: "Hogar",
     icon: "🏠",
     subtypes: [{ id: "unico", label: "Único" }],
-    rules: [{ subtype: "unico", type: "none", val: 0, margin: 25, add: 0 }]
+    rules: [{ subtype: "unico", type: "none", val: 0, steps: [{kind:"percent", value:25}, {kind:"usd", value:0}] }]
   }
 ];
 
@@ -1791,6 +1799,7 @@ function loadDataFromLocalStorage() {
     products = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
     save(LS_PRODUCTS, products);
   }
+  products.forEach(p => { if (p.verifyPrice === undefined) p.verifyPrice = true; });
   banners = load(LS_BANNERS, null);
   if (!banners) {
     banners = JSON.parse(JSON.stringify(DEFAULT_BANNERS));
@@ -1836,6 +1845,7 @@ async function loadDataFromRepo() {
   if (!data || !Array.isArray(data.products)) return false;
 
   products = data.products;
+  products.forEach(p => { if (p.verifyPrice === undefined) p.verifyPrice = true; });
   save(LS_PRODUCTS, products);
 
   if (Array.isArray(data.banners)) {
@@ -2462,6 +2472,7 @@ function openProductModal(id) {
     document.getElementById('pmBadgeColor').value = selectedBadgeColor;
     renderBadgeColors();
     document.getElementById('pmCalcHint').textContent = 'Solo visible en el panel.';
+    document.getElementById('pmVerifyPrice').checked = p.verifyPrice !== false;
     // Reference links
     const refs = p.referenceLinks || [];
     document.getElementById('pmRefLink1').value = (refs[0] && refs[0].url) || '';
@@ -2483,6 +2494,7 @@ function openProductModal(id) {
     document.getElementById('pmBadgeColor').value = '#25D366';
     renderBadgeColors();
     document.getElementById('pmCalcHint').textContent = 'Solo visible en el panel.';
+    document.getElementById('pmVerifyPrice').checked = true;
   }
 
   updatePreview();
@@ -2580,6 +2592,7 @@ function saveProduct() {
   const badge = document.getElementById('pmBadge').value.trim() || null;
   const badgeColor = document.getElementById('pmBadgeColor').value || '#25D366';
   const referenceLinks = collectReferenceLinks();
+  const verifyPrice = document.getElementById('pmVerifyPrice').checked;
 
   if (!name) return showToast('El nombre es obligatorio.', 'error');
   if (!cat)  return showToast('Seleccioná una categoría.', 'error');
@@ -2599,6 +2612,7 @@ function saveProduct() {
     p.ars   = ars;  p.usd   = usd;   p.weight = weight; p.usdSell = usdSell; p.badge = badge;
     p.badgeColor = badgeColor;
     p.referenceLinks = referenceLinks;
+    p.verifyPrice = verifyPrice;
     if (hasPrimaryLink && p.status !== 'pending') p.status = p.status || 'enriched';
     // Log price change
     if (ars && ars !== prevArs) {
@@ -2614,6 +2628,7 @@ function saveProduct() {
       ars, usd, weight, usdSell, activo: true, fechaAlta: today,
       priceHistory: ars ? [{ ars, date: today }] : [],
       referenceLinks, status, enrichError: null,
+      verifyPrice,
     };
     products.push(newP);
     showToast(`✅ Producto "${name}" agregado.` + (status === 'pending' ? ' Pendiente de enriquecimiento.' : ''));
@@ -2629,6 +2644,28 @@ function saveProduct() {
 /* ══════════════════════════════════════
    CALCULATION ENGINE
 ══════════════════════════════════════ */
+function ruleSteps(rule) {
+  if (rule.steps && rule.steps.length) return rule.steps;
+  return [
+    { kind: 'percent', value: rule.margin || 0 },
+    { kind: 'usd',     value: rule.add    || 0 }
+  ];
+}
+
+function applySteps(u, rule) {
+  let v = u;
+  for (const s of ruleSteps(rule)) {
+    if (s.kind === 'percent') v = v * (1 + (s.value || 0) / 100);
+    else if (s.kind === 'usd') v = v + (s.value || 0);
+  }
+  return v;
+}
+
+function formatStep(s) {
+  if (s.kind === 'percent') return `+${s.value || 0}%`;
+  return `+U$D ${s.value || 0}`;
+}
+
 function getCalculationResult(catName, sub, usdCost, weightArg) {
   if (!settings.categories) return null;
   const u = parseFloat(usdCost);
@@ -2665,8 +2702,7 @@ function getCalculationResult(catName, sub, usdCost, weightArg) {
      else return null;
   }
 
-  const pct = 1 + (matchedRule.margin / 100);
-  const baseUsd = (u * pct) + matchedRule.add;
+  const baseUsd = applySteps(u, matchedRule);
   const ars = dollar ? Math.ceil((baseUsd * dollar) / 100) * 100 : null;
 
   return { ars, baseUsd, rule: matchedRule, key: catName + '_' + subtypeTarget };
@@ -2706,7 +2742,10 @@ function autoCalcArs() {
   if (res) {
     document.getElementById('pmUsdSell').value = res.baseUsd.toFixed(2);
     document.getElementById('pmArs').value = res.ars;
-    if (hint) hint.innerHTML = `<span style="color:var(--green);font-weight:700">Auto-calculado: +${res.rule.margin}% ganancia y +U$D ${res.rule.add} flete</span>`;
+    if (hint) {
+      const stepsTxt = ruleSteps(res.rule).map(formatStep).join(' ➜ ');
+      hint.innerHTML = `<span style="color:var(--green);font-weight:700">Auto-calculado: ${stepsTxt}</span>`;
+    }
   } else {
     if (hint) hint.textContent = 'Solo visible en el panel. Nunca se muestra al cliente.';
   }
@@ -2745,7 +2784,8 @@ function renderCategoriesTable() {
   tbody.innerHTML = cats.map(c => {
     const rulesSummary = (c.rules || []).map(r => {
        const opText = r.type === 'none' ? 'Siempre' : `${r.type==='price'?'Precio':'Peso'} ${r.op} ${r.val}`;
-       return `[${r.subtype}] ${opText} ➜ +${r.margin}% +$${r.add}`;
+       const stepsTxt = ruleSteps(r).map(formatStep).join(' ➜ ');
+       return `[${r.subtype}] ${opText} ➜ ${stepsTxt}`;
     }).join('<br>');
     const subsSummary = (c.subtypes || []).map(s => s.label).join(', ') || 'Único';
     
@@ -2805,7 +2845,20 @@ function renderCmSubtypes() {
 function renderCmRules() {
    const ls = document.getElementById('cmRulesList');
    const subOpts = window._tempSubtypes.length > 0 ? window._tempSubtypes : [{id:'unico', label:'Único'}];
-   
+
+   // Lazy migration: each rule must have a 2-slot steps array
+   window._tempRules.forEach(r => {
+      if (!r.steps || r.steps.length < 2) {
+         const legacy = r.steps || [];
+         r.steps = [
+            legacy[0] || { kind: 'percent', value: r.margin || 0 },
+            legacy[1] || { kind: 'usd',     value: r.add    || 0 }
+         ];
+         delete r.margin;
+         delete r.add;
+      }
+   });
+
    ls.innerHTML = window._tempRules.map((r, i) => {
       const typeOpts = `
          <option value="none" ${r.type==='none'?'selected':''}>Siempre</option>
@@ -2819,7 +2872,23 @@ function renderCmRules() {
          <option value=">" ${r.op==='>'?'selected':''}>&gt;</option>
       `;
       const sOpts = subOpts.map(so => `<option value="${so.id}" ${r.subtype===so.id?'selected':''}>${so.id}</option>`).join('');
-      
+
+      const stepBlock = (idx, label) => {
+         const s = r.steps[idx];
+         const kindOpts = `
+            <option value="percent" ${s.kind==='percent'?'selected':''}>%</option>
+            <option value="usd" ${s.kind==='usd'?'selected':''}>U$D</option>
+         `;
+         return `
+         <div>
+            <div style="font-size:10px;color:var(--text-3);margin-bottom:2px">${label}</div>
+            <div style="display:flex;gap:4px">
+               <select class="form-select" style="padding:6px;font-size:12px;height:auto;width:65px" onchange="window._tempRules[${i}].steps[${idx}].kind=this.value">${kindOpts}</select>
+               <input type="number" step="0.01" class="form-input" style="padding:6px;font-size:12px;height:auto;width:75px" value="${s.value||0}" onchange="window._tempRules[${i}].steps[${idx}].value=parseFloat(this.value)||0">
+            </div>
+         </div>`;
+      };
+
       return `
       <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--surf-2);padding:10px;border-radius:var(--r-sm);border:1px solid var(--border)">
          <div>
@@ -2836,14 +2905,8 @@ function renderCmRules() {
                ` : ''}
             </div>
          </div>
-         <div>
-            <div style="font-size:10px;color:var(--text-3);margin-bottom:2px">Margen (+%)</div>
-            <input type="number" class="form-input" style="padding:6px;font-size:12px;height:auto;width:70px" value="${r.margin}" onchange="window._tempRules[${i}].margin=parseFloat(this.value)||0">
-         </div>
-         <div>
-            <div style="font-size:10px;color:var(--text-3);margin-bottom:2px">Cargo (+USD)</div>
-            <input type="number" class="form-input" style="padding:6px;font-size:12px;height:auto;width:70px" value="${r.add}" onchange="window._tempRules[${i}].add=parseFloat(this.value)||0">
-         </div>
+         ${stepBlock(0, 'Paso 1')}
+         ${stepBlock(1, 'Paso 2')}
          <button class="btn btn-ghost btn-sm btn-icon text-red" style="margin-top:14px" onclick="window._tempRules.splice(${i},1); renderCmRules();">✕</button>
       </div>`
    }).join('');
@@ -2856,7 +2919,10 @@ function addCategorySubtype() {
 
 function addCategoryRule() {
    const st = window._tempSubtypes.length ? window._tempSubtypes[0].id : 'unico';
-   window._tempRules.push({subtype:st, type:'none', op:'<=', val:0, margin:0, add:0});
+   window._tempRules.push({
+      subtype: st, type: 'none', op: '<=', val: 0,
+      steps: [{kind:'percent', value:0}, {kind:'usd', value:0}]
+   });
    renderCmRules();
 }
 
