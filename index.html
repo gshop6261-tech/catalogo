@@ -128,6 +128,18 @@
     @media (min-width: 600px) { .hero-deco { opacity: .25; right: 30px; bottom: 10px; } }
     @media (min-width: 900px) { .hero-deco { opacity: .32; right: 60px; } }
 
+    /* Modo "imagen de fondo" — usa <img> real en vez de gradiente */
+    .hero-slide.has-image .hero-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      z-index: 0;
+    }
+    .hero-slide.has-image .hero-deco { display: none; }
+
     .hero-content {
       position: relative;
       z-index: 2;
@@ -1036,60 +1048,12 @@
 </head>
 <body>
 
-<!-- ===== HERO CAROUSEL ===== -->
+<!-- ===== HERO CAROUSEL (slides renderizados dinámicamente desde data/productos.json) ===== -->
 <section class="hero" id="hero" aria-label="Banners de productos">
   <button class="hero-arrow prev" id="heroPrev" aria-label="Banner anterior">&#8592;</button>
   <button class="hero-arrow next" id="heroNext" aria-label="Banner siguiente">&#8594;</button>
-
-  <div class="hero-track" id="heroTrack">
-    <!-- Slide 1: Celulares -->
-    <div class="hero-slide" style="background: linear-gradient(135deg,#080e1e 0%,#0d1b3e 60%,#162960 100%)">
-      <span class="hero-deco" aria-hidden="true">📱</span>
-      <div class="hero-content">
-        <span class="hero-tag">✨ Importación directa</span>
-        <h2 class="hero-title">Celulares<br><em>premium</em></h2>
-        <p class="hero-sub">iPhone, Samsung y más.<br>Originales garantizados, precio real.</p>
-        <a href="#catalogo" class="hero-cta" data-filter="Celulares">Ver celulares ↓</a>
-      </div>
-    </div>
-    <!-- Slide 2: Smart TV -->
-    <div class="hero-slide" style="background: linear-gradient(135deg,#080f0a 0%,#0c2212 60%,#103a1a 100%)">
-      <span class="hero-deco" aria-hidden="true">📺</span>
-      <div class="hero-content">
-        <span class="hero-tag">🔥 Los más pedidos</span>
-        <h2 class="hero-title">Smart TV<br><em>4K Ultra HD</em></h2>
-        <p class="hero-sub">Samsung, LG y Hisense.<br>55", 65" y más tamaños disponibles.</p>
-        <a href="#catalogo" class="hero-cta" data-filter="Smart TV">Ver Smart TVs ↓</a>
-      </div>
-    </div>
-    <!-- Slide 3: Audio -->
-    <div class="hero-slide" style="background: linear-gradient(135deg,#130828 0%,#220e45 60%,#31186a 100%)">
-      <span class="hero-deco" aria-hidden="true">🎧</span>
-      <div class="hero-content">
-        <span class="hero-tag">🎵 Audio premium</span>
-        <h2 class="hero-title">Sonido que<br><em>enamora</em></h2>
-        <p class="hero-sub">AirPods, JBL y headphones premium.<br>Para todos los gustos.</p>
-        <a href="#catalogo" class="hero-cta" data-filter="Audio">Ver Audio ↓</a>
-      </div>
-    </div>
-    <!-- Slide 4: General -->
-    <div class="hero-slide" style="background: linear-gradient(135deg,#101010 0%,#1a1a1a 60%,#232323 100%)">
-      <span class="hero-deco" aria-hidden="true">🛒</span>
-      <div class="hero-content">
-        <span class="hero-tag">🇦🇷 Todo Argentina</span>
-        <h2 class="hero-title">Compra<br><em>directo</em></h2>
-        <p class="hero-sub">Envíos AMBA e interior del país.<br>Consulta gratis por WhatsApp.</p>
-        <a href="https://wa.me/5491154125271?text=Hola!%20Quiero%20consultar%20el%20cat%C3%A1logo%20%F0%9F%9B%92" target="_blank" rel="noopener" class="hero-cta">Consultar ahora 💬</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-dots" id="heroDots" role="tablist" aria-label="Slides del carousel">
-    <button class="hero-dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
-    <button class="hero-dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
-    <button class="hero-dot" role="tab" aria-label="Slide 3" aria-selected="false"></button>
-    <button class="hero-dot" role="tab" aria-label="Slide 4" aria-selected="false"></button>
-  </div>
+  <div class="hero-track" id="heroTrack"></div>
+  <div class="hero-dots" id="heroDots" role="tablist" aria-label="Slides del carousel"></div>
 </section>
 
 <!-- ===== TRUST BAR ===== -->
@@ -1379,6 +1343,24 @@ const CFG = {
 };
 
 let _dollarLive = null;
+let HERO_BANNERS = [];
+
+const FALLBACK_BANNERS = [
+  {
+    id: 'fallback-1',
+    tag: '🇦🇷 Todo Argentina',
+    title: 'Compra',
+    accent: 'directo',
+    sub: 'Envíos AMBA e interior del país.',
+    cta: 'Consultar ahora 💬',
+    filter: '',
+    grad: 'linear-gradient(135deg,#101010 0%,#1a1a1a 60%,#232323 100%)',
+    emoji: '🛒',
+    imagen: '',
+    ctaUrl: 'https://wa.me/5491154125271?text=Hola!%20Quiero%20consultar%20el%20cat%C3%A1logo',
+    activo: true
+  }
+];
 
 const DEFAULT_CATS = ['Celulares', 'Smart TV', 'Audio', 'Computación', 'Accesorios', 'Hogar'];
 let CATS = ['Todos'].concat((_catalog.categories && _catalog.categories.length > 0 ? _catalog.categories : DEFAULT_CATS).map(c => typeof c === 'string' ? c : c.name));
@@ -1570,6 +1552,10 @@ async function tryLoadProductosJSON() {
 
   PRODUCTOS = data.products.filter(p => p.activo && p.status !== 'pending');
 
+  if (Array.isArray(data.banners) && data.banners.length) {
+    HERO_BANNERS = data.banners.filter(b => b.activo !== false);
+  }
+
   if (data.settings) {
     const vParam = new URLSearchParams(window.location.search).get('v');
     let vendedorMatched = false;
@@ -1601,6 +1587,48 @@ function updateWaLinks() {
 }
 
 /* ─── HERO CAROUSEL ──────────────────────────── */
+function escHtml(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+}
+
+function renderHero() {
+  const list = (HERO_BANNERS && HERO_BANNERS.length) ? HERO_BANNERS : FALLBACK_BANNERS;
+  const track = document.getElementById('heroTrack');
+  const dotsEl = document.getElementById('heroDots');
+
+  track.innerHTML = list.map((b, i) => {
+    const hasImage = !!(b.imagen && b.imagen.trim());
+    const grad = b.grad || 'linear-gradient(135deg,#111 0%,#222 100%)';
+    const slideStyle = `background:${grad}`;
+    const slideClass = 'hero-slide' + (hasImage ? ' has-image' : '');
+    const ctaHref = (b.ctaUrl && b.ctaUrl.trim()) ? b.ctaUrl : '#catalogo';
+    const ctaExternal = !!(b.ctaUrl && b.ctaUrl.trim());
+    const ctaAttrs = ctaExternal ? ' target="_blank" rel="noopener"' : '';
+    const filterAttr = b.filter ? ` data-filter="${escHtml(b.filter)}"` : '';
+    const imgTag = hasImage ? `<img class="hero-bg-img" src="${escHtml(b.imagen)}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}">` : '';
+    const decoTag = (!hasImage && b.emoji) ? `<span class="hero-deco" aria-hidden="true">${escHtml(b.emoji)}</span>` : '';
+    return `
+      <div class="${slideClass}" style="${slideStyle}">
+        ${imgTag}
+        ${decoTag}
+        <div class="hero-content">
+          <span class="hero-tag">${escHtml(b.tag || '')}</span>
+          <h2 class="hero-title">${escHtml(b.title || '')}${b.accent ? `<br><em>${escHtml(b.accent)}</em>` : ''}</h2>
+          <p class="hero-sub">${escHtml(b.sub || '')}</p>
+          <a href="${escHtml(ctaHref)}" class="hero-cta"${ctaAttrs}${filterAttr}>${escHtml(b.cta || 'Ver más ↓')}</a>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  dotsEl.innerHTML = list.map((_, i) =>
+    `<button class="hero-dot${i === 0 ? ' active' : ''}" role="tab" aria-label="Slide ${i+1}" aria-selected="${i === 0 ? 'true' : 'false'}"></button>`
+  ).join('');
+
+  state.total = list.length;
+  state.slide = 0;
+}
+
 function goTo(n) {
   const track = document.getElementById('heroTrack');
   const dots  = document.querySelectorAll('.hero-dot');
@@ -1898,10 +1926,11 @@ function carouselGo(i) {
 document.addEventListener('DOMContentLoaded', async () => {
   const settingsData = await tryLoadProductosJSON();
   await fetchDollarLive(settingsData);
-  updateWaLinks();
   initCats();
   initSearch();
   renderProducts();
+  renderHero();
+  updateWaLinks();
   initHero();
   initScrollTop();
   initPWA();

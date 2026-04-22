@@ -1477,6 +1477,16 @@
           </select>
         </div>
         <div class="form-group form-full">
+          <label class="form-label">Imagen de fondo (path o URL)</label>
+          <input type="text" class="form-input" id="bmImagen" placeholder="images/banners/01-cockpit.jpg">
+          <span class="form-hint">Si se usa imagen, el gradiente queda como fallback y el emoji se oculta.</span>
+        </div>
+        <div class="form-group form-full">
+          <label class="form-label">URL del CTA (opcional — p.ej. WhatsApp)</label>
+          <input type="text" class="form-input" id="bmCtaUrl" placeholder="https://wa.me/5491154125271?text=...">
+          <span class="form-hint">Si está vacío, el botón filtra por categoría según el campo de arriba.</span>
+        </div>
+        <div class="form-group form-full">
           <label class="form-label">Color de fondo (gradiente CSS)</label>
           <input type="text" class="form-input" id="bmGrad" placeholder="linear-gradient(135deg,#080e1e 0%,#0f1e38 100%)">
           <span class="form-hint">Gradiente CSS. Debe ser oscuro para que el texto sea legible.</span>
@@ -1570,10 +1580,11 @@ const DEFAULT_PRODUCTS = [
 ];
 
 const DEFAULT_BANNERS = [
-  { id:1, tag:'✨ Importación directa', title:'Celulares', accent:'premium',    sub:'iPhone, Samsung y más. Originales.', cta:'Ver celulares ↓',  filter:'Celulares', grad:'linear-gradient(135deg,#080e1e 0%,#0f1e38 60%,#162960 100%)', emoji:'📱', activo:true },
-  { id:2, tag:'🔥 Los más pedidos',    title:'Smart TV',  accent:'4K Ultra HD', sub:'Samsung, LG y Hisense. 55" y 65".', cta:'Ver Smart TVs ↓',  filter:'Smart TV',  grad:'linear-gradient(135deg,#080f0a 0%,#0c2212 60%,#103a1a 100%)', emoji:'📺', activo:true },
-  { id:3, tag:'🎵 Audio premium',      title:'Sonido que', accent:'enamora',     sub:'AirPods, JBL y headphones premium.',  cta:'Ver Audio ↓',     filter:'Audio',     grad:'linear-gradient(135deg,#130828 0%,#220e45 60%,#31186a 100%)', emoji:'🎧', activo:true },
-  { id:4, tag:'🇦🇷 Todo Argentina',   title:'Compra',    accent:'directo',      sub:'Envíos AMBA e interior del país.',    cta:'Consultar 💬',     filter:'',          grad:'linear-gradient(135deg,#101010 0%,#1a1a1a 60%,#232323 100%)', emoji:'🛒', activo:true },
+  { id:1, tag:'🎮 Gaming',         title:'Cockpit',     accent:'Redragon', sub:'Vortex — llevá la experiencia de conducción a otro nivel', cta:'Consultar →', filter:'', grad:'linear-gradient(135deg,#080e1e 0%,#0f1e38 100%)', emoji:'🎮', imagen:'images/banners/01-cockpit-redragon-vortex.jpg', ctaUrl:'https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20Cockpit%20Gamer%20Redragon%20Vortex', activo:true },
+  { id:2, tag:'💻 Computacion',    title:'ASUS ROG',    accent:'Flow Z13', sub:'Ryzen AI Max+395 · 128GB · 1TB · 13"',                    cta:'Consultar →', filter:'', grad:'linear-gradient(135deg,#130828 0%,#31186a 100%)', emoji:'💻', imagen:'images/banners/02-asus-rog-flow-z13.jpg',        ctaUrl:'https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20ASUS%20ROG%20Flow%20Z13',          activo:true },
+  { id:3, tag:'🎮 Gaming 2025',    title:'ROG Xbox',    accent:'Ally',     sub:'La consola portátil más potente del mercado',             cta:'Consultar →', filter:'', grad:'linear-gradient(135deg,#080f0a 0%,#103a1a 100%)', emoji:'🎮', imagen:'images/banners/03-rog-xbox-ally.jpg',            ctaUrl:'https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20ROG%20Xbox%20Ally',                activo:true },
+  { id:4, tag:'🎮 Setup Gamer',    title:'Organiza tu', accent:'setup',    sub:'gamer — soportes y accesorios gaming premium',            cta:'Consultar →', filter:'', grad:'linear-gradient(135deg,#101010 0%,#232323 100%)', emoji:'🎮', imagen:'images/banners/04-setup-gamer.jpg',              ctaUrl:'https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20setup%20gamer',                    activo:true },
+  { id:5, tag:'📱 Celulares',      title:'Honor',       accent:'Magic8',   sub:'Lite 5G — fusión perfecta de innovación y diseño',        cta:'Consultar →', filter:'', grad:'linear-gradient(135deg,#080e1e 0%,#162960 100%)', emoji:'📱', imagen:'images/banners/05-honor-magic8-lite.jpg',        ctaUrl:'https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20Honor%20Magic8%20Lite',            activo:true },
 ];
 
 const DEFAULT_CATEGORIES = [
@@ -3042,8 +3053,8 @@ function renderBannerList() {
   }
   list.innerHTML = banners.map(b => `
     <div class="banner-card" id="banner-card-${b.id}">
-      <div class="banner-preview" style="background:${b.grad}">
-        <span>${b.emoji || '🖼️'}</span>
+      <div class="banner-preview" style="background:${b.grad};${b.imagen ? `background-image:url('${b.imagen}');background-size:cover;background-position:center;` : ''}">
+        <span>${b.imagen ? '🖼' : (b.emoji || '🖼️')}</span>
       </div>
       <div class="banner-info">
         <div class="banner-tag-badge">${b.tag}</div>
@@ -3104,8 +3115,10 @@ function openBannerModal(id) {
     document.getElementById('bmCta').value    = b.cta || '';
     document.getElementById('bmFilter').value = b.filter || '';
     document.getElementById('bmGrad').value   = b.grad || '';
+    document.getElementById('bmImagen').value = b.imagen || '';
+    document.getElementById('bmCtaUrl').value = b.ctaUrl || '';
   } else {
-    ['bmId','bmTag','bmEmoji','bmTitle','bmAccent','bmSub','bmCta','bmGrad'].forEach(x => {
+    ['bmId','bmTag','bmEmoji','bmTitle','bmAccent','bmSub','bmCta','bmGrad','bmImagen','bmCtaUrl'].forEach(x => {
       document.getElementById(x).value = '';
     });
     document.getElementById('bmFilter').value = '';
@@ -3128,6 +3141,8 @@ function saveBanner() {
   const cta    = document.getElementById('bmCta').value.trim();
   const filter = document.getElementById('bmFilter').value;
   const grad   = document.getElementById('bmGrad').value.trim() || 'linear-gradient(135deg,#111 0%,#222 100%)';
+  const imagen = document.getElementById('bmImagen').value.trim();
+  const ctaUrl = document.getElementById('bmCtaUrl').value.trim();
 
   if (!tag)   return showToast('El tag es obligatorio.', 'error');
   if (!title) return showToast('El título es obligatorio.', 'error');
@@ -3137,11 +3152,12 @@ function saveBanner() {
     if (b) {
       b.tag=tag; b.emoji=emoji; b.title=title; b.accent=accent;
       b.sub=sub; b.cta=cta; b.filter=filter; b.grad=grad;
+      b.imagen=imagen; b.ctaUrl=ctaUrl;
     }
     showToast('✅ Banner actualizado.');
   } else {
     const newId = banners.length ? Math.max(...banners.map(x=>x.id))+1 : 1;
-    banners.push({ id:newId, tag, emoji, title, accent, sub, cta, filter, grad, activo:true });
+    banners.push({ id:newId, tag, emoji, title, accent, sub, cta, filter, grad, imagen, ctaUrl, activo:true });
     showToast('✅ Banner agregado.');
   }
 
