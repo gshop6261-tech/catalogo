@@ -39,9 +39,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-redragon-ares-h120-rgb-p2-adaptador-35mm-preto/1167597",
-          "price": null,
+          "price": 15.9,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:35.065421+00:00"
         }
       ],
       "status": "enriched",
@@ -94,9 +95,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-redragon-cronus-h211w-rgb-branco/1003987",
-          "price": null,
+          "price": 16.9,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:35.702576+00:00"
         }
       ],
       "status": "enriched",
@@ -144,9 +146,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-razer-blackshark-v2-x-rz04-03240100-r3u1-p2-preto/712125",
-          "price": null,
+          "price": 41.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:36.208173+00:00"
         }
       ],
       "status": "enriched",
@@ -169,9 +172,9 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "67500",
-      "usd": 38,
+      "usd": 40.0,
       "weight": null,
-      "usdSell": 47.5,
+      "usdSell": 50.0,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
@@ -186,14 +189,19 @@
         {
           "ars": "67500",
           "date": "2026-04-23"
+        },
+        {
+          "usd": 40.0,
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-preto/1354058",
-          "price": null,
+          "price": 40.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:36.620749+00:00"
         }
       ],
       "status": "enriched",
@@ -246,9 +254,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-flip-7-bluetooth-camuflado/1213874",
-          "price": null,
+          "price": 79.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:37.090128+00:00"
         }
       ],
       "status": "enriched",
@@ -297,9 +306,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/speaker-jbl-clip-5-black/1080087",
-          "price": null,
+          "price": 37.5,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:37.549433+00:00"
         }
       ],
       "status": "enriched",
@@ -352,9 +362,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/projetores/projetor-xiaomi-wanbo-x5-lcd-1100-lumens-hdmi-azul/1179026",
-          "price": null,
+          "price": 225.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:38.069697+00:00"
         }
       ],
       "status": "enriched",
@@ -403,9 +414,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-gopro-max-360-chdhz-203-rw-18mp-wifi-preto/1220391",
-          "price": null,
+          "price": 278.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:38.558095+00:00"
         }
       ],
       "status": "enriched",
@@ -453,9 +465,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": null,
+          "price": 75.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:39.034220+00:00"
         }
       ],
       "status": "enriched",
@@ -504,9 +517,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/utensilios/dispenser-de-sabonete-automatico-xiaomi-mi-1s-bhr8853gl-branco/1207866",
-          "price": null,
+          "price": 12.75,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:39.472072+00:00"
         }
       ],
       "status": "enriched",
@@ -553,9 +567,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/chaleira-eletrica-xiaomi-mi-electric-kettle-2-mjdsh04ym-17l-220v-branco/976893",
-          "price": null,
+          "price": 22.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:39.959703+00:00"
         }
       ],
       "status": "enriched",
@@ -604,9 +619,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/teclados/kit-gamer-redragon-s143w-teclado-k617rgbw-sp-mouse-m724/1191561",
-          "price": null,
+          "price": 47.9,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:40.353026+00:00"
         }
       ],
       "status": "enriched",
@@ -650,9 +666,10 @@
       "referenceLinks": [
         {
           "url": "https://www.mobilezone.com.py/product/1122596",
-          "price": null,
+          "price": 17.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:40.798949+00:00"
         }
       ],
       "status": "enriched",
@@ -678,9 +695,9 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "53700",
-      "usd": 31.5,
+      "usd": 32.0,
       "weight": 0.5,
-      "usdSell": 37.8,
+      "usdSell": 38.4,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -703,14 +720,19 @@
         {
           "ars": "53700",
           "date": "2026-04-23"
+        },
+        {
+          "usd": 32.0,
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-2-xiaomi-mi-portatil-electric-air-mjcqb06qw-preto/1010923",
-          "price": null,
+          "price": 32.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:41.476693+00:00"
         }
       ],
       "status": "enriched",
@@ -764,9 +786,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-wireless-para-ps5-vermelho/777018",
-          "price": null,
+          "price": 60.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:41.842058+00:00"
         }
       ],
       "status": "enriched",
@@ -819,9 +842,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixa-de-som/caixa-de-som-redragon-surge-gs817-rgb-bluetooth-35mm-preto/1157741",
-          "price": null,
+          "price": 62.9,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:42.270090+00:00"
         }
       ],
       "status": "enriched",
@@ -882,9 +906,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-30-aniversario-edicao-limitada-para-ps5-wireless-japao-cinza/1182422",
-          "price": null,
+          "price": 89.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:42.726241+00:00"
         }
       ],
       "status": "enriched",
@@ -939,9 +964,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-dualshock-para-ps4-wireless-ppp-argentina-messi/1243864",
-          "price": null,
+          "price": 11.75,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:43.177331+00:00"
         }
       ],
       "status": "enriched",
@@ -997,9 +1023,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-microsoft-ep2-2992221-sem-fio-para-xbox-series/1314076",
-          "price": null,
+          "price": 47.5,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:43.696027+00:00"
         }
       ],
       "status": "enriched",
@@ -1218,9 +1245,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/smart-tv-xiaomi-l43mb-afph-2026-43-4k-ultra-hd-preto/1317572",
-          "price": null,
+          "price": 185.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:44.133580+00:00"
         }
       ],
       "status": "enriched",
@@ -1277,9 +1305,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/mascara-capilar-karseell-maca-power-500ml/1314793",
-          "price": null,
+          "price": 4.75,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:45.170791+00:00"
         }
       ],
       "status": "enriched",
@@ -1328,9 +1357,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/cera-capilar-karseell-maca-hair-style-wax-100g/1286113",
-          "price": null,
+          "price": 3.5,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:45.610521+00:00"
         }
       ],
       "status": "enriched",
@@ -1382,9 +1412,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/aspiradores/robo-aspirador-xiaomi-robot-vacuum-s40-bhr084aeu-branco/1251340",
-          "price": null,
+          "price": 162.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:46.124775+00:00"
         }
       ],
       "status": "enriched",
@@ -1433,9 +1464,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/cafeteira-xiaomi-semi-automatic-espresso-machine-bhr9798eu-220v-prata/1197112",
-          "price": null,
+          "price": 86.75,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T23:31:46.779362+00:00"
         }
       ],
       "status": "enriched",
@@ -1483,7 +1515,7 @@
           "price": 79,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T15:30:42.455701+00:00"
+          "lastChecked": "2026-04-23T23:31:47.304295+00:00"
         }
       ],
       "status": "enriched",
@@ -1527,7 +1559,7 @@
           "price": 40,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T15:30:43.571146+00:00"
+          "lastChecked": "2026-04-23T23:31:47.716472+00:00"
         }
       ],
       "status": "enriched",
@@ -1571,7 +1603,7 @@
           "price": 40,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T15:30:44.211764+00:00"
+          "lastChecked": "2026-04-23T23:31:48.219172+00:00"
         }
       ],
       "status": "enriched",
@@ -1615,7 +1647,7 @@
           "price": 40,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T15:30:44.947337+00:00"
+          "lastChecked": "2026-04-23T23:31:48.680432+00:00"
         }
       ],
       "status": "enriched",
@@ -1659,7 +1691,7 @@
           "price": 40,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T15:30:45.636693+00:00"
+          "lastChecked": "2026-04-23T23:31:49.149165+00:00"
         }
       ],
       "status": "enriched",
@@ -1703,7 +1735,7 @@
           "price": 40,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T15:30:46.266767+00:00"
+          "lastChecked": "2026-04-23T23:31:49.627767+00:00"
         }
       ],
       "status": "enriched",
@@ -1747,7 +1779,7 @@
           "price": 40,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T15:30:46.956845+00:00"
+          "lastChecked": "2026-04-23T23:31:50.088697+00:00"
         }
       ],
       "status": "enriched",
@@ -1941,7 +1973,7 @@
           "price": 149,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:11:41.790330+00:00"
+          "lastChecked": "2026-04-23T23:31:50.566495+00:00"
         }
       ],
       "status": "enriched",
@@ -1986,7 +2018,7 @@
           "price": 179,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:11:43.324843+00:00"
+          "lastChecked": "2026-04-23T23:31:51.041797+00:00"
         }
       ],
       "status": "enriched",
@@ -2029,7 +2061,7 @@
           "price": 339,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:11:44.649480+00:00"
+          "lastChecked": "2026-04-23T23:31:51.511923+00:00"
         }
       ],
       "status": "enriched",
@@ -2073,7 +2105,7 @@
           "price": 135,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:11:45.676161+00:00"
+          "lastChecked": "2026-04-23T23:31:51.960536+00:00"
         }
       ],
       "status": "enriched",
@@ -2117,7 +2149,7 @@
           "price": 699,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:26:30.728902+00:00"
+          "lastChecked": "2026-04-23T23:31:52.439197+00:00"
         }
       ],
       "status": "enriched",
@@ -2161,7 +2193,7 @@
           "price": 575,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:26:32.456423+00:00"
+          "lastChecked": "2026-04-23T23:31:52.876157+00:00"
         }
       ],
       "status": "enriched",
@@ -2205,7 +2237,7 @@
           "price": 525,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:26:34.070964+00:00"
+          "lastChecked": "2026-04-23T23:31:53.277798+00:00"
         }
       ],
       "status": "enriched",
@@ -2250,7 +2282,7 @@
           "price": 499,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:26:35.743112+00:00"
+          "lastChecked": "2026-04-23T23:31:53.790583+00:00"
         }
       ],
       "status": "enriched",
@@ -2294,7 +2326,7 @@
           "price": 435,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:26:37.608644+00:00"
+          "lastChecked": "2026-04-23T23:31:54.229551+00:00"
         }
       ],
       "status": "enriched",
@@ -2337,7 +2369,7 @@
           "price": 399,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:26:39.222653+00:00"
+          "lastChecked": "2026-04-23T23:31:54.671261+00:00"
         }
       ],
       "status": "enriched",
@@ -2382,7 +2414,7 @@
           "price": 389,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:26:40.633289+00:00"
+          "lastChecked": "2026-04-23T23:31:55.128749+00:00"
         }
       ],
       "status": "enriched",
@@ -2425,7 +2457,7 @@
           "price": 299,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:26:42.111436+00:00"
+          "lastChecked": "2026-04-23T23:31:55.581367+00:00"
         }
       ],
       "status": "enriched",
@@ -2465,7 +2497,7 @@
           "price": 299,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:26:43.277707+00:00"
+          "lastChecked": "2026-04-23T23:31:55.989428+00:00"
         }
       ],
       "status": "enriched",
@@ -2505,7 +2537,7 @@
           "price": 127,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:58:36.875351+00:00"
+          "lastChecked": "2026-04-23T23:31:56.476367+00:00"
         }
       ],
       "status": "enriched",
@@ -2545,7 +2577,7 @@
           "price": 320,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:58:37.628877+00:00"
+          "lastChecked": "2026-04-23T23:31:56.932951+00:00"
         }
       ],
       "status": "enriched",
@@ -2589,7 +2621,7 @@
           "price": 180,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-23T18:58:38.486235+00:00"
+          "lastChecked": "2026-04-23T23:31:57.619875+00:00"
         }
       ],
       "status": "enriched",
@@ -2918,5 +2950,5 @@
     "dollarManual": null
   },
   "lastSync": "2026-04-23T21:59:33.701Z",
-  "lastPriceCheck": null
+  "lastPriceCheck": "2026-04-23T23:31:58.161520+00:00"
 }
