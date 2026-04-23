@@ -77,13 +77,16 @@
     .hero {
       position: relative;
       width: 100%;
-      height: 230px;
+      /* Responsive: proporción en vez de altura fija */
+      aspect-ratio: 16 / 9;
+      max-height: 260px;
       overflow: hidden;
       background: #111;
       user-select: none;
     }
-    @media (min-width: 600px)  { .hero { height: 320px; } }
-    @media (min-width: 900px)  { .hero { height: 420px; } }
+    @media (min-width: 600px)  { .hero { max-height: 360px; } }
+    @media (min-width: 900px)  { .hero { aspect-ratio: 21 / 8; max-height: 460px; } }
+    @media (min-width: 1200px) { .hero { max-height: 500px; } }
 
     .hero-track {
       display: flex;
@@ -104,13 +107,14 @@
     @media (min-width: 600px) { .hero-slide { padding: 0 36px; } }
     @media (min-width: 900px) { .hero-slide { padding: 0 56px; } }
 
-    /* Gradient overlay so text is always legible */
+    /* Subtle vignette — solo para estética, sin texto encima */
     .hero-slide::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.35) 55%, rgba(0,0,0,.05) 100%);
+      background: linear-gradient(to top, rgba(0,0,0,.18) 0%, transparent 40%);
       z-index: 1;
+      pointer-events: none;
     }
 
     .hero-deco {
@@ -134,71 +138,41 @@
       inset: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center top;
+      object-fit: cover;    /* NUNCA se deforma — recorta los bordes */
+      object-position: center center;
       z-index: 0;
+    }
+    /* Imagen mobile: se oculta por defecto en desktop */
+    .hero-slide.has-image .hero-bg-img.mobile-img {
+      display: none;
+    }
+    @media (max-width: 599px) {
+      /* En mobile: si hay imagen mobile, mostrar esa y ocultar la desktop */
+      .hero-slide.has-mobile-img .hero-bg-img.desktop-img { display: none; }
+      .hero-slide.has-mobile-img .hero-bg-img.mobile-img  { display: block; }
     }
     .hero-slide.has-image .hero-deco { display: none; }
 
+    /* Hero content: oculto visualmente, solo para accesibilidad */
     .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: clamp(240px, 55vw, 500px);
-    }
-
-    .hero-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      background: var(--green);
-      color: #fff;
-      font-size: 9px;
-      font-weight: 800;
-      letter-spacing: 1.8px;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 4px;
-      margin-bottom: 11px;
-    }
-
-    .hero-title {
-      font-size: clamp(23px, 6vw, 44px);
-      font-weight: 900;
-      color: #fff;
-      line-height: 1.04;
-      margin-bottom: 8px;
-      letter-spacing: -1.5px;
-    }
-    .hero-title em {
-      font-style: italic;
-      color: var(--yellow);
-    }
-
-    .hero-sub {
-      font-size: clamp(11px, 2.8vw, 14px);
-      color: rgba(255,255,255,.62);
-      line-height: 1.55;
-      margin-bottom: 18px;
-    }
-
-    .hero-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: var(--yellow);
-      color: #000;
-      font-weight: 800;
-      font-size: clamp(11px, 2.5vw, 13px);
-      padding: 11px 20px;
-      border-radius: var(--r-md);
-      transition: background var(--t) var(--ease), transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
-      box-shadow: 0 4px 16px rgba(255,214,0,.45);
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
       white-space: nowrap;
+      border: 0;
     }
-    .hero-cta:hover {
-      background: var(--yellow-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(255,214,0,.55);
+
+    /* Slide clickable — cursor pointer cuando tiene link */
+    .hero-slide[data-href] { cursor: pointer; }
+    .hero-slide[data-href]:hover .hero-bg-img {
+      transform: scale(1.03);
+    }
+    .hero-slide .hero-bg-img {
+      transition: transform .6s var(--ease);
     }
 
     /* Arrows */
@@ -1598,25 +1572,35 @@ function renderHero() {
 
   track.innerHTML = list.map((b, i) => {
     const hasImage = !!(b.imagen && b.imagen.trim());
+    const hasMobileImg = !!(b.imagenMobile && b.imagenMobile.trim());
     const grad = b.grad || 'linear-gradient(135deg,#111 0%,#222 100%)';
     const slideStyle = `background:${grad}`;
-    const slideClass = 'hero-slide' + (hasImage ? ' has-image' : '');
-    const ctaHref = (b.ctaUrl && b.ctaUrl.trim()) ? b.ctaUrl : '#catalogo';
-    const ctaExternal = !!(b.ctaUrl && b.ctaUrl.trim());
-    const ctaAttrs = ctaExternal ? ' target="_blank" rel="noopener"' : '';
-    const filterAttr = b.filter ? ` data-filter="${escHtml(b.filter)}"` : '';
-    const imgTag = hasImage ? `<img class="hero-bg-img" src="${escHtml(b.imagen)}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}">` : '';
+    let slideClass = 'hero-slide';
+    if (hasImage)     slideClass += ' has-image';
+    if (hasMobileImg) slideClass += ' has-mobile-img';
+
+    // Link: si tiene ctaUrl, el slide entero es clickeable
+    const ctaHref = (b.ctaUrl && b.ctaUrl.trim()) ? b.ctaUrl : '';
+    const filterVal = b.filter || '';
+    const dataHref = ctaHref ? ` data-href="${escHtml(ctaHref)}"` : '';
+    const dataFilter = filterVal ? ` data-filter="${escHtml(filterVal)}"` : '';
+
+    // Alt text ilustrativo (solo para accesibilidad)
+    const altText = escHtml(b.title ? `${b.title}${b.accent ? ' ' + b.accent : ''}` : '');
+
+    // Desktop image
+    let imgTag = hasImage ? `<img class="hero-bg-img desktop-img" src="${escHtml(b.imagen)}" alt="${altText}" loading="${i === 0 ? 'eager' : 'lazy'}">` : '';
+    // Mobile image
+    if (hasMobileImg) {
+      imgTag += `<img class="hero-bg-img mobile-img" src="${escHtml(b.imagenMobile)}" alt="${altText}" loading="${i === 0 ? 'eager' : 'lazy'}">` ;
+    }
     const decoTag = (!hasImage && b.emoji) ? `<span class="hero-deco" aria-hidden="true">${escHtml(b.emoji)}</span>` : '';
+
     return `
-      <div class="${slideClass}" style="${slideStyle}">
+      <div class="${slideClass}" style="${slideStyle}"${dataHref}${dataFilter}>
         ${imgTag}
         ${decoTag}
-        <div class="hero-content">
-          <span class="hero-tag">${escHtml(b.tag || '')}</span>
-          <h2 class="hero-title">${escHtml(b.title || '')}${b.accent ? `<br><em>${escHtml(b.accent)}</em>` : ''}</h2>
-          <p class="hero-sub">${escHtml(b.sub || '')}</p>
-          <a href="${escHtml(ctaHref)}" class="hero-cta"${ctaAttrs}${filterAttr}>${escHtml(b.cta || 'Ver más ↓')}</a>
-        </div>
+        <span class="hero-content">${altText}</span>
       </div>
     `;
   }).join('');
@@ -1628,6 +1612,7 @@ function renderHero() {
   state.total = list.length;
   state.slide = 0;
 }
+
 
 function goTo(n) {
   const track = document.getElementById('heroTrack');
@@ -1664,14 +1649,18 @@ function initHero() {
     if (Math.abs(dx) > 40) bump(dx > 0 ? 1 : -1);
   }, { passive: true });
 
-  // Hero CTA filter clicks
-  document.querySelectorAll('.hero-cta[data-filter]').forEach(btn => {
-    btn.addEventListener('click', e => {
-      e.preventDefault();
-      const f = btn.dataset.filter;
-      if (f) {
-        setCategory(f);
+  // Slide click — navega al link o filtra categoría
+  document.querySelectorAll('.hero-slide[data-href], .hero-slide[data-filter]').forEach(slide => {
+    slide.addEventListener('click', e => {
+      // No interceptar clicks en flechas o dots
+      if (e.target.closest('.hero-arrow') || e.target.closest('.hero-dot')) return;
+      const href = slide.dataset.href;
+      const filter = slide.dataset.filter;
+      if (filter) {
+        setCategory(filter);
         document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
+      } else if (href) {
+        window.open(href, '_blank', 'noopener');
       }
     });
   });

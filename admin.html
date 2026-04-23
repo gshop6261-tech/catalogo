@@ -1485,9 +1485,14 @@
           </select>
         </div>
         <div class="form-group form-full">
-          <label class="form-label">Imagen de fondo (path o URL)</label>
+          <label class="form-label">Imagen de fondo — Desktop (path o URL)</label>
           <input type="text" class="form-input" id="bmImagen" placeholder="images/banners/01-cockpit.jpg">
-          <span class="form-hint">Si se usa imagen, el gradiente queda como fallback y el emoji se oculta.</span>
+          <span class="form-hint">Tamaño recomendado: 1920×500 px. Si se usa imagen, el gradiente queda como fallback y el emoji se oculta.</span>
+        </div>
+        <div class="form-group form-full">
+          <label class="form-label">Imagen Mobile (opcional — path o URL)</label>
+          <input type="text" class="form-input" id="bmImagenMobile" placeholder="images/banners/01-cockpit-mobile.jpg">
+          <span class="form-hint">Tamaño recomendado: 600×340 px (cuadrada o vertical). Si está vacío se usa la misma imagen de desktop en mobile.</span>
         </div>
         <div class="form-group form-full">
           <label class="form-label">URL del CTA (opcional — p.ej. WhatsApp)</label>
@@ -3125,7 +3130,7 @@ function renderBannerList() {
       <div class="banner-info">
         <div class="banner-tag-badge">${b.tag}</div>
         <div class="banner-title-txt">${b.title} <span style="color:var(--yellow)">${b.accent || ''}</span></div>
-        <div class="banner-sub-txt">${b.sub || ''}</div>
+        <div class="banner-sub-txt">${b.sub || ''}${b.imagenMobile ? ' · <span style="color:var(--blue);font-size:9px;font-weight:800">📱 IMG MOBILE</span>' : ''}</div>
       </div>
       <div class="banner-actions">
         <label class="toggle" title="${b.activo ? 'Desactivar' : 'Activar'}">
@@ -3182,9 +3187,10 @@ function openBannerModal(id) {
     document.getElementById('bmFilter').value = b.filter || '';
     document.getElementById('bmGrad').value   = b.grad || '';
     document.getElementById('bmImagen').value = b.imagen || '';
+    document.getElementById('bmImagenMobile').value = b.imagenMobile || '';
     document.getElementById('bmCtaUrl').value = b.ctaUrl || '';
   } else {
-    ['bmId','bmTag','bmEmoji','bmTitle','bmAccent','bmSub','bmCta','bmGrad','bmImagen','bmCtaUrl'].forEach(x => {
+    ['bmId','bmTag','bmEmoji','bmTitle','bmAccent','bmSub','bmCta','bmGrad','bmImagen','bmImagenMobile','bmCtaUrl'].forEach(x => {
       document.getElementById(x).value = '';
     });
     document.getElementById('bmFilter').value = '';
@@ -3208,6 +3214,7 @@ function saveBanner() {
   const filter = document.getElementById('bmFilter').value;
   const grad   = document.getElementById('bmGrad').value.trim() || 'linear-gradient(135deg,#111 0%,#222 100%)';
   const imagen = document.getElementById('bmImagen').value.trim();
+  const imagenMobile = document.getElementById('bmImagenMobile').value.trim();
   const ctaUrl = document.getElementById('bmCtaUrl').value.trim();
 
   if (!tag)   return showToast('El tag es obligatorio.', 'error');
@@ -3218,12 +3225,12 @@ function saveBanner() {
     if (b) {
       b.tag=tag; b.emoji=emoji; b.title=title; b.accent=accent;
       b.sub=sub; b.cta=cta; b.filter=filter; b.grad=grad;
-      b.imagen=imagen; b.ctaUrl=ctaUrl;
+      b.imagen=imagen; b.imagenMobile=imagenMobile; b.ctaUrl=ctaUrl;
     }
     showToast('✅ Banner actualizado.');
   } else {
     const newId = banners.length ? Math.max(...banners.map(x=>x.id))+1 : 1;
-    banners.push({ id:newId, tag, emoji, title, accent, sub, cta, filter, grad, imagen, ctaUrl, activo:true });
+    banners.push({ id:newId, tag, emoji, title, accent, sub, cta, filter, grad, imagen, imagenMobile, ctaUrl, activo:true });
     showToast('✅ Banner agregado.');
   }
 
