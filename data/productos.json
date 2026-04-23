@@ -3,7 +3,7 @@
     {
       "id": 1,
       "cat": "Audio",
-      "calcSub": "unico",
+      "calcSub": "",
       "name": "Headset Gamer Redragon Ares H120 RGB P2 + Adaptador 3.5mm - Negro",
       "sub": "",
       "desc": "El Redragon Ares H120 RGB es un headset gamer accesible y cómodo, ideal para largas sesiones de juego. Equipado con drivers de 40 mm, ofrece un sonido equilibrado e inmersivo. El micrófono integrado capta la voz con claridad, mientras que el control de volumen facilita los ajustes rápidos. La conexión P2 (3,5 mm) y USB garantiza compatibilidad con diversos dispositivos. Con iluminación RGB, aporta un diseño moderno para completar tu setup gamer.",
@@ -17,10 +17,10 @@
         "images/productos/1/6.jpg",
         "images/productos/1/7.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "27000",
+      "ars": "27100",
       "usd": 15.9,
       "weight": null,
       "usdSell": 19.08,
@@ -30,24 +30,28 @@
         {
           "ars": "27000",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "27100",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-redragon-ares-h120-rgb-p2-adaptador-35mm-preto/1167597",
-          "price": 15.9,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:44.500115+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 2,
       "cat": "Audio",
-      "calcSub": "unico",
+      "calcSub": "Grande",
       "name": "Headset Redragon Cronus H211W-RGB - Blanco",
       "sub": "",
       "desc": "Vive una experiencia de sonido inmersiva con los auriculares Redragon Cronus! Equipado con controladores de 40 mm para unos agudos nítidos y unos graves potentes, ofrece un sonido envolvente envolvente. Su micrófono unidireccional garantiza una comunicación nítida, mientras que la diadema ajustable y las almohadillas de espuma viscoelástica brindan comodidad duradera. Además, su construcción robusta y su iluminación RGB dinámica elevan tu estilo mientras juegas.",
@@ -60,37 +64,49 @@
         "images/productos/2/5.jpg",
         "images/productos/2/6.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "28600",
+      "ars": "30000",
       "usd": 16.9,
       "weight": null,
-      "usdSell": 20.28,
+      "usdSell": 21.13,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
         {
           "ars": "28600",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "28700",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "29900",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "30000",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-redragon-cronus-h211w-rgb-branco/1003987",
-          "price": 16.9,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:45.082146+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 3,
       "cat": "Audio",
-      "calcSub": "unico",
+      "calcSub": "",
       "name": "Headset Gamer Razer Blackshark V2 X RZ04-03240100-R3U1 P2 - Negro",
       "sub": "",
       "desc": "Audio competitivo con enfoque en precisión sonora desde el primer uso. El headset gamer Razer BlackShark V2 X incorpora drivers Razer TriForce de 50 mm que separan graves, medios y agudos para detectar pasos, disparos y detalles con mayor claridad. El micrófono cardioide brinda una voz clara y reduce ruidos del entorno en juegos y llamadas. La conexión P2 3.5 mm asegura amplia compatibilidad con PC, consolas y dispositivos móviles. Ideal para juegos competitivos, estudio y comunicación diaria.",
@@ -102,10 +118,10 @@
         "images/productos/3/4.jpg",
         "images/productos/3/5.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "69400",
+      "ars": "69900",
       "usd": 41,
       "weight": null,
       "usdSell": 49.2,
@@ -115,25 +131,33 @@
         {
           "ars": "69400",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "69700",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "69900",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-razer-blackshark-v2-x-rz04-03240100-r3u1-p2-preto/712125",
-          "price": 41,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:45.529715+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 4,
       "cat": "Audio",
-      "calcSub": "unico",
-      "name": "Speaker Portátil JBL Go 5 - Negro",
+      "calcSub": "Grande",
+      "name": "Speaker Portátil JBL Go 5 Negro",
       "sub": "",
       "desc": "El JBL GO 5 esta nueva generación ha sido mejorada con el sonido JBL Pro, entregando graves más profundos y una nitidez superior para su tamaño. Con certificación IP67, es totalmente resistente al agua y al polvo, lo que lo hace ideal para cualquier entorno, desde la oficina hasta el borde de la piscina. Destaca por la inclusión de la tecnología Auracast, que permite el emparejamiento con otros altavoces JBL compatibles, y por el modo Playtime Boost, que ofrece 2 horas extras de batería para prolongar su experiencia musical.",
       "img": "images/productos/4/main.jpg",
@@ -141,37 +165,45 @@
         "images/productos/4/main.jpg",
         "images/productos/4/2.jpg"
       ],
-      "badge": null,
+      "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "67700",
-      "usd": 40,
+      "ars": "67500",
+      "usd": 38,
       "weight": null,
-      "usdSell": 48,
+      "usdSell": 47.5,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
         {
           "ars": "67700",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "67300",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "67500",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-preto/1354058",
-          "price": 40,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:46.209798+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 5,
       "cat": "Audio",
-      "calcSub": "unico",
+      "calcSub": "Grande",
       "name": "Speaker Portátil JBL Flip 7 Bluetooth - Camuflaje",
       "sub": "",
       "desc": "El JBL Flip 7 es la nueva generación de la línea de altavoces portátiles, que ofrece 35 W RMS de potencia con un sonido aún más dinámico. Cuenta con Bluetooth 5.4 para una conexión rápida y estable, además de una autonomía de hasta 14 horas, ampliable hasta 2 horas con el modo Playtime Boost. AI Sound Boost optimiza automáticamente el rendimiento del sonido. Cuenta con 1 woofer de 45 x 80 mm y 1 tweeter de 16 mm, garantizando graves potentes y agudos claros para cualquier entorno.",
@@ -184,37 +216,49 @@
         "images/productos/5/5.jpg",
         "images/productos/5/6.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "133700",
+      "ars": "140300",
       "usd": 79,
       "weight": null,
-      "usdSell": 94.8,
+      "usdSell": 98.75,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
         {
           "ars": "133700",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "134200",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "134700",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "140300",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-flip-7-bluetooth-camuflado/1213874",
-          "price": 79,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:46.736437+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 6,
       "cat": "Audio",
-      "calcSub": "unico",
+      "calcSub": "",
       "name": "JBL CLIP 5 BLACK",
       "sub": "",
       "desc": "El JBL Clip 5 es el altavoz portátil ideal para acompañar todas tus aventuras. Con su tamaño compacto, es perfecto para llevar la música a cualquier lugar sin ocupar demasiado espacio. Ofrece hasta 12 horas de duración de la batería, lo que te permite disfrutar de tus listas de reproducción. Certificado con IP67, es completamente resistente al agua y al polvo. Su potente controlador garantiza unos graves mejorados, proporcionando una calidad de sonido excepcional.",
@@ -227,10 +271,10 @@
         "images/productos/6/5.jpg",
         "images/productos/6/6.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "63500",
+      "ars": "63900",
       "usd": 37.5,
       "weight": null,
       "usdSell": 45,
@@ -240,24 +284,32 @@
         {
           "ars": "63500",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "63700",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "63900",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/speaker-jbl-clip-5-black/1080087",
-          "price": 37.5,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:47.494479+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 7,
       "cat": "Smart TV - Proyectores",
-      "calcSub": "chico",
+      "calcSub": "",
       "name": "Proyector Xiaomi Wanbo X5 LCD 1100 Lúmenes HDMI - Azul",
       "sub": "",
       "desc": "El proyector Wanbo X5 Pro ofrece 1100 imágenes de brillo de lúmenes y tamaño ajustable de 40 a 180 pulgadas, ideal para entretenimiento en el hogar. Tiene enfoque y corrección automática de Kerystone para centralizar y alinear fácilmente la proyección. Equipado con altavoces 5W con HIFI DSP, entrega luz y sonido inmersivo. Tiene interfaz HDMI y USB, conectividad Wi-Fi y Bluetooth, así como la compatibilidad de Google TV para la transmisión integrada.",
@@ -270,8 +322,8 @@
         "images/productos/7/5.jpg",
         "images/productos/7/6.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "391300",
       "usd": 225,
@@ -300,14 +352,14 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/projetores/projetor-xiaomi-wanbo-x5-lcd-1100-lumens-hdmi-azul/1179026",
-          "price": 225,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:48.028711+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 8,
@@ -325,10 +377,10 @@
         "images/productos/8/5.jpg",
         "images/productos/8/6.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "470400",
+      "ars": "473800",
       "usd": 278,
       "weight": null,
       "usdSell": 333.6,
@@ -338,19 +390,27 @@
         {
           "ars": "470400",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "472100",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "473800",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-gopro-max-360-chdhz-203-rw-18mp-wifi-preto/1220391",
-          "price": 278,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:48.542581+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 9,
@@ -367,10 +427,10 @@
         "images/productos/9/4.jpg",
         "images/productos/9/5.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "126900",
+      "ars": "127800",
       "usd": 75,
       "weight": null,
       "usdSell": 90,
@@ -380,19 +440,27 @@
         {
           "ars": "126900",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "127400",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "127800",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": 75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:49.014405+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 10,
@@ -410,10 +478,10 @@
         "images/productos/10/5.jpg",
         "images/productos/10/6.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "21600",
+      "ars": "21800",
       "usd": 12.75,
       "weight": null,
       "usdSell": 15.3,
@@ -423,19 +491,27 @@
         {
           "ars": "21600",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "21700",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "21800",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/utensilios/dispenser-de-sabonete-automatico-xiaomi-mi-1s-bhr8853gl-branco/1207866",
-          "price": 12.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:49.406117+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 12,
@@ -451,10 +527,10 @@
         "images/productos/12/3.jpg",
         "images/productos/12/4.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "37300",
+      "ars": "37500",
       "usd": 22,
       "weight": null,
       "usdSell": 26.4,
@@ -464,19 +540,27 @@
         {
           "ars": "37300",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "37400",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "37500",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/chaleira-eletrica-xiaomi-mi-electric-kettle-2-mjdsh04ym-17l-220v-branco/976893",
-          "price": 22,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:49.860357+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 13,
@@ -494,10 +578,10 @@
         "images/productos/13/5.jpg",
         "images/productos/13/6.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "81100",
+      "ars": "81700",
       "usd": 47.9,
       "weight": null,
       "usdSell": 57.48,
@@ -507,19 +591,27 @@
         {
           "ars": "81100",
           "date": "2026-04-17"
+        },
+        {
+          "ars": "81400",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "81700",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/teclados/kit-gamer-redragon-s143w-teclado-k617rgbw-sp-mouse-m724/1191561",
-          "price": 47.9,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:50.346367+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 14,
@@ -532,10 +624,10 @@
       "images": [
         "images/productos/14/main.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "28800",
+      "ars": "29000",
       "usd": 17,
       "weight": null,
       "usdSell": 20.4,
@@ -545,25 +637,33 @@
         {
           "ars": "28800",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "28900",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "29000",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://www.mobilezone.com.py/product/1122596",
-          "price": 17,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:50.843261+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 15,
       "cat": "Accesorios",
       "calcSub": "unico",
-      "name": "Compresor de Aire Xiaomi Mi Portátil Electric Air 2 Pro MJCQB07PQW - Negro",
+      "name": "Compresor de Aire 2 Xiaomi Mi Portátil Electric Air MJCQB06QW Negro",
       "sub": "",
       "desc": "El Xiaomi Electric Air Compressor 2 Pro es una solución práctica y eficiente para inflar neumáticos y otros objetos. Con interfaz de carga USB-C, ofrece comodidad y modernidad. Su autonomía permite inflar hasta 2,5 neumáticos aproximadamente con una sola carga, mientras que el tiempo de recarga ronda las 3,5 horas. Equipado con dos baterías de 2000 mAh, proporciona potencia constante y una presión máxima de 150 PSI, ideal para diferentes aplicaciones.",
       "img": "images/productos/15/main.jpg",
@@ -574,13 +674,13 @@
         "images/productos/15/4.jpg",
         "images/productos/15/5.jpg"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "83000",
-      "usd": 49,
+      "ars": "53700",
+      "usd": 31.5,
       "weight": 0.5,
-      "usdSell": 58.8,
+      "usdSell": 37.8,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -595,25 +695,33 @@
         {
           "ars": "83000",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "53500",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "53700",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
-          "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-xiaomi-mi-portatil-electric-air-2-pro-mjcqb07pqw-preto/1151114",
-          "price": 49,
+          "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-2-xiaomi-mi-portatil-electric-air-mjcqb06qw-preto/1010923",
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:51.605107+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 17,
       "cat": "Accesorios",
-      "calcSub": "unico",
-      "name": "Control Joystick Sony Dualsense Wireless para PS5 Rojo",
+      "calcSub": "joystick",
+      "name": "Control Joystick Sony Dualsense Wireless para PS5 Cosmic Red",
       "sub": "",
       "desc": "El controlador Sony DualSense redefine la experiencia de juego con tecnologías inmersivas y un diseño innovador. Equipado con retroalimentación háptica y disparadores adaptativos, ofrece retroalimentación receptiva que eleva la interacción en cada partido. Tiene una entrada de micrófono incorporada para auriculares, lo que permite una comunicación práctica durante el juego. Su diseño moderno con distribución ergonómica proporciona comodidad incluso durante largas sesiones.",
       "img": "images/productos/17/main.jpg",
@@ -626,32 +734,44 @@
         "images/productos/17/6.jpg",
         "images/productos/17/7.jpg"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "101600",
+      "ars": "104700",
       "usd": 60,
       "weight": null,
-      "usdSell": 72,
+      "usdSell": 73.7,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
         {
           "ars": "101600",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "101900",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "102300",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "104700",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-wireless-para-ps5-vermelho/777018",
-          "price": 60,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:52.073654+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 18,
@@ -669,10 +789,10 @@
         "images/productos/18/5.jpg",
         "images/productos/18/6.jpg"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "110900",
+      "ars": "111700",
       "usd": 62.9,
       "weight": null,
       "usdSell": 78.63,
@@ -686,24 +806,32 @@
         {
           "ars": "110900",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "111300",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "111700",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixa-de-som/caixa-de-som-redragon-surge-gs817-rgb-bluetooth-35mm-preto/1157741",
-          "price": 62.9,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:52.490492+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 19,
       "cat": "Accesorios",
-      "calcSub": "unico",
+      "calcSub": "joystick",
       "name": "Control Joystick Sony Dualsense 30º Aniversario Edición Limitada para PS5 Wireless Japón Gris",
       "sub": "",
       "desc": "El DualSense Controller 30th Anniversary Edition celebra tres décadas de innovación en una edición limitada con un diseño único y sofisticado. Conserva todas las funciones avanzadas, como retroalimentación háptica, gatillos adaptativos, que ofrecen una experiencia de juego inmersiva. Tiene una entrada de micrófono incorporada para auriculares, lo que permite una comunicación clara y conveniente durante el juego. Acabado conmemorativo especial, ideal para aficionados y coleccionistas.",
@@ -716,13 +844,13 @@
         "images/productos/19/5.jpg",
         "images/productos/19/6.jpg"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "150600",
+      "ars": "150000",
       "usd": 89,
       "weight": null,
-      "usdSell": 106.8,
+      "usdSell": 105.6,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -737,24 +865,36 @@
         {
           "ars": "150600",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "151200",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "151700",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "150000",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-30-aniversario-edicao-limitada-para-ps5-wireless-japao-cinza/1182422",
-          "price": 89,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:52.965473+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 20,
       "cat": "Accesorios",
-      "calcSub": "unico",
+      "calcSub": "joystick",
       "name": "Control Dualshock para PS4 Wireless PPP Argentina Messi",
       "sub": "",
       "desc": "El Control PS4 Wireless brinda respuesta rápida y estable sin necesidad de cables. Incluye gatillos analógicos sensibles, vibración inmersiva y panel táctil central para más funciones. Su batería recargable permite largas horas de uso, perfecto para disfrutar con total libertad de movimiento.",
@@ -765,13 +905,13 @@
         "images/productos/20/3.jpg",
         "images/productos/20/4.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "19900",
+      "ars": "29300",
       "usd": 11.75,
       "weight": null,
-      "usdSell": 14.1,
+      "usdSell": 20.63,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -782,24 +922,36 @@
         {
           "ars": "19900",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "20000",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "20100",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "29300",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-dualshock-para-ps4-wireless-ppp-argentina-messi/1243864",
-          "price": 11.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:53.436769+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 21,
       "cat": "Accesorios",
-      "calcSub": "unico",
+      "calcSub": "joystick",
       "name": "Control Microsoft EP2-29922/21 Inalámbrico para Xbox Series",
       "sub": "",
       "desc": "El Xbox Wireless Controller es un control inalámbrico compatible con Xbox Series X, Series S, Xbox One y dispositivos con Windows/Android/iOS, con el diseño moderno del Xbox Wireless Controller en color Robot White. Ofrece conexión Xbox Wireless y Bluetooth, botones texturizados y un pad direccional preciso para comodidad durante largas sesiones de juego, además de un botón Share para capturar y compartir contenido fácilmente.",
@@ -811,13 +963,13 @@
         "images/productos/21/4.jpg",
         "images/productos/21/5.jpg"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "80400",
+      "ars": "85200",
       "usd": 47.5,
       "weight": null,
-      "usdSell": 57,
+      "usdSell": 59.95,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -828,19 +980,31 @@
         {
           "ars": "80400",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "80700",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "81000",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "85200",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-microsoft-ep2-2992221-sem-fio-para-xbox-series/1314076",
-          "price": 47.5,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:53.896590+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 22,
@@ -855,13 +1019,13 @@
         "https://firebasestorage.googleapis.com/v0/b/eccomerce-jmcomputer.firebasestorage.app/o/products%2Ff78436c8-2c28-4bc8-b775-b55dec2e1107_image.png?alt=media&token=633d9190-dbfe-469f-b5c1-0b06bf563ef7",
         "https://firebasestorage.googleapis.com/v0/b/eccomerce-jmcomputer.firebasestorage.app/o/products%2F5041deaf-8462-4923-ab09-4c86c871f119_image.png?alt=media&token=9ab011a0-6b85-4062-b42d-21a133fb93d6"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "197400",
+      "ars": "203100",
       "usd": 100,
       "weight": null,
-      "usdSell": 140,
+      "usdSell": 143,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -880,11 +1044,24 @@
         {
           "ars": "197400",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "201700",
+          "date": "2026-04-22"
+        },
+        {
+          "ars": "202400",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "203100",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": false
     },
     {
       "id": 23,
@@ -902,13 +1079,13 @@
         "images/productos/23/5.jpg",
         "images/productos/23/6.jpg"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "223800",
-      "usd": 117,
+      "ars": "234300",
+      "usd": 120,
       "weight": null,
-      "usdSell": 158.7,
+      "usdSell": 165,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -919,19 +1096,31 @@
         {
           "ars": "223800",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "228000",
+          "date": "2026-04-22"
+        },
+        {
+          "ars": "233500",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "234300",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/tv-smart-xiaomi-a-series-l32m8-p2ph-32-hd-google-tv-preto/1181081",
-          "price": 117,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:54.334955+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": false
     },
     {
       "id": 24,
@@ -948,32 +1137,44 @@
         "images/productos/24/4.jpg",
         "images/productos/24/5.jpg"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "213000",
-      "usd": 120,
+      "ars": "218700",
+      "usd": 110,
       "weight": null,
-      "usdSell": 162,
+      "usdSell": 154,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
         {
           "ars": "213000",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "232700",
+          "date": "2026-04-22"
+        },
+        {
+          "ars": "218000",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "218700",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/geral/tv-led-32-jvc-32km158-hdsmartgoogle-tvblutetoohhdmi/1329322",
-          "price": 120,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:54.788831+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": false
     },
     {
       "id": 25,
@@ -987,38 +1188,50 @@
         "images/productos/25/main.jpg",
         "images/productos/25/2.jpg"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "335600",
+      "ars": "351500",
       "usd": 185,
       "weight": null,
-      "usdSell": 243.5,
+      "usdSell": 247.5,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
         {
           "ars": "335600",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "349000",
+          "date": "2026-04-22"
+        },
+        {
+          "ars": "350300",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "351500",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/smart-tv-xiaomi-l43mb-afph-2026-43-4k-ultra-hd-preto/1317572",
-          "price": 185,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:55.188205+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 26,
       "cat": "Belleza",
-      "calcSub": "unico",
-      "name": "Mascarilla Capilar Karseell Maca Power 500ml",
+      "calcSub": "mascarilla",
+      "name": "Mascarilla Capilar Karseell Maca Power 500ml Original",
       "sub": "",
       "desc": "Tratamiento profundo para cabello seco y dañado. La Karseell Hair Mask trabaja directamente en la fibra capilar, ayudando a recuperar suavidad, brillo y elasticidad desde la primera aplicación. Su fórmula nutritiva aporta hidratación duradera, reduce el frizz y mejora la manejabilidad en el uso diario. Ideal para cuidados semanales, facilita el desenredo y deja el cabello con un aspecto más sano, alineado y nutrido por más tiempo.",
       "img": "images/productos/26/main.jpg",
@@ -1026,37 +1239,57 @@
         "images/productos/26/main.jpg",
         "images/productos/26/2.jpg"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "7700",
+      "ars": "8700",
       "usd": 4.75,
       "weight": null,
-      "usdSell": 5.7,
+      "usdSell": 6.06,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
         {
           "ars": "7700",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "8100",
+          "date": "2026-04-22"
+        },
+        {
+          "ars": "8600",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "8900",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "8600",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "8700",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/mascara-capilar-karseell-maca-power-500ml/1314793",
-          "price": 4.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:55.651138+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 27,
       "cat": "Belleza",
-      "calcSub": "unico",
+      "calcSub": "cera",
       "name": "Cera Capilar Karseell Maca Hair Style Wax 100g",
       "sub": "",
       "desc": "Definición que perdura todo el día. La Karseell Maca Hair Style Wax ofrece fijación fuerte y brillo intenso, permitiendo moldear el cabello con control total. Su fórmula ligera no carga ni deja sensación grasosa, ideal para peinados definidos en cabellos medianos a cortos. Aporta textura y firmeza duradera. Perfecta para estructurar estilos complejos o looks con efecto moldeado.",
@@ -1065,32 +1298,44 @@
         "images/productos/27/main.jpg",
         "images/productos/27/2.jpg"
       ],
-      "badge": null,
+      "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "5500",
+      "ars": "6600",
       "usd": 3.5,
       "weight": null,
-      "usdSell": 4.2,
+      "usdSell": 4.62,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
         {
           "ars": "5500",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "6000",
+          "date": "2026-04-22"
+        },
+        {
+          "ars": "6400",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "6600",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/cera-capilar-karseell-maca-hair-style-wax-100g/1286113",
-          "price": 3.5,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:56.119942+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 28,
@@ -1107,10 +1352,10 @@
         "images/productos/28/4.jpg",
         "images/productos/28/5.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "276800",
+      "ars": "287600",
       "usd": 162,
       "weight": null,
       "usdSell": 202.5,
@@ -1120,19 +1365,31 @@
         {
           "ars": "276800",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "285600",
+          "date": "2026-04-22"
+        },
+        {
+          "ars": "286600",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "287600",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/aspiradores/robo-aspirador-xiaomi-robot-vacuum-s40-bhr084aeu-branco/1251340",
-          "price": 162,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:25:56.640297+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
     },
     {
       "id": 29,
@@ -1146,10 +1403,10 @@
         "images/productos/29/main.jpg",
         "images/productos/29/2.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "128600",
+      "ars": "147900",
       "usd": 86.75,
       "weight": null,
       "usdSell": 104.1,
@@ -1159,19 +1416,1185 @@
         {
           "ars": "128600",
           "date": "2026-04-21"
+        },
+        {
+          "ars": "146800",
+          "date": "2026-04-22"
+        },
+        {
+          "ars": "147400",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "147900",
+          "date": "2026-04-23"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/cafeteira-xiaomi-semi-automatic-espresso-machine-bhr9798eu-220v-prata/1197112",
-          "price": 86.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-21T22:42:53.247811+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
-      "enrichError": null
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 30,
+      "cat": "Audio",
+      "calcSub": "Grande",
+      "name": "Speaker Portátil JBL Flip 7 Bluetooth Negro",
+      "sub": "",
+      "desc": "El JBL Flip 7 es la última incorporación a la línea de altavoces portátiles de JBL, ofreciendo sonido potente y características mejoradas para acompañar tu ritmo. Con la tecnología AI Sound Boost, proporciona audio de alta calidad sin distorsiones, incluso a volúmenes altos. La certificación IP68 garantiza resistencia al agua y al polvo, haciéndolo ideal para aventuras al aire libre.",
+      "img": "images/productos/30/main.jpg",
+      "images": [
+        "images/productos/30/main.jpg",
+        "images/productos/30/2.jpg",
+        "images/productos/30/3.jpg",
+        "images/productos/30/4.jpg",
+        "images/productos/30/5.jpg",
+        "images/productos/30/6.jpg"
+      ],
+      "badge": "Disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "140300",
+      "usd": 79,
+      "weight": null,
+      "usdSell": 98.75,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "138000",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "140300",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-flip-7-bluetooth-preto/1197624",
+          "price": 79,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T15:30:42.455701+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 31,
+      "cat": "Audio",
+      "calcSub": "Grande",
+      "name": "Speaker Portátil JBL Go 5 Azul",
+      "sub": "",
+      "desc": "El JBL GO 5 Blue es el compañero ultraportátil definitivo para quienes no renuncian a la calidad sonora en cualquier lugar. Esta nueva generación ofrece el sonido JBL Pro con graves sorprendentemente potentes para su tamaño reducido. Totalmente a prueba de agua y polvo con certificación IP67, es perfecto para la playa o la piscina. El gran diferencial de esta versión es la tecnología Auracast, que permite conectar múltiples altavoces JBL compatibles. Su batería mejorada ofrece hasta 7 horas de reproducción, con un adicional de 2 horas mediante el modo Playtime Boost.",
+      "img": "images/productos/31/main.jpg",
+      "images": [
+        "images/productos/31/main.jpg",
+        "images/productos/31/2.jpg"
+      ],
+      "badge": "Disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "71000",
+      "usd": 40,
+      "weight": null,
+      "usdSell": 50,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "67300",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "71000",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-azul/1354065",
+          "price": 40,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T15:30:43.571146+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 32,
+      "cat": "Audio",
+      "calcSub": "Grande",
+      "name": "Speaker Portátil JBL Go 5 Naranja",
+      "sub": "",
+      "desc": "Compre Speaker Portátil JBL Go 5 - Laranja no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/32/main.jpg",
+      "images": [
+        "images/productos/32/main.jpg",
+        "images/productos/32/2.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "71000",
+      "usd": 40,
+      "weight": null,
+      "usdSell": 50,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "67300",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "71000",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-laranja/1354072",
+          "price": 40,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T15:30:44.211764+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 33,
+      "cat": "Audio",
+      "calcSub": "Grande",
+      "name": "Speaker Portátil JBL Go 5 Rosa",
+      "sub": "",
+      "desc": "El JBL GO 5 combina un estilo vibrante y moderno con el renombrado sonido JBL Pro. Esta nueva generación ha sido optimizada para ofrecer un audio nítido y graves potentes que sorprenden por su tamaño ultra-compacto. Con certificación IP67, el dispositivo es totalmente resistente al agua y al polvo, permitiéndote llevar tu música a cualquier aventura sin preocupaciones. El soporte a la tecnología Auracast permite conectar varios altavoces compatibles para ampliar el sonido, mientras que el modo Playtime Boost garantiza hasta 2 horas extras de batería sobre las 7 horas de uso continuo.",
+      "img": "images/productos/33/main.jpg",
+      "images": [
+        "images/productos/33/main.jpg",
+        "images/productos/33/2.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "71000",
+      "usd": 40,
+      "weight": null,
+      "usdSell": 50,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "67300",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "71000",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-rosa/1354089",
+          "price": 40,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T15:30:44.947337+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 34,
+      "cat": "Audio",
+      "calcSub": "Grande",
+      "name": "Speaker Portátil JBL Go 5 Rojo",
+      "sub": "",
+      "desc": "El JBL GO 5 presenta un diseño audaz en color rojo vibrante, entregando el sonido JBL Pro con bajos impactantes que desafían su tamaño ultra-compacto. Esta nueva generación ha sido diseñada para la máxima durabilidad con certificación IP67, siendo totalmente resistente al agua y al polvo. Equipado con Bluetooth 5.3, ofrece una conexión estable y soporta la tecnología Auracast, permitiendo conectar múltiples altavoces compatibles.",
+      "img": "images/productos/34/main.jpg",
+      "images": [
+        "images/productos/34/main.jpg",
+        "images/productos/34/2.jpg"
+      ],
+      "badge": "Disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "71000",
+      "usd": 40,
+      "weight": null,
+      "usdSell": 50,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "67300",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "71000",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-vermelho/1354362",
+          "price": 40,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T15:30:45.636693+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 35,
+      "cat": "Audio",
+      "calcSub": "Grande",
+      "name": "Speaker Portátil JBL Go 5 Camuflaje",
+      "sub": "",
+      "desc": "El JBL GO 5 presenta un diseño aventurero con un patrón camuflado exclusivo, manteniendo el legendario sonido JBL Pro en un formato ultra-compacto. Esta nueva generación ha sido diseñada para enfrentar cualquier terreno gracias a su certificación IP67, que garantiza protección total contra el agua y el polvo. Equipado con Bluetooth 5.3, ofrece una conexión estable y soporta la innovadora tecnología Auracast, permitiendo el emparejamiento con múltiples altavoces JBL compatibles. Además de las 7 horas de reproducción estándar, la función Playtime Boost proporciona hasta 2 horas extras de audio nítido y bajos potentes.",
+      "img": "images/productos/35/main.jpg",
+      "images": [
+        "images/productos/35/main.jpg",
+        "images/productos/35/2.jpg"
+      ],
+      "badge": "Disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "71000",
+      "usd": 40,
+      "weight": null,
+      "usdSell": 50,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "67300",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "71000",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-camuflado/1354379",
+          "price": 40,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T15:30:46.266767+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 36,
+      "cat": "Audio",
+      "calcSub": "Grande",
+      "name": "Speaker Portátil JBL Go 5 Amarillo",
+      "sub": "",
+      "desc": "El JBL GO 5 combina un estilo vibrante y moderno con el renombrado sonido JBL Pro. Esta nueva generación ha sido optimizada para ofrecer un audio nítido y graves potentes que sorprenden por su tamaño ultra-compacto. Con certificación IP67, el dispositivo es totalmente resistente al agua y al polvo, permitiéndote llevar tu música a cualquier aventura sin preocupaciones. El soporte a la tecnología Auracast permite conectar varios altavoces compatibles para ampliar el sonido, mientras que el modo Playtime Boost garantiza hasta 2 horas extras de batería sobre las 7 horas de uso continuo.",
+      "img": "images/productos/36/main.jpg",
+      "images": [
+        "images/productos/36/main.jpg",
+        "images/productos/36/2.jpg"
+      ],
+      "badge": "Disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "71000",
+      "usd": 40,
+      "weight": null,
+      "usdSell": 50,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "67300",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "71000",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-amarelo/1354096",
+          "price": 40,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T15:30:46.956845+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 37,
+      "cat": "Celulares",
+      "calcSub": "gruesa",
+      "name": "Smartphone Xiaomi Poco C85 Global 128GB 6GB RAM Dual SIM Pantalla 6.9\"",
+      "sub": "",
+      "desc": "El POCO C85 combina el rendimiento y la practicidad con la pantalla IPS IPS de 120 Hz, asegurando imágenes fluidas y colores afilados. Su cámara principal de 50 MP captura fotos detalladas y videos de calidad para la vida cotidiana. Tiene una conexión 4G para la navegación rápida y rápida, así como la certificación IP64, lo que garantiza la resistencia al polvo y las salpicaduras. La batería a largo plazo garantiza más tiempo de uso libre de preocupación, ideal para rutinas intensas.",
+      "img": "images/productos/37/main.jpg",
+      "images": [
+        "images/productos/37/main.jpg",
+        "images/productos/37/2.jpg",
+        "images/productos/37/3.jpg",
+        "images/productos/37/4.jpg",
+        "images/productos/37/5.jpg",
+        "images/productos/37/6.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "167600",
+      "usd": 101.82,
+      "weight": null,
+      "usdSell": 118,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "167900",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "167600",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-poco-c85-global-128gb-6gb-ram-dual-sim-tela-69-verde/1268348",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": false
+    },
+    {
+      "id": 38,
+      "cat": "Celulares",
+      "calcSub": "gruesa",
+      "name": "Smartphone Motorola Moto G15 XT-2521-2 128GB 4GB RAM Dual SIM Pantalla 6.72\"",
+      "sub": "",
+      "desc": "El Motorola Moto G15 XT2521-2 combina rendimiento y diseño en un dispositivo accesible. Su pantalla FHD+ de 6.72\\\" ofrece imágenes nítidas, ideal para entretenimiento y navegación. Equipado con el procesador Helio G81 Extreme y 4GB de RAM, garantiza fluidez en tareas diarias. La cámara principal de 50 MP captura fotos detalladas, mientras que la batería de 5200 mAh proporciona autonomía prolongada. Con Android 15 y almacenamiento expandible, es una opción equilibrada para usuarios exigentes.",
+      "img": "images/productos/38/main.jpg",
+      "images": [
+        "images/productos/38/main.jpg",
+        "images/productos/38/2.jpg",
+        "images/productos/38/3.jpg",
+        "images/productos/38/4.jpg",
+        "images/productos/38/5.jpg",
+        "images/productos/38/6.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "185400",
+      "usd": 113.18,
+      "weight": null,
+      "usdSell": 130.5,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "185400",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "185100",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "185400",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g15-xt-2521-2-128gb-4gb-ram-dual-sim-tela-672-verde/1212396",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": false
+    },
+    {
+      "id": 39,
+      "cat": "Celulares",
+      "calcSub": "gruesa",
+      "name": "Smartphone Motorola Moto G05 XT-2523-2 128GB 4GB RAM Dual SIM Pantalla 6.67\"",
+      "sub": "",
+      "desc": "El smartphone Moto G05 combina un rendimiento eficiente y características modernas. Su pantalla LCD IPS de 90Hz ofrece imágenes más fluidas. Equipado con un procesador de 8 núcleos, garantiza una buena respuesta en la multitarea. La cámara principal de 50 MP captura fotos detalladas con calidad. Con conexión 4G, proporciona una navegación estable. La certificación IP54 proporciona resistencia a las salpicaduras y al polvo, mientras que la batería de larga duración permite más tiempo de uso.",
+      "img": "images/productos/39/main.jpg",
+      "images": [
+        "images/productos/39/main.jpg",
+        "images/productos/39/2.jpg",
+        "images/productos/39/3.jpg",
+        "images/productos/39/4.jpg",
+        "images/productos/39/5.jpg",
+        "images/productos/39/6.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "176100",
+      "usd": 107.27,
+      "weight": null,
+      "usdSell": 124,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "176100",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "175700",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "176100",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g05-xt-2523-2-128gb-4gb-ram-dual-sim-tela-667-verde/1227017",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": false
+    },
+    {
+      "id": 40,
+      "cat": "Accesorios",
+      "calcSub": "unico",
+      "name": "Micrófono Solapa DJI MIC Mini USB-C 2 TX + 1 RX + Charging Funda Wireless para Smartphone Negro",
+      "sub": "",
+      "desc": "El DJI Mic Mini (2 TX + 1 RX) es un micrófono versátil y eficiente. Con captación de audio omnidireccional, garantiza un sonido claro y detallado. Su transmisión estable de hasta 400 metros permite una movilidad sin interferencias. Ofrece una autonomía total de hasta 48 horas en el estuche y 11 horas en el transmisor. Tiene cancelación activa de ruido de 2 niveles para un audio más limpio. Compatible con TRS 3.5mm e interfaz USB-C, es ideal para diversas aplicaciones.",
+      "img": "images/productos/40/main.jpg",
+      "images": [
+        "images/productos/40/main.jpg",
+        "images/productos/40/2.jpg",
+        "images/productos/40/3.jpg",
+        "images/productos/40/4.jpg",
+        "images/productos/40/5.jpg",
+        "images/productos/40/6.jpg",
+        "images/productos/40/7.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "253900",
+      "usd": 149,
+      "weight": null,
+      "usdSell": 178.8,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "253900",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/microfones/microfone-lapela-dji-mic-mini-usb-c-2-tx-1-rx-charging-case-wireless-para-smartphone-preto/1153026",
+          "price": 149,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:11:41.790330+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 41,
+      "cat": "Accesorios",
+      "calcSub": "unico",
+      "name": "Micrófono Lapela DJI Mic 2 USB-C 1 TX + 1 RX FCC Inalámbrico para Smartphone negro",
+      "sub": "",
+      "desc": "Captura de audio para creadores de contenido, cineastas y profesionales que buscan una calidad de sonido superior sin maraña de cables. El micrófono DJI Mic 2 tiene un alcance de transmisión de hasta 250 metros. Autonomía de 5,5 horas de uso continuo y hasta 15 horas en el estuche de carga. El diseño magnético, complementado con un clip trasero, permite una fijación rápida y segura a la ropa. El kit incluye un transmisor y un receptor.",
+      "img": "images/productos/41/main.jpg",
+      "images": [
+        "images/productos/41/main.jpg",
+        "images/productos/41/2.jpg",
+        "images/productos/41/3.jpg",
+        "images/productos/41/4.jpg",
+        "images/productos/41/5.jpg",
+        "images/productos/41/6.jpg",
+        "images/productos/41/7.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "305100",
+      "usd": 179,
+      "weight": null,
+      "usdSell": 214.8,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "305100",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/microfones/microfone-lapela-dji-mic-2-usb-c-1-tx-1-rx-fcc-sem-fio-para-smartphone-preto/1045017",
+          "price": 179,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:11:43.324843+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 42,
+      "cat": "Accesorios",
+      "calcSub": "unico",
+      "name": "Microfono Solapa DJI Mic 3 Inalámbrico + Funda - Negro (2TX + 1RX)",
+      "sub": "",
+      "desc": "Gravação profissional em qualquer cenário. O DJI Mic 3 vem com dois transmissores ultracompactos e um receptor com visor OLED, além de estojo inteligente que organiza e recarrega todo o conjunto com praticidade. Com alcance de até 400 m e gravação interna em 32-bit float, oferece áudio nítido mesmo em ambientes desafiadores. Conta com cancelamento de ruído, presets de voz e controle automático de ganho, ideal para vídeos, entrevistas ou podcasts com liberdade e qualidade superior.",
+      "img": "images/productos/42/main.jpg",
+      "images": [
+        "images/productos/42/main.jpg",
+        "images/productos/42/2.jpg",
+        "images/productos/42/3.jpg",
+        "images/productos/42/4.jpg",
+        "images/productos/42/5.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "577700",
+      "usd": 339,
+      "weight": null,
+      "usdSell": 406.8,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "577700",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/microfones/microfone-lapela-dji-mic-3-sem-fio-capa-preto-2tx-1rx/1264050",
+          "price": 339,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:11:44.649480+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 43,
+      "cat": "Accesorios",
+      "calcSub": "unico",
+      "name": "Microfono Solapa DJI Mic 3 Receiver Inalámbrico Negro",
+      "sub": "",
+      "desc": "El DJI Mic 3 Receiver garantiza recepción de señal digital de alta calidad mediante tecnología dual-band (2,4 GHz / 5,8 GHz) con conmutación automática para máxima estabilidad. Compatible con hasta cuatro transmisores y hasta ocho receptores, es ideal para producciones multicámara y captación de múltiples voces al mismo tiempo. Incluye pantalla AMOLED de 1,1 pulgadas, control por dial y ajustes locales, permitiendo modificar ganancia, monitoreo y configuración directamente desde el receptor.",
+      "img": "images/productos/43/main.jpg",
+      "images": [
+        "images/productos/43/main.jpg",
+        "images/productos/43/2.jpg",
+        "images/productos/43/3.jpg",
+        "images/productos/43/4.jpg",
+        "images/productos/43/5.jpg",
+        "images/productos/43/6.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "230100",
+      "usd": 135,
+      "weight": null,
+      "usdSell": 162,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "230100",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/microfones/microfone-lapela-dji-mic-3-receiver-sem-fio-preto/1264067",
+          "price": 135,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:11:45.676161+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 44,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Cámara de Acción DJI Osmo Pocket 3 Estabilizador Creator Combo",
+      "sub": "",
+      "desc": "Descubra la magia de la fotografía y la videografía con el Osmo Pocket 3. Déjese deslumbrar por los colores auténticos y los finos detalles gracias al sensor CMOS de 1 pulgada del Pocket 3. Con una pantalla táctil giratoria de 2 pulgadas, cambie fácilmente entre los modos horizontal y vertical. Capture momentos decisivos de forma estable y precisa sin fluctuaciones. Y para escenas en movimiento, filme en sorprendentes 4K/120 fps para obtener resultados increíblemente fluidos y dinámicos.",
+      "img": "images/productos/44/main.jpg",
+      "images": [
+        "images/productos/44/main.jpg",
+        "images/productos/44/2.jpg",
+        "images/productos/44/3.jpg",
+        "images/productos/44/4.jpg",
+        "images/productos/44/5.jpg",
+        "images/productos/44/6.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "1191100",
+      "usd": 699,
+      "weight": null,
+      "usdSell": 838.8,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "1191100",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-dji-osmo-pocket-3-estabilizador-creator-combo/1017410",
+          "price": 699,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:26:30.728902+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 45,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Cámara de Acción DJI Osmo 360 Adventure Combo 120MP WiFi Negro",
+      "sub": "",
+      "desc": "Revolución en grabación 360°, la cámara DJI Osmo 360 Adventure Combo cuenta con sensor de 1",
+      "img": "images/productos/45/main.jpg",
+      "images": [
+        "images/productos/45/main.jpg",
+        "images/productos/45/2.jpg",
+        "images/productos/45/3.jpg",
+        "images/productos/45/4.jpg",
+        "images/productos/45/5.jpg",
+        "images/productos/45/6.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "979800",
+      "usd": 575,
+      "weight": null,
+      "usdSell": 690,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "979800",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-dji-osmo-360-adventure-combo-120mp-wifi-preto/1252163",
+          "price": 575,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:26:32.456423+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 46,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Cámara de Acción DJI Osmo Pocket 3 con Estabilizador",
+      "sub": "",
+      "desc": "Descubra la magia de la fotografía y la videografía con el Osmo Pocket 3. Déjese deslumbrar por los colores auténticos y los finos detalles gracias al sensor CMOS de 1 pulgada del Pocket 3. Con una pantalla táctil giratoria de 2 pulgadas, cambie fácilmente entre los modos horizontal y vertical. Capture momentos decisivos de forma estable y precisa sin fluctuaciones. Y para escenas en movimiento, filme en sorprendentes 4K/120 fps para obtener resultados increíblemente fluidos y dinámicos.",
+      "img": "images/productos/46/main.jpg",
+      "images": [
+        "images/productos/46/main.jpg",
+        "images/productos/46/2.jpg",
+        "images/productos/46/3.jpg",
+        "images/productos/46/4.jpg",
+        "images/productos/46/5.jpg",
+        "images/productos/46/6.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "894600",
+      "usd": 525,
+      "weight": null,
+      "usdSell": 630,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "894600",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-dji-osmo-pocket-3-com-estabilizador/1017403",
+          "price": 525,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:26:34.070964+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 47,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Cámara de Acción DJI Osmo Action 5 Pro Adventure Combo 40MP WiFi Negro",
+      "sub": "",
+      "desc": "Ideal para aventuras, la cámara de acción Osmo Action 5 Pro graba en 4K HDR, ofreciendo colores vibrantes y excelente calidad en baja luz. Su estabilización avanzada mantiene los videos fluidos, incluso en movimientos extremos. Resistente al agua y a los impactos, está lista para cualquier desafío. El Adventure Combo incluye accesorios esenciales para capturar momentos únicos con total libertad.",
+      "img": "images/productos/47/main.jpg",
+      "images": [
+        "images/productos/47/main.jpg",
+        "images/productos/47/2.jpg",
+        "images/productos/47/3.jpg",
+        "images/productos/47/4.jpg",
+        "images/productos/47/5.jpg",
+        "images/productos/47/6.jpg",
+        "images/productos/47/7.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "850300",
+      "usd": 499,
+      "weight": null,
+      "usdSell": 598.8,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "850300",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-dji-osmo-action-5-pro-adventure-combo-40mp-wifi-preto/1125788",
+          "price": 499,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:26:35.743112+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 48,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Cámara de Acción DJI Osmo 360 Standard Combo 120MP Negro",
+      "sub": "",
+      "desc": "La cámara de acción DJI Osmo 360 ofrece una experiencia inmersiva con captura de 360° y una impresionante resolución de 120MP. Permite grabar continuamente en 8K a 30fps durante hasta 100 minutos, así como un modo mejorado en 4K a 120fps con un ángulo de 170°, ideal para acciones extremas. Cuenta con estabilización RockSteady 3.0 para vídeos fluidos en cualquier situación. Con impermeabilización IP68, es perfecta para aventuras en cualquier entorno.",
+      "img": "images/productos/48/main.jpg",
+      "images": [
+        "images/productos/48/main.jpg",
+        "images/productos/48/2.jpg",
+        "images/productos/48/3.jpg",
+        "images/productos/48/4.jpg",
+        "images/productos/48/5.jpg",
+        "images/productos/48/6.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "741300",
+      "usd": 435,
+      "weight": null,
+      "usdSell": 522,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "741300",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-dji-osmo-360-standard-combo-120mp-preto/1252156",
+          "price": 435,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:26:37.608644+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 49,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Cámara de Acción DJI Osmo Action 4 Adventure Combo Negro",
+      "sub": "",
+      "desc": "Conozca el Osmo Action 4 con captura excepcional en condiciones de poca luz, increíble color de 10 bits, 4K/120 fps, ángulo ultra gran angular de 155°, estabilidad superior, resistente al agua hasta 60 pies, duración de batería de más de 2,5 horas y accesorios versátiles. ¡Empieza a crear ahora!",
+      "img": "images/productos/49/main.jpg",
+      "images": [
+        "images/productos/49/main.jpg",
+        "images/productos/49/2.jpg",
+        "images/productos/49/3.jpg",
+        "images/productos/49/4.jpg",
+        "images/productos/49/5.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "679900",
+      "usd": 399,
+      "weight": null,
+      "usdSell": 478.8,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "679900",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-dji-osmo-action-4-adventure-combo-preto/997379",
+          "price": 399,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:26:39.222653+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 50,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Cámara de Acción DJI Osmo Action 5 Pro Standard Combo 40MP WiFi Negro",
+      "sub": "",
+      "desc": "La DJI Osmo Action 5 Pro es la cámara perfecta para aventuras y producciones profesionales. Equipado con conectividad Wi-Fi 6.0 y Bluetooth 5.1, facilita compartir y controlar a distancia. Su cámara de 40 MP con resolución 4K captura imágenes y vídeos con una claridad increíble. Las pantallas OLED delantera y trasera ofrecen comodidad para selfies y monitoreo en tiempo real. Con resistencia al agua de hasta 20 m sin estuche y 60 m con estuche.",
+      "img": "images/productos/50/main.jpg",
+      "images": [
+        "images/productos/50/main.jpg",
+        "images/productos/50/2.jpg",
+        "images/productos/50/3.jpg",
+        "images/productos/50/4.jpg",
+        "images/productos/50/5.jpg",
+        "images/productos/50/6.jpg",
+        "images/productos/50/7.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "662900",
+      "usd": 389,
+      "weight": null,
+      "usdSell": 466.8,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "662900",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-dji-osmo-action-5-pro-standard-combo-40mp-wifi-preto/1125795",
+          "price": 389,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:26:40.633289+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 51,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Cámara con Estabilizador DJI Osmo Pocket 2 OT-210 Negro",
+      "sub": "",
+      "desc": "Compre Câmera com Estabilizador DJI Osmo Pocket 2 OT-210 - Preto no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/51/main.jpg",
+      "images": [
+        "images/productos/51/main.jpg",
+        "images/productos/51/2.jpg",
+        "images/productos/51/3.jpg",
+        "images/productos/51/4.jpg",
+        "images/productos/51/5.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "509500",
+      "usd": 299,
+      "weight": null,
+      "usdSell": 358.8,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "509500",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/geral/dji-camera-cestabilizador-osmo-pocket-2-ot-210/1340099",
+          "price": 299,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:26:42.111436+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 52,
+      "cat": "Fotografia y Video",
+      "calcSub": "Unico",
+      "name": "Cámara de Acción DJI Osmo Action 4 Stander Combo Negro",
+      "sub": "",
+      "desc": "La Osmo Action 4 Stander es la cámara ideal para tus aventuras. Con un sensor de 1/1,3 pulgadas para fotografías increíbles con poca luz, color de 10 bits para una paleta rica y resistencia a temperaturas bajo cero y agua hasta 60 pies. Graba en 4K/120 fps, con estabilidad RockSteady 3.0. Control sencillo con pantallas táctiles duales y cierre rápido magnético. ¡Empieza a crear tus historias ahora!",
+      "img": "images/productos/52/main.jpg",
+      "images": [
+        "images/productos/52/main.jpg",
+        "images/productos/52/2.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "509500",
+      "usd": 299,
+      "weight": null,
+      "usdSell": 358.8,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "509500",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-dji-osmo-action-4-stander-combo-preto/997386",
+          "price": 299,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:26:43.277707+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 53,
+      "cat": "Celulares",
+      "calcSub": "slim",
+      "name": "Smartphone Samsung Galaxy A16 SM-A165F Global 128GB 4GB RAM Dual SIM Pantalla 6.7\" - Gris (Caja Slim)",
+      "sub": "",
+      "desc": "El Samsung Galaxy A16 en color Gris es un smartphone que une elegancia y tecnología para las tareas esenciales del día a día. Con una pantalla Super AMOLED de 6.7 pulgadas y tasa de refresco de 90Hz, ofrece una experiencia visual inmersiva y fluida con la calidad de imagen característica de Samsung. Esta versión cuenta con 128GB de almacenamiento y 4GB de RAM, garantizando espacio para sus archivos y un rendimiento estable. El dispositivo presenta un diseño moderno y ergonómico, siendo entregado en una Caja Slim, alineado con el compromiso sostenible de la marca.",
+      "img": "images/productos/53/main.jpg",
+      "images": [
+        "images/productos/53/main.jpg",
+        "images/productos/53/2.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "203300",
+      "usd": 127,
+      "weight": null,
+      "usdSell": 143.16,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "203300",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a16-sm-a165f-global-128gb-4gb-ram-dual-sim-tela-67-cinza-caixa-slim/1351385",
+          "price": 127,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:58:36.875351+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 54,
+      "cat": "Celulares",
+      "calcSub": "gruesa",
+      "name": "Smartphone Motorola Edge 60 Neo 5G XT-2509-1 256GB 12GB RAM Dual SIM Pantalla 6.36\" Gris",
+      "sub": "",
+      "desc": "Compre Smartphone Motorola Edge 60 Neo 5G XT-2509-1 256GB 12GB RAM Dual SIM Tela 6.36\" - Cinza no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/54/main.jpg",
+      "images": [
+        "images/productos/54/main.jpg",
+        "images/productos/54/2.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "499900",
+      "usd": 320,
+      "weight": null,
+      "usdSell": 352,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "499900",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-edge-60-neo-5g-xt-2509-1-256gb-12gb-ram-dual-sim-tela-636-cinza/1354423",
+          "price": 320,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:58:37.628877+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 55,
+      "cat": "Celulares",
+      "calcSub": "slim",
+      "name": "Smartphone Motorola Moto G56 5G XT-2529-2 256GB 8GB RAM Dual SIM Pantalla 6.72\" Verde (Caja Slim)",
+      "sub": "",
+      "desc": "El Moto G56 combina rendimiento y resistencia con una pantalla LCD IPS de 120 Hz, lo que garantiza fluidez e imágenes nítidas. Equipado con una cámara principal dual de 50MP, captura fotos detalladas y videos de alta calidad. Cuenta con conexión 5G para navegación ultrarrápida y certificaciones IP68/IP69, ofreciendo protección contra el agua, el polvo y los impactos. Su batería de larga duración garantiza horas de uso continuo, ideal para aquellos que buscan potencia y durabilidad.",
+      "img": "images/productos/55/main.jpg",
+      "images": [
+        "images/productos/55/main.jpg",
+        "images/productos/55/2.jpg",
+        "images/productos/55/3.jpg",
+        "images/productos/55/4.jpg",
+        "images/productos/55/5.jpg",
+        "images/productos/55/6.jpg"
+      ],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "284600",
+      "usd": 180,
+      "weight": null,
+      "usdSell": 200.4,
+      "activo": true,
+      "fechaAlta": "2026-04-23",
+      "priceHistory": [
+        {
+          "ars": "284600",
+          "date": "2026-04-23"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g56-5g-xt-2529-2-256gb-8gb-ram-dual-sim-tela-672-verde-caixa-slim/1307313",
+          "price": 180,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-23T18:58:38.486235+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
     }
   ],
   "banners": [
@@ -1493,6 +2916,6 @@
     "dollarUpdated": "2026-04-22T00:04:26.490681+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-21T22:42:54.718050+00:00",
+  "lastSync": "2026-04-23T21:32:38.435Z",
   "lastPriceCheck": null
 }
