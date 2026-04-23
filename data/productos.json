@@ -2608,9 +2608,10 @@
       "filter": "",
       "grad": "linear-gradient(135deg,#080e1e 0%,#0f1e38 100%)",
       "emoji": "🎮",
-      "imagen": "images/banners/01-cockpit-redragon-vortex.jpg",
+      "imagen": "images/banners/BannerMoto.jpeg",
       "ctaUrl": "https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20Cockpit%20Gamer%20Redragon%20Vortex",
-      "activo": true
+      "activo": true,
+      "imagenMobile": ""
     },
     {
       "id": 2,
@@ -2912,10 +2913,10 @@
         "whatsapp": "5491154870326"
       }
     ],
-    "dollarAuto": 1410.0,
+    "dollarAuto": 1410,
     "dollarUpdated": "2026-04-22T00:04:26.490681+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-23T21:32:38.435Z",
+  "lastSync": "2026-04-23T21:59:33.701Z",
   "lastPriceCheck": null
 }
