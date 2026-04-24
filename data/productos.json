@@ -3189,34 +3189,6 @@
         ]
       },
       {
-        "id": "hogar",
-        "name": "Hogar",
-        "icon": "🏠",
-        "subtypes": [
-          {
-            "id": "unico",
-            "label": "Único"
-          }
-        ],
-        "rules": [
-          {
-            "subtype": "unico",
-            "type": "none",
-            "val": 0,
-            "steps": [
-              {
-                "kind": "percent",
-                "value": 15
-              },
-              {
-                "kind": "percent",
-                "value": 10
-              }
-            ]
-          }
-        ]
-      },
-      {
         "id": "fotografia-y-video",
         "name": "Fotografia y Video",
         "icon": "📦",
@@ -3412,6 +3384,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T19:08:45.221Z",
+  "lastSync": "2026-04-24T19:09:48.333Z",
   "lastPriceCheck": null
 }
