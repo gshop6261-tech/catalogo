@@ -2919,14 +2919,17 @@
       "calcSub": "Nintendo",
       "name": "Console Nintendo Switch 2 Mario Kart World 256GB Digital Gris",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "La Nintendo Switch 2 Edición Mario Kart World ofrece una evolución masiva en potencia y gráficos. Con 256GB de almacenamiento interno y 12GB de RAM, esta consola permite disfrutar de texturas de alta resolución y tiempos de carga mínimos. Su pantalla de 8 pulgadas LCD con soporte HDR brinda colores vibrantes en modo portátil, mientras que el Dock compatible con 4K y DLSS 3.5 transforma la experiencia en el televisor. Esta versión incluye el código digital o preinstalación de Mario Kart World, diseñada con un acabado gris elegante y controles magnéticos de nueva generación.",
+      "img": "images/productos/57/main.jpg",
+      "images": [
+        "images/productos/57/main.jpg",
+        "images/productos/57/2.jpg"
+      ],
       "badge": "A pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645,
+      "usd": 645.0,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -2940,12 +2943,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-digital-cinza/1356939",
-          "price": null,
+          "price": 645.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-24T20:14:48.120135+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -2955,14 +2959,17 @@
       "calcSub": "Nintendo",
       "name": "Consola Nintendo Switch 2 Mario Kart World 256GB UK Gris",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "La Nintendo Switch 2 con 256 GB de almacenamiento ofrece un rendimiento híbrido premium a través de una pantalla Full HD de 7,9",
+      "img": "images/productos/58/main.jpg",
+      "images": [
+        "images/productos/58/main.jpg",
+        "images/productos/58/2.jpg"
+      ],
       "badge": "A pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645,
+      "usd": 645.0,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -2976,12 +2983,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-uk-cinza/1354966",
-          "price": null,
+          "price": 645.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-24T20:14:48.965710+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -2991,14 +2999,17 @@
       "calcSub": "Nintendo",
       "name": "Consola Nintendo Switch 2 Mario Kart World 256GB LCD UK Gris",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "Nintendo Switch 2 brinda una nueva experiencia visual al icónico Mario Kart World, así como visualización de 120 Hz en una pantalla LCD. Equipado con un procesador NVIDIA, garantiza un alto rendimiento en los juegos. La autonomía varía de 2 a 6,5 ​​horas, ideal para sesiones en movimiento. El audio PCM lineal 5.1 proporciona un sonido envolvente, mientras que la función NFC de los Joy-Cons permite la integración con accesorios y amiibos, ampliando la interactividad.",
+      "img": "images/productos/59/main.jpg",
+      "images": [
+        "images/productos/59/main.jpg",
+        "images/productos/59/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1115200",
-      "usd": 649,
+      "usd": 649.0,
       "weight": null,
       "usdSell": 785.29,
       "activo": true,
@@ -3012,12 +3023,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-lcd-uk-cinza/1347432",
-          "price": null,
+          "price": 649.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-24T20:14:49.673326+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -3027,14 +3039,22 @@
       "calcSub": "Nintendo",
       "name": "Consola Nintendo Switch 2 Mario Kart World 256GB USA - Gris",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El Nintendo Switch 2 presenta una nueva experiencia de pantalla LCD de 7.9 'y una tasa de actualización de 120 Hz, ofreciendo imágenes fluidas de hasta 4k a 60 fps. Equipado con procesador NVIDIA, garantiza un alto rendimiento en los juegos. La autonomía varía de 2 a 6.5 horas, ideal para sesiones en movimiento. El Audio Linear PCM 5.1 proporciona un sonido inmersivo, mientras que el recurso NFC en Joy-Cons permite la integración con accesorios y amiibos, expandiendo la interactividad.",
+      "img": "images/productos/60/main.jpg",
+      "images": [
+        "images/productos/60/main.jpg",
+        "images/productos/60/2.jpg",
+        "images/productos/60/3.jpg",
+        "images/productos/60/4.jpg",
+        "images/productos/60/5.jpg",
+        "images/productos/60/6.jpg",
+        "images/productos/60/7.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645,
+      "usd": 645.0,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -3048,12 +3068,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-usa-cinza/1323139",
-          "price": null,
+          "price": 645.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-24T20:14:50.364388+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     }
@@ -3556,6 +3577,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T20:14:34.832Z",
+  "lastSync": "2026-04-24T20:14:51.973873+00:00",
   "lastPriceCheck": null
 }
