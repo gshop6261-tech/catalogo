@@ -3156,8 +3156,7 @@
         "name": "Efectivo",
         "icon": "💵",
         "modifier": 0,
-        "active": true,
-        "dollarType": "blue"
+        "active": true
       },
       {
         "id": "transferencia",
@@ -3168,23 +3167,14 @@
         "dollarType": "cripto"
       },
       {
-        "id": "mercadopago",
-        "name": "MercadoPago",
-        "icon": "📲",
-        "modifier": 7,
-        "active": true,
-        "dollarType": "blue"
-      },
-      {
         "id": "usdt",
         "name": "USDT",
         "icon": "🪙",
         "modifier": -3,
-        "active": true,
-        "dollarType": "blue"
+        "active": true
       }
     ]
   },
-  "lastSync": "2026-04-24T15:30:31.581Z",
+  "lastSync": "2026-04-24T15:48:21.143Z",
   "lastPriceCheck": null
 }
