@@ -2919,17 +2919,14 @@
       "calcSub": "Nintendo",
       "name": "Console Nintendo Switch 2 Mario Kart World 256GB Digital Gris",
       "sub": "",
-      "desc": "La Nintendo Switch 2 Edición Mario Kart World ofrece una evolución masiva en potencia y gráficos. Con 256GB de almacenamiento interno y 12GB de RAM, esta consola permite disfrutar de texturas de alta resolución y tiempos de carga mínimos. Su pantalla de 8 pulgadas LCD con soporte HDR brinda colores vibrantes en modo portátil, mientras que el Dock compatible con 4K y DLSS 3.5 transforma la experiencia en el televisor. Esta versión incluye el código digital o preinstalación de Mario Kart World, diseñada con un acabado gris elegante y controles magnéticos de nueva generación.",
-      "img": "images/productos/57/main.jpg",
-      "images": [
-        "images/productos/57/main.jpg",
-        "images/productos/57/2.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": "A pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645.0,
+      "usd": 645,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -2943,13 +2940,12 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-digital-cinza/1356939",
-          "price": 645.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-24T20:17:34.743628+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -2959,17 +2955,14 @@
       "calcSub": "Nintendo",
       "name": "Consola Nintendo Switch 2 Mario Kart World 256GB UK Gris",
       "sub": "",
-      "desc": "La Nintendo Switch 2 con 256 GB de almacenamiento ofrece un rendimiento híbrido premium a través de una pantalla Full HD de 7,9",
-      "img": "images/productos/58/main.jpg",
-      "images": [
-        "images/productos/58/main.jpg",
-        "images/productos/58/2.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": "A pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645.0,
+      "usd": 645,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -2983,13 +2976,12 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-uk-cinza/1354966",
-          "price": 645.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-24T20:17:38.180232+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -2999,17 +2991,14 @@
       "calcSub": "Nintendo",
       "name": "Consola Nintendo Switch 2 Mario Kart World 256GB LCD UK Gris",
       "sub": "",
-      "desc": "Nintendo Switch 2 brinda una nueva experiencia visual al icónico Mario Kart World, así como visualización de 120 Hz en una pantalla LCD. Equipado con un procesador NVIDIA, garantiza un alto rendimiento en los juegos. La autonomía varía de 2 a 6,5 ​​horas, ideal para sesiones en movimiento. El audio PCM lineal 5.1 proporciona un sonido envolvente, mientras que la función NFC de los Joy-Cons permite la integración con accesorios y amiibos, ampliando la interactividad.",
-      "img": "images/productos/59/main.jpg",
-      "images": [
-        "images/productos/59/main.jpg",
-        "images/productos/59/2.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1115200",
-      "usd": 649.0,
+      "usd": 649,
       "weight": null,
       "usdSell": 785.29,
       "activo": true,
@@ -3023,13 +3012,12 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-lcd-uk-cinza/1347432",
-          "price": 649.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-24T20:17:39.154469+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -3039,22 +3027,14 @@
       "calcSub": "Nintendo",
       "name": "Consola Nintendo Switch 2 Mario Kart World 256GB USA - Gris",
       "sub": "",
-      "desc": "El Nintendo Switch 2 presenta una nueva experiencia de pantalla LCD de 7.9 'y una tasa de actualización de 120 Hz, ofreciendo imágenes fluidas de hasta 4k a 60 fps. Equipado con procesador NVIDIA, garantiza un alto rendimiento en los juegos. La autonomía varía de 2 a 6.5 horas, ideal para sesiones en movimiento. El Audio Linear PCM 5.1 proporciona un sonido inmersivo, mientras que el recurso NFC en Joy-Cons permite la integración con accesorios y amiibos, expandiendo la interactividad.",
-      "img": "images/productos/60/main.jpg",
-      "images": [
-        "images/productos/60/main.jpg",
-        "images/productos/60/2.jpg",
-        "images/productos/60/3.jpg",
-        "images/productos/60/4.jpg",
-        "images/productos/60/5.jpg",
-        "images/productos/60/6.jpg",
-        "images/productos/60/7.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645.0,
+      "usd": 645,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -3068,13 +3048,12 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-usa-cinza/1323139",
-          "price": 645.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-24T20:17:39.995949+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -3084,21 +3063,14 @@
       "calcSub": "Nintendo",
       "name": "Consola Nintendo Switch 2 256GB USA Gris",
       "sub": "",
-      "desc": "El Nintendo Switch 2 presenta una nueva experiencia de pantalla LCD de 7.9 'y una tasa de actualización de 120 Hz, ofreciendo imágenes fluidas de hasta 4k a 60 fps. Equipado con procesador NVIDIA, garantiza un alto rendimiento en los juegos. La autonomía varía de 2 a 6.5 horas, ideal para sesiones en movimiento. El Audio Linear PCM 5.1 proporciona un sonido inmersivo, mientras que el recurso NFC en Joy-Cons permite la integración con accesorios y amiibos, expandiendo la interactividad.",
-      "img": "images/productos/61/main.jpg",
-      "images": [
-        "images/productos/61/main.jpg",
-        "images/productos/61/2.jpg",
-        "images/productos/61/3.jpg",
-        "images/productos/61/4.jpg",
-        "images/productos/61/5.jpg",
-        "images/productos/61/6.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1029300",
-      "usd": 599.0,
+      "usd": 599,
       "weight": null,
       "usdSell": 724.79,
       "activo": true,
@@ -3112,13 +3084,12 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-256gb-usa-cinza/1323115",
-          "price": 599.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-24T20:17:41.702929+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -3128,21 +3099,14 @@
       "calcSub": "Nintendo",
       "name": "Consola Nintendo Switch 2 256GB UK + Juego Mario Karf Word Física Gris",
       "sub": "",
-      "desc": "El Nintendo Switch 2 con 256 GB de capacidad incorpora una pantalla de 7,9\\\" Full HD, modo TV hasta 4 K y hasta 120 Hz de refresco.  Su gran almacenamiento interno permite instalar múltiples juegos sin necesidad inmediata de tarjeta extra. Incluye el juego físico Mario Kart World, una experiencia de carreras repleta de pistas espectaculares y juego multijugador para disfrutar desde el primer momento. Perfecto para quienes desean jugar en casa o en movilidad con una consola moderna.",
-      "img": "images/productos/62/main.jpg",
-      "images": [
-        "images/productos/62/main.jpg",
-        "images/productos/62/2.jpg",
-        "images/productos/62/3.jpg",
-        "images/productos/62/4.jpg",
-        "images/productos/62/5.jpg",
-        "images/productos/62/6.jpg"
-      ],
+      "desc": "",
+      "img": null,
+      "images": [],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645.0,
+      "usd": 645,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -3156,13 +3120,84 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-256gb-uk-jogo-mario-karf-word-fisico-cinza/1293098",
-          "price": 645.0,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-24T20:17:43.382832+00:00"
+          "isPrimary": true
         }
       ],
-      "status": "enriched",
+      "status": "pending",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 63,
+      "cat": "Consolas",
+      "calcSub": "Nintendo",
+      "name": "Consola Nintendo Switch OLED Neon Model 64GB - HEG-S-KABAA",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "634100",
+      "usd": 369,
+      "weight": null,
+      "usdSell": 446.49,
+      "activo": true,
+      "fechaAlta": "2026-04-24",
+      "priceHistory": [
+        {
+          "ars": "634100",
+          "date": "2026-04-24"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-oled-neon-model-64gb-heg-s-kabaa/1212686",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 64,
+      "cat": "Consolas",
+      "calcSub": "Nintendo",
+      "name": "Console Nintendo Switch OLED 64GB Japón - Blanco (HEG-S-KAAAA)",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "616900",
+      "usd": 359,
+      "weight": null,
+      "usdSell": 434.39,
+      "activo": true,
+      "fechaAlta": "2026-04-24",
+      "priceHistory": [
+        {
+          "ars": "616900",
+          "date": "2026-04-24"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-oled-64gb-japao-branco-heg-s-kaaaa/1212679",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
       "enrichError": null,
       "verifyPrice": true
     }
@@ -3665,6 +3700,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T20:17:44.944069+00:00",
+  "lastSync": "2026-04-24T20:19:16.548Z",
   "lastPriceCheck": null
 }
