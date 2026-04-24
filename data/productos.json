@@ -3144,6 +3144,11 @@
         "id": "1154870326",
         "nombre": "Carlos",
         "whatsapp": "5491154870326"
+      },
+      {
+        "id": "ruben",
+        "nombre": "Ruben",
+        "whatsapp": "5491145125271"
       }
     ],
     "dollarAuto": 1420,
@@ -3176,6 +3181,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T15:51:42.773Z",
+  "lastSync": "2026-04-24T15:53:21.625Z",
   "lastPriceCheck": null
 }
