@@ -3721,8 +3721,8 @@
         "whatsapp": "5491169651009"
       }
     ],
-    "dollarAuto": 1420,
-    "dollarUpdated": "2026-04-24T20:09:20.506712+00:00",
+    "dollarAuto": 1420.0,
+    "dollarUpdated": "2026-04-24T22:29:30.507498+00:00",
     "dollarManual": null,
     "dollarType": "blue",
     "paymentMethods": [
