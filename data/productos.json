@@ -3165,16 +3165,9 @@
         "modifier": 0,
         "active": true,
         "dollarType": "cripto"
-      },
-      {
-        "id": "usdt",
-        "name": "USDT",
-        "icon": "🪙",
-        "modifier": -3,
-        "active": true
       }
     ]
   },
-  "lastSync": "2026-04-24T15:48:21.143Z",
+  "lastSync": "2026-04-24T15:49:28.981Z",
   "lastPriceCheck": null
 }
