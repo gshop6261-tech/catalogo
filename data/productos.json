@@ -2751,62 +2751,6 @@
       "ctaUrl": "https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20Cockpit%20Gamer%20Redragon%20Vortex",
       "activo": true,
       "imagenMobile": ""
-    },
-    {
-      "id": 2,
-      "tag": "💻 Computacion",
-      "title": "ASUS ROG",
-      "accent": "Flow Z13",
-      "sub": "Ryzen AI Max+395 · 128GB · 1TB · 13\"",
-      "cta": "Consultar →",
-      "filter": "",
-      "grad": "linear-gradient(135deg,#130828 0%,#31186a 100%)",
-      "emoji": "💻",
-      "imagen": "images/banners/02-asus-rog-flow-z13.jpg",
-      "ctaUrl": "https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20ASUS%20ROG%20Flow%20Z13",
-      "activo": true
-    },
-    {
-      "id": 3,
-      "tag": "🎮 Gaming 2025",
-      "title": "ROG Xbox",
-      "accent": "Ally",
-      "sub": "La consola portátil más potente del mercado",
-      "cta": "Consultar →",
-      "filter": "",
-      "grad": "linear-gradient(135deg,#080f0a 0%,#103a1a 100%)",
-      "emoji": "🎮",
-      "imagen": "images/banners/03-rog-xbox-ally.jpg",
-      "ctaUrl": "https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20ROG%20Xbox%20Ally",
-      "activo": true
-    },
-    {
-      "id": 4,
-      "tag": "🎮 Setup Gamer",
-      "title": "Organiza tu",
-      "accent": "setup",
-      "sub": "gamer — soportes y accesorios gaming premium",
-      "cta": "Consultar →",
-      "filter": "",
-      "grad": "linear-gradient(135deg,#101010 0%,#232323 100%)",
-      "emoji": "🎮",
-      "imagen": "images/banners/04-setup-gamer.jpg",
-      "ctaUrl": "https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20setup%20gamer",
-      "activo": true
-    },
-    {
-      "id": 5,
-      "tag": "📱 Celulares",
-      "title": "Honor",
-      "accent": "Magic8",
-      "sub": "Lite 5G — fusión perfecta de innovación y diseño",
-      "cta": "Consultar →",
-      "filter": "",
-      "grad": "linear-gradient(135deg,#080e1e 0%,#162960 100%)",
-      "emoji": "📱",
-      "imagen": "images/banners/05-honor-magic8-lite.jpg",
-      "ctaUrl": "https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20Honor%20Magic8%20Lite",
-      "activo": true
     }
   ],
   "settings": {
@@ -3155,7 +3099,7 @@
         "whatsapp": "5491169651009"
       }
     ],
-    "dollarAuto": 1420.0,
+    "dollarAuto": 1420,
     "dollarUpdated": "2026-04-24T17:57:09.531916+00:00",
     "dollarManual": null,
     "dollarType": "blue",
@@ -3185,6 +3129,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T17:11:35.569Z",
+  "lastSync": "2026-04-24T18:12:41.167Z",
   "lastPriceCheck": null
 }
