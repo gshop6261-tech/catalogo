@@ -816,6 +816,31 @@
     }
     .settings-title { font-size: 14px; font-weight: 800; margin-bottom: 14px; letter-spacing: -.3px; }
 
+    /* Rate type selector */
+    .sett-rate-opt {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      border: 2px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 12px 14px;
+      cursor: pointer;
+      transition: all var(--t);
+      background: var(--surface);
+      min-width: 180px;
+      flex: 1;
+    }
+    .sett-rate-opt:hover { border-color: var(--text-3); }
+    .sett-rate-opt input[type=radio] { display: none; }
+    .sett-rate-opt.selected {
+      border-color: var(--green);
+      background: var(--green-lt);
+    }
+    .rate-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+    .rate-info { display: flex; flex-direction: column; gap: 3px; }
+    .rate-name { font-size: 13px; font-weight: 800; color: var(--text); }
+    .rate-desc { font-size: 10px; color: var(--text-3); line-height: 1.4; }
+
     /* ==========================================
        TOAST
     ========================================== */
@@ -1186,6 +1211,49 @@
       </div>
 
       <div class="settings-card">
+        <div class="settings-title">💱 Tipo de cambio para precios</div>
+        <p style="font-size:12px;color:var(--text-2);margin-bottom:14px;">
+          Elegí qué cotización del dólar se usa para calcular precios en pesos en el catálogo. La conversión se actualiza en tiempo real.
+        </p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px">
+          <label class="sett-rate-opt" id="rateOptBlue">
+            <input type="radio" name="dollarType" value="blue" id="settDollarTypeBlue">
+            <span class="rate-icon">🟦</span>
+            <span class="rate-info">
+              <span class="rate-name">Dólar Blue</span>
+              <span class="rate-desc">Mercado informal. El más usado en importaciones directas.</span>
+            </span>
+          </label>
+          <label class="sett-rate-opt" id="rateOptCripto">
+            <input type="radio" name="dollarType" value="cripto" id="settDollarTypeCripto">
+            <span class="rate-icon">🪙</span>
+            <span class="rate-info">
+              <span class="rate-name">Dólar Cripto (MEP/CCL)</span>
+              <span class="rate-desc">Cotización por operaciones con criptomonedas.</span>
+            </span>
+          </label>
+          <label class="sett-rate-opt" id="rateOptTarjeta">
+            <input type="radio" name="dollarType" value="tarjeta" id="settDollarTypeTarjeta">
+            <span class="rate-icon">💳</span>
+            <span class="rate-info">
+              <span class="rate-name">Dólar Tarjeta</span>
+              <span class="rate-desc">Dólar oficial + impuestos (PAIS + percepción).</span>
+            </span>
+          </label>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <button class="btn btn-primary" onclick="saveDollarType()">💾 Guardar tipo de cambio</button>
+          <span id="settDollarLiveVal" style="font-size:13px;color:var(--text-3);font-weight:600"></span>
+        </div>
+        <!-- Hidden select used internally for JS read -->
+        <select id="settDollarType" style="display:none" onchange="">
+          <option value="blue">Blue</option>
+          <option value="cripto">Cripto</option>
+          <option value="tarjeta">Tarjeta</option>
+        </select>
+      </div>
+
+      <div class="settings-card">
         <div class="settings-title">📱 Número de WhatsApp</div>
         <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">
           <div class="form-group" style="flex:1;min-width:200px">
@@ -1235,6 +1303,55 @@
             <span class="form-hint">Sin + ni espacios</span>
           </div>
           <button class="btn btn-primary" onclick="addVendedor()" style="margin-bottom:18px">＋ Agregar</button>
+        </div>
+      </div>
+
+      <div class="settings-card">
+        <div class="settings-title">💳 Métodos de pago</div>
+        <p style="font-size:12px;color:var(--text-2);margin-bottom:14px;">
+          Configurá los métodos disponibles para el comprador. El modificador es un porcentaje: positivo = recargo, negativo = descuento.
+          <br><strong>Tipo de cambio</strong>: el dólar con el que se convierte el precio USD cuando el cliente elige ese método.
+        </p>
+        <div class="table-wrap" style="margin-bottom:14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Ícono</th>
+                <th>Nombre</th>
+                <th>Modificador %</th>
+                <th>Tipo de cambio</th>
+                <th>Activo</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody id="paymentMethodsTableBody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+        <div style="display:grid;grid-template-columns:60px 1fr 110px 140px auto;gap:10px;align-items:end">
+          <div class="form-group" style="margin:0">
+            <label class="form-label">Ícono</label>
+            <input type="text" class="form-input" id="pmAddIcon" placeholder="💳" maxlength="4">
+          </div>
+          <div class="form-group" style="margin:0">
+            <label class="form-label">Nombre <span class="req">*</span></label>
+            <input type="text" class="form-input" id="pmAddName" placeholder="Ej: Débito">
+          </div>
+          <div class="form-group" style="margin:0">
+            <label class="form-label">Modificador %</label>
+            <input type="number" class="form-input" id="pmAddModifier" placeholder="0" step="0.5">
+            <span class="form-hint">0 = sin cambio</span>
+          </div>
+          <div class="form-group" style="margin:0">
+            <label class="form-label">Tipo de cambio</label>
+            <select class="form-select" id="pmAddDollarType">
+              <option value="blue">Dólar Blue</option>
+              <option value="cripto">Dólar Cripto</option>
+              <option value="tarjeta">Dólar Tarjeta</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" onclick="addPaymentMethod()" style="margin-bottom:18px">＋ Agregar</button>
         </div>
       </div>
 
@@ -1664,7 +1781,14 @@ const DEFAULT_SETTINGS = {
   dollarManual: null,
   dollarAuto: null,
   dollarUpdated: null,
-  categories: JSON.parse(JSON.stringify(DEFAULT_CATEGORIES))
+  dollarType: 'blue',
+  categories: JSON.parse(JSON.stringify(DEFAULT_CATEGORIES)),
+  paymentMethods: [
+    { id:'efectivo',      name:'Efectivo',      icon:'💵', modifier:0,  active:true, dollarType:'blue'    },
+    { id:'transferencia', name:'Transferencia', icon:'🏦', modifier:0,  active:true, dollarType:'cripto'  },
+    { id:'mercadopago',   name:'MercadoPago',   icon:'📲', modifier:7,  active:true, dollarType:'tarjeta' },
+    { id:'usdt',          name:'USDT',          icon:'🪙', modifier:-3, active:true, dollarType:'blue'    },
+  ]
 };
 
 /* ══════════════════════════════════════
@@ -1673,7 +1797,7 @@ const DEFAULT_SETTINGS = {
 let products = [];
 let banners  = [];
 let settings = {};
-const _dirty = { products:false, banners:false, categories:false, whatsapp:false, vendedores:false, dollarManual:false };
+const _dirty = { products:false, banners:false, categories:false, whatsapp:false, vendedores:false, dollarManual:false, dollarType:false, paymentMethods:false };
 function _resetDirty() { for (const k in _dirty) _dirty[k] = false; }
 let dollar   = null;
 let currentPage = 'dashboard';
@@ -1725,6 +1849,8 @@ function syncCatalog() {
     banners: banners.filter(b => b.activo),
     categories: settings.categories || [],
     whatsapp: settings.whatsapp,
+    paymentMethods: settings.paymentMethods || DEFAULT_SETTINGS.paymentMethods,
+    dollarType: settings.dollarType || 'blue',
   };
   save('cd_catalog', catalog);
 }
@@ -1868,6 +1994,8 @@ async function loadDataFromRepo() {
     if (data.settings.dollarAuto    != null) settings.dollarAuto    = data.settings.dollarAuto;
     if (data.settings.dollarUpdated != null) settings.dollarUpdated = data.settings.dollarUpdated;
     if (data.settings.dollarManual  != null) settings.dollarManual  = data.settings.dollarManual;
+    if (data.settings.dollarType)            settings.dollarType    = data.settings.dollarType;
+    if (Array.isArray(data.settings.paymentMethods)) settings.paymentMethods = data.settings.paymentMethods;
   }
   save(LS_SETTINGS, settings);
 
@@ -1880,12 +2008,14 @@ function _buildProductosJSONData() {
     products,
     banners,
     settings: {
-      categories:    settings.categories,
-      whatsapp:      settings.whatsapp,
-      vendedores:    settings.vendedores || [],
-      dollarAuto:    settings.dollarAuto    ?? null,
-      dollarManual:  settings.dollarManual  ?? null,
-      dollarUpdated: settings.dollarUpdated ?? null,
+      categories:     settings.categories,
+      whatsapp:       settings.whatsapp,
+      vendedores:     settings.vendedores || [],
+      dollarAuto:     settings.dollarAuto    ?? null,
+      dollarManual:   settings.dollarManual  ?? null,
+      dollarUpdated:  settings.dollarUpdated ?? null,
+      dollarType:     settings.dollarType    ?? 'blue',
+      paymentMethods: settings.paymentMethods || DEFAULT_SETTINGS.paymentMethods,
     },
     lastSync: new Date().toISOString(),
     lastPriceCheck: null,
@@ -1950,9 +2080,11 @@ async function exportToProductosJSON(opts = {}) {
         categories:    _dirty.categories ? local.settings.categories : (rs.categories || local.settings.categories),
         whatsapp:      _dirty.whatsapp   ? local.settings.whatsapp   : (rs.whatsapp   || local.settings.whatsapp),
         vendedores:    _dirty.vendedores ? local.settings.vendedores : (rs.vendedores || local.settings.vendedores || []),
-        dollarAuto:    rs.dollarAuto    ?? local.settings.dollarAuto    ?? null,
-        dollarUpdated: rs.dollarUpdated ?? local.settings.dollarUpdated ?? null,
-        dollarManual:  _dirty.dollarManual ? local.settings.dollarManual : (rs.dollarManual ?? local.settings.dollarManual ?? null),
+        dollarAuto:     rs.dollarAuto    ?? local.settings.dollarAuto    ?? null,
+        dollarUpdated:  rs.dollarUpdated ?? local.settings.dollarUpdated ?? null,
+        dollarManual:   _dirty.dollarManual    ? local.settings.dollarManual    : (rs.dollarManual ?? local.settings.dollarManual ?? null),
+        dollarType:     _dirty.dollarType      ? local.settings.dollarType      : (rs.dollarType   ?? local.settings.dollarType   ?? 'blue'),
+        paymentMethods: _dirty.paymentMethods  ? local.settings.paymentMethods  : (rs.paymentMethods || local.settings.paymentMethods || DEFAULT_SETTINGS.paymentMethods),
       },
       lastSync: local.lastSync,
       lastPriceCheck: local.lastPriceCheck,
@@ -1984,9 +2116,10 @@ async function exportToProductosJSON(opts = {}) {
     // Sincronizar estado local con lo que acabamos de publicar
     products = data.products;
     banners  = data.banners;
-    settings.categories = data.settings.categories;
-    settings.whatsapp   = data.settings.whatsapp;
-    settings.vendedores = data.settings.vendedores;
+    settings.categories     = data.settings.categories;
+    settings.whatsapp       = data.settings.whatsapp;
+    settings.vendedores     = data.settings.vendedores;
+    settings.paymentMethods = data.settings.paymentMethods;
     save(LS_PRODUCTS, products);
     save(LS_BANNERS,  banners);
     save(LS_SETTINGS, settings);
@@ -2087,6 +2220,100 @@ function deleteVendedor(id) {
   });
 }
 
+/* ══════════════════════════════════════
+   MÉTODOS DE PAGO
+══════════════════════════════════════ */
+function renderPaymentMethodsTable() {
+  const tbody = document.getElementById('paymentMethodsTableBody');
+  if (!tbody) return;
+  const methods = settings.paymentMethods || DEFAULT_SETTINGS.paymentMethods;
+  if (!methods.length) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-3);font-size:12px;padding:14px">Sin métodos configurados</td></tr>';
+    return;
+  }
+  tbody.innerHTML = methods.map((m, idx) => {
+    const dtLabel = { blue: 'Blue', cripto: 'Cripto', tarjeta: 'Tarjeta' }[m.dollarType || 'blue'] || 'Blue';
+    return `
+    <tr>
+      <td style="font-size:20px">${m.icon}</td>
+      <td style="font-weight:700;font-size:13px">${m.name}</td>
+      <td>${m.modifier > 0 ? '+' : ''}${m.modifier}%</td>
+      <td>
+        <select class="form-select" style="font-size:11px;padding:5px 8px;min-width:110px"
+          onchange="updatePayMethodDollarType(${idx}, this.value)">
+          <option value="blue"    ${(m.dollarType||'blue')==='blue'    ? 'selected':''}>🟦 Dólar Blue</option>
+          <option value="cripto"  ${(m.dollarType||'blue')==='cripto'  ? 'selected':''}>🪙 Dólar Cripto</option>
+          <option value="tarjeta" ${(m.dollarType||'blue')==='tarjeta' ? 'selected':''}>💳 Dólar Tarjeta</option>
+        </select>
+      </td>
+      <td>
+        <label style="cursor:pointer;display:flex;align-items:center;gap:6px">
+          <input type="checkbox" ${m.active ? 'checked' : ''}
+            onchange="togglePaymentMethod(${idx}, this.checked)">
+          <span style="font-size:12px">${m.active ? 'Sí' : 'No'}</span>
+        </label>
+      </td>
+      <td>
+        <button class="btn btn-ghost btn-sm btn-icon" onclick="removePaymentMethod(${idx})" title="Eliminar" style="color:var(--red)">🗑</button>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function addPaymentMethod() {
+  const icon       = (document.getElementById('pmAddIcon').value.trim() || '💳');
+  const name       = document.getElementById('pmAddName').value.trim();
+  const modifier   = parseFloat(document.getElementById('pmAddModifier').value) || 0;
+  const dollarType = document.getElementById('pmAddDollarType').value || 'blue';
+  if (!name) return showToast('El nombre es obligatorio.', 'error');
+  if (!settings.paymentMethods) settings.paymentMethods = [...DEFAULT_SETTINGS.paymentMethods];
+  const id = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/g,'_');
+  if (settings.paymentMethods.find(m => m.id === id))
+    return showToast('Ya existe un método con ese nombre.', 'error');
+  settings.paymentMethods.push({ id, name, icon, modifier, active: true, dollarType });
+  _dirty.paymentMethods = true;
+  saveSettings();
+  renderPaymentMethodsTable();
+  document.getElementById('pmAddIcon').value       = '';
+  document.getElementById('pmAddName').value       = '';
+  document.getElementById('pmAddModifier').value   = '';
+  document.getElementById('pmAddDollarType').value = 'blue';
+  exportToProductosJSON({ silent: true }).then(ok => {
+    showToast(ok ? '✅ Método de pago agregado y publicado.' : '⚠️ Guardado local. Configurá token GitHub para publicar.', ok ? 'success' : 'error');
+  });
+}
+
+function updatePayMethodDollarType(idx, type) {
+  if (!settings.paymentMethods) return;
+  settings.paymentMethods[idx].dollarType = type;
+  _dirty.paymentMethods = true;
+  saveSettings();
+  exportToProductosJSON({ silent: true }).then(ok => {
+    if (ok) showToast('✅ Tipo de cambio actualizado y publicado.');
+    else showToast('✅ Tipo de cambio guardado localmente.');
+  });
+}
+
+function removePaymentMethod(idx) {
+  showConfirm('🗑 Eliminar método de pago', '¿Eliminás este método de pago?', () => {
+    if (!settings.paymentMethods) return;
+    settings.paymentMethods.splice(idx, 1);
+    _dirty.paymentMethods = true;
+    saveSettings();
+    renderPaymentMethodsTable();
+    exportToProductosJSON({ silent: true });
+  });
+}
+
+function togglePaymentMethod(idx, active) {
+  if (!settings.paymentMethods) return;
+  settings.paymentMethods[idx].active = active;
+  _dirty.paymentMethods = true;
+  saveSettings();
+  renderPaymentMethodsTable();
+  exportToProductosJSON({ silent: true });
+}
+
 async function initApp() {
   const loadedFromRepo = await loadDataFromRepo();
   if (!loadedFromRepo) {
@@ -2095,6 +2322,10 @@ async function initApp() {
   }
   if (settings.formulas && !settings.categories) {
     settings.categories = JSON.parse(JSON.stringify(DEFAULT_CATEGORIES));
+    saveSettings();
+  }
+  if (!settings.paymentMethods || !settings.paymentMethods.length) {
+    settings.paymentMethods = JSON.parse(JSON.stringify(DEFAULT_SETTINGS.paymentMethods));
     saveSettings();
   }
 
@@ -2129,6 +2360,29 @@ async function initApp() {
   document.getElementById('settGhRepo').value   = settings.ghRepo   || '';
   document.getElementById('settGhBranch').value = settings.ghBranch || 'main';
   document.getElementById('settGhToken').value  = settings.ghToken  || '';
+  // Sync dollar type radios
+  const savedType = settings.dollarType || 'blue';
+  const dtSel = document.getElementById('settDollarType');
+  if (dtSel) dtSel.value = savedType;
+  document.querySelectorAll('.sett-rate-opt').forEach(lbl => {
+    const radio = lbl.querySelector('input[type=radio]');
+    if (!radio) return;
+    const isSelected = radio.value === savedType;
+    radio.checked = isSelected;
+    lbl.classList.toggle('selected', isSelected);
+  });
+  document.querySelectorAll('.sett-rate-opt').forEach(lbl => {
+    lbl.addEventListener('click', () => {
+      const radio = lbl.querySelector('input[type=radio]');
+      if (!radio) return;
+      document.querySelectorAll('.sett-rate-opt').forEach(l => l.classList.remove('selected'));
+      lbl.classList.add('selected');
+      radio.checked = true;
+      const sel = document.getElementById('settDollarType');
+      if (sel) sel.value = radio.value;
+    });
+  });
+  _dirty.dollarType = false;
 
   if (!settings.categories) settings.categories = JSON.parse(JSON.stringify(DEFAULT_CATEGORIES));
 
@@ -2171,7 +2425,7 @@ function navTo(page) {
     case 'prices':    renderPricesTable(); break;
     case 'banners':   renderBannerList(); break;
     case 'categories':  renderCategoriesTable(); break;
-    case 'settings':  renderVendedoresTable(); break;
+    case 'settings':  renderVendedoresTable(); renderPaymentMethodsTable(); break;
   }
 }
 
@@ -2188,6 +2442,12 @@ function closeSidebar() {
 /* ══════════════════════════════════════
    DOLLAR FETCH
 ══════════════════════════════════════ */
+const DOLLAR_TYPES = {
+  blue:     { label: 'Dólar Blue',     endpoint: 'https://dolarapi.com/v1/dolares/blue',     field: 'venta' },
+  cripto:   { label: 'Dólar Cripto',   endpoint: 'https://dolarapi.com/v1/dolares/cripto',   field: 'venta' },
+  tarjeta:  { label: 'Dólar Tarjeta',  endpoint: 'https://dolarapi.com/v1/dolares/tarjeta',  field: 'venta' },
+};
+
 function _parseDollarUpdated(v) {
   if (!v) return 0;
   if (typeof v === 'number') return v;
@@ -2196,7 +2456,7 @@ function _parseDollarUpdated(v) {
 }
 
 async function fetchDollar(force) {
-  // Cache 30min: el cron del repo actualiza cada 30min, no hace falta pegarle más seguido
+  // Cache 30min
   const lastUpdate = _parseDollarUpdated(settings.dollarUpdated);
   if (!force && settings.dollarAuto && lastUpdate && (Date.now() - lastUpdate < 30 * 60 * 1000)) {
     dollar = settings.dollarAuto;
@@ -2204,16 +2464,24 @@ async function fetchDollar(force) {
     return;
   }
 
+  const type = settings.dollarType || 'blue';
+  const dtInfo = DOLLAR_TYPES[type] || DOLLAR_TYPES.blue;
+
   try {
-    const res = await fetch('https://dolarapi.com/v1/dolares/blue', { cache: 'no-store' });
+    const res = await fetch(dtInfo.endpoint, { cache: 'no-store' });
     const data = await res.json();
-    dollar = data.venta;
+    dollar = data[dtInfo.field];
   } catch(e) {
-    try {
-      const res2 = await fetch('https://api.bluelytics.com.ar/v2/latest', { cache: 'no-store' });
-      const d2 = await res2.json();
-      dollar = d2.blue.value_sell;
-    } catch(e2) {
+    // fallback: try blue via bluelytics only if type is blue
+    if (type === 'blue') {
+      try {
+        const res2 = await fetch('https://api.bluelytics.com.ar/v2/latest', { cache: 'no-store' });
+        const d2 = await res2.json();
+        dollar = d2.blue.value_sell;
+      } catch(e2) {
+        dollar = settings.dollarAuto || settings.dollarManual || null;
+      }
+    } else {
       dollar = settings.dollarAuto || settings.dollarManual || null;
     }
   }
@@ -2231,9 +2499,11 @@ function renderDollarWidgets() {
   const val = dollar || settings.dollarManual || null;
   const fmt = val ? `$ ${Number(val).toLocaleString('es-AR')}` : '$ —';
   const tsMs = _parseDollarUpdated(settings.dollarUpdated);
+  const type = settings.dollarType || 'blue';
+  const typeLabel = (DOLLAR_TYPES[type] || DOLLAR_TYPES.blue).label;
   const sub = tsMs
-    ? 'Actualizado ' + new Date(tsMs).toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'})
-    : 'Sin conexión — usar cotización manual';
+    ? `${typeLabel} · Actualizado ${new Date(tsMs).toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'})}`
+    : `${typeLabel} · Sin conexión — usar cotización manual`;
 
   ['dollarVal','pricesDollarVal'].forEach(id => {
     const el = document.getElementById(id);
@@ -2243,6 +2513,9 @@ function renderDollarWidgets() {
     const el = document.getElementById(id);
     if (el) el.textContent = sub;
   });
+  // Update settings card live value
+  const liveEl = document.getElementById('settDollarLiveVal');
+  if (liveEl && val) liveEl.textContent = `Actual: ${fmt} (${typeLabel})`;
 }
 
 function applyManualDollar() {
@@ -2255,6 +2528,24 @@ function applyManualDollar() {
   saveSettings();
   renderDollarWidgets();
   showToast(`✅ Cotización manual: $ ${v.toLocaleString('es-AR')}`);
+}
+
+function saveDollarType() {
+  const sel = document.getElementById('settDollarType');
+  if (!sel) return;
+  const type = sel.value;
+  settings.dollarType = type;
+  _dirty.dollarType = true;
+  saveSettings();
+  // Force re-fetch with the new type
+  settings.dollarAuto = null;
+  settings.dollarUpdated = null;
+  fetchDollar(true);
+  exportToProductosJSON({ silent: true }).then(ok => {
+    showToast(ok
+      ? `✅ Tipo de cambio actualizado: ${(DOLLAR_TYPES[type] || DOLLAR_TYPES.blue).label}`
+      : `✅ Guardado local: ${(DOLLAR_TYPES[type] || DOLLAR_TYPES.blue).label}`);
+  });
 }
 
 /* ══════════════════════════════════════
