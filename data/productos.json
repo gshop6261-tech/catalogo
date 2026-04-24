@@ -2929,7 +2929,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645.0,
+      "usd": 645,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -2943,7 +2943,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-digital-cinza/1356939",
-          "price": 645.0,
+          "price": 645,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T20:30:41.214890+00:00"
@@ -2969,7 +2969,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645.0,
+      "usd": 645,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -2983,7 +2983,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-uk-cinza/1354966",
-          "price": 645.0,
+          "price": 645,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T20:30:42.072314+00:00"
@@ -3009,7 +3009,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1115200",
-      "usd": 649.0,
+      "usd": 649,
       "weight": null,
       "usdSell": 785.29,
       "activo": true,
@@ -3023,7 +3023,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-lcd-uk-cinza/1347432",
-          "price": 649.0,
+          "price": 649,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T20:30:42.747176+00:00"
@@ -3054,7 +3054,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645.0,
+      "usd": 645,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -3068,7 +3068,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-usa-cinza/1323139",
-          "price": 645.0,
+          "price": 645,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T20:30:43.405129+00:00"
@@ -3098,7 +3098,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1029300",
-      "usd": 599.0,
+      "usd": 599,
       "weight": null,
       "usdSell": 724.79,
       "activo": true,
@@ -3112,7 +3112,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-256gb-usa-cinza/1323115",
-          "price": 599.0,
+          "price": 599,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T20:30:44.447836+00:00"
@@ -3142,7 +3142,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645.0,
+      "usd": 645,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -3156,7 +3156,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-256gb-uk-jogo-mario-karf-word-fisico-cinza/1293098",
-          "price": 645.0,
+          "price": 645,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T20:30:45.459231+00:00"
@@ -3185,7 +3185,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "634100",
-      "usd": 369.0,
+      "usd": 369,
       "weight": null,
       "usdSell": 446.49,
       "activo": true,
@@ -3199,7 +3199,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-oled-neon-model-64gb-heg-s-kabaa/1212686",
-          "price": 369.0,
+          "price": 369,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T20:30:46.727702+00:00"
@@ -3228,7 +3228,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "616900",
-      "usd": 359.0,
+      "usd": 359,
       "weight": null,
       "usdSell": 434.39,
       "activo": true,
@@ -3242,7 +3242,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-oled-64gb-japao-branco-heg-s-kaaaa/1212679",
-          "price": 359.0,
+          "price": 359,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T20:30:47.479971+00:00"
@@ -3261,11 +3261,11 @@
       "accent": "Redragon",
       "sub": "Vortex — llevá la experiencia de conducción a otro nivel",
       "cta": "Consultar →",
-      "filter": "",
+      "filter": "Celulares",
       "grad": "linear-gradient(135deg,#080e1e 0%,#0f1e38 100%)",
       "emoji": "🎮",
       "imagen": "images/banners/BannerMoto.jpeg",
-      "ctaUrl": "https://wa.me/5491154125271?text=Hola!%20Me%20interesa%20el%20Cockpit%20Gamer%20Redragon%20Vortex",
+      "ctaUrl": "",
       "activo": true,
       "imagenMobile": ""
     }
@@ -3751,6 +3751,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T20:30:48.321397+00:00",
+  "lastSync": "2026-04-24T20:34:20.694Z",
   "lastPriceCheck": null
 }
