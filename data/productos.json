@@ -3222,6 +3222,10 @@
           {
             "id": "Chico",
             "label": "Chico"
+          },
+          {
+            "id": "termo",
+            "label": "termo"
           }
         ],
         "rules": [
@@ -3238,6 +3242,22 @@
               {
                 "kind": "percent",
                 "value": 10
+              }
+            ]
+          },
+          {
+            "subtype": "termo",
+            "type": "none",
+            "op": "<=",
+            "val": 0,
+            "steps": [
+              {
+                "kind": "percent",
+                "value": 0
+              },
+              {
+                "kind": "usd",
+                "value": 0
               }
             ]
           }
@@ -3341,6 +3361,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T18:19:40.382Z",
+  "lastSync": "2026-04-24T18:49:34.431Z",
   "lastPriceCheck": null
 }
