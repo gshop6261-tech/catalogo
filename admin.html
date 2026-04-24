@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <title>Admin · Compra Directa</title>
+  <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -2059,7 +2060,10 @@ async function exportToProductosJSON(opts = {}) {
     // 1. Obtener SHA + contenido actual del archivo (para merge conservador)
     let sha = null;
     let remoteData = null;
-    const getResp = await fetch(`${apiUrl}?ref=${branch}`, { headers });
+    const getResp = await fetch(`${apiUrl}?ref=${branch}&t=${Date.now()}`, { 
+      headers,
+      cache: 'no-store'
+    });
     if (getResp.ok) {
       const fileData = await getResp.json();
       sha = fileData.sha;
