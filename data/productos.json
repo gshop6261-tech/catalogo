@@ -810,10 +810,9 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-wireless-para-ps5-vermelho/777018",
-          "price": 60,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-24T10:56:19.388517+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -3101,6 +3100,6 @@
     "dollarUpdated": "2026-04-24T10:53:27.743452+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-24T13:50:40.606Z",
+  "lastSync": "2026-04-24T13:51:45.212Z",
   "lastPriceCheck": null
 }
