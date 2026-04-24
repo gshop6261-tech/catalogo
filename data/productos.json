@@ -3165,9 +3165,17 @@
         "modifier": 0,
         "active": true,
         "dollarType": "cripto"
+      },
+      {
+        "id": "usdt",
+        "name": "Usdt",
+        "icon": "🪙",
+        "modifier": 0,
+        "active": true,
+        "dollarType": "blue"
       }
     ]
   },
-  "lastSync": "2026-04-24T15:49:28.981Z",
+  "lastSync": "2026-04-24T15:51:42.773Z",
   "lastPriceCheck": null
 }
