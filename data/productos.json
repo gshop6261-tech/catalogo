@@ -2919,14 +2919,17 @@
       "calcSub": "Nintendo",
       "name": "Console Nintendo Switch 2 Mario Kart World 256GB Digital Gris",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "La Nintendo Switch 2 Edición Mario Kart World ofrece una evolución masiva en potencia y gráficos. Con 256GB de almacenamiento interno y 12GB de RAM, esta consola permite disfrutar de texturas de alta resolución y tiempos de carga mínimos. Su pantalla de 8 pulgadas LCD con soporte HDR brinda colores vibrantes en modo portátil, mientras que el Dock compatible con 4K y DLSS 3.5 transforma la experiencia en el televisor. Esta versión incluye el código digital o preinstalación de Mario Kart World, diseñada con un acabado gris elegante y controles magnéticos de nueva generación.",
+      "img": "images/productos/57/main.jpg",
+      "images": [
+        "images/productos/57/main.jpg",
+        "images/productos/57/2.jpg"
+      ],
       "badge": "A pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645,
+      "usd": 645.0,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -2940,12 +2943,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-digital-cinza/1356939",
-          "price": null,
+          "price": 645.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-24T20:11:44.643435+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -2955,14 +2959,17 @@
       "calcSub": "Nintendo",
       "name": "Consola Nintendo Switch 2 Mario Kart World 256GB UK Gris",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "La Nintendo Switch 2 con 256 GB de almacenamiento ofrece un rendimiento híbrido premium a través de una pantalla Full HD de 7,9",
+      "img": "images/productos/58/main.jpg",
+      "images": [
+        "images/productos/58/main.jpg",
+        "images/productos/58/2.jpg"
+      ],
       "badge": "A pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1108300",
-      "usd": 645,
+      "usd": 645.0,
       "weight": null,
       "usdSell": 780.45,
       "activo": true,
@@ -2976,12 +2983,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-uk-cinza/1354966",
-          "price": null,
+          "price": 645.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-24T20:11:45.320256+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     }
@@ -3484,6 +3492,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T20:11:31.632Z",
+  "lastSync": "2026-04-24T20:11:46.026272+00:00",
   "lastPriceCheck": null
 }
