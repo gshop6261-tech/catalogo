@@ -123,8 +123,8 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "69900",
-      "usd": 39.0,
+      "ars": "66500",
+      "usd": 39,
       "weight": null,
       "usdSell": 46.8,
       "activo": true,
@@ -143,14 +143,18 @@
           "date": "2026-04-23"
         },
         {
-          "usd": 39.0,
+          "usd": 39,
+          "date": "2026-04-24"
+        },
+        {
+          "ars": "66500",
           "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-razer-blackshark-v2-x-rz04-03240100-r3u1-p2-preto/712125",
-          "price": 39.0,
+          "price": 39,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:14.849516+00:00"
@@ -175,10 +179,10 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "67500",
-      "usd": 40.0,
+      "ars": "71000",
+      "usd": 40,
       "weight": null,
-      "usdSell": 50.0,
+      "usdSell": 50,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
@@ -195,14 +199,18 @@
           "date": "2026-04-23"
         },
         {
-          "usd": 40.0,
+          "usd": 40,
           "date": "2026-04-23"
+        },
+        {
+          "ars": "71000",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-preto/1354058",
-          "price": 40.0,
+          "price": 40,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:15.152269+00:00"
@@ -258,7 +266,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-flip-7-bluetooth-camuflado/1213874",
-          "price": 79.0,
+          "price": 79,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:16.029694+00:00"
@@ -366,7 +374,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/projetores/projetor-xiaomi-wanbo-x5-lcd-1100-lumens-hdmi-azul/1179026",
-          "price": 225.0,
+          "price": 225,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:16.882378+00:00"
@@ -418,7 +426,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-gopro-max-360-chdhz-203-rw-18mp-wifi-preto/1220391",
-          "price": 278.0,
+          "price": 278,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:17.253862+00:00"
@@ -469,7 +477,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/bombas-e-dispenser-de-agua/maquina-de-gelo-smartfy-crystal-ice-supreme-mg01w-85w-15l-220v-branco/1198379",
-          "price": 75.0,
+          "price": 75,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:17.560206+00:00"
@@ -571,7 +579,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/chaleira-eletrica-xiaomi-mi-electric-kettle-2-mjdsh04ym-17l-220v-branco/976893",
-          "price": 22.0,
+          "price": 22,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:18.123607+00:00"
@@ -670,7 +678,7 @@
       "referenceLinks": [
         {
           "url": "https://www.mobilezone.com.py/product/1122596",
-          "price": 17.0,
+          "price": 17,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:18.739780+00:00"
@@ -698,8 +706,8 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "53700",
-      "usd": 32.0,
+      "ars": "54600",
+      "usd": 32,
       "weight": 0.5,
       "usdSell": 38.4,
       "activo": true,
@@ -726,14 +734,18 @@
           "date": "2026-04-23"
         },
         {
-          "usd": 32.0,
+          "usd": 32,
           "date": "2026-04-23"
+        },
+        {
+          "ars": "54600",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-2-xiaomi-mi-portatil-electric-air-mjcqb06qw-preto/1010923",
-          "price": 32.0,
+          "price": 32,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:19.125495+00:00"
@@ -763,10 +775,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "104700",
+      "ars": "102300",
       "usd": 60,
       "weight": null,
-      "usdSell": 73.7,
+      "usdSell": 72,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -785,12 +797,16 @@
         {
           "ars": "104700",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "102300",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-wireless-para-ps5-vermelho/777018",
-          "price": 60.0,
+          "price": 60,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:19.388517+00:00"
@@ -875,10 +891,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "150000",
+      "ars": "151700",
       "usd": 89,
       "weight": null,
-      "usdSell": 105.6,
+      "usdSell": 106.8,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -905,12 +921,16 @@
         {
           "ars": "150000",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "151700",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-30-aniversario-edicao-limitada-para-ps5-wireless-japao-cinza/1182422",
-          "price": 89.0,
+          "price": 89,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:20.012234+00:00"
@@ -937,10 +957,10 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "29300",
+      "ars": "20100",
       "usd": 11.75,
       "weight": null,
-      "usdSell": 20.63,
+      "usdSell": 14.1,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -963,6 +983,10 @@
         {
           "ars": "29300",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "20100",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -996,10 +1020,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "85200",
+      "ars": "81000",
       "usd": 47.5,
       "weight": null,
-      "usdSell": 59.95,
+      "usdSell": 57,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1022,6 +1046,10 @@
         {
           "ars": "85200",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "81000",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1053,10 +1081,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "203100",
+      "ars": "198800",
       "usd": 100,
       "weight": null,
-      "usdSell": 143,
+      "usdSell": 140,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1087,6 +1115,10 @@
         {
           "ars": "203100",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "198800",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [],
@@ -1113,10 +1145,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "234300",
+      "ars": "230100",
       "usd": 120,
       "weight": null,
-      "usdSell": 165,
+      "usdSell": 162,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1139,6 +1171,10 @@
         {
           "ars": "234300",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "230100",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1171,10 +1207,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "218700",
+      "ars": "214500",
       "usd": 110,
       "weight": null,
-      "usdSell": 154,
+      "usdSell": 151,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1193,6 +1229,10 @@
         {
           "ars": "218700",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "214500",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1222,10 +1262,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "351500",
+      "ars": "345800",
       "usd": 185,
       "weight": null,
-      "usdSell": 247.5,
+      "usdSell": 243.5,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1244,12 +1284,16 @@
         {
           "ars": "351500",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "345800",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smart-tv/smart-tv-xiaomi-l43mb-afph-2026-43-4k-ultra-hd-preto/1317572",
-          "price": 185.0,
+          "price": 185,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:21.003673+00:00"
@@ -1274,10 +1318,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "8700",
+      "ars": "8600",
       "usd": 4.75,
       "weight": null,
-      "usdSell": 6.06,
+      "usdSell": 6,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1304,6 +1348,10 @@
         {
           "ars": "8700",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "8600",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1416,7 +1464,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/aspiradores/robo-aspirador-xiaomi-robot-vacuum-s40-bhr084aeu-branco/1251340",
-          "price": 162.0,
+          "price": 162,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T10:56:22.528528+00:00"
@@ -1809,10 +1857,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "167600",
+      "ars": "164800",
       "usd": 101.82,
       "weight": null,
-      "usdSell": 118,
+      "usdSell": 116,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -1823,6 +1871,10 @@
         {
           "ars": "167600",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "164800",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1856,10 +1908,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "185400",
+      "ars": "182500",
       "usd": 113.18,
       "weight": null,
-      "usdSell": 130.5,
+      "usdSell": 128.5,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -1874,6 +1926,10 @@
         {
           "ars": "185400",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "182500",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1907,10 +1963,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "176100",
+      "ars": "173300",
       "usd": 107.27,
       "weight": null,
-      "usdSell": 124,
+      "usdSell": 122,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -1925,6 +1981,10 @@
         {
           "ars": "176100",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "173300",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -2935,8 +2995,32 @@
             "type": "none",
             "op": "<=",
             "val": 0,
-            "margin": 20,
-            "add": 0
+            "steps": [
+              {
+                "kind": "usd",
+                "value": 0.7
+              },
+              {
+                "kind": "percent",
+                "value": 10
+              }
+            ]
+          },
+          {
+            "subtype": "unico",
+            "type": "none",
+            "op": "<=",
+            "val": 0,
+            "steps": [
+              {
+                "kind": "usd",
+                "value": 0.7
+              },
+              {
+                "kind": "percent",
+                "value": 10
+              }
+            ]
           }
         ]
       }
@@ -2949,10 +3033,10 @@
         "whatsapp": "5491154870326"
       }
     ],
-    "dollarAuto": 1420.0,
+    "dollarAuto": 1420,
     "dollarUpdated": "2026-04-24T10:53:27.743452+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-23T21:59:33.701Z",
-  "lastPriceCheck": "2026-04-24T10:56:30.309165+00:00"
+  "lastSync": "2026-04-24T12:43:46.873Z",
+  "lastPriceCheck": null
 }
