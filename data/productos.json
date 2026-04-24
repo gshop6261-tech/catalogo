@@ -3156,8 +3156,6 @@
       {"id":"mercadopago","name":"MercadoPago","icon":"📲","modifier":7,"active":true,"dollarType":"tarjeta"},
       {"id":"usdt","name":"USDT","icon":"🪙","modifier":-3,"active":true,"dollarType":"blue"}
     ]
-
-    ]
   },
   "lastSync": "2026-04-24T15:01:54.644Z",
   "lastPriceCheck": null
