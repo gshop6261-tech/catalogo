@@ -20,10 +20,10 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "27100",
+      "ars": "27400",
       "usd": 15.9,
       "weight": null,
-      "usdSell": 19.08,
+      "usdSell": 19.24,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
@@ -34,6 +34,10 @@
         {
           "ars": "27100",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "27400",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -67,10 +71,10 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "30000",
+      "ars": "30400",
       "usd": 16.9,
       "weight": null,
-      "usdSell": 21.13,
+      "usdSell": 21.38,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
@@ -89,6 +93,10 @@
         {
           "ars": "30000",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "30400",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -122,10 +130,10 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "66500",
+      "ars": "67100",
       "usd": 39,
       "weight": null,
-      "usdSell": 46.8,
+      "usdSell": 47.19,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
@@ -147,6 +155,10 @@
         },
         {
           "ars": "66500",
+          "date": "2026-04-24"
+        },
+        {
+          "ars": "67100",
           "date": "2026-04-24"
         }
       ],
@@ -178,10 +190,10 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71000",
+      "ars": "71900",
       "usd": 40,
       "weight": null,
-      "usdSell": 50,
+      "usdSell": 50.6,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
@@ -203,6 +215,10 @@
         },
         {
           "ars": "71000",
+          "date": "2026-04-24"
+        },
+        {
+          "ars": "71900",
           "date": "2026-04-24"
         }
       ],
@@ -238,10 +254,10 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "140300",
+      "ars": "142000",
       "usd": 79,
       "weight": null,
-      "usdSell": 98.75,
+      "usdSell": 99.94,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
@@ -260,6 +276,10 @@
         {
           "ars": "140300",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "142000",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -294,10 +314,10 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "63900",
+      "ars": "64500",
       "usd": 37.5,
       "weight": null,
-      "usdSell": 45,
+      "usdSell": 45.38,
       "activo": true,
       "fechaAlta": "2026-04-17",
       "priceHistory": [
@@ -312,6 +332,10 @@
         {
           "ars": "63900",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "64500",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -705,7 +729,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "54600",
+      "ars": "58000",
       "usd": 34,
       "weight": 0.5,
       "usdSell": 40.8,
@@ -742,6 +766,10 @@
         },
         {
           "usd": 34,
+          "date": "2026-04-24"
+        },
+        {
+          "ars": "58000",
           "date": "2026-04-24"
         }
       ],
@@ -842,10 +870,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "111700",
+      "ars": "113000",
       "usd": 62.9,
       "weight": null,
-      "usdSell": 78.63,
+      "usdSell": 79.57,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -864,6 +892,10 @@
         {
           "ars": "111700",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "113000",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1576,10 +1608,10 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "140300",
+      "ars": "142000",
       "usd": 79,
       "weight": null,
-      "usdSell": 98.75,
+      "usdSell": 99.94,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -1590,6 +1622,10 @@
         {
           "ars": "140300",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "142000",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1620,10 +1656,10 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71000",
+      "ars": "71900",
       "usd": 40,
       "weight": null,
-      "usdSell": 50,
+      "usdSell": 50.6,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -1634,6 +1670,10 @@
         {
           "ars": "71000",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "71900",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1664,10 +1704,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71000",
+      "ars": "71900",
       "usd": 40,
       "weight": null,
-      "usdSell": 50,
+      "usdSell": 50.6,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -1678,6 +1718,10 @@
         {
           "ars": "71000",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "71900",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1708,10 +1752,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71000",
+      "ars": "71900",
       "usd": 40,
       "weight": null,
-      "usdSell": 50,
+      "usdSell": 50.6,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -1722,6 +1766,10 @@
         {
           "ars": "71000",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "71900",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1752,10 +1800,10 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71000",
+      "ars": "71900",
       "usd": 40,
       "weight": null,
-      "usdSell": 50,
+      "usdSell": 50.6,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -1766,6 +1814,10 @@
         {
           "ars": "71000",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "71900",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1796,10 +1848,10 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71000",
+      "ars": "71900",
       "usd": 40,
       "weight": null,
-      "usdSell": 50,
+      "usdSell": 50.6,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -1810,6 +1862,10 @@
         {
           "ars": "71000",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "71900",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1840,10 +1896,10 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71000",
+      "ars": "71900",
       "usd": 40,
       "weight": null,
-      "usdSell": 50,
+      "usdSell": 50.6,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -1854,6 +1910,10 @@
         {
           "ars": "71000",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "71900",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -2888,16 +2948,32 @@
             "subtype": "unico",
             "type": "none",
             "val": 0,
-            "margin": 20,
-            "add": 0
+            "steps": [
+              {
+                "kind": "percent",
+                "value": 10
+              },
+              {
+                "kind": "percent",
+                "value": 10
+              }
+            ]
           },
           {
             "subtype": "Grande",
             "type": "none",
             "op": "<=",
             "val": 0,
-            "margin": 25,
-            "add": 0
+            "steps": [
+              {
+                "kind": "percent",
+                "value": 15
+              },
+              {
+                "kind": "percent",
+                "value": 10
+              }
+            ]
           }
         ]
       },
@@ -3129,6 +3205,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T18:12:41.167Z",
+  "lastSync": "2026-04-24T18:13:21.948Z",
   "lastPriceCheck": null
 }
