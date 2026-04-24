@@ -2889,10 +2889,9 @@
       "name": "Termo 1L con mate",
       "sub": "",
       "desc": "Termo de de 1 Litro de acero inoxidable con mate",
-      "img": "https://drive.google.com/file/d/1mSMuFjuMclpNesZTOrZCKGcOJXbktBG3/view?usp=sharing",
+      "img": "https://imgur.com/a/r49CyKT",
       "images": [
-        "https://drive.google.com/file/d/1mSMuFjuMclpNesZTOrZCKGcOJXbktBG3/view?usp=sharing",
-        "https://drive.google.com/file/d/11KHd9PEB9ql67ZGK_y8CduN4INA1dfpY/view?usp=sharing"
+        "https://imgur.com/a/r49CyKT"
       ],
       "badge": "disponible",
       "badgeColor": "#25D366",
@@ -3384,6 +3383,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T19:09:48.333Z",
+  "lastSync": "2026-04-24T19:12:04.683Z",
   "lastPriceCheck": null
 }
