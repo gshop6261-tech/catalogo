@@ -2912,6 +2912,42 @@
       "status": "enriched",
       "enrichError": null,
       "verifyPrice": false
+    },
+    {
+      "id": 57,
+      "cat": "Consolas",
+      "calcSub": "Nintendo",
+      "name": "Console Nintendo Switch 2 Mario Kart World 256GB Digital Gris",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": "A pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": "1108300",
+      "usd": 645,
+      "weight": null,
+      "usdSell": 780.45,
+      "activo": true,
+      "fechaAlta": "2026-04-24",
+      "priceHistory": [
+        {
+          "ars": "1108300",
+          "date": "2026-04-24"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-2-mario-kart-world-256gb-digital-cinza/1356939",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null,
+      "verifyPrice": true
     }
   ],
   "banners": [
@@ -3333,6 +3369,35 @@
             ]
           }
         ]
+      },
+      {
+        "id": "consolas",
+        "name": "Consolas",
+        "icon": "📦",
+        "subtypes": [
+          {
+            "id": "Nintendo",
+            "label": "Nintendo"
+          }
+        ],
+        "rules": [
+          {
+            "subtype": "Nintendo",
+            "type": "none",
+            "op": "<=",
+            "val": 0,
+            "steps": [
+              {
+                "kind": "percent",
+                "value": 10
+              },
+              {
+                "kind": "percent",
+                "value": 10
+              }
+            ]
+          }
+        ]
       }
     ],
     "whatsapp": "111111111111",
@@ -3383,6 +3448,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T19:14:45.686Z",
+  "lastSync": "2026-04-24T20:06:38.069Z",
   "lastPriceCheck": null
 }
