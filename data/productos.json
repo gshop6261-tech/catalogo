@@ -2882,6 +2882,38 @@
       "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
+    },
+    {
+      "id": 56,
+      "cat": "Hogar y Cocina",
+      "calcSub": "termo",
+      "name": "Termo 1L con mate",
+      "sub": "",
+      "desc": "Termo de de 1 Litro de acero inoxidable con mate",
+      "img": "https://drive.google.com/file/d/1mSMuFjuMclpNesZTOrZCKGcOJXbktBG3/view?usp=sharing",
+      "images": [
+        "https://drive.google.com/file/d/1mSMuFjuMclpNesZTOrZCKGcOJXbktBG3/view?usp=sharing",
+        "https://drive.google.com/file/d/11KHd9PEB9ql67ZGK_y8CduN4INA1dfpY/view?usp=sharing"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "21300",
+      "usd": 15,
+      "weight": null,
+      "usdSell": 15,
+      "activo": true,
+      "fechaAlta": "2026-04-24",
+      "priceHistory": [
+        {
+          "ars": "21300",
+          "date": "2026-04-24"
+        }
+      ],
+      "referenceLinks": [],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": false
     }
   ],
   "banners": [
@@ -3361,6 +3393,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T18:49:34.431Z",
+  "lastSync": "2026-04-24T18:58:14.228Z",
   "lastPriceCheck": null
 }
