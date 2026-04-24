@@ -1318,10 +1318,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "8600",
+      "ars": "9300",
       "usd": 4.75,
       "weight": null,
-      "usdSell": 6,
+      "usdSell": 6.54,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1352,6 +1352,10 @@
         {
           "ars": "8600",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "9300",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -1381,10 +1385,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "6600",
+      "ars": "7200",
       "usd": 3.5,
       "weight": null,
-      "usdSell": 4.62,
+      "usdSell": 5.04,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1403,6 +1407,10 @@
         {
           "ars": "6600",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "7200",
+          "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
@@ -3010,7 +3018,7 @@
               },
               {
                 "kind": "percent",
-                "value": 10
+                "value": 20
               }
             ]
           },
@@ -3026,7 +3034,7 @@
               },
               {
                 "kind": "percent",
-                "value": 10
+                "value": 20
               }
             ]
           }
@@ -3045,6 +3053,6 @@
     "dollarUpdated": "2026-04-24T10:53:27.743452+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-24T12:51:41.529Z",
+  "lastSync": "2026-04-24T12:56:16.382Z",
   "lastPriceCheck": null
 }
