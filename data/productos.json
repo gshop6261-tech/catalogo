@@ -1512,8 +1512,8 @@
     },
     {
       "id": 28,
-      "cat": "Hogar",
-      "calcSub": "unico",
+      "cat": "Hogar y Cocina",
+      "calcSub": "aspiradora",
       "name": "Robot Aspirador Xiaomi Robot Vacuum S40 BHR084AEU Blanco",
       "sub": "",
       "desc": "El robot aspirador Xiaomi Vacuum S40 se distingue por su potente succión de hasta 10.000 Pa, capaz de eliminar polvo, pelos y restos incrustados con eficacia. Su batería de 5.200 mAh ofrece largos periodos de funcionamiento; el tanque de agua combinado con el mop permite aspirar y trapear húmedo para un cuidado integral del suelo. El sistema de navegación láser mapea espacios con precisión, evitando obstáculos; compatible con 110-220 V/50-60 Hz, ideal para uso doméstico en diversas zonas.",
@@ -1559,10 +1559,9 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/aspiradores/robo-aspirador-xiaomi-robot-vacuum-s40-bhr084aeu-branco/1251340",
-          "price": 162,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-24T14:59:44.448722+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -3413,6 +3412,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T19:07:18.232Z",
+  "lastSync": "2026-04-24T19:08:45.221Z",
   "lastPriceCheck": null
 }
