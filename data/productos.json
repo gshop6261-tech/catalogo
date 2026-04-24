@@ -1385,10 +1385,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "7200",
+      "ars": "6600",
       "usd": 3.5,
       "weight": null,
-      "usdSell": 5.04,
+      "usdSell": 4.62,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1410,6 +1410,10 @@
         },
         {
           "ars": "7200",
+          "date": "2026-04-24"
+        },
+        {
+          "ars": "6600",
           "date": "2026-04-24"
         }
       ],
@@ -3018,7 +3022,7 @@
               },
               {
                 "kind": "percent",
-                "value": 20
+                "value": 10
               }
             ]
           },
@@ -3053,6 +3057,6 @@
     "dollarUpdated": "2026-04-24T10:53:27.743452+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-24T12:56:16.382Z",
+  "lastSync": "2026-04-24T13:01:20.235Z",
   "lastPriceCheck": null
 }
