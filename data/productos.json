@@ -775,10 +775,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "102300",
+      "ars": "104700",
       "usd": 60,
       "weight": null,
-      "usdSell": 72,
+      "usdSell": 73.7,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -800,6 +800,10 @@
         },
         {
           "ars": "102300",
+          "date": "2026-04-24"
+        },
+        {
+          "ars": "104700",
           "date": "2026-04-24"
         }
       ],
@@ -891,10 +895,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "151700",
+      "ars": "150000",
       "usd": 89,
       "weight": null,
-      "usdSell": 106.8,
+      "usdSell": 105.6,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -924,6 +928,10 @@
         },
         {
           "ars": "151700",
+          "date": "2026-04-24"
+        },
+        {
+          "ars": "150000",
           "date": "2026-04-24"
         }
       ],
@@ -957,10 +965,10 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "20100",
+      "ars": "29300",
       "usd": 11.75,
       "weight": null,
-      "usdSell": 14.1,
+      "usdSell": 20.63,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -986,6 +994,10 @@
         },
         {
           "ars": "20100",
+          "date": "2026-04-24"
+        },
+        {
+          "ars": "29300",
           "date": "2026-04-24"
         }
       ],
@@ -1020,10 +1032,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "81000",
+      "ars": "85200",
       "usd": 47.5,
       "weight": null,
-      "usdSell": 57,
+      "usdSell": 59.95,
       "activo": true,
       "fechaAlta": "2026-04-21",
       "priceHistory": [
@@ -1049,6 +1061,10 @@
         },
         {
           "ars": "81000",
+          "date": "2026-04-24"
+        },
+        {
+          "ars": "85200",
           "date": "2026-04-24"
         }
       ],
@@ -2921,6 +2937,10 @@
           {
             "id": "unico",
             "label": "Único"
+          },
+          {
+            "id": "joystick",
+            "label": "joystick"
           }
         ],
         "rules": [
@@ -2928,8 +2948,32 @@
             "subtype": "unico",
             "type": "none",
             "val": 0,
-            "margin": 20,
-            "add": 0
+            "steps": [
+              {
+                "kind": "percent",
+                "value": 20
+              },
+              {
+                "kind": "usd",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "subtype": "joystick",
+            "type": "none",
+            "op": "<=",
+            "val": 0,
+            "steps": [
+              {
+                "kind": "usd",
+                "value": 7
+              },
+              {
+                "kind": "percent",
+                "value": 10
+              }
+            ]
           }
         ]
       },
@@ -3057,6 +3101,6 @@
     "dollarUpdated": "2026-04-24T10:53:27.743452+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-24T13:01:20.235Z",
+  "lastSync": "2026-04-24T13:50:40.606Z",
   "lastPriceCheck": null
 }
