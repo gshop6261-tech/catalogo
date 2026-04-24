@@ -1306,7 +1306,7 @@
     {
       "id": 26,
       "cat": "Belleza",
-      "calcSub": "mascarilla",
+      "calcSub": "masc",
       "name": "Mascarilla Capilar Karseell Maca Power 500ml Original",
       "sub": "",
       "desc": "Tratamiento profundo para cabello seco y dañado. La Karseell Hair Mask trabaja directamente en la fibra capilar, ayudando a recuperar suavidad, brillo y elasticidad desde la primera aplicación. Su fórmula nutritiva aporta hidratación duradera, reduce el frizz y mejora la manejabilidad en el uso diario. Ideal para cuidados semanales, facilita el desenredo y deja el cabello con un aspecto más sano, alineado y nutrido por más tiempo.",
@@ -1357,10 +1357,9 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/mascara-capilar-karseell-maca-power-500ml/1314793",
-          "price": 4.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-24T10:56:21.633787+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -3030,6 +3029,6 @@
     "dollarUpdated": "2026-04-24T10:53:27.743452+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-24T12:47:02.088Z",
+  "lastSync": "2026-04-24T12:49:57.026Z",
   "lastPriceCheck": null
 }
