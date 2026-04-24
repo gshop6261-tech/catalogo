@@ -707,7 +707,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "54600",
-      "usd": 34.0,
+      "usd": 34,
       "weight": 0.5,
       "usdSell": 40.8,
       "activo": true,
@@ -742,14 +742,14 @@
           "date": "2026-04-24"
         },
         {
-          "usd": 34.0,
+          "usd": 34,
           "date": "2026-04-24"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-2-xiaomi-mi-portatil-electric-air-mjcqb06qw-preto/1010923",
-          "price": 34.0,
+          "price": 34,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T14:59:40.117486+00:00"
@@ -814,7 +814,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-wireless-para-ps5-vermelho/777018",
-          "price": 60.0,
+          "price": 60,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-24T14:59:40.487331+00:00"
@@ -3146,10 +3146,42 @@
         "whatsapp": "5491154870326"
       }
     ],
-    "dollarAuto": 1420.0,
+    "dollarAuto": 1420,
     "dollarUpdated": "2026-04-24T14:59:10.177593+00:00",
-    "dollarManual": null
+    "dollarManual": null,
+    "dollarType": "blue",
+    "paymentMethods": [
+      {
+        "id": "efectivo",
+        "name": "Efectivo",
+        "icon": "💵",
+        "modifier": 0,
+        "active": true
+      },
+      {
+        "id": "transferencia",
+        "name": "Transferencia",
+        "icon": "🏦",
+        "modifier": 0,
+        "active": true,
+        "dollarType": "cripto"
+      },
+      {
+        "id": "mercadopago",
+        "name": "MercadoPago",
+        "icon": "📲",
+        "modifier": 7,
+        "active": true
+      },
+      {
+        "id": "usdt",
+        "name": "USDT",
+        "icon": "🪙",
+        "modifier": -3,
+        "active": true
+      }
+    ]
   },
-  "lastSync": "2026-04-24T14:23:20.399Z",
-  "lastPriceCheck": "2026-04-24T14:59:53.794604+00:00"
+  "lastSync": "2026-04-24T15:01:54.644Z",
+  "lastPriceCheck": null
 }
