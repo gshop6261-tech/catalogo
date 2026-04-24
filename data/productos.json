@@ -6,7 +6,7 @@
       "calcSub": "",
       "name": "Headset Gamer Redragon Ares H120 RGB P2 + Adaptador 3.5mm - Negro",
       "sub": "",
-      "desc": "El Redragon Ares H120 RGB es un headset gamer accesible y cómodo, ideal para largas sesiones de juego. Equipado con drivers de 40 mm, ofrece un sonido equilibrado e inmersivo. El micrófono integrado capta la voz con claridad, mientras que el control de volumen facilita los ajustes rápidos. La conexión P2 (3,5 mm) y USB garantiza compatibilidad con diversos dispositivos. Con iluminación RGB, aporta un diseño moderno para completar tu setup gamer.",
+      "desc": "El Redragon Ares H120 RGB es un headset gamer accesible y cómodo, ideal para largas sesiones de juego. Equipado con drivers de 40 mm, ofrece un sonido equilibrado e inmersivo. El micrófono integrado capta la voz con claridad, mientras que el control de volumen facilita los ajustes rápidos. La conexión P2 (3,5 mm) y USB garantiza compatibilidad con diversos dispositivos. Con iluminación RGB, aporta un diseño moderno para completar tu setup gamer.1",
       "img": "images/productos/1/main.jpg",
       "images": [
         "images/productos/1/main.jpg",
@@ -39,10 +39,9 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/headsets/headset-gamer-redragon-ares-h120-rgb-p2-adaptador-35mm-preto/1167597",
-          "price": 15.9,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-24T14:59:34.409037+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -3176,6 +3175,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T16:03:37.768Z",
+  "lastSync": "2026-04-24T16:04:52.261Z",
   "lastPriceCheck": null
 }
