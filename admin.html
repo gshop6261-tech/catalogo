@@ -35,6 +35,7 @@
       --blue-lt:   #EBF4FF;
       --orange:    #FF9500;
       --purple:    #5856D6;
+      --primary:   var(--blue);
       --r-sm:  8px;
       --r-md: 12px;
       --r-lg: 16px;
@@ -867,6 +868,7 @@
     }
     .toast.show { transform: translateY(0); opacity: 1; }
     .toast.success .ti { color: var(--green); }
+    .toast.warning .ti { color: var(--orange); }
     .toast.error .ti { color: var(--red); }
 
     /* ==========================================
@@ -1782,6 +1784,7 @@ const DEFAULT_SETTINGS = {
   dollarAuto: null,
   dollarUpdated: null,
   dollarType: 'blue',
+  vendedores: [],
   categories: JSON.parse(JSON.stringify(DEFAULT_CATEGORIES)),
   paymentMethods: [
     { id:'efectivo',      name:'Efectivo',      icon:'💵', modifier:0,  active:true, dollarType:'blue'    },
@@ -2134,7 +2137,13 @@ async function exportToProductosJSON(opts = {}) {
     return true;
   } catch (e) {
     console.error('GitHub sync error:', e);
-    if (!silent) showToast(`❌ Error al publicar: ${e.message}`, 'error');
+    if (!silent) {
+      let msg = e.message || 'Error desconocido';
+      if (msg.includes('409') || msg.toLowerCase().includes('conflict')) {
+        msg = "Conflicto de versión. Por favor, recargá la página (F5) para sincronizar y reintentá.";
+      }
+      showToast(`❌ Error al publicar: ${msg}`, 'error');
+    }
     return false;
   } finally {
     if (btn) { btn.disabled = false; btn.textContent = '🚀 Publicar en GitHub'; }
@@ -2202,8 +2211,8 @@ function addVendedor() {
   exportToProductosJSON({ silent: true }).then(ok => {
     showToast(ok
       ? '✅ Vendedor agregado y publicado en GitHub.'
-      : '⚠️ Vendedor guardado local. Configurá token GitHub para publicar.',
-      ok ? 'success' : 'error');
+      : '⚠️ Vendedor guardado local. Configurá el token de GitHub para publicar automáticamente.',
+      ok ? 'success' : 'warning');
   });
 }
 
@@ -2215,6 +2224,7 @@ function deleteVendedor(id) {
     renderVendedoresTable();
     exportToProductosJSON({ silent: true }).then(ok => {
       if (ok) showToast('✅ Vendedor eliminado y publicado en GitHub.');
+      else showToast('⚠️ Vendedor eliminado localmente. Falta sincronizar con GitHub.', 'warning');
     });
   });
 }
@@ -3647,7 +3657,12 @@ let toastTimer;
 function showToast(msg, type = 'success') {
   const toast = document.getElementById('toast');
   document.getElementById('toastMsg').textContent = msg;
-  document.getElementById('toastIcon').textContent = type === 'error' ? '❌' : '✅';
+  
+  let icon = '✅';
+  if (type === 'error')   icon = '❌';
+  if (type === 'warning') icon = '⚠️';
+  
+  document.getElementById('toastIcon').textContent = icon;
   toast.className = `toast ${type} show`;
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => toast.classList.remove('show'), 3000);
