@@ -2988,26 +2988,19 @@
         "id": "belleza",
         "name": "Belleza",
         "icon": "📦",
-        "subtypes": [],
-        "rules": [
+        "subtypes": [
           {
-            "subtype": "unico",
-            "type": "none",
-            "op": "<=",
-            "val": 0,
-            "steps": [
-              {
-                "kind": "usd",
-                "value": 0.7
-              },
-              {
-                "kind": "percent",
-                "value": 10
-              }
-            ]
+            "id": "cera",
+            "label": "cera"
           },
           {
-            "subtype": "unico",
+            "id": "masc",
+            "label": "mascarilla"
+          }
+        ],
+        "rules": [
+          {
+            "subtype": "cera",
             "type": "none",
             "op": "<=",
             "val": 0,
@@ -3037,6 +3030,6 @@
     "dollarUpdated": "2026-04-24T10:53:27.743452+00:00",
     "dollarManual": null
   },
-  "lastSync": "2026-04-24T12:43:46.873Z",
+  "lastSync": "2026-04-24T12:47:02.088Z",
   "lastPriceCheck": null
 }
