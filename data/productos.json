@@ -3253,6 +3253,36 @@
       "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
+    },
+    {
+      "id": 65,
+      "cat": "Celulares",
+      "publicSub": "",
+      "calcSub": "slim",
+      "name": "12",
+      "sub": "11",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "10100",
+      "usd": 1,
+      "weight": null,
+      "usdSell": 7.08,
+      "activo": true,
+      "fechaAlta": "2026-04-26",
+      "priceHistory": [
+        {
+          "ars": "10100",
+          "date": "2026-04-26"
+        }
+      ],
+      "referenceLinks": [],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
     }
   ],
   "banners": [
@@ -3753,6 +3783,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-26T15:02:05.550Z",
+  "lastSync": "2026-04-26T15:02:47.486Z",
   "lastPriceCheck": null
 }
