@@ -535,9 +535,69 @@
       padding: 16px 12px 110px;
     }
 
+    /* Catalog Layout with Subcategories */
+    .catalog-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .subcats-sidebar {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .subcats-sidebar::-webkit-scrollbar {
+      display: none;
+    }
+    .subcat-pill {
+      white-space: nowrap;
+      padding: 8px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-2);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .subcat-pill:hover {
+      border-color: var(--text-3);
+    }
+    .subcat-pill.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
     @media (min-width: 900px) {
       .main-content {
         padding: 24px 24px 110px;
+      }
+      .catalog-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+      }
+      .subcats-sidebar {
+        flex-direction: column;
+        flex-shrink: 0;
+        width: 200px;
+        position: sticky;
+        top: 150px;
+      }
+      .subcat-pill {
+        text-align: left;
+        border-radius: 8px;
+        padding: 10px 14px;
+      }
+      .catalog-main {
+        flex: 1;
+        min-width: 0;
       }
     }
 
@@ -1078,8 +1138,8 @@
     }
 
     .cart-remove-btn {
-      font-size: 11px;
-      color: var(--text-4);
+      font-size: 12px;
+      color: #FF3B30;
       background: none;
       border: none;
       cursor: pointer;
@@ -2018,12 +2078,19 @@
 
   <!-- ===== PRODUCT CATALOG ===== -->
   <main class="main-content" id="catalogo">
-    <div class="grid-meta">
-      <span class="grid-count"><strong id="productCount">0</strong> productos</span>
-      <span class="grid-badge" id="gridBadge">✅ En stock</span>
-    </div>
-    <div class="products-grid" id="productsGrid" role="list" aria-label="Productos disponibles">
-      <!-- Rendered by JS -->
+    <div class="catalog-layout">
+      <aside class="subcats-sidebar" id="subcatsSidebar" style="display:none;" aria-label="Subcategorías">
+        <!-- Rendered by JS -->
+      </aside>
+      <div class="catalog-main">
+        <div class="grid-meta">
+          <span class="grid-count"><strong id="productCount">0</strong> productos</span>
+          <span class="grid-badge" id="gridBadge">✅ En stock</span>
+        </div>
+        <div class="products-grid" id="productsGrid" role="list" aria-label="Productos disponibles">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
     </div>
   </main>
 
@@ -2423,6 +2490,7 @@
 
     /* Productos: se sobreescriben con data/productos.json en boot si está disponible */
     let PRODUCTOS = FALLBACK_PRODUCTOS;
+    let SETTINGS_CATEGORIES = [];
 
     /* ─── ESTADO ─────────────────────────────────── */
     const state = {
@@ -2430,6 +2498,7 @@
       total: 4,
       timer: null,
       cat: 'Todos',
+      subcat: 'Todos',
       query: '',
     };
 
@@ -2557,6 +2626,7 @@
         }
         const cats = data.settings.categories;
         if (cats && cats.length) {
+          SETTINGS_CATEGORIES = cats;
           CATS = ['Todos'].concat(cats.map(c => c.name));
         }
         if (Array.isArray(data.settings.paymentMethods) && data.settings.paymentMethods.length) {
@@ -2578,6 +2648,9 @@
     /* ─── HERO CAROUSEL ──────────────────────────── */
     function escHtml(s) {
       return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+    function escCss(s) {
+      return /^#[0-9a-fA-F]{3,8}$/.test(s) ? s : '#888888';
     }
 
     function renderHero() {
@@ -2700,12 +2773,53 @@
 
     function setCategory(cat) {
       state.cat = cat;
+      state.subcat = 'Todos'; // Reset subcategory
       document.querySelectorAll('.cat-pill').forEach(btn => {
         const active = btn.textContent === cat;
         btn.classList.toggle('active', active);
         btn.setAttribute('aria-selected', active ? 'true' : 'false');
       });
+      renderSubcategories();
       renderProducts();
+    }
+
+    function setSubcategory(subcat) {
+      state.subcat = subcat;
+      document.querySelectorAll('.subcat-pill').forEach(btn => {
+        const active = btn.dataset.id === subcat;
+        btn.classList.toggle('active', active);
+      });
+      renderProducts();
+    }
+
+    function renderSubcategories() {
+      const sidebar = document.getElementById('subcatsSidebar');
+      if (!sidebar) return;
+      
+      if (state.cat === 'Todos') {
+        sidebar.style.display = 'none';
+        return;
+      }
+      
+      const catObj = SETTINGS_CATEGORIES.find(c => c.name === state.cat);
+      const subcats = catObj && catObj.subcategories ? catObj.subcategories : [];
+      
+      // If there are no public subcategories, don't show the sidebar
+      if (!subcats || subcats.length === 0) {
+        sidebar.style.display = 'none';
+        return;
+      }
+      
+      sidebar.style.display = 'flex';
+      
+      let html = `<button class="subcat-pill ${state.subcat === 'Todos' ? 'active' : ''}" data-id="Todos" onclick="setSubcategory('Todos')">Todas</button>`;
+      
+      subcats.forEach(sub => {
+        const isActive = state.subcat === sub.id ? 'active' : '';
+        html += `<button class="subcat-pill ${isActive}" data-id="${sub.id}" onclick="setSubcategory('${sub.id}')">${sub.label}</button>`;
+      });
+      
+      sidebar.innerHTML = html;
     }
 
     /* ─── SEARCH ─────────────────────────────────── */
@@ -2727,6 +2841,7 @@
 
       let list = PRODUCTOS.filter(p => p.activo);
       if (state.cat !== 'Todos') list = list.filter(p => p.cat === state.cat);
+      if (state.subcat !== 'Todos') list = list.filter(p => p.publicSub === state.subcat);
       if (state.query) {
         list = list.filter(p =>
           p.name.toLowerCase().includes(state.query) ||
@@ -2762,11 +2877,11 @@
 
       const mainImg = (p.images && p.images.length) ? p.images[0] : p.img;
       const imgPart = mainImg
-        ? `<img src="${mainImg}" alt="${p.name}" loading="lazy">`
+        ? `<img src="${escHtml(mainImg)}" alt="${escHtml(p.name)}" loading="lazy">`
         : `<span class="card-emoji" aria-hidden="true">${p.icon}</span>`;
 
       const badgePart = p.badge
-        ? `<span class="card-badge" style="background:${p.badgeColor}">${p.badge}</span>`
+        ? `<span class="card-badge" style="background:${escCss(p.badgeColor)}">${escHtml(p.badge)}</span>`
         : '';
 
       let pricePart = '';
@@ -2782,16 +2897,16 @@
       }
 
       return `
-    <article class="card" role="listitem" aria-label="${p.name}" style="animation-delay:${delay}" onclick="openDetailModal(${p.id})">
+    <article class="card" role="listitem" aria-label="${escHtml(p.name)}" style="animation-delay:${delay}" onclick="openDetailModal(${p.id})">
       <div class="card-img-wrap">
         ${badgePart}
         ${imgPart}
       </div>
       <div class="card-body">
-        <div class="card-cat">${p.cat}</div>
-        <div class="card-name">${p.name}</div>
-        <div class="card-sub">${p.sub}</div>
-        <div class="card-desc">${p.desc}</div>
+        <div class="card-cat">${escHtml(p.cat)}</div>
+        <div class="card-name">${escHtml(p.name)}</div>
+        <div class="card-sub">${escHtml(p.sub)}</div>
+        <div class="card-desc">${escHtml(p.desc)}</div>
         <div class="card-divider"></div>
         ${pricePart}
         <div class="card-cart-row" onclick="event.stopPropagation()">
@@ -2800,7 +2915,7 @@
             class="card-btn cart-add-btn${CART.find(i => i.product.id === p.id) ? ' in-cart' : ''}"
             id="cart-btn-${p.id}"
             onclick="cartAdd(${p.id}, document.getElementById('qty-${p.id}').value)"
-            aria-label="Agregar ${p.name} al presupuesto"
+            aria-label="Agregar ${escHtml(p.name)} al presupuesto"
           >${CART.find(i => i.product.id === p.id) ? `En presupuesto (${CART.find(i => i.product.id === p.id).qty})` : 'Agregar a presupuesto'}</button>
         </div>
       </div>
@@ -2940,7 +3055,7 @@
           <button class="cart-qty-btn" onclick="cartUpdateQty(${p.id}, ${qty + 1})">+</button>
         </div>
         ${subtotalLine}
-        <button class="cart-remove-btn" onclick="cartRemove(${p.id})" aria-label="Eliminar">✕</button>
+        <button class="cart-remove-btn" onclick="cartRemove(${p.id})" aria-label="Eliminar">Eliminar</button>
       </div>
     </div>`;
       }).join('');
@@ -2952,11 +3067,11 @@
       const methods = cartPayMethods();
       container.innerHTML = methods.map(m => `
     <label class="pay-option${PAYMENT_METHOD === m.id ? ' selected' : ''}">
-      <input type="radio" name="payMethod" value="${m.id}"
+      <input type="radio" name="payMethod" value="${escHtml(m.id)}"
         ${PAYMENT_METHOD === m.id ? 'checked' : ''}
-        onchange="selectPaymentMethod('${m.id}')">
-      <span class="pay-icon">${m.icon}</span>
-      <span class="pay-name">${m.name}</span>
+        onchange="selectPaymentMethod(this.value)">
+      <span class="pay-icon">${escHtml(m.icon)}</span>
+      <span class="pay-name">${escHtml(m.name)}</span>
       ${m.modifier !== 0 ? `<span class="pay-modifier">${m.modifier > 0 ? '+' : ''}${m.modifier}%</span>` : ''}
     </label>`).join('');
     }

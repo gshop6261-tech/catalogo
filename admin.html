@@ -1146,7 +1146,7 @@
           <thead>
             <tr>
               <th>Categoría</th>
-              <th>Subtipos</th>
+              <th>Subcategorías / Subtipos</th>
               <th>Reglas matemáticas configuradas</th>
               <th>Acción</th>
             </tr>
@@ -1183,10 +1183,16 @@
               <input type="text" class="form-input" id="cmIcon" placeholder="📱" maxlength="4">
             </div>
             
-            <div class="form-section form-full">📦 Subtipos (opcional)</div>
+            <div class="form-section form-full">📦 Subcategorías públicas</div>
+            <div class="form-group form-full" style="padding-bottom:10px;">
+               <div id="cmPublicSubList" style="display:flex; flex-direction:column; gap:8px;"></div>
+               <button class="btn btn-ghost btn-sm" style="margin-top:10px" onclick="addCategoryPublicSub()">+ Agregar Subcategoría</button>
+            </div>
+
+            <div class="form-section form-full">🏷️ Reglas de Precios (Opcional)</div>
             <div class="form-group form-full" style="padding-bottom:10px;">
                <div id="cmSubtypesList" style="display:flex; flex-direction:column; gap:8px;"></div>
-               <button class="btn btn-ghost btn-sm" style="margin-top:10px" onclick="addCategorySubtype()">+ Agregar Subtipo</button>
+               <button class="btn btn-ghost btn-sm" style="margin-top:10px" onclick="addCategorySubtype()">+ Agregar Regla de Precio</button>
             </div>
 
             <div class="form-section form-full">📐 Reglas de cálculo</div>
@@ -1445,7 +1451,13 @@
           </select>
         </div>
         <div class="form-group">
-          <label class="form-label" id="pmCalcSubLabel">Subtipo / Caja</label>
+          <label class="form-label" id="pmPublicSubLabel">Subcategoría Pública</label>
+          <select class="form-select" id="pmPublicSub" onchange="updatePreview()">
+             <option value="">-</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" id="pmCalcSubLabel">Regla de Precio</label>
           <select class="form-select" id="pmCalcSub" onchange="autoCalcArs(); updatePreview()">
             <option value="unico">-</option>
           </select>
@@ -1678,12 +1690,23 @@
 /* ══════════════════════════════════════
    CONSTANTS
 ══════════════════════════════════════ */
-const LS_PASS      = 'cd_admin_pass';
-const LS_PRODUCTS  = 'cd_products';
-const LS_BANNERS   = 'cd_banners';
-const LS_SETTINGS  = 'cd_settings';
-const LS_SESSION   = 'cd_session';
-const DEFAULT_PASS = 'GlobalShop2026';   // ← Rubén cambia esto desde Configuración
+const LS_PASS       = 'cd_admin_pass';   // legacy — migrado al primer login
+const LS_PRODUCTS   = 'cd_products';
+const LS_BANNERS    = 'cd_banners';
+const LS_SETTINGS   = 'cd_settings';
+const LS_SESSION    = 'cd_session';
+const AUTH_SALT_KEY = 'cd_auth_salt';
+const AUTH_HASH_KEY = 'cd_auth_hash';
+const LS_ATTEMPTS   = 'cd_auth_attempts';
+const LOCKOUT_MAX   = 5;
+const LOCKOUT_MS    = 15 * 60 * 1000;
+
+function escHtml(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function escCss(s) {
+  return /^#[0-9a-fA-F]{3,8}$/.test(s) ? s : '#888888';
+}
 
 const CATS = () => (settings.categories || []).map(c => c.name);
 
@@ -1859,23 +1882,100 @@ function syncCatalog() {
 }
 
 /* ══════════════════════════════════════
-   AUTH
+   AUTH — PBKDF2 + HMAC-SHA256
 ══════════════════════════════════════ */
-function getPass() {
-  return load(LS_PASS, DEFAULT_PASS);
+async function _pbkdf2Hash(password, salt) {
+  const enc = new TextEncoder();
+  const key = await crypto.subtle.importKey('raw', enc.encode(password), 'PBKDF2', false, ['deriveBits']);
+  const bits = await crypto.subtle.deriveBits(
+    { name: 'PBKDF2', salt: enc.encode(salt), iterations: 100000, hash: 'SHA-256' },
+    key, 256
+  );
+  return Array.from(new Uint8Array(bits)).map(b => b.toString(16).padStart(2,'0')).join('');
 }
 
-function doLogin() {
-  const val = document.getElementById('loginPassword').value;
-  if (val === getPass()) {
-    save(LS_SESSION, { ts: Date.now() });
+async function _hmacSign(data, keyHex) {
+  const enc = new TextEncoder();
+  const keyBytes = new Uint8Array(keyHex.match(/.{2}/g).map(b => parseInt(b,16)));
+  const key = await crypto.subtle.importKey('raw', keyBytes, { name:'HMAC', hash:'SHA-256' }, false, ['sign']);
+  const sig = await crypto.subtle.sign('HMAC', key, enc.encode(data));
+  return Array.from(new Uint8Array(sig)).map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+async function _setPassword(password) {
+  const salt = Array.from(crypto.getRandomValues(new Uint8Array(16))).map(b => b.toString(16).padStart(2,'0')).join('');
+  const hash = await _pbkdf2Hash(password, salt);
+  localStorage.setItem(AUTH_SALT_KEY, salt);
+  localStorage.setItem(AUTH_HASH_KEY, hash);
+}
+
+function _isLockedOut() {
+  const a = load(LS_ATTEMPTS, { count: 0, lockUntil: 0 });
+  return a.lockUntil > Date.now();
+}
+function _lockoutRemaining() {
+  return Math.ceil((load(LS_ATTEMPTS, { lockUntil: 0 }).lockUntil - Date.now()) / 60000);
+}
+function _recordFailedAttempt() {
+  const a = load(LS_ATTEMPTS, { count: 0, lockUntil: 0 });
+  a.count++;
+  if (a.count >= LOCKOUT_MAX) { a.lockUntil = Date.now() + LOCKOUT_MS; a.count = 0; }
+  save(LS_ATTEMPTS, a);
+}
+
+async function doLogin() {
+  const errEl = document.getElementById('loginError');
+  const pwdEl = document.getElementById('loginPassword');
+  const val   = pwdEl.value;
+  if (!val) return;
+
+  if (_isLockedOut()) {
+    errEl.textContent = `Demasiados intentos. Esperá ${_lockoutRemaining()} min.`;
+    errEl.style.display = 'block';
+    return;
+  }
+
+  const storedHash = localStorage.getItem(AUTH_HASH_KEY);
+  if (!storedHash) {
+    // Primera vez o migración: validar contra legacy plaintext si existe
+    const legacy = load(LS_PASS, null);
+    if (legacy !== null && val !== legacy) {
+      _recordFailedAttempt();
+      const a = load(LS_ATTEMPTS, { count: 0, lockUntil: 0 });
+      errEl.textContent = _isLockedOut()
+        ? `Demasiados intentos. Esperá ${_lockoutRemaining()} min.`
+        : `Contraseña incorrecta. Intento ${a.count}/${LOCKOUT_MAX}.`;
+      errEl.style.display = 'block';
+      setTimeout(() => errEl.style.display = 'none', 4000);
+      pwdEl.value = ''; pwdEl.focus();
+      return;
+    }
+    // Hashear y guardar la contraseña
+    await _setPassword(val);
+    localStorage.removeItem(LS_PASS);
+    const hash = localStorage.getItem(AUTH_HASH_KEY);
+    save(LS_SESSION, { ts: Date.now(), sig: await _hmacSign(String(Date.now()), hash) });
+    save(LS_ATTEMPTS, { count: 0, lockUntil: 0 });
+    showApp();
+    return;
+  }
+
+  const salt = localStorage.getItem(AUTH_SALT_KEY) || '';
+  const hash = await _pbkdf2Hash(val, salt);
+  if (hash === storedHash) {
+    save(LS_ATTEMPTS, { count: 0, lockUntil: 0 });
+    const ts = Date.now();
+    save(LS_SESSION, { ts, sig: await _hmacSign(String(ts), storedHash) });
     showApp();
   } else {
-    const err = document.getElementById('loginError');
-    err.style.display = 'block';
-    setTimeout(() => err.style.display = 'none', 3000);
-    document.getElementById('loginPassword').value = '';
-    document.getElementById('loginPassword').focus();
+    _recordFailedAttempt();
+    const a = load(LS_ATTEMPTS, { count: 0, lockUntil: 0 });
+    errEl.textContent = _isLockedOut()
+      ? `Demasiados intentos. Esperá ${_lockoutRemaining()} min.`
+      : `Contraseña incorrecta. Intento ${a.count}/${LOCKOUT_MAX}.`;
+    errEl.style.display = 'block';
+    setTimeout(() => errEl.style.display = 'none', 4000);
+    pwdEl.value = ''; pwdEl.focus();
   }
 }
 
@@ -1884,23 +1984,30 @@ function doLogout() {
   location.reload();
 }
 
-function changePassword() {
+async function changePassword() {
   const p1 = document.getElementById('newPass1').value;
   const p2 = document.getElementById('newPass2').value;
-  if (!p1 || p1.length < 4) return showToast('La contraseña debe tener al menos 4 caracteres.', 'error');
+  if (!p1 || p1.length < 6) return showToast('La contraseña debe tener al menos 6 caracteres.', 'error');
   if (p1 !== p2) return showToast('Las contraseñas no coinciden.', 'error');
-  save(LS_PASS, p1);
+  await _setPassword(p1);
+  const newHash = localStorage.getItem(AUTH_HASH_KEY);
+  const ts = Date.now();
+  save(LS_SESSION, { ts, sig: await _hmacSign(String(ts), newHash) });
+  localStorage.removeItem(LS_PASS);
   document.getElementById('newPass1').value = '';
   document.getElementById('newPass2').value = '';
   showToast('✅ Contraseña actualizada.');
 }
 
 /* Check session on load */
-function checkSession() {
+async function checkSession() {
   const s = load(LS_SESSION, null);
-  if (s && (Date.now() - s.ts) < 8 * 60 * 60 * 1000) {
-    showApp();
-  }
+  if (!s || !s.ts || !s.sig) return;
+  if ((Date.now() - s.ts) >= 8 * 60 * 60 * 1000) return;
+  const storedHash = localStorage.getItem(AUTH_HASH_KEY);
+  if (!storedHash) return;
+  const expected = await _hmacSign(String(s.ts), storedHash);
+  if (expected === s.sig) showApp();
 }
 
 /* ══════════════════════════════════════
@@ -2653,11 +2760,11 @@ function renderProdTable() {
       <tr>
         <td class="prod-emoji-cell">${p.icon}</td>
         <td class="prod-name-cell">
-          <div class="pn">${p.name}</div>
-          <div class="pc">${p.cat}</div>
+          <div class="pn">${escHtml(p.name)}</div>
+          <div class="pc">${escHtml(p.cat)}</div>
           ${p.status === 'pending' ? '<span class="badge-pill" style="background:#FF9500;font-size:10px">⏳ Pendiente</span>' : ''}
           ${p.status === 'error' ? '<span class="badge-pill" style="background:#FF3B30;font-size:10px">❌ Error</span>' : ''}
-          ${p.badge ? `<span class="badge-pill" style="background:${p.badgeColor}">${p.badge}</span>` : ''}
+          ${p.badge ? `<span class="badge-pill" style="background:${escCss(p.badgeColor)}">${escHtml(p.badge)}</span>` : ''}
         </td>
         <td class="hide-sm">
           ${price
@@ -2767,6 +2874,7 @@ function openProductModal(id) {
     document.getElementById('pmName').value      = p.name;
     document.getElementById('pmCat').value       = p.cat;
     updateSubtypeOptions();
+    document.getElementById('pmPublicSub').value = p.publicSub || '';
     document.getElementById('pmCalcSub').value   = p.calcSub || 'unico';
     document.getElementById('pmIcon').value      = p.icon;
     document.getElementById('pmSub').value       = p.sub;
@@ -2888,6 +2996,7 @@ function addImageInput() {
 function saveProduct() {
   const name  = document.getElementById('pmName').value.trim();
   const cat   = document.getElementById('pmCat').value;
+  const publicSub = document.getElementById('pmPublicSub') ? document.getElementById('pmPublicSub').value : '';
   const calcSub = document.getElementById('pmCalcSub') ? document.getElementById('pmCalcSub').value : 'unico';
   const icon  = document.getElementById('pmIcon').value.trim() || '📦';
   const sub   = document.getElementById('pmSub').value.trim();
@@ -2916,7 +3025,7 @@ function saveProduct() {
     const p = products.find(x => x.id === editingProductId);
     if (!p) return;
     const prevArs = p.ars;
-    p.name  = name; p.cat   = cat;   p.calcSub = calcSub; p.icon  = icon;
+    p.name  = name; p.cat   = cat; p.publicSub = publicSub;  p.calcSub = calcSub; p.icon  = icon;
     p.sub   = sub;  p.desc  = desc;  p.img   = img; p.images = images;
     p.ars   = ars;  p.usd   = usd;   p.weight = weight; p.usdSell = usdSell; p.badge = badge;
     p.badgeColor = badgeColor;
@@ -2933,7 +3042,7 @@ function saveProduct() {
     // New
     const newId = products.length ? Math.max(...products.map(p=>p.id)) + 1 : 1;
     const newP = {
-      id: newId, cat, calcSub, name, sub, desc, img, images, badge, badgeColor, icon,
+      id: newId, cat, publicSub, calcSub, name, sub, desc, img, images, badge, badgeColor, icon,
       ars, usd, weight, usdSell, activo: true, fechaAlta: today,
       priceHistory: ars ? [{ ars, date: today }] : [],
       referenceLinks, status, enrichError: null,
@@ -3018,19 +3127,35 @@ function getCalculationResult(catName, sub, usdCost, weightArg) {
 }
 
 function updateSubtypeOptions() {
-  const cat = document.getElementById('pmCat').value;
+  const catName = document.getElementById('pmCat').value;
   const subSel = document.getElementById('pmCalcSub');
-  if (!subSel) return;
+  const pubSubSel = document.getElementById('pmPublicSub');
   
-  while (subSel.children.length > 0) subSel.removeChild(subSel.lastChild);
+  if (subSel) {
+    while (subSel.children.length > 0) subSel.removeChild(subSel.lastChild);
+    let options = SUBTYPES(catName);
+    options.forEach(o => {
+      const opt = document.createElement('option');
+      opt.value = o.id; opt.textContent = o.label;
+      subSel.appendChild(opt);
+    });
+  }
   
-  let options = SUBTYPES(cat);
-  
-  options.forEach(o => {
-    const opt = document.createElement('option');
-    opt.value = o.id; opt.textContent = o.label;
-    subSel.appendChild(opt);
-  });
+  if (pubSubSel) {
+    while (pubSubSel.children.length > 0) pubSubSel.removeChild(pubSubSel.lastChild);
+    const optEmpty = document.createElement('option');
+    optEmpty.value = ""; optEmpty.textContent = "-";
+    pubSubSel.appendChild(optEmpty);
+    
+    const cat = (settings.categories || []).find(c => c.name === catName);
+    if (cat && cat.subcategories && cat.subcategories.length > 0) {
+      cat.subcategories.forEach(o => {
+        const opt = document.createElement('option');
+        opt.value = o.id; opt.textContent = o.label;
+        pubSubSel.appendChild(opt);
+      });
+    }
+  }
   
   autoCalcArs();
 }
@@ -3090,7 +3215,7 @@ function renderCategoriesTable() {
   if(!tbody || !settings.categories) return;
   const cats = settings.categories;
   
-  tbody.innerHTML = cats.map(c => {
+  tbody.innerHTML = cats.map((c, i) => {
     const rulesSummary = (c.rules || []).map(r => {
        const opText = r.type === 'none' ? 'Siempre' : `${r.type==='price'?'Precio':'Peso'} ${r.op} ${r.val}`;
        const stepsTxt = ruleSteps(r).map(formatStep).join(' ➜ ');
@@ -3104,12 +3229,36 @@ function renderCategoriesTable() {
         <td style="font-size:11px;color:var(--text-2);max-width:200px;">${subsSummary}</td>
         <td style="font-size:10px;color:var(--text-3);line-height:1.4">${rulesSummary || 'Sin reglas'}</td>
         <td>
+          <button class="btn btn-ghost btn-sm btn-icon" onclick="moveCategoryUp(${i})" title="Subir" ${i === 0 ? 'disabled' : ''}>⬆️</button>
+          <button class="btn btn-ghost btn-sm btn-icon" onclick="moveCategoryDown(${i})" title="Bajar" ${i === cats.length - 1 ? 'disabled' : ''}>⬇️</button>
           <button class="btn btn-ghost btn-sm btn-icon" onclick="openCategoryModal('${c.id}')" title="Editar">✏️</button>
           <button class="btn btn-ghost btn-sm btn-icon" onclick="deleteCategory('${c.id}')" title="Eliminar" style="color:var(--red)">🗑</button>
         </td>
       </tr>
     `;
   }).join('');
+}
+
+function moveCategoryUp(index) {
+  if (index === 0) return;
+  const temp = settings.categories[index - 1];
+  settings.categories[index - 1] = settings.categories[index];
+  settings.categories[index] = temp;
+  _dirty.categories = true;
+  saveSettings();
+  renderCategoriesTable();
+  populateCatDropdowns();
+}
+
+function moveCategoryDown(index) {
+  if (index >= settings.categories.length - 1) return;
+  const temp = settings.categories[index + 1];
+  settings.categories[index + 1] = settings.categories[index];
+  settings.categories[index] = temp;
+  _dirty.categories = true;
+  saveSettings();
+  renderCategoriesTable();
+  populateCatDropdowns();
 }
 
 function deleteCategory(id) {
@@ -3127,6 +3276,7 @@ function openCategoryModal(id) {
   const cat = settings.categories.find(c => c.id === id);
   document.getElementById('cmId').value = id || '';
   
+  window._tempSubcategories = cat ? JSON.parse(JSON.stringify(cat.subcategories || [])) : [];
   window._tempSubtypes = cat ? JSON.parse(JSON.stringify(cat.subtypes || [])) : [];
   window._tempRules = cat ? JSON.parse(JSON.stringify(cat.rules || [])) : [];
   
@@ -3134,10 +3284,27 @@ function openCategoryModal(id) {
   document.getElementById('cmIcon').value = cat ? (cat.icon || '📦') : '📦';
   document.getElementById('catModalTitle').textContent = cat ? 'Editar Categoría' : 'Nueva Categoría';
   
+  renderCmPublicSubs();
   renderCmSubtypes();
   renderCmRules();
   
   mo.classList.add('show');
+}
+
+function renderCmPublicSubs() {
+   const ls = document.getElementById('cmPublicSubList');
+   ls.innerHTML = window._tempSubcategories.map((s, i) => `
+     <div style="display:flex;gap:8px;align-items:center;background:var(--surf-2);padding:10px;border-radius:var(--r-sm);border:1px solid var(--border)">
+       <input type="text" class="form-input" placeholder="ID (ej: apple)" style="width:80px" value="${s.id}" onchange="window._tempSubcategories[${i}].id=this.value">
+       <input type="text" class="form-input" placeholder="Label visible" style="flex:1" value="${s.label}" onchange="window._tempSubcategories[${i}].label=this.value">
+       <button class="btn btn-ghost btn-sm btn-icon text-red" onclick="window._tempSubcategories.splice(${i},1); renderCmPublicSubs();">✕</button>
+     </div>
+   `).join('');
+}
+
+function addCategoryPublicSub() {
+   window._tempSubcategories.push({id:'', label:''});
+   renderCmPublicSubs();
 }
 
 function renderCmSubtypes() {
@@ -3249,11 +3416,13 @@ function saveCategory() {
    const newId = cmId || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g,'');
    
    // Clean up sub/rules empty
+   const validPublicSubs = window._tempSubcategories.filter(s => s.id && s.label);
    const validSubs = window._tempSubtypes.filter(s => s.id && s.label);
    
    const newCat = {
       id: newId,
       name, icon,
+      subcategories: validPublicSubs,
       subtypes: validSubs,
       rules: window._tempRules
    };
