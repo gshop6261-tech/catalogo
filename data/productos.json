@@ -76,7 +76,7 @@
       "badge": "Premium",
       "badgeColor": "#FF9500",
       "icon": "🎧",
-      "ars": "187500",
+      "ars": "189100",
       "usd": 110,
       "activo": true,
       "fechaAlta": "2026-04-01",
@@ -88,10 +88,14 @@
         {
           "ars": "187500",
           "date": "2026-04-26"
+        },
+        {
+          "ars": "189100",
+          "date": "2026-04-26"
         }
       ],
       "verifyPrice": true,
-      "usdSell": 132
+      "usdSell": 133.1
     },
     {
       "id": 5,
@@ -103,7 +107,7 @@
       "badge": "Destacado",
       "badgeColor": "#007AFF",
       "icon": "💻",
-      "ars": "1329200",
+      "ars": "1340200",
       "usd": 780,
       "activo": true,
       "fechaAlta": "2026-04-10",
@@ -111,10 +115,14 @@
         {
           "ars": "1329200",
           "date": "2026-04-26"
+        },
+        {
+          "ars": "1340200",
+          "date": "2026-04-26"
         }
       ],
       "verifyPrice": true,
-      "usdSell": 936
+      "usdSell": 943.8
     },
     {
       "id": 6,
@@ -642,6 +650,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-26T20:04:41.355Z",
+  "lastSync": "2026-04-26T20:07:38.014Z",
   "lastPriceCheck": null
 }
