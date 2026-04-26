@@ -1560,7 +1560,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/aspiradores/robo-aspirador-xiaomi-robot-vacuum-s40-bhr084aeu-branco/1251340",
-          "price": 162.0,
+          "price": 162,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-26T14:10:49.511304+00:00"
@@ -3723,7 +3723,7 @@
         "whatsapp": "5491169651009"
       }
     ],
-    "dollarAuto": 1420.0,
+    "dollarAuto": 1420,
     "dollarUpdated": "2026-04-26T12:07:19.010844+00:00",
     "dollarManual": null,
     "dollarType": "blue",
@@ -3753,6 +3753,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-24T20:34:20.694Z",
-  "lastPriceCheck": "2026-04-26T14:11:00.121353+00:00"
+  "lastSync": "2026-04-26T15:02:05.550Z",
+  "lastPriceCheck": null
 }
