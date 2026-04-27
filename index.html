@@ -3141,9 +3141,23 @@
       const modifier = method ? method.modifier : 0;
       const totalArs = subtotalArs ? Math.ceil(subtotalArs * (1 + modifier / 100) / 100) * 100 : 0;
       const totalUsd = subtotalUsd ? +(subtotalUsd * (1 + modifier / 100)).toFixed(2) : 0;
-      const modNote = (method && modifier !== 0)
-        ? `<div class="cart-modifier-note">${method.icon} ${method.name}: ${modifier > 0 ? '+' : ''}${modifier}%</div>`
-        : '';
+
+      // Calcular desglose si hay costo financiero
+      let costFinancieroLine = '';
+      if (method && modifier !== 0 && (subtotalArs || subtotalUsd)) {
+        const costoArs = subtotalArs ? Math.ceil(subtotalArs * (modifier / 100) / 100) * 100 : 0;
+        const costoUsd = subtotalUsd ? +(subtotalUsd * (modifier / 100)).toFixed(2) : 0;
+        const costoArsStr = costoArs ? formatARS(String(costoArs)) : '—';
+        const costoUsdStr = costoUsd ? `U$D ${costoUsd.toFixed(2)}` : '';
+        costFinancieroLine = `
+    <div class="cart-summary-row" style="color:var(--primary);font-size:13px">
+      <span>Costo financiero (${modifier > 0 ? '+' : ''}${modifier}%)</span>
+      <div class="cart-summary-dual">
+        ${costoUsdStr ? `<span class="summary-usd" style="font-size:12px">${costoUsdStr}</span>` : ''}
+        <span class="summary-ars">${costoArsStr}</span>
+      </div>
+    </div>`;
+      }
 
       const subtotalArsStr = subtotalArs ? formatARS(String(subtotalArs)) : (hasConsultar ? 'A consultar' : '—');
       const subtotalUsdStr = subtotalUsd ? `U$D ${subtotalUsd.toFixed(2)}` : '';
@@ -3158,7 +3172,7 @@
         <span class="summary-ars">${subtotalArsStr}</span>
       </div>
     </div>
-    ${modNote}
+    ${costFinancieroLine}
     <div class="cart-summary-row total">
       <span>Total</span>
       <div class="cart-summary-dual">
