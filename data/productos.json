@@ -3753,7 +3753,7 @@
         "whatsapp": "5491169651009"
       }
     ],
-    "dollarAuto": 1420.0,
+    "dollarAuto": 1420,
     "dollarUpdated": "2026-04-26T15:05:06.039300+00:00",
     "dollarManual": null,
     "dollarType": "blue",
@@ -3763,7 +3763,7 @@
         "name": "Efectivo",
         "icon": "💵",
         "modifier": 0,
-        "active": true
+        "active": false
       },
       {
         "id": "transferencia",
@@ -3783,6 +3783,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-26T15:02:47.486Z",
+  "lastSync": "2026-04-27T00:07:20.920Z",
   "lastPriceCheck": null
 }
