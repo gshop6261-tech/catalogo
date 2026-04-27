@@ -2613,12 +2613,29 @@
       if (data.settings) {
         const vParam = new URLSearchParams(window.location.search).get('v');
         let vendedorMatched = false;
+
         if (vParam && data.settings.vendedores && data.settings.vendedores.length) {
-          const vendedor = data.settings.vendedores.find(v => v.id === vParam);
-          if (vendedor) {
+          const activos = data.settings.vendedores.filter(v => v.activo !== false);
+
+          if (vParam === '_rota' && activos.length) {
+            // Rotación aleatoria — fijada por sesión para no cambiar durante el checkout
+            const cached = sessionStorage.getItem('cd_rota_v');
+            const vendedor = cached
+              ? activos.find(v => v.id === cached) || activos[Math.floor(Math.random() * activos.length)]
+              : activos[Math.floor(Math.random() * activos.length)];
+            sessionStorage.setItem('cd_rota_v', vendedor.id);
             CFG.whatsapp = vendedor.whatsapp;
             CFG.vendedorNombre = vendedor.nombre || null;
             vendedorMatched = true;
+
+          } else {
+            // Vendedor específico por ID
+            const vendedor = activos.find(v => v.id === vParam);
+            if (vendedor) {
+              CFG.whatsapp = vendedor.whatsapp;
+              CFG.vendedorNombre = vendedor.nombre || null;
+              vendedorMatched = true;
+            }
           }
         }
         if (!vendedorMatched) {

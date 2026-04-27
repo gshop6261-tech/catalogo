@@ -1280,6 +1280,11 @@
           Cada vendedor tiene su propio enlace con su WhatsApp. Ejemplo:
           <code style="background:var(--surf-2);padding:1px 5px;border-radius:4px">index.html?v=juan</code>
         </p>
+        <div style="background:var(--surf-2);border-radius:8px;padding:10px 14px;margin-bottom:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span style="font-size:13px;color:var(--text-2)">🔄 <strong>Link de rotación:</strong></span>
+          <code id="rotaLinkDisplay" style="font-size:12px;flex:1;word-break:break-all;color:var(--primary)"></code>
+          <button class="btn btn-ghost btn-sm" onclick="copyRotaLink()" title="Copiar link de rotación">📋 Copiar</button>
+        </div>
         <div class="table-wrap" style="margin-bottom:14px">
           <table>
             <thead>
@@ -1287,6 +1292,7 @@
                 <th>ID (URL)</th>
                 <th>Nombre</th>
                 <th>WhatsApp</th>
+                <th>Activo</th>
                 <th>Link del catálogo</th>
                 <th>Acción</th>
               </tr>
@@ -2290,29 +2296,38 @@ function renderVendedoresTable() {
   const tbody = document.getElementById('vendedoresTableBody');
   if (!tbody) return;
   const vendedores = settings.vendedores || [];
-  if (!vendedores.length) {
-    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-3);font-size:12px;padding:14px">Sin vendedores configurados</td></tr>';
-    return;
-  }
   const base = (() => {
     const u = new URL(window.location.href);
     u.search = ''; u.hash = '';
     u.pathname = u.pathname.replace(/\/(admin|admin\.html)\/?$/, '/');
     return u.origin + u.pathname;
   })();
+
+  // Actualizar banner de link de rotación
+  const rotaDisplay = document.getElementById('rotaLinkDisplay');
+  if (rotaDisplay) rotaDisplay.textContent = `${base}?v=_rota`;
+
+  if (!vendedores.length) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-3);font-size:12px;padding:14px">Sin vendedores configurados</td></tr>';
+    return;
+  }
   tbody.innerHTML = vendedores.map(v => `
     <tr>
-      <td style="font-weight:700;font-size:13px">${v.id}</td>
-      <td>${v.nombre || '—'}</td>
-      <td style="font-family:monospace;font-size:12px">${v.whatsapp}</td>
+      <td style="font-weight:700;font-size:13px">${escHtml(v.id)}</td>
+      <td>${escHtml(v.nombre || '—')}</td>
+      <td style="font-family:monospace;font-size:12px">${escHtml(v.whatsapp)}</td>
+      <td style="text-align:center">
+        <input type="checkbox" ${v.activo !== false ? 'checked' : ''}
+               onchange="toggleVendedor('${escHtml(v.id)}', this.checked)">
+      </td>
       <td style="font-size:11px">
-        <a href="${base}?v=${v.id}" target="_blank" style="color:var(--primary);word-break:break-all">${base}?v=${v.id}</a>
+        <a href="${base}?v=${encodeURIComponent(v.id)}" target="_blank" style="color:var(--primary);word-break:break-all">${base}?v=${escHtml(v.id)}</a>
       </td>
       <td>
-        <button class="btn btn-ghost btn-sm btn-icon" onclick="deleteVendedor('${v.id}')" title="Eliminar" style="color:var(--red)">🗑</button>
+        <button class="btn btn-ghost btn-sm" onclick="copyVendedorLink('${base}?v=${encodeURIComponent(v.id)}')" title="Copiar link">📋</button>
+        <button class="btn btn-ghost btn-sm btn-icon" onclick="deleteVendedor('${escHtml(v.id)}')" title="Eliminar" style="color:var(--red)">🗑</button>
       </td>
-    </tr>
-  `).join('');
+    </tr>`).join('');
 }
 
 function addVendedor() {
@@ -2322,7 +2337,7 @@ function addVendedor() {
   if (!id || !whatsapp) return showToast('ID y WhatsApp son obligatorios.', 'error');
   if (!settings.vendedores) settings.vendedores = [];
   if (settings.vendedores.find(v => v.id === id)) return showToast(`Ya existe un vendedor con ID "${id}".`, 'error');
-  settings.vendedores.push({ id, nombre, whatsapp });
+  settings.vendedores.push({ id, nombre, whatsapp, activo: true });
   _dirty.vendedores = true;
   saveSettings();
   renderVendedoresTable();
@@ -2348,6 +2363,27 @@ function deleteVendedor(id) {
       else showToast('⚠️ Vendedor eliminado localmente. Falta sincronizar con GitHub.', 'warning');
     });
   });
+}
+
+function toggleVendedor(id, activo) {
+  const v = (settings.vendedores || []).find(v => v.id === id);
+  if (!v) return;
+  v.activo = activo;
+  _dirty.vendedores = true;
+  saveSettings();
+  exportToProductosJSON({ silent: true });
+}
+
+function copyVendedorLink(url) {
+  navigator.clipboard.writeText(url)
+    .then(() => showToast('✅ Link copiado al portapapeles.', 'success'));
+}
+
+function copyRotaLink() {
+  const el = document.getElementById('rotaLinkDisplay');
+  if (!el) return;
+  navigator.clipboard.writeText(el.textContent)
+    .then(() => showToast('✅ Link de rotación copiado.', 'success'));
 }
 
 /* ══════════════════════════════════════
