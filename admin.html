@@ -3871,6 +3871,9 @@ document.addEventListener('keydown', e => {
 /* ══════════════════════════════════════
    BOOT
 ══════════════════════════════════════ */
+localStorage.removeItem(AUTH_SALT_KEY);
+localStorage.removeItem(AUTH_HASH_KEY);
+localStorage.removeItem(LS_PASS);
 checkSession();
 </script>
 </body>
