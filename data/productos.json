@@ -1985,10 +1985,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "167600",
+      "ars": "174460",
       "usd": 101.82,
       "weight": null,
-      "usdSell": 118,
+      "usdSell": 122,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -2007,6 +2007,14 @@
         {
           "ars": "167600",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "168800",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "174460",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2019,7 +2027,8 @@
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": false
+      "verifyPrice": false,
+      "publicSub": ""
     },
     {
       "id": 38,
@@ -2040,10 +2049,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "185400",
+      "ars": "192335",
       "usd": 113.18,
       "weight": null,
-      "usdSell": 130.5,
+      "usdSell": 134.5,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -2066,6 +2075,10 @@
         {
           "ars": "185400",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "192335",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2078,7 +2091,8 @@
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": false
+      "verifyPrice": false,
+      "publicSub": ""
     },
     {
       "id": 39,
@@ -2099,10 +2113,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "176100",
+      "ars": "183040",
       "usd": 107.27,
       "weight": null,
-      "usdSell": 124,
+      "usdSell": 128,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -2125,6 +2139,10 @@
         {
           "ars": "176100",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "183040",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2137,7 +2155,8 @@
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": false
+      "verifyPrice": false,
+      "publicSub": ""
     },
     {
       "id": 40,
@@ -2775,7 +2794,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "203300",
+      "ars": "204800",
       "usd": 127,
       "weight": null,
       "usdSell": 143.16,
@@ -2785,20 +2804,28 @@
         {
           "ars": "203300",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "213070",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "204800",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a16-sm-a165f-global-128gb-4gb-ram-dual-sim-tela-67-cinza-caixa-slim/1351385",
-          "price": 127,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-28T07:57:48.731989+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": false,
+      "publicSub": ""
     },
     {
       "id": 54,
@@ -3723,7 +3750,7 @@
         "whatsapp": "5491169651009"
       }
     ],
-    "dollarAuto": 1430.0,
+    "dollarAuto": 1430,
     "dollarUpdated": "2026-04-28T07:43:32.866960+00:00",
     "dollarManual": null,
     "dollarType": "blue",
@@ -3753,6 +3780,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-27T21:44:22.922Z",
-  "lastPriceCheck": "2026-04-28T07:57:53.289664+00:00"
+  "lastSync": "2026-04-28T14:07:00.326Z",
+  "lastPriceCheck": null
 }
