@@ -3812,10 +3812,9 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/oleo-reparador-karseell-maca-power-50ml/1310214",
-          "price": 4.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-28T15:48:01.078242+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -4375,6 +4374,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T16:00:29.916Z",
+  "lastSync": "2026-04-28T16:03:07.258Z",
   "lastPriceCheck": null
 }
