@@ -1,11 +1,12 @@
 name: Enrich Products
 
 on:
-  push:
-    paths:
-      - 'data/productos.json'
-    branches:
-      - main
+  # TEMPORALMENTE DESHABILITADO - Workflow en loop de fallos
+  # push:
+  #   paths:
+  #     - 'data/productos.json'
+  #   branches:
+  #     - main
   workflow_dispatch: {}
 
 env:
