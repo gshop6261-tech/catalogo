@@ -3790,10 +3790,10 @@
         "images/productos/65/main.jpg",
         "images/productos/65/2.jpg"
       ],
-      "badge": null,
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "9100",
+      "ars": "9000",
       "usd": 4.75,
       "weight": null,
       "usdSell": 6.28,
@@ -3806,6 +3806,10 @@
         },
         {
           "ars": "9100",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "9000",
           "date": "2026-04-28"
         }
       ],
@@ -4374,6 +4378,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T16:12:00Z",
+  "lastSync": "2026-04-28T16:11:10.122Z",
   "lastPriceCheck": null
 }
