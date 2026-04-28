@@ -4021,6 +4021,12 @@
         "id": "gab",
         "nombre": "gab",
         "whatsapp": "5491169651009"
+      },
+      {
+        "id": "flor",
+        "nombre": "Flor",
+        "whatsapp": "5491156596187",
+        "activo": true
       }
     ],
     "dollarAuto": 1430,
@@ -4053,6 +4059,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T14:27:27.171Z",
+  "lastSync": "2026-04-28T14:29:47.847Z",
   "lastPriceCheck": null
 }
