@@ -14,7 +14,7 @@ Usage:
 import argparse
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -80,7 +80,7 @@ def make_pending_product(
                 "price": price,
                 "currency": "USD",
                 "isPrimary": True,
-                "lastChecked": datetime.utcnow().isoformat() + "+00:00",
+                "lastChecked": datetime.now(timezone.utc).isoformat(),
             }
         ],
         "status": "pending",
