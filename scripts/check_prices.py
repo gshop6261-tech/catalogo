@@ -35,7 +35,10 @@ def check_product_prices(product: dict, categories: list[dict]) -> bool:
 
     if not links:
         if should_verify:
+            now = datetime.now(timezone.utc).isoformat()
             product["activo"] = False
+            product["deactivationReason"] = "No reference links found"
+            product["deactivatedAt"] = now
             print(f"  ⚠️  No reference links found. Product deactivated.")
             return True
         return False
@@ -70,6 +73,8 @@ def check_product_prices(product: dict, categories: list[dict]) -> bool:
     new_avg = average_cost(links)
     if should_verify and new_avg is None:
         product["activo"] = False
+        product["deactivationReason"] = "No valid price found from reference links"
+        product["deactivatedAt"] = now
         print(f"  ⚠️  No valid price found from reference links. Product deactivated.")
         return True
 
