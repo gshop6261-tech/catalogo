@@ -3554,6 +3554,10 @@
           {
             "id": "gruesa",
             "label": "Caja gruesa (con cargador)"
+          },
+          {
+            "id": "nada",
+            "label": "nada"
           }
         ],
         "rules": [
@@ -4037,6 +4041,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T14:11:56.265Z",
+  "lastSync": "2026-04-28T14:14:17.788Z",
   "lastPriceCheck": null
 }
