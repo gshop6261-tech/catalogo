@@ -9,7 +9,7 @@ Structure:
 
 import json
 import re
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -176,5 +176,35 @@ class AtacadoScraper(BaseScraper):
                     return {"price": float(val), "currency": "USD"}
                 except ValueError:
                     continue
+
+    def scrape_category(self, url: str) -> list[str]:
+        """Navega todas las páginas de la categoría y retorna URLs de productos únicos."""
+        product_urls: list[str] = []
+        seen: set[str] = set()
+        base_url = url.rstrip("/")
+        page = 1
+
+        while page <= 50:
+            page_url = base_url if page == 1 else f"{base_url}?page={page}"
+            print(f"  Fetching category page {page}: {page_url}")
+            soup, _ = _fetch(page_url)
+
+            new_count = 0
+            for a in soup.find_all("a", href=True):
+                href = a["href"]
+                if "/produto/" in href or "/product/" in href:
+                    abs_url = urljoin(page_url, href).split("?")[0].split("#")[0].rstrip("/")
+                    if abs_url not in seen:
+                        seen.add(abs_url)
+                        product_urls.append(abs_url)
+                        new_count += 1
+
+            next_link = soup.find("a", class_="next") or soup.find("a", rel="next")
+            if not next_link or new_count == 0:
+                break
+            page += 1
+
+        print(f"  Found {len(product_urls)} products across {page} page(s)")
+        return product_urls
 
         return {"price": None, "currency": "USD"}
