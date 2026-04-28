@@ -177,34 +177,69 @@ class AtacadoScraper(BaseScraper):
                 except ValueError:
                     continue
 
-    def scrape_category(self, url: str) -> list[str]:
-        """Navega todas las páginas de la categoría y retorna URLs de productos únicos."""
+    def scrape_category(self, url: str, max_pages: int = 200) -> list[str]:
+        """Navega todas las páginas de la categoría usando Playwright (JS rendering).
+        Atacado is a Next.js SPA — requires JavaScript to paginate properly."""
+        from playwright.sync_api import sync_playwright
+
         product_urls: list[str] = []
         seen: set[str] = set()
         base_url = url.rstrip("/")
-        page = 1
+        consecutive_empty = 0
 
-        while page <= 50:
-            page_url = base_url if page == 1 else f"{base_url}?page={page}"
-            print(f"  Fetching category page {page}: {page_url}")
-            soup, _ = _fetch(page_url)
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent=HEADERS["User-Agent"],
+            )
+            context.add_cookies([{
+                "name": "currency", "value": "Peso",
+                "domain": "atacadoconnect.com", "path": "/",
+            }])
+            page = context.new_page()
 
-            new_count = 0
-            for a in soup.find_all("a", href=True):
-                href = a["href"]
-                if "/produto/" in href or "/product/" in href:
-                    abs_url = urljoin(page_url, href).split("?")[0].split("#")[0].rstrip("/")
-                    if abs_url not in seen:
+            for pnum in range(1, max_pages + 1):
+                page_url = base_url if pnum == 1 else f"{base_url}?page={pnum}"
+                print(f"  Fetching category page {pnum}: {page_url}")
+
+                try:
+                    page.goto(page_url, wait_until="load", timeout=60000)
+                    # Espera adicional para que JS termine de renderizar
+                    page.wait_for_selector('a[href*="/produto/"]', timeout=30000)
+                except Exception as e:
+                    err_msg = str(e)[:80]
+                    print(f"  Warning: page {pnum} error: {err_msg}")
+                    # Intentar extraer lo que haya cargado de todos modos
+                    pass
+
+                # Extraer URLs de productos renderizados
+                try:
+                    links = page.eval_on_selector_all(
+                        'a[href*="/produto/"]',
+                        "els => els.map(e => e.href)"
+                    )
+                except Exception:
+                    links = []
+
+                new_count = 0
+                for href in links:
+                    abs_url = href.split("?")[0].split("#")[0].rstrip("/")
+                    if "/produto/" in abs_url and abs_url not in seen:
                         seen.add(abs_url)
                         product_urls.append(abs_url)
                         new_count += 1
 
-            next_link = soup.find("a", class_="next") or soup.find("a", rel="next")
-            if not next_link or new_count == 0:
-                break
-            page += 1
+                if new_count == 0:
+                    consecutive_empty += 1
+                    if consecutive_empty >= 2:
+                        print(f"  No new products found on page {pnum}, stopping.")
+                        break
+                else:
+                    consecutive_empty = 0
 
-        print(f"  Found {len(product_urls)} products across {page} page(s)")
+            browser.close()
+
+        print(f"  Found {len(product_urls)} unique products")
         return product_urls
 
         return {"price": None, "currency": "USD"}

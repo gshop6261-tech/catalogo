@@ -56,6 +56,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
+      - name: Install Playwright browser
+        run: playwright install --with-deps chromium
+
       # Modo manual: un solo import con los inputs del dispatch
       - name: Import category (manual)
         if: github.event_name == 'workflow_dispatch'
