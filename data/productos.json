@@ -3544,9 +3544,12 @@
       "calcSub": "aceite",
       "name": "Aceite Reparador Karseell Maca Power 50ml",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El Aceite Reparador Karseell Maca Power es ideal para cabello seco y dañado, con una fragancia fresca y un toque ligero. Su fórmula combina aceite de argán, esencia de maca, colágeno, aceite de aguacate y manteca de karité para nutrir profundamente, reducir el encrespamiento y garantizar un brillo inmediato. Además, ofrece protección térmica, dejando el cabello más suave, sedoso y con un aspecto más saludable.",
+      "img": "images/productos/65/main.jpg",
+      "images": [
+        "images/productos/65/main.jpg",
+        "images/productos/65/2.jpg"
+      ],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
@@ -3565,12 +3568,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/oleo-reparador-karseell-maca-power-50ml/1310214",
-          "price": null,
+          "price": 4.75,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-28T15:48:01.078242+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     }
@@ -4127,6 +4131,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T15:40:27.913Z",
+  "lastSync": "2026-04-28T15:48:01.823785+00:00",
   "lastPriceCheck": null
 }
