@@ -2173,7 +2173,7 @@
     {
       "id": 38,
       "cat": "Celulares",
-      "calcSub": "nada",
+      "calcSub": "gruesa",
       "name": "Smartphone Motorola Moto G15 XT-2521-2 128GB 4GB RAM Dual SIM Pantalla 6.72\"",
       "sub": "",
       "desc": "El Motorola Moto G15 XT2521-2 combina rendimiento y diseño en un dispositivo accesible. Su pantalla FHD+ de 6.72\\\" ofrece imágenes nítidas, ideal para entretenimiento y navegación. Equipado con el procesador Helio G81 Extreme y 4GB de RAM, garantiza fluidez en tareas diarias. La cámara principal de 50 MP captura fotos detalladas, mientras que la batería de 5200 mAh proporciona autonomía prolongada. Con Android 15 y almacenamiento expandible, es una opción equilibrada para usuarios exigentes.",
@@ -2190,7 +2190,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "192400",
-      "usd": 134.5,
+      "usd": 116.82,
       "weight": null,
       "usdSell": 134.5,
       "activo": true,
@@ -4065,6 +4065,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T14:52:09.640Z",
+  "lastSync": "2026-04-28T14:59:26.660Z",
   "lastPriceCheck": null
 }
