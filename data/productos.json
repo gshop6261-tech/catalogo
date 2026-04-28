@@ -2101,7 +2101,7 @@
     {
       "id": 37,
       "cat": "Celulares",
-      "calcSub": "gruesa",
+      "calcSub": "nada",
       "name": "Smartphone Xiaomi Poco C85 Global 128GB 6GB RAM Dual SIM Pantalla 6.9\"",
       "sub": "",
       "desc": "El POCO C85 combina el rendimiento y la practicidad con la pantalla IPS IPS de 120 Hz, asegurando imágenes fluidas y colores afilados. Su cámara principal de 50 MP captura fotos detalladas y videos de calidad para la vida cotidiana. Tiene una conexión 4G para la navegación rápida y rápida, así como la certificación IP64, lo que garantiza la resistencia al polvo y las salpicaduras. La batería a largo plazo garantiza más tiempo de uso libre de preocupación, ideal para rutinas intensas.",
@@ -2117,10 +2117,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "168800",
-      "usd": 101.82,
+      "ars": "174500",
+      "usd": 122,
       "weight": null,
-      "usdSell": 118,
+      "usdSell": 122,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -2151,6 +2151,10 @@
         {
           "ars": "168800",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "174500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2169,7 +2173,7 @@
     {
       "id": 38,
       "cat": "Celulares",
-      "calcSub": "gruesa",
+      "calcSub": "nada",
       "name": "Smartphone Motorola Moto G15 XT-2521-2 128GB 4GB RAM Dual SIM Pantalla 6.72\"",
       "sub": "",
       "desc": "El Motorola Moto G15 XT2521-2 combina rendimiento y diseño en un dispositivo accesible. Su pantalla FHD+ de 6.72\\\" ofrece imágenes nítidas, ideal para entretenimiento y navegación. Equipado con el procesador Helio G81 Extreme y 4GB de RAM, garantiza fluidez en tareas diarias. La cámara principal de 50 MP captura fotos detalladas, mientras que la batería de 5200 mAh proporciona autonomía prolongada. Con Android 15 y almacenamiento expandible, es una opción equilibrada para usuarios exigentes.",
@@ -2185,10 +2189,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "186700",
-      "usd": 113.18,
+      "ars": "192400",
+      "usd": 134.5,
       "weight": null,
-      "usdSell": 130.5,
+      "usdSell": 134.5,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -2219,6 +2223,10 @@
         {
           "ars": "186700",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "192400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2237,7 +2245,7 @@
     {
       "id": 39,
       "cat": "Celulares",
-      "calcSub": "gruesa",
+      "calcSub": "nada",
       "name": "Smartphone Motorola Moto G05 XT-2523-2 128GB 4GB RAM Dual SIM Pantalla 6.67\"",
       "sub": "",
       "desc": "El smartphone Moto G05 combina un rendimiento eficiente y características modernas. Su pantalla LCD IPS de 90Hz ofrece imágenes más fluidas. Equipado con un procesador de 8 núcleos, garantiza una buena respuesta en la multitarea. La cámara principal de 50 MP captura fotos detalladas con calidad. Con conexión 4G, proporciona una navegación estable. La certificación IP54 proporciona resistencia a las salpicaduras y al polvo, mientras que la batería de larga duración permite más tiempo de uso.",
@@ -2253,10 +2261,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "177400",
-      "usd": 107.27,
+      "ars": "183100",
+      "usd": 128,
       "weight": null,
-      "usdSell": 124,
+      "usdSell": 128,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -2286,6 +2294,10 @@
         },
         {
           "ars": "177400",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "183100",
           "date": "2026-04-28"
         }
       ],
@@ -4041,6 +4053,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T14:14:17.788Z",
+  "lastSync": "2026-04-28T14:17:55.892Z",
   "lastPriceCheck": null
 }
