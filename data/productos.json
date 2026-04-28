@@ -2101,7 +2101,7 @@
     {
       "id": 37,
       "cat": "Celulares",
-      "calcSub": "nada",
+      "calcSub": "gruesa",
       "name": "Smartphone Xiaomi Poco C85 Global 128GB 6GB RAM Dual SIM Pantalla 6.9\"",
       "sub": "",
       "desc": "El POCO C85 combina el rendimiento y la practicidad con la pantalla IPS IPS de 120 Hz, asegurando imágenes fluidas y colores afilados. Su cámara principal de 50 MP captura fotos detalladas y videos de calidad para la vida cotidiana. Tiene una conexión 4G para la navegación rápida y rápida, así como la certificación IP64, lo que garantiza la resistencia al polvo y las salpicaduras. La batería a largo plazo garantiza más tiempo de uso libre de preocupación, ideal para rutinas intensas.",
@@ -2118,7 +2118,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "174500",
-      "usd": 122,
+      "usd": 105.45,
       "weight": null,
       "usdSell": 122,
       "activo": true,
@@ -4065,6 +4065,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T14:37:37.438Z",
+  "lastSync": "2026-04-28T14:52:09.640Z",
   "lastPriceCheck": null
 }
