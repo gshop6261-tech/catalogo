@@ -28,13 +28,21 @@ def save_data(data: dict) -> None:
 
 
 def check_product_prices(product: dict, categories: list[dict]) -> bool:
-    """Check all reference links for price changes. Returns True if any changed."""
+    """Check all reference links for price changes. Returns True if any changed.
+    Deactivates product if verifyPrice=true but no valid price found."""
     links = product.get("referenceLinks", [])
+    should_verify = product.get("verifyPrice", False)
+
     if not links:
+        if should_verify:
+            product["activo"] = False
+            print(f"  ⚠️  No reference links found. Product deactivated.")
+            return True
         return False
 
     now = datetime.now(timezone.utc).isoformat()
     changed = False
+    found_valid_price = False
 
     for link in links:
         url = link.get("url")
@@ -48,19 +56,27 @@ def check_product_prices(product: dict, categories: list[dict]) -> bool:
             new_price = result.get("price")
             link["lastChecked"] = now
 
-            if new_price is not None and new_price != old_price:
-                print(f"  Price changed on {url}: {old_price} -> {new_price}")
-                link["price"] = new_price
-                link["currency"] = result.get("currency", "USD")
-                changed = True
+            if new_price is not None:
+                found_valid_price = True
+                if new_price != old_price:
+                    print(f"  Price changed on {url}: {old_price} -> {new_price}")
+                    link["price"] = new_price
+                    link["currency"] = result.get("currency", "USD")
+                    changed = True
         except Exception as e:
             print(f"  Warning: failed to check {url}: {e}")
+
+    # Check if we have a valid average price after scraping
+    new_avg = average_cost(links)
+    if should_verify and new_avg is None:
+        product["activo"] = False
+        print(f"  ⚠️  No valid price found from reference links. Product deactivated.")
+        return True
 
     if not changed:
         return False
 
     old_usd = product.get("usd")
-    new_avg = average_cost(links)
     if new_avg is not None and new_avg != old_usd:
         product["usd"] = new_avg
         print(f"  Cost updated: {old_usd} -> {new_avg}")
