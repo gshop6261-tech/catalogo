@@ -135,23 +135,23 @@ def main():
             result = scraper.scrape_price(url)
             price = result.get("price") if result else None
         except Exception as e:
-            print(f"  ❌ Error al verificar precio de {url}: {e}")
+            print(f"  [ERROR] Error al verificar precio de {url}: {e}")
             price = None
 
         if price is None:
-            print(f"  ⊘ Sin precio — salteado: {url}")
+            print(f"  [SKIP] Sin precio: {url}")
             skipped_no_price += 1
             continue
 
-        print(f"  ✓ OK precio={price} USD")
+        print(f"  [OK] precio={price} USD")
+        p = make_pending_product(
+            url, price, current_id, args.cat, args.calc_sub,
+            args.badge, args.badge_color, today
+        )
+        added.append(p)
         if not args.dry_run:
-            p = make_pending_product(
-                url, price, current_id, args.cat, args.calc_sub,
-                args.badge, args.badge_color, today
-            )
             products.append(p)
-            added.append(p)
-            current_id += 1
+        current_id += 1
 
     print(f"\n{'='*60}")
     print(f"Resultado:")
@@ -161,14 +161,14 @@ def main():
     print(f"{'='*60}")
 
     if args.dry_run:
-        print("\n[DRY RUN] No se escribió nada.")
+        print("\n[DRY RUN] No se escribio nada.")
         return
 
     if added:
         save_data(data)
-        print(f"\n✓ {len(added)} productos guardados. IDs asignados: {added[0]['id']} - {added[-1]['id']}")
+        print(f"\n[OK] {len(added)} productos guardados. IDs asignados: {added[0]['id']} - {added[-1]['id']}")
     else:
-        print("\nNo había productos nuevos con precio para agregar.")
+        print("\nNo habia productos nuevos con precio para agregar.")
 
 
 if __name__ == "__main__":
