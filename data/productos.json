@@ -20,7 +20,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "27400",
+      "ars": "27600",
       "usd": 15.9,
       "weight": null,
       "usdSell": 19.24,
@@ -38,6 +38,10 @@
         {
           "ars": "27400",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "27600",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -72,7 +76,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "30400",
+      "ars": "30600",
       "usd": 16.9,
       "weight": null,
       "usdSell": 21.38,
@@ -98,6 +102,10 @@
         {
           "ars": "30400",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "30600",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -131,7 +139,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "67100",
+      "ars": "67500",
       "usd": 39,
       "weight": null,
       "usdSell": 47.19,
@@ -161,6 +169,10 @@
         {
           "ars": "67100",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "67500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -191,7 +203,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71900",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -221,6 +233,10 @@
         {
           "ars": "71900",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "72400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -255,7 +271,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "142000",
+      "ars": "143000",
       "usd": 79,
       "weight": null,
       "usdSell": 99.94,
@@ -281,6 +297,10 @@
         {
           "ars": "142000",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "143000",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -315,7 +335,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "64500",
+      "ars": "64900",
       "usd": 37.5,
       "weight": null,
       "usdSell": 45.38,
@@ -337,6 +357,10 @@
         {
           "ars": "64500",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "64900",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -427,7 +451,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "477700",
+      "ars": "481100",
       "usd": 278,
       "weight": null,
       "usdSell": 336.38,
@@ -449,6 +473,10 @@
         {
           "ars": "477700",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "481100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -482,7 +510,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "128900",
+      "ars": "129800",
       "usd": 75,
       "weight": null,
       "usdSell": 90.75,
@@ -504,6 +532,10 @@
         {
           "ars": "128900",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "129800",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -538,7 +570,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "22000",
+      "ars": "22100",
       "usd": 12.75,
       "weight": null,
       "usdSell": 15.43,
@@ -560,6 +592,10 @@
         {
           "ars": "22000",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "22100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -592,7 +628,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "37900",
+      "ars": "38100",
       "usd": 22,
       "weight": null,
       "usdSell": 26.62,
@@ -614,6 +650,10 @@
         {
           "ars": "37900",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "38100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -648,7 +688,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "82400",
+      "ars": "82900",
       "usd": 47.9,
       "weight": null,
       "usdSell": 57.96,
@@ -670,6 +710,10 @@
         {
           "ars": "82400",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "82900",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -699,7 +743,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "29300",
+      "ars": "29500",
       "usd": 17,
       "weight": null,
       "usdSell": 20.57,
@@ -721,6 +765,10 @@
         {
           "ars": "29300",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "29500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -754,7 +802,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "58500",
+      "ars": "58900",
       "usd": 34,
       "weight": 0.5,
       "usdSell": 41.14,
@@ -800,6 +848,10 @@
         {
           "ars": "58500",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "58900",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -835,7 +887,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "104700",
+      "ars": "105400",
       "usd": 60,
       "weight": null,
       "usdSell": 73.7,
@@ -865,6 +917,10 @@
         {
           "ars": "104700",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "105400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -899,7 +955,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "113000",
+      "ars": "113800",
       "usd": 62.9,
       "weight": null,
       "usdSell": 79.57,
@@ -925,6 +981,10 @@
         {
           "ars": "113000",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "113800",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -959,7 +1019,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "150000",
+      "ars": "151100",
       "usd": 89,
       "weight": null,
       "usdSell": 105.6,
@@ -997,6 +1057,10 @@
         {
           "ars": "150000",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "151100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1029,7 +1093,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "29300",
+      "ars": "29500",
       "usd": 11.75,
       "weight": null,
       "usdSell": 20.63,
@@ -1063,6 +1127,10 @@
         {
           "ars": "29300",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "29500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1096,7 +1164,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "85200",
+      "ars": "85800",
       "usd": 47.5,
       "weight": null,
       "usdSell": 59.95,
@@ -1130,6 +1198,10 @@
         {
           "ars": "85200",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "85800",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1161,7 +1233,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "198800",
+      "ars": "200200",
       "usd": 100,
       "weight": null,
       "usdSell": 140,
@@ -1199,6 +1271,10 @@
         {
           "ars": "198800",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "200200",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [],
@@ -1225,7 +1301,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "230100",
+      "ars": "231700",
       "usd": 120,
       "weight": null,
       "usdSell": 162,
@@ -1255,6 +1331,10 @@
         {
           "ars": "230100",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "231700",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1287,7 +1367,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "214500",
+      "ars": "216000",
       "usd": 110,
       "weight": null,
       "usdSell": 151,
@@ -1313,6 +1393,10 @@
         {
           "ars": "214500",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "216000",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1342,7 +1426,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "345800",
+      "ars": "348300",
       "usd": 185,
       "weight": null,
       "usdSell": 243.5,
@@ -1368,6 +1452,10 @@
         {
           "ars": "345800",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "348300",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1398,7 +1486,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "9300",
+      "ars": "9400",
       "usd": 4.75,
       "weight": null,
       "usdSell": 6.54,
@@ -1436,6 +1524,10 @@
         {
           "ars": "9300",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "9400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1466,7 +1558,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "6600",
+      "ars": "6700",
       "usd": 3.5,
       "weight": null,
       "usdSell": 4.62,
@@ -1496,6 +1588,10 @@
         {
           "ars": "6600",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "6700",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1529,7 +1625,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "291100",
+      "ars": "293100",
       "usd": 162,
       "weight": null,
       "usdSell": 204.93,
@@ -1555,6 +1651,10 @@
         {
           "ars": "291100",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "293100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1585,7 +1685,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "149100",
+      "ars": "150200",
       "usd": 86.75,
       "weight": null,
       "usdSell": 104.97,
@@ -1611,6 +1711,10 @@
         {
           "ars": "149100",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "150200",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1645,7 +1749,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "142000",
+      "ars": "143000",
       "usd": 79,
       "weight": null,
       "usdSell": 99.94,
@@ -1663,6 +1767,10 @@
         {
           "ars": "142000",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "143000",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1693,7 +1801,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71900",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -1711,6 +1819,10 @@
         {
           "ars": "71900",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "72400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1741,7 +1853,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71900",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -1759,6 +1871,10 @@
         {
           "ars": "71900",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "72400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1789,7 +1905,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71900",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -1807,6 +1923,10 @@
         {
           "ars": "71900",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "72400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1837,7 +1957,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71900",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -1855,6 +1975,10 @@
         {
           "ars": "71900",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "72400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1885,7 +2009,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71900",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -1903,6 +2027,10 @@
         {
           "ars": "71900",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "72400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1933,7 +2061,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "71900",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -1951,6 +2079,10 @@
         {
           "ars": "71900",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "72400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1985,10 +2117,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "174460",
+      "ars": "168800",
       "usd": 101.82,
       "weight": null,
-      "usdSell": 122,
+      "usdSell": 118,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -2014,6 +2146,10 @@
         },
         {
           "ars": "174460",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "168800",
           "date": "2026-04-28"
         }
       ],
@@ -2049,10 +2185,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "192335",
+      "ars": "186700",
       "usd": 113.18,
       "weight": null,
-      "usdSell": 134.5,
+      "usdSell": 130.5,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -2078,6 +2214,10 @@
         },
         {
           "ars": "192335",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "186700",
           "date": "2026-04-28"
         }
       ],
@@ -2113,10 +2253,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "183040",
+      "ars": "177400",
       "usd": 107.27,
       "weight": null,
-      "usdSell": 128,
+      "usdSell": 124,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -2142,6 +2282,10 @@
         },
         {
           "ars": "183040",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "177400",
           "date": "2026-04-28"
         }
       ],
@@ -2178,7 +2322,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "256100",
+      "ars": "257900",
       "usd": 149,
       "weight": null,
       "usdSell": 180.29,
@@ -2192,6 +2336,10 @@
         {
           "ars": "256100",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "257900",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2227,7 +2375,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "307600",
+      "ars": "309800",
       "usd": 179,
       "weight": null,
       "usdSell": 216.59,
@@ -2241,6 +2389,10 @@
         {
           "ars": "307600",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "309800",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2274,7 +2426,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "582500",
+      "ars": "586600",
       "usd": 339,
       "weight": null,
       "usdSell": 410.19,
@@ -2288,6 +2440,10 @@
         {
           "ars": "582500",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "586600",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2322,7 +2478,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "232000",
+      "ars": "233600",
       "usd": 135,
       "weight": null,
       "usdSell": 163.35,
@@ -2336,6 +2492,10 @@
         {
           "ars": "232000",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "233600",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2370,7 +2530,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1201100",
+      "ars": "1209500",
       "usd": 699,
       "weight": null,
       "usdSell": 845.79,
@@ -2384,6 +2544,10 @@
         {
           "ars": "1201100",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "1209500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2418,7 +2582,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "988000",
+      "ars": "995000",
       "usd": 575,
       "weight": null,
       "usdSell": 695.75,
@@ -2432,6 +2596,10 @@
         {
           "ars": "988000",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "995000",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2466,7 +2634,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "902100",
+      "ars": "908500",
       "usd": 525,
       "weight": null,
       "usdSell": 635.25,
@@ -2480,6 +2648,10 @@
         {
           "ars": "902100",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "908500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2515,7 +2687,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "857400",
+      "ars": "863500",
       "usd": 499,
       "weight": null,
       "usdSell": 603.79,
@@ -2529,6 +2701,10 @@
         {
           "ars": "857400",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "863500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2563,7 +2739,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "747500",
+      "ars": "752700",
       "usd": 435,
       "weight": null,
       "usdSell": 526.35,
@@ -2577,6 +2753,10 @@
         {
           "ars": "747500",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "752700",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2610,7 +2790,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "685600",
+      "ars": "690400",
       "usd": 399,
       "weight": null,
       "usdSell": 482.79,
@@ -2624,6 +2804,10 @@
         {
           "ars": "685600",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "690400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2659,7 +2843,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "668400",
+      "ars": "673100",
       "usd": 389,
       "weight": null,
       "usdSell": 470.69,
@@ -2673,6 +2857,10 @@
         {
           "ars": "668400",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "673100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2706,7 +2894,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "513800",
+      "ars": "517400",
       "usd": 299,
       "weight": null,
       "usdSell": 361.79,
@@ -2720,6 +2908,10 @@
         {
           "ars": "513800",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "517400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2750,7 +2942,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "513800",
+      "ars": "517400",
       "usd": 299,
       "weight": null,
       "usdSell": 361.79,
@@ -2764,6 +2956,10 @@
         {
           "ars": "513800",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "517400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2842,7 +3038,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "499900",
+      "ars": "503400",
       "usd": 320,
       "weight": null,
       "usdSell": 352,
@@ -2852,6 +3048,10 @@
         {
           "ars": "499900",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "503400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2886,7 +3086,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "284600",
+      "ars": "286600",
       "usd": 180,
       "weight": null,
       "usdSell": 200.4,
@@ -2896,6 +3096,10 @@
         {
           "ars": "284600",
           "date": "2026-04-23"
+        },
+        {
+          "ars": "286600",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2925,7 +3129,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "21300",
+      "ars": "21500",
       "usd": 15,
       "weight": null,
       "usdSell": 15,
@@ -2935,6 +3139,10 @@
         {
           "ars": "21300",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "21500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [],
@@ -2957,7 +3165,7 @@
       "badge": "A pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1108300",
+      "ars": "1116100",
       "usd": 645,
       "weight": null,
       "usdSell": 780.45,
@@ -2967,6 +3175,10 @@
         {
           "ars": "1108300",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "1116100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2997,7 +3209,7 @@
       "badge": "A pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1108300",
+      "ars": "1116100",
       "usd": 645,
       "weight": null,
       "usdSell": 780.45,
@@ -3007,6 +3219,10 @@
         {
           "ars": "1108300",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "1116100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -3037,7 +3253,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1115200",
+      "ars": "1123000",
       "usd": 649,
       "weight": null,
       "usdSell": 785.29,
@@ -3047,6 +3263,10 @@
         {
           "ars": "1115200",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "1123000",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -3082,7 +3302,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1108300",
+      "ars": "1116100",
       "usd": 645,
       "weight": null,
       "usdSell": 780.45,
@@ -3092,6 +3312,10 @@
         {
           "ars": "1108300",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "1116100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -3126,7 +3350,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1029300",
+      "ars": "1036500",
       "usd": 599,
       "weight": null,
       "usdSell": 724.79,
@@ -3136,6 +3360,10 @@
         {
           "ars": "1029300",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "1036500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -3170,7 +3398,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1108300",
+      "ars": "1116100",
       "usd": 645,
       "weight": null,
       "usdSell": 780.45,
@@ -3180,6 +3408,10 @@
         {
           "ars": "1108300",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "1116100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -3213,7 +3445,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "634100",
+      "ars": "638500",
       "usd": 369,
       "weight": null,
       "usdSell": 446.49,
@@ -3223,6 +3455,10 @@
         {
           "ars": "634100",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "638500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -3256,7 +3492,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "616900",
+      "ars": "621200",
       "usd": 359,
       "weight": null,
       "usdSell": 434.39,
@@ -3266,6 +3502,10 @@
         {
           "ars": "616900",
           "date": "2026-04-24"
+        },
+        {
+          "ars": "621200",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -3305,6 +3545,7 @@
         "id": "celulares",
         "name": "Celulares",
         "icon": "📱",
+        "subcategories": [],
         "subtypes": [
           {
             "id": "slim",
@@ -3373,6 +3614,22 @@
               {
                 "kind": "percent",
                 "value": 10
+              },
+              {
+                "kind": "usd",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "subtype": "nada",
+            "type": "none",
+            "op": "<=",
+            "val": 0,
+            "steps": [
+              {
+                "kind": "percent",
+                "value": 0
               },
               {
                 "kind": "usd",
@@ -3780,6 +4037,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T14:07:00.326Z",
+  "lastSync": "2026-04-28T14:11:56.265Z",
   "lastPriceCheck": null
 }
