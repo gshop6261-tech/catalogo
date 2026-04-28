@@ -4027,6 +4027,12 @@
         "nombre": "Flor",
         "whatsapp": "5491156596187",
         "activo": true
+      },
+      {
+        "id": "l",
+        "nombre": "Cari",
+        "whatsapp": "5491151454077",
+        "activo": true
       }
     ],
     "dollarAuto": 1430,
@@ -4059,6 +4065,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T14:31:03.518Z",
+  "lastSync": "2026-04-28T14:37:33.970Z",
   "lastPriceCheck": null
 }
