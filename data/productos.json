@@ -20697,8 +20697,8 @@
     {
       "id": 1,
       "tag": "🎮 Gaming",
-      "title": "Cockpit",
-      "accent": "Redragon",
+      "title": "Motorola",
+      "accent": "",
       "sub": "Vortex — llevá la experiencia de conducción a otro nivel",
       "cta": "Consultar →",
       "filter": "Celulares",
@@ -21251,7 +21251,7 @@
         "activo": true
       }
     ],
-    "dollarAuto": 1415.0,
+    "dollarAuto": 1415,
     "dollarUpdated": "2026-04-29T20:42:08.904097+00:00",
     "dollarManual": null,
     "dollarType": "blue",
@@ -21281,6 +21281,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-29T20:25:08.452Z",
+  "lastSync": "2026-04-29T20:45:43.648Z",
   "lastPriceCheck": null
 }
