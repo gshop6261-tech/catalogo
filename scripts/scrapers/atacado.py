@@ -199,17 +199,18 @@ class AtacadoScraper(BaseScraper):
             page = context.new_page()
 
             for pnum in range(1, max_pages + 1):
-                page_url = base_url if pnum == 1 else f"{base_url}?page={pnum}"
+                page_url = base_url if pnum == 1 else f"{base_url}&page={pnum}"
                 print(f"  Fetching category page {pnum}: {page_url}")
 
                 try:
-                    page.goto(page_url, wait_until="load", timeout=60000)
-                    # Espera adicional para que JS termine de renderizar
-                    page.wait_for_selector('a[href*="/produto/"]', timeout=30000)
+                    page.goto(page_url, wait_until="networkidle", timeout=60000)
+                    # Atacado es Next.js SPA: networkidle + wait extra asegura que JS
+                    # termine de actualizar los productos al filtro/page actual.
+                    # Sin esto, Playwright lee el HTML inicial antes de que JS lo actualice.
+                    page.wait_for_timeout(3000)
                 except Exception as e:
                     err_msg = str(e)[:80]
                     print(f"  Warning: page {pnum} error: {err_msg}")
-                    # Intentar extraer lo que haya cargado de todos modos
                     pass
 
                 # Extraer URLs de productos renderizados
@@ -221,6 +222,7 @@ class AtacadoScraper(BaseScraper):
                 except Exception:
                     links = []
 
+                print(f"    Found {len(links)} links on this page")
                 new_count = 0
                 for href in links:
                     abs_url = href.split("?")[0].split("#")[0].rstrip("/")
@@ -231,8 +233,8 @@ class AtacadoScraper(BaseScraper):
 
                 if new_count == 0:
                     consecutive_empty += 1
-                    if consecutive_empty >= 2:
-                        print(f"  No new products found on page {pnum}, stopping.")
+                    if consecutive_empty >= 5:
+                        print(f"  No new products found on {consecutive_empty} consecutive pages, stopping.")
                         break
                 else:
                     consecutive_empty = 0
@@ -241,5 +243,3 @@ class AtacadoScraper(BaseScraper):
 
         print(f"  Found {len(product_urls)} unique products")
         return product_urls
-
-        return {"price": None, "currency": "USD"}
