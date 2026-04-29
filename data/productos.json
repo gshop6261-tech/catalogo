@@ -10600,7 +10600,7 @@
       "usd": 5.0,
       "usdSell": 6.33,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -10638,7 +10638,7 @@
       "usd": 11.0,
       "usdSell": 13.91,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -10675,7 +10675,7 @@
       "usd": 9.0,
       "usdSell": 11.38,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -10713,7 +10713,7 @@
       "usd": 8.0,
       "usdSell": 10.12,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -10752,7 +10752,7 @@
       "usd": 3.5,
       "usdSell": 4.43,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -10791,7 +10791,7 @@
       "usd": 3.5,
       "usdSell": 4.43,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -10830,7 +10830,7 @@
       "usd": 3.5,
       "usdSell": 4.43,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -10869,7 +10869,7 @@
       "usd": 3.5,
       "usdSell": 4.43,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -10904,7 +10904,7 @@
       "usd": 5.0,
       "usdSell": 6.33,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -10939,7 +10939,7 @@
       "usd": 5.0,
       "usdSell": 6.33,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -10974,7 +10974,7 @@
       "usd": 5.0,
       "usdSell": 6.33,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -11009,7 +11009,7 @@
       "usd": 5.0,
       "usdSell": 6.33,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -11047,7 +11047,7 @@
       "usd": 4.0,
       "usdSell": 5.06,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -11085,7 +11085,7 @@
       "usd": 5.0,
       "usdSell": 6.33,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -11123,7 +11123,7 @@
       "usd": 5.0,
       "usdSell": 6.33,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -11161,7 +11161,7 @@
       "usd": 5.5,
       "usdSell": 6.96,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -11199,7 +11199,7 @@
       "usd": 5.5,
       "usdSell": 6.96,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -11237,7 +11237,7 @@
       "usd": 5.5,
       "usdSell": 6.96,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -11275,7 +11275,7 @@
       "usd": 5.5,
       "usdSell": 6.96,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
@@ -11313,7 +11313,7 @@
       "usd": 5.5,
       "usdSell": 6.96,
       "weight": null,
-      "activo": false,
+      "activo": true,
       "fechaAlta": "2026-04-29",
       "priceHistory": [],
       "referenceLinks": [
