@@ -2495,90 +2495,6 @@
       "verifyPrice": true
     },
     {
-      "id": 38,
-      "cat": "Celulares",
-      "calcSub": "gruesa",
-      "name": "Smartphone Motorola Moto G15 XT-2521-2 128GB 4GB RAM Dual SIM Pantalla 6.72\"",
-      "sub": "",
-      "desc": "El Motorola Moto G15 XT2521-2 combina rendimiento y diseño en un dispositivo accesible. Su pantalla FHD+ de 6.72\\\" ofrece imágenes nítidas, ideal para entretenimiento y navegación. Equipado con el procesador Helio G81 Extreme y 4GB de RAM, garantiza fluidez en tareas diarias. La cámara principal de 50 MP captura fotos detalladas, mientras que la batería de 5200 mAh proporciona autonomía prolongada. Con Android 15 y almacenamiento expandible, es una opción equilibrada para usuarios exigentes.",
-      "img": "images/productos/38/main.jpg",
-      "images": [
-        "images/productos/38/main.jpg",
-        "images/productos/38/2.jpg",
-        "images/productos/38/3.jpg",
-        "images/productos/38/4.jpg",
-        "images/productos/38/5.jpg",
-        "images/productos/38/6.jpg"
-      ],
-      "badge": "disponible",
-      "badgeColor": "#25D366",
-      "icon": "📦",
-      "ars": "190400",
-      "usd": 116.82,
-      "weight": null,
-      "usdSell": 134.5,
-      "activo": true,
-      "fechaAlta": "2026-04-23",
-      "priceHistory": [
-        {
-          "ars": "185400",
-          "date": "2026-04-23"
-        },
-        {
-          "ars": "185100",
-          "date": "2026-04-23"
-        },
-        {
-          "ars": "185400",
-          "date": "2026-04-23"
-        },
-        {
-          "ars": "182500",
-          "date": "2026-04-24"
-        },
-        {
-          "ars": "185400",
-          "date": "2026-04-24"
-        },
-        {
-          "ars": "192335",
-          "date": "2026-04-28"
-        },
-        {
-          "ars": "186700",
-          "date": "2026-04-28"
-        },
-        {
-          "ars": "192400",
-          "date": "2026-04-28"
-        },
-        {
-          "ars": "193100",
-          "date": "2026-04-28"
-        },
-        {
-          "ars": "192400",
-          "date": "2026-04-28"
-        },
-        {
-          "ars": "190400",
-          "date": "2026-04-29"
-        }
-      ],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g15-xt-2521-2-128gb-4gb-ram-dual-sim-tela-672-verde/1212396",
-          "price": null,
-          "currency": "USD",
-          "isPrimary": true
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": false,
-      "publicSub": ""
-    },
-    {
       "id": 39,
       "cat": "Celulares",
       "calcSub": "gruesa",
@@ -20035,7 +19951,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 3.0,
+      "usd": 3,
       "usdSell": 6.6,
       "weight": null,
       "activo": true,
@@ -20044,7 +19960,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-qaed-al-fursan-unlimited-unissex-200ml/1339376",
-          "price": 3.0,
+          "price": 3,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-29T19:18:44.853244+00:00"
@@ -21412,6 +21328,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-29T19:18:58.018748+00:00",
+  "lastSync": "2026-04-29T20:22:10.923Z",
   "lastPriceCheck": null
 }
