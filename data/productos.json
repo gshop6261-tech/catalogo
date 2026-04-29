@@ -3998,10 +3998,8 @@
       "name": "Body Splash Victoria's Secret Mango Temptation 250ml",
       "sub": "",
       "desc": "Con un irresistible toque tropical, el bálsamo corporal Mango Temptation de Victoria's Secret es perfecto para quienes desean sentirse ligeras, femeninas y radiantes a diario. Su fragancia floral-frutal combina el jugoso mango con notas de hibisco, creando un aroma dulce, refrescante y cautivador. Aplicado en spray, es ideal para uso diario, dejando la piel ligeramente perfumada y fresca durante todo el día.",
-      "img": "images/productos/66/main.jpg",
-      "images": [
-        "images/productos/66/main.jpg"
-      ],
+      "img": null,
+      "images": [],
       "badge": null,
       "badgeColor": "#25D366",
       "icon": "📦",
@@ -4020,10 +4018,9 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/body-splash/body-splash-victorias-secret-mango-temptation-250ml/1359770",
-          "price": 11.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-28T18:53:59.660560+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -4068,7 +4065,7 @@
           "price": 139.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T02:02:27.144898+00:00"
+          "lastChecked": "2026-04-28T20:06:35.084019+00:00"
         }
       ],
       "status": "enriched",
@@ -4096,7 +4093,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "212500",
-      "usd": 138.0,
+      "usd": 138,
       "weight": null,
       "usdSell": 155.04,
       "activo": true,
@@ -4110,10 +4107,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g35-5g-xt-2433-5-128gb-4gb-ram-dual-sim-tela-672-preto-caixa-slim/1201307",
-          "price": 138.0,
+          "price": 138,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T02:02:34.039655+00:00"
+          "lastChecked": "2026-04-28T20:06:36.556307+00:00"
         }
       ],
       "status": "enriched",
@@ -4131,7 +4128,7 @@
       "img": "images/productos/69/main.jpg",
       "images": [
         "images/productos/69/main.jpg",
-        "images/productos/69/2.webp",
+        "images/productos/69/2.jpg",
         "images/productos/69/3.jpg",
         "images/productos/69/4.jpg",
         "images/productos/69/5.jpg",
@@ -4141,7 +4138,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "444200",
-      "usd": 282.0,
+      "usd": 282,
       "weight": null,
       "usdSell": 310.56,
       "activo": true,
@@ -4155,10 +4152,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a36-5g-a366e-256gb-8gb-ram-dual-sim-tela-67-preto-caixa-slim/1199369",
-          "price": 282.0,
+          "price": 282,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T02:02:40.387838+00:00"
+          "lastChecked": "2026-04-28T20:19:36.599756+00:00"
         }
       ],
       "status": "enriched",
@@ -4203,7 +4200,7 @@
           "price": 139.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T02:02:46.259350+00:00"
+          "lastChecked": "2026-04-28T20:30:32.839634+00:00"
         }
       ],
       "status": "enriched",
@@ -4231,7 +4228,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "154900",
-      "usd": 93.0,
+      "usd": 93,
       "weight": null,
       "usdSell": 108.3,
       "activo": true,
@@ -4245,10 +4242,10 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g06-xt-2535-2-128gb-4gb-ram-dual-sim-tela-688-azul/1316032",
-          "price": 93.0,
+          "price": 93,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T02:02:53.233174+00:00"
+          "lastChecked": "2026-04-28T20:44:56.967689+00:00"
         }
       ],
       "status": "enriched",
@@ -4270,7 +4267,7 @@
         "images/productos/72/3.jpg",
         "images/productos/72/4.jpg",
         "images/productos/72/5.jpg",
-        "images/productos/72/6.webp"
+        "images/productos/72/6.jpg"
       ],
       "badge": "disponible",
       "badgeColor": "#25D366",
@@ -4293,7 +4290,7 @@
           "price": 111.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T02:02:59.819613+00:00"
+          "lastChecked": "2026-04-28T20:44:58.173323+00:00"
         }
       ],
       "status": "enriched",
@@ -4818,7 +4815,7 @@
         "activo": true
       }
     ],
-    "dollarAuto": 1430.0,
+    "dollarAuto": 1430,
     "dollarUpdated": "2026-04-29T00:08:27.340210+00:00",
     "dollarManual": null,
     "dollarType": "blue",
@@ -4848,6 +4845,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-29T02:03:05.051356+00:00",
+  "lastSync": "2026-04-29T02:07:31.557Z",
   "lastPriceCheck": null
 }
