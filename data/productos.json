@@ -11333,17 +11333,17 @@
       "id": 260,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Pear Glace Feminino 250ml",
       "sub": "",
-      "desc": "",
+      "desc": "Compre Body Splash Victoria's Secret Pear Glace Feminino 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
       "img": "",
       "images": [],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.75,
+      "usdSell": 14.86,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11354,10 +11354,10 @@
           "price": 11.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:11.835937+00:00"
+          "lastChecked": "2026-04-29T14:56:33.014301+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11365,17 +11365,19 @@
       "id": 261,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria’s Secret Amber Aperitif Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Con un toque cálido y sofisticado, el bálsamo corporal Amber Aperitif de Victoria's Secret es perfecto para quienes buscan una fragancia envolvente y elegante para el día a día. Su composición gourmand combina ámbar dorado con especias y notas dulces, creando un aroma cautivador y reconfortante en la piel. Aplicado en spray, proporciona frescura inmediata e hidratación ligera, ideal para perfumarse con practicidad y estilo en cualquier momento.",
+      "img": "images/productos/261/main.jpg",
+      "images": [
+        "images/productos/261/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.75,
+      "usdSell": 14.86,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11386,10 +11388,10 @@
           "price": 11.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:12.143108+00:00"
+          "lastChecked": "2026-04-29T14:56:33.303514+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11397,17 +11399,19 @@
       "id": 262,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria’s Secret Berry Brulee Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Con un aroma dulce y sofisticado, el bálsamo corporal Berry Brulee de Victoria’s Secret es perfecto para quienes buscan una fragancia seductora para el día a día. Su composición floral gourmand combina notas de pistacho, jazmín y una base cremosa de caramelo y vainilla, creando una sensación llamativa pero delicada en la piel. Aplicado en spray, ofrece ligereza, frescura y comodidad para perfumarse en cualquier momento.",
+      "img": "images/productos/262/main.jpg",
+      "images": [
+        "images/productos/262/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.75,
+      "usdSell": 14.86,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11418,10 +11422,10 @@
           "price": 11.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:12.439172+00:00"
+          "lastChecked": "2026-04-29T14:56:33.838304+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11429,17 +11433,19 @@
       "id": 263,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Sugared Petals Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Delicado y cautivador, el bálsamo corporal Sugared Petals de Victoria's Secret es perfecto para quienes adoran las fragancias dulces y femeninas para el día a día. Su combinación de pétalos azucarados, vainilla y flores blancas crea un aroma floral gourmand ligero e irresistible, dejando la piel perfumada y fresca. Su práctico formato en spray proporciona una hidratación suave y comodidad para que te sientas perfumada y segura de ti misma siempre que lo desees.",
+      "img": "images/productos/263/main.jpg",
+      "images": [
+        "images/productos/263/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.75,
+      "usdSell": 14.86,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11450,10 +11456,10 @@
           "price": 11.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:12.780428+00:00"
+          "lastChecked": "2026-04-29T14:56:34.254528+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11461,17 +11467,19 @@
       "id": 264,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victorias Secret Pistachio Crème Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Victorias Secret Pistachio Crème Feminino 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/264/main.jpg",
+      "images": [
+        "images/productos/264/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 12.0,
+      "usdSell": 15.18,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11482,10 +11490,10 @@
           "price": 12.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:13.182973+00:00"
+          "lastChecked": "2026-04-29T14:56:34.665701+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11493,17 +11501,19 @@
       "id": 265,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Mango Temptation 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Con un irresistible toque tropical, el bálsamo corporal Mango Temptation de Victoria's Secret es perfecto para quienes desean sentirse ligeras, femeninas y radiantes a diario. Su fragancia floral-frutal combina el jugoso mango con notas de hibisco, creando un aroma dulce, refrescante y cautivador. Aplicado en spray, es ideal para uso diario, dejando la piel ligeramente perfumada y fresca durante todo el día.",
+      "img": "images/productos/265/main.jpg",
+      "images": [
+        "images/productos/265/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.75,
+      "usdSell": 14.86,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11514,10 +11524,10 @@
           "price": 11.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:13.507360+00:00"
+          "lastChecked": "2026-04-29T14:56:35.164363+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11525,17 +11535,19 @@
       "id": 266,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Armaf I AM Velvet Mirage 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Armaf I AM Velvet Mirage 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/266/main.jpg",
+      "images": [
+        "images/productos/266/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11546,10 +11558,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:13.831431+00:00"
+          "lastChecked": "2026-04-29T14:56:35.595231+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11557,17 +11569,19 @@
       "id": 267,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Armaf I AM Magic 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Armaf I AM Magic 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/267/main.jpg",
+      "images": [
+        "images/productos/267/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11578,10 +11592,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:14.120568+00:00"
+          "lastChecked": "2026-04-29T14:56:36.039970+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11589,17 +11603,19 @@
       "id": 268,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Armaf I Am Heavenly 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Armaf I Am Heavenly 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/268/main.jpg",
+      "images": [
+        "images/productos/268/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11610,10 +11626,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:14.448535+00:00"
+          "lastChecked": "2026-04-29T14:56:36.478974+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11621,17 +11637,19 @@
       "id": 269,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Armaf I Am Frozen Blossom 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Armaf I Am Frozen Blossom 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/269/main.jpg",
+      "images": [
+        "images/productos/269/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11642,10 +11660,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:14.829404+00:00"
+          "lastChecked": "2026-04-29T14:56:36.932224+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11653,17 +11671,19 @@
       "id": 270,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Armaf I AM Fire 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Armaf I AM Fire 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/270/main.jpg",
+      "images": [
+        "images/productos/270/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11674,10 +11694,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:15.124756+00:00"
+          "lastChecked": "2026-04-29T14:56:37.375529+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11685,17 +11705,19 @@
       "id": 271,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Armaf I Am Enigma 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Armaf I Am Enigma 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/271/main.jpg",
+      "images": [
+        "images/productos/271/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11706,10 +11728,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:15.499855+00:00"
+          "lastChecked": "2026-04-29T14:56:37.840499+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11717,17 +11739,19 @@
       "id": 272,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Armaf I AM Elixir Of The Wild 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Armaf I AM Elixir Of The Wild 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/272/main.jpg",
+      "images": [
+        "images/productos/272/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11738,10 +11762,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:15.884191+00:00"
+          "lastChecked": "2026-04-29T14:56:38.300328+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11749,17 +11773,19 @@
       "id": 273,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Armaf I AM Eba 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Armaf I AM Eba 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/273/main.jpg",
+      "images": [
+        "images/productos/273/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11770,10 +11796,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:16.186122+00:00"
+          "lastChecked": "2026-04-29T14:56:38.750737+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11781,17 +11807,19 @@
       "id": 274,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Perfume de Ambiente Lattafa Badee Al Oud For Glory 450ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Perfume de Ambiente Lattafa Badee Al Oud For Glory 450ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/274/main.jpg",
+      "images": [
+        "images/productos/274/main.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11802,10 +11830,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:16.497075+00:00"
+          "lastChecked": "2026-04-29T14:56:39.192877+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11813,17 +11841,20 @@
       "id": 275,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Lattafa Layaan Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Lattafa Layaan Feminino 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/275/main.jpg",
+      "images": [
+        "images/productos/275/main.jpg",
+        "images/productos/275/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 9.5,
+      "usdSell": 12.02,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11834,10 +11865,10 @@
           "price": 9.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:16.795251+00:00"
+          "lastChecked": "2026-04-29T14:56:39.668903+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11845,17 +11876,20 @@
       "id": 276,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Lattafa Teriaq 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Aroma envolvente con carácter oriental distintivo. El Lattafa Teriaq brinda perfumación ligera y refrescante para el uso diario, combinando notas dulces y especiadas que logran presencia elegante sin resultar intensa. Su formato en spray permite aplicación uniforme y frescura inmediata sobre la piel. Ideal para después del baño, en la jornada laboral o en ocasiones especiales, manteniendo fragancia agradable durante horas.",
+      "img": "images/productos/276/main.jpg",
+      "images": [
+        "images/productos/276/main.jpg",
+        "images/productos/276/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 9.5,
+      "usdSell": 12.02,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11866,10 +11900,10 @@
           "price": 9.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:17.081413+00:00"
+          "lastChecked": "2026-04-29T14:56:40.180713+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11877,17 +11911,20 @@
       "id": 277,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Afeer Yara Pink Feminino 200ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El AFEER Body and Hair Splash Yara Pink es una bruma perfumada versátil diseñada para envolver tanto el cuerpo como el cabello en un aura dulce y sofisticada. Inspirado en la fragancia viral \\\"Yara",
+      "img": "images/productos/277/main.jpg",
+      "images": [
+        "images/productos/277/main.jpg",
+        "images/productos/277/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11898,10 +11935,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:17.798478+00:00"
+          "lastChecked": "2026-04-29T14:56:40.756427+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11909,17 +11946,20 @@
       "id": 278,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Afeer Nuit Royale Woman Feminino 200ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Afeer Royale Woman Nuit es un body and hair splash lujoso diseñado para envolver el cuerpo y el cabello en un aura de misterio y sofisticación. Su fragancia abre con notas vibrantes que evolucionan hacia un corazón de especias suaves, finalizando con una base cálida de ámbar y maderas. Es la elección perfecta para quienes buscan frescura y una perfumación ligera, pero con una firma nocturna marcada y elegante.",
+      "img": "images/productos/278/main.jpg",
+      "images": [
+        "images/productos/278/main.jpg",
+        "images/productos/278/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11930,10 +11970,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:18.089957+00:00"
+          "lastChecked": "2026-04-29T14:56:41.249592+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11941,17 +11981,20 @@
       "id": 279,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Afeer Royal Amber Feminino 200ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Afeer Royal Amber Body and Hair Splash es una fragancia versátil y lujosa diseñada para refrescar tanto la piel como el cabello. Con una apertura vibrante de notas verdes y cítricas, evoluciona hacia un corazón dulce y frutal donde el ámbar destaca, proporcionando un aura de elegancia. Su base amaderada y de vainilla garantiza una sensación de confort y sofisticación durante todo el día.",
+      "img": "images/productos/279/main.jpg",
+      "images": [
+        "images/productos/279/main.jpg",
+        "images/productos/279/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11962,10 +12005,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:18.384413+00:00"
+          "lastChecked": "2026-04-29T14:56:41.782360+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -11973,17 +12016,20 @@
       "id": 280,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Afeer Fakhar Rose Feminino 200ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Afeer Fakhar Rose Body and Hair Splash es una extensión refrescante de la icónica línea Fakhar de Lattafa. Diseñado para proporcionar un aroma ligero y envolvente, este spray puede aplicarse tanto en la piel como en el cabello sin resecar. Su fragancia abre con un brillo frutal de granada y evoluciona hacia un ramo de flores blancas opulentas, finalizando con una base cremosa de vainilla y sándalo que evoca elegancia y feminidad diaria.",
+      "img": "images/productos/280/main.jpg",
+      "images": [
+        "images/productos/280/main.jpg",
+        "images/productos/280/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -11994,10 +12040,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:18.662450+00:00"
+          "lastChecked": "2026-04-29T14:56:42.297566+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12005,17 +12051,20 @@
       "id": 281,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Afeer Delilah Feminino 200ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Afeer Body and Hair Splash Delilah es una bruma perfumada ligera y refrescante, diseñada para aplicarse tanto en la piel como en el cabello. Su fragancia es una celebración de la feminidad moderna, abriendo con notas jugosas de lichi y ruibarbo, que se funden en un corazón floral romántico de rosas y peonías. Es la elección perfecta para quienes buscan mantener una aura sofisticada y elegante durante todo el día, con un toque suave de vainilla y cachemira en el fondo.",
+      "img": "images/productos/281/main.jpg",
+      "images": [
+        "images/productos/281/main.jpg",
+        "images/productos/281/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12026,10 +12075,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:19.206504+00:00"
+          "lastChecked": "2026-04-29T14:56:42.795862+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12037,17 +12086,20 @@
       "id": 282,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Pure Seduction Sol Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Pure Seduction Sol de Victoria's Secret es una interpretación luminosa y vibrante de la clásica fragancia Pure Seduction. Esta bruma captura la esencia de un día soleado, mezclando la efervescencia de la naranja mimosa con el dulzor tropical de la piña. Es una fragancia ligera, refrescante y \\\"besada por el sol",
+      "img": "images/productos/282/main.jpg",
+      "images": [
+        "images/productos/282/main.jpg",
+        "images/productos/282/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.0,
+      "usdSell": 16.45,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12058,10 +12110,10 @@
           "price": 13.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:19.551967+00:00"
+          "lastChecked": "2026-04-29T14:56:43.312871+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12069,17 +12121,20 @@
       "id": 283,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Love Spell Sol Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Love Spell Sol es una interpretación luminosa y cálida del clásico Love Spell. Esta fragancia captura la esencia de un día soleado, combinando el dulzor de la frambuesa dorada con la elegancia del iris. Las notas solares aportan una sensación de piel besada por el sol, convirtiéndolo en el body splash perfecto para quienes buscan frescura con un toque radiante y sofisticado.",
+      "img": "images/productos/283/main.jpg",
+      "images": [
+        "images/productos/283/main.jpg",
+        "images/productos/283/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.0,
+      "usdSell": 16.45,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12090,10 +12145,10 @@
           "price": 13.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:19.861420+00:00"
+          "lastChecked": "2026-04-29T14:56:43.784255+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12101,17 +12156,20 @@
       "id": 284,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Velvet Petals Sol Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Victoria's Secret Velvet Petals Sol es una interpretación radiante y soleada de la clásica fragancia Velvet Petals. Esta edición limitada combina el frescor cítrico de la bergamota jugosa con la delicadeza de la peonía blanca, creando un aroma ligero, alegre y energizante. Es la elección perfecta para quienes buscan una sensación de \\\"verano eterno",
+      "img": "images/productos/284/main.jpg",
+      "images": [
+        "images/productos/284/main.jpg",
+        "images/productos/284/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 12.5,
+      "usdSell": 15.81,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12122,10 +12180,10 @@
           "price": 12.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:20.202703+00:00"
+          "lastChecked": "2026-04-29T14:56:44.317155+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12133,17 +12191,20 @@
       "id": 285,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Electric Mango Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Victoria's Secret Electric Mango forma parte de la colección Electric Flora. Es una fragancia vibrante y enérgica que captura la esencia del mango jugoso mezclado con notas florales luminosas. Ideal para el uso diario, proporciona una sensación de frescura tropical y brillo solar, siendo perfecto para reaplicar a lo largo del día y mantener la piel perfumada con ligereza.",
+      "img": "images/productos/285/main.jpg",
+      "images": [
+        "images/productos/285/main.jpg",
+        "images/productos/285/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.5,
+      "usdSell": 14.55,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12154,10 +12215,10 @@
           "price": 11.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:20.502738+00:00"
+          "lastChecked": "2026-04-29T14:56:44.805043+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12165,17 +12226,20 @@
       "id": 286,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Wild Neroli Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Wild Neroli forma parte de la colección Wild Flowers de Victoria's Secret. Es una fragancia que captura la esencia de un jardín soleado, destacando notas brillantes de neroli refrescante y bergamota. Es ideal para el uso diario, proporcionando una sensación de limpieza y frescura floral que perdura en la piel de forma sutil durante todo el día.",
+      "img": "images/productos/286/main.jpg",
+      "images": [
+        "images/productos/286/main.jpg",
+        "images/productos/286/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.5,
+      "usdSell": 14.55,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12186,10 +12250,10 @@
           "price": 11.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:20.814015+00:00"
+          "lastChecked": "2026-04-29T14:56:45.381455+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12197,17 +12261,20 @@
       "id": 287,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Sizzling Vanilla Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Victoria's Secret Sizzling Vanilla destaca por su aura cálida y radiante, combinando la cremosidad de la vainilla con un toque tropical innovador de mango a la parrilla. Esta edición limitada ofrece una sensación \\\"solar\\\" y dulce, perfecta para quienes buscan una fragancia envolvente que evoca el calor del verano. Al ser un Fragrance Mist, proporciona una perfumación ligera y refrescante, ideal para ser aplicada varias veces al día.",
+      "img": "images/productos/287/main.jpg",
+      "images": [
+        "images/productos/287/main.jpg",
+        "images/productos/287/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.75,
+      "usdSell": 14.86,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12218,10 +12285,10 @@
           "price": 11.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:21.203795+00:00"
+          "lastChecked": "2026-04-29T14:56:46.008705+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12229,17 +12296,20 @@
       "id": 288,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Neon Tropic Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Victoria's Secret Neon Tropic destaca por su energía vibrante y refrescante, presentando una nota jugosa de sandía neón que define su identidad. Ideal para climas cálidos, este body mist combina el dulzor frutal con toques de flores tropicales, proporcionando una sensación de frescura inmediata y ligereza en la piel. Con una fijación suave y luminosa, es la elección perfecta para quienes buscan una fragancia relajada para el día a día.",
+      "img": "images/productos/288/main.jpg",
+      "images": [
+        "images/productos/288/main.jpg",
+        "images/productos/288/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.5,
+      "usdSell": 14.55,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12250,10 +12320,10 @@
           "price": 11.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:21.502359+00:00"
+          "lastChecked": "2026-04-29T14:56:46.497115+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12261,17 +12331,20 @@
       "id": 289,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria’s Secret Pure Seduction Joy 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Body Splash Victoria’s Secret Pure Seduction Joy Shimmer ofrece una fragancia frutal y envolvente que perfuma tu piel con una sensación ligera y fresca. Su fórmula liviana humecta suavemente mientras libera un aroma atractivo y un brillo delicado que dura. Perfecto para usar después del baño o cuando desees sentirte perfumada y con energía, este body splash deja la piel suave, perfumada y con un toque luminoso que realza tu presencia.",
+      "img": "images/productos/289/main.jpg",
+      "images": [
+        "images/productos/289/main.jpg",
+        "images/productos/289/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.25,
+      "usdSell": 16.76,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12282,10 +12355,10 @@
           "price": 13.25,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:21.886888+00:00"
+          "lastChecked": "2026-04-29T14:56:47.000179+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12293,17 +12366,20 @@
       "id": 290,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria’s Secret Velvet Petals Joy 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Body Splash Victoria’s Secret Velvet Petals Joy Shimmer envuelve tu piel con una fragancia floral elegante y delicada que perdura de forma ligera. Su fórmula liviana humecta y refresca sin sensación pegajosa, brindando una sensación de bienestar al instante. Con un brillo sutil que realza la luminosidad natural de la piel, este body splash es ideal para usar después del baño o cuando desees un toque perfumado y radiante en tu cuidado diario.",
+      "img": "images/productos/290/main.jpg",
+      "images": [
+        "images/productos/290/main.jpg",
+        "images/productos/290/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.25,
+      "usdSell": 16.76,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12314,10 +12390,10 @@
           "price": 13.25,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:22.165393+00:00"
+          "lastChecked": "2026-04-29T14:56:47.478109+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12325,17 +12401,20 @@
       "id": 291,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Beauty Brand 076 Valvet Petals 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Body Splash 076 de Beauty Brand presenta una fragancia Floral Gourmand envolvente y delicada. Las frescas notas de salida de bergamota y pera dan paso a un corazón floral de nardo y jazmín. En el fondo, la miel, la avellana, la crema chantilly y la vainilla crean un toque dulce, cremoso y ligeramente polvoriento. Ideal para quienes buscan aromas femeninos, reconfortantes y memorables.",
+      "img": "images/productos/291/main.jpg",
+      "images": [
+        "images/productos/291/main.jpg",
+        "images/productos/291/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 6.0,
+      "usdSell": 7.59,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12346,10 +12425,10 @@
           "price": 6.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:22.450071+00:00"
+          "lastChecked": "2026-04-29T14:56:47.976832+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12357,17 +12436,20 @@
       "id": 292,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Sultry Petals 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Con un encanto cremoso y envolvente, Sultry Petals se abre con la dulce calidez del sorbete de frutos rojos. Los pétalos de magnolia aportan una suavidad floral, mientras que el jazmín añade un toque elegante que se funde con la piel. En el fondo, la madera de cachemir y el haba tonka crean un acabado suave y acogedor. Perfecta para quienes buscan una fragancia femenina con una delicada calidez para el día a día.",
+      "img": "images/productos/292/main.jpg",
+      "images": [
+        "images/productos/292/main.jpg",
+        "images/productos/292/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 12.0,
+      "usdSell": 15.18,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12378,10 +12460,10 @@
           "price": 12.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:22.778208+00:00"
+          "lastChecked": "2026-04-29T14:56:48.432583+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12389,17 +12471,20 @@
       "id": 293,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Coconut Passion Shimmer Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Explosión tropical con un brillo radiante sobre la piel. Coconut Passion Shimmer mezcla coco cremoso con vainilla dulce, creando una fragancia sensual y acogedora. Enriquecido con notas suaves de camomila, aloe vera y flores delicadas, deja una sensación fresca y suave. El acabado brillante aporta un resplandor sutil y elegante. Perfecto para días cálidos, después de la ducha o momentos especiales con un toque tropical y luminoso.",
+      "img": "images/productos/293/main.jpg",
+      "images": [
+        "images/productos/293/main.jpg",
+        "images/productos/293/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.75,
+      "usdSell": 14.86,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12410,10 +12495,10 @@
           "price": 11.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:23.083607+00:00"
+          "lastChecked": "2026-04-29T14:56:49.421620+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12421,17 +12506,20 @@
       "id": 294,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Pure Seduction Cashmere Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Dulzura acogedora con fruta fresca y toque cremoso. Pure Seduction Cashmere envuelve moras jugosas y notas de merengue batido, resultando en un aroma suave y sofisticado. La versión “cashmere” aporta capas de vainilla ligera, pétalos aterciopelados y una calidez envolvente. El resultado es envolvente sin saturar, ideal para uso diario, reaplicación durante el día o combinar con lociones de la línea para prolongar la fragancia.",
+      "img": "images/productos/294/main.jpg",
+      "images": [
+        "images/productos/294/main.jpg",
+        "images/productos/294/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 12.0,
+      "usdSell": 15.18,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12442,10 +12530,10 @@
           "price": 12.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:23.351230+00:00"
+          "lastChecked": "2026-04-29T14:56:50.334418+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12453,17 +12541,20 @@
       "id": 295,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Love Spell Cashmere Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Una reinterpretación cálida y cremosa del clásico Love Spell. Love Spell Cashmere combina nectarina jugosa con notas suaves de malvavisco, merengue batido y pétalos delicados, sobre una base de vainilla aterciopelada. El resultado es una fragancia dulce, envolvente y elegante, ideal para climas frescos o días que piden comodidad. Perfecta para usar después de la ducha o en cualquier momento del día cuando se busca una sensación cálida y femenina.",
+      "img": "images/productos/295/main.jpg",
+      "images": [
+        "images/productos/295/main.jpg",
+        "images/productos/295/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.75,
+      "usdSell": 14.86,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12474,10 +12565,10 @@
           "price": 11.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:23.686676+00:00"
+          "lastChecked": "2026-04-29T14:56:50.803362+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12485,17 +12576,20 @@
       "id": 296,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Lattafa Ana Abiyedh Feminino 150ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Lattafa Ana Abiyedh Spray Corporal ofrece una fragancia unisex gourmand fresca, comenzando con bergamota y naranja; en su corazón revela pera y vainilla dulce y cremosa; la base de almizcle y ámbar alarga la permanencia sobre la piel. No empalaga, deja una huella suave y elegante. Perfecto para después de la ducha, climas templados o para sentirse bien durante el día.",
+      "img": "images/productos/296/main.jpg",
+      "images": [
+        "images/productos/296/main.jpg",
+        "images/productos/296/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12506,10 +12600,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:23.966214+00:00"
+          "lastChecked": "2026-04-29T14:56:51.284324+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12517,17 +12611,20 @@
       "id": 297,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Guava Fiesta Shimmer Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Guava Fiesta Shimmer de Victoria’s Secret es una explosión de frescura tropical que combina notas de piña jugosa y guayaba vibrante con el toque floral de jazmín y fresia, sobre una base suave de almizcle y sándalo. Su acabado ligeramente brillante ilumina la piel con un resplandor delicado, ideal para días soleados o momentos en que se busca un toque de energía y ligereza.",
+      "img": "images/productos/297/main.jpg",
+      "images": [
+        "images/productos/297/main.jpg",
+        "images/productos/297/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.0,
+      "usdSell": 16.45,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12538,10 +12635,10 @@
           "price": 13.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:24.268223+00:00"
+          "lastChecked": "2026-04-29T14:56:51.946973+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12549,17 +12646,20 @@
       "id": 298,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Velvet Petals Shimmer Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Body Splash Victoria's Secret Velvet Petals Shimmer mezcla una fragancia floral suave con notas dulces de almendra, creando un aroma femenino y delicado. Su fórmula ligera permite aplicarlo en cuerpo y cabello, dejando un sutil brillo con partículas luminosas. Ideal para quienes buscan un perfume fresco, romántico y con acabado brillante para usar a diario o en ocasiones especiales.",
+      "img": "images/productos/298/main.jpg",
+      "images": [
+        "images/productos/298/main.jpg",
+        "images/productos/298/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.75,
+      "usdSell": 14.86,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12570,10 +12670,10 @@
           "price": 11.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:24.574003+00:00"
+          "lastChecked": "2026-04-29T14:56:52.432697+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12581,17 +12681,20 @@
       "id": 299,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Pure Seduction Shimmer Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Pure Seduction Shimmer de Victoria’s Secret es un body splash encantador que fusiona notas frutales y florales con un efecto brillante que realza la piel. Con ciruela jugosa y fresia fresca, esta fragancia vibrante y atractiva transmite encanto y diversión. El spray aporta un brillo radiante de pies a cabeza y se combina a la perfección con la loción corporal de la misma línea para intensificar la duración del aroma. Perfecto para quienes buscan un toque dulce, moderno y lleno de ligereza.",
+      "img": "images/productos/299/main.jpg",
+      "images": [
+        "images/productos/299/main.jpg",
+        "images/productos/299/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 12.0,
+      "usdSell": 15.18,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12602,10 +12705,10 @@
           "price": 12.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:24.986064+00:00"
+          "lastChecked": "2026-04-29T14:56:52.895531+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12613,17 +12716,20 @@
       "id": 300,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Lattafa Yara Tous Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Esencia tropical que evoca verano: o body splash Yara Tous se despliega con notas de mango, coco y fruta de la pasión, ofreciendo una fragancia refrescante ideal para climas cálidos. Su corazón floral de jazmín y azahar aporta delicadeza. En el fondo, vainilla, almizcle y cashmeran se unen a una faceta cremosa y ligeramente dulce. De duración aceptable y proyección moderada, perfecto para uso diario con estilo y suavidad.",
+      "img": "images/productos/300/main.jpg",
+      "images": [
+        "images/productos/300/main.jpg",
+        "images/productos/300/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 9.5,
+      "usdSell": 12.02,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12634,10 +12740,10 @@
           "price": 9.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:25.335323+00:00"
+          "lastChecked": "2026-04-29T14:56:53.385676+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12645,17 +12751,20 @@
       "id": 301,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Love Spell Shimmer Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Body splash Love Spell Shimmer combina notas frutales y florales con destellos luminosos. Abre con durazno jugoso y flor de cerezo aportando frescura inmediata. En el corazón, jazmín blanco y lirio de los valles agregan un matiz floral delicado. Su base de almizcle y maderas claras ofrece aroma suave y un brillo sutil en la piel. Perfecto para usar a diario, deja una fragancia fresca con un toque de chispa elegante.",
+      "img": "images/productos/301/main.jpg",
+      "images": [
+        "images/productos/301/main.jpg",
+        "images/productos/301/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 12.75,
+      "usdSell": 16.13,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12666,10 +12775,10 @@
           "price": 12.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:25.619305+00:00"
+          "lastChecked": "2026-04-29T14:56:54.238673+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12677,17 +12786,20 @@
       "id": 302,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Midnight Bloom Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Fragancia floral cálida para día o noche con el Body Splash Victoria’s Secret Midnight Bloom, que mezcla flores blancas con un fondo amaderado para un aroma delicado y envolvente. Ligero y fácil de reaplicar, perfuma la piel sin ser pesado y mantiene sensación de frescura por más tiempo. Ideal para quien busca body splash femenino con un toque sofisticado para uso diario o ocasiones especiales.",
+      "img": "images/productos/302/main.jpg",
+      "images": [
+        "images/productos/302/main.jpg",
+        "images/productos/302/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 12.0,
+      "usdSell": 15.18,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12698,10 +12810,10 @@
           "price": 12.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:25.974522+00:00"
+          "lastChecked": "2026-04-29T14:56:54.801643+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12709,17 +12821,20 @@
       "id": 303,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Mist Shirley May Deluxe Pink Rose Petals 236ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El mist corporal Swiss Arabian Body Mist Pink Rose Petal ofrece una fragancia romántica y envolvente, perfecta para el día a día. Sus notas florales de rosa combinan frescura y suavidad, brindando un perfume delicado y sofisticado. Con 236 ml, garantiza fijación duradera y un toque refrescante en la piel. Ideal para quienes buscan un aroma ligero y elegante sin ser demasiado intenso.\\",
+      "img": "images/productos/303/main.jpg",
+      "images": [
+        "images/productos/303/main.jpg",
+        "images/productos/303/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 8.0,
+      "usdSell": 10.12,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12730,10 +12845,10 @@
           "price": 8.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:26.500765+00:00"
+          "lastChecked": "2026-04-29T14:56:55.253051+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12741,17 +12856,20 @@
       "id": 304,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Mist Shirley May Deluxe Sweet Sweet Dahlia 236ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Delicadeza y sofisticación definen el mist corporal Swiss Arabian Body Mist Sweet Sweet Dahlia, que brinda una fragancia ligera y envolvente. Sus notas florales y dulces garantizan un perfume suave y refrescante para el día a día. Con 236 ml, ofrece fijación duradera y frescura prolongada. Ideal para quienes buscan un aroma distintivo en la medida justa, sin ser demasiado intenso.",
+      "img": "images/productos/304/main.jpg",
+      "images": [
+        "images/productos/304/main.jpg",
+        "images/productos/304/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 8.0,
+      "usdSell": 10.12,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12762,10 +12880,10 @@
           "price": 8.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:26.857566+00:00"
+          "lastChecked": "2026-04-29T14:56:55.726513+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12773,17 +12891,20 @@
       "id": 305,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Pure Seduction Intense Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Fragancia dulce e intensa que realza tu estilo con frescura. El Body Splash Victoria's Secret Pure Seduction Intense mezcla notas frutales llamativas con un fondo floral suave, logrando un aroma juvenil y envolvente. Su fórmula ligera permite reaplicar fácilmente durante el día, dejando sensación refrescante después de la ducha o antes de una salida. Perfecto para quienes buscan una bruma corporal práctica, femenina y adaptable a cualquier ocasión.",
+      "img": "images/productos/305/main.jpg",
+      "images": [
+        "images/productos/305/main.jpg",
+        "images/productos/305/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.25,
+      "usdSell": 16.76,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12794,10 +12915,10 @@
           "price": 13.25,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:27.173673+00:00"
+          "lastChecked": "2026-04-29T14:56:56.259995+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12805,17 +12926,20 @@
       "id": 306,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Love Spell Intense Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Aroma intenso y frutal que resalta tu estilo con personalidad. El Body Splash Victoria's Secret Love Spell Intense mezcla notas jugosas de frutas con un fondo floral envolvente, logrando una fragancia femenina y llamativa. Su textura ligera permite reaplicar durante el día sin saturar, manteniendo frescura agradable después de la ducha o antes de una salida. Perfecto para quienes desean una bruma corporal dulce y moderna para cualquier momento.",
+      "img": "images/productos/306/main.jpg",
+      "images": [
+        "images/productos/306/main.jpg",
+        "images/productos/306/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.25,
+      "usdSell": 16.76,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12826,10 +12950,10 @@
           "price": 13.25,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:27.470737+00:00"
+          "lastChecked": "2026-04-29T14:56:56.818336+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12837,17 +12961,20 @@
       "id": 307,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victorias Secret Cherry Bonbon Bliss Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Compre Body Splash Victorias Secret Cherry Bonbon Bliss Feminino 250ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
+      "img": "images/productos/307/main.jpg",
+      "images": [
+        "images/productos/307/main.jpg",
+        "images/productos/307/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.25,
+      "usdSell": 16.76,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12858,10 +12985,10 @@
           "price": 13.25,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:27.763060+00:00"
+          "lastChecked": "2026-04-29T14:56:57.313592+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12869,17 +12996,20 @@
       "id": 308,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Festive Fizz Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Victoria's Secret Festive Fizz es un body splash diseñado para capturar la alegría de las celebraciones. Su aroma destaca por una mezcla vibrante de grosella roja y kiwi, que aporta un toque efervescente y fresco. Es ideal para el uso diario o para retocar la fragancia durante el día, dejando una sensación de frescura frutal en la piel.",
+      "img": "images/productos/308/main.jpg",
+      "images": [
+        "images/productos/308/main.jpg",
+        "images/productos/308/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.25,
+      "usdSell": 16.76,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12890,10 +13020,10 @@
           "price": 13.25,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:28.056446+00:00"
+          "lastChecked": "2026-04-29T14:56:57.879208+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12901,17 +13031,20 @@
       "id": 309,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Naughty Spice Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Fragancia cálida y atrevida que destaca tu personalidad. El Body Splash Victoria's Secret Naughty Spice mezcla notas especiadas intensas con un fondo dulce equilibrado, logrando un aroma moderno y envolvente. Su textura ligera permite reaplicar durante el día sin saturar, dejando sensación agradable después de la ducha o antes de una salida. Presentación de 250 ml con excelente rendimiento. Perfecto para quienes desean una bruma corporal con carácter y estilo.",
+      "img": "images/productos/309/main.jpg",
+      "images": [
+        "images/productos/309/main.jpg",
+        "images/productos/309/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.25,
+      "usdSell": 16.76,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12922,10 +13055,10 @@
           "price": 13.25,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:28.425542+00:00"
+          "lastChecked": "2026-04-29T14:56:58.339110+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12933,17 +13066,20 @@
       "id": 310,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Merry Delights Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Aroma dulce y festivo que realza tu estilo diario. El Body Splash Victoria's Secret Merry Delights mezcla notas gourmand cremosas con un matiz frutal suave, logrando una fragancia alegre y envolvente. Su textura ligera facilita reaplicar durante el día sin saturar, dejando sensación fresca después de la ducha o antes de una salida. Presentación de 250 ml con excelente rendimiento. Perfecto para quienes buscan una bruma corporal delicada y versátil para ocasiones especiales.",
+      "img": "images/productos/310/main.jpg",
+      "images": [
+        "images/productos/310/main.jpg",
+        "images/productos/310/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 13.25,
+      "usdSell": 16.76,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12954,10 +13090,10 @@
           "price": 13.25,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:28.710595+00:00"
+          "lastChecked": "2026-04-29T14:56:58.966027+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12965,17 +13101,20 @@
       "id": 311,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Afeer Sabah Al Ward Feminino 200ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Afeer Body and Hair Splash Sabah Al Ward es una bruma perfumada versátil, diseñada tanto para el cuerpo como para el cabello. Inspirada en la elegancia del perfume clásico Sabah Al Ward, esta versión ofrece una fragancia más ligera y refrescante. Su composición abre con el frescor cítrico de la mandarina y el toque picante de la pimienta rosa, evolucionando hacia un corazón dulce de cacao y flores blancas, finalizando con una base cremosa de vainilla. Está enriquecido para proporcionar Frescura.",
+      "img": "images/productos/311/main.jpg",
+      "images": [
+        "images/productos/311/main.jpg",
+        "images/productos/311/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -12986,10 +13125,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:28.998887+00:00"
+          "lastChecked": "2026-04-29T14:56:59.461205+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -12997,17 +13136,20 @@
       "id": 312,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Afeer Musamam White Intense Feminino 200ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Musamam White Intense Body and Hair Splash de afeer es una bruma ligera y lujosa diseñada tanto para el cuerpo como para el cabello. Esta fragancia abre con un frescor cítrico y especiado, evolucionando hacia un corazón tropical y cremoso de coco e ylang-ylang. Su base amaderada de sándalo y almizcle aporta una sensación de limpieza sofisticada y elegancia solar que perdura todo el día, dejando el cabello perfumado sin resecarlo.",
+      "img": "images/productos/312/main.jpg",
+      "images": [
+        "images/productos/312/main.jpg",
+        "images/productos/312/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -13018,10 +13160,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:29.306125+00:00"
+          "lastChecked": "2026-04-29T14:57:00.142540+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -13029,17 +13171,20 @@
       "id": 313,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Kit Victoria's Secret Velvet Petals Body Splash Feminino 75ml e Body Lotion 75ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Experimenta un toque floral y cremoso con el Kit Velvet Petals de Victoria's Secret, que incluye un Body Splash y una Crema Hidratante. La fragancia combina flores aterciopeladas y almendras dulces, con una suave base de almizcle y maderas claras. El Body Splash perfuma delicadamente, mientras que la crema hidrata y deja la piel suave durante todo el día. Ideal para quienes buscan una fragancia femenina, elegante y cómoda para el día a día, en un práctico tamaño para llevar en el bolso.",
+      "img": "images/productos/313/main.jpg",
+      "images": [
+        "images/productos/313/main.jpg",
+        "images/productos/313/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 20.0,
+      "usdSell": 25.3,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -13050,10 +13195,10 @@
           "price": 20.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:29.606603+00:00"
+          "lastChecked": "2026-04-29T14:57:00.656420+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -13061,17 +13206,20 @@
       "id": 314,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Kit Victoria's Secret Love Spell Body Splash Feminino 75ml e Body Lotion 75ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Aroma seductor y cuidado completo con el Victoria’s Secret Kit Love Spell, su principal diferencial es la fragancia emblemática Love Spell con notas frutales y florales que dejan un perfume suave, delicado y memorable. El body splash proporciona una niebla ligera que refresca la piel sin sensación pesada, mientras la loción hidratante nutre profundamente y deja la piel aterciopelada por más tiempo. Texturas de rápida absorción que ofrecen frescura continua y dejan un rastro aromático encantador.",
+      "img": "images/productos/314/main.jpg",
+      "images": [
+        "images/productos/314/main.jpg",
+        "images/productos/314/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 20.0,
+      "usdSell": 25.3,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -13082,10 +13230,10 @@
           "price": 20.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:29.893202+00:00"
+          "lastChecked": "2026-04-29T14:57:01.364986+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -13093,17 +13241,20 @@
       "id": 315,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria Secret Aqua Kiss Shimmer Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Frescura envolvente con un toque de brillo delicado. Aqua Kiss Shimmer de Victoria’s Secret combina frésia húmeda y toronja rosa con un acabado brillante que deja la piel sutilmente luminosa. Esta fragancia floral acuática es ligera, refrescante y duradera, ideal para después de la ducha o para destacar tu aroma durante todo el día. Una versión radiante del clásico Aqua Kiss que aporta feminidad, luz y frescura con cada rocío.",
+      "img": "images/productos/315/main.jpg",
+      "images": [
+        "images/productos/315/main.jpg",
+        "images/productos/315/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 11.75,
+      "usdSell": 14.86,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -13114,10 +13265,10 @@
           "price": 11.75,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:30.180841+00:00"
+          "lastChecked": "2026-04-29T14:57:01.952630+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -13125,17 +13276,20 @@
       "id": 316,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Lattafa Sehr Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Body Splash Lattafa Sehr presenta una apertura cálida con almendra amarga y canela, evoluciona con toques florales de jazmín, Pomarosa y Akigalawood y se asienta sobre una base cremosa de vainilla, ámbar y haba tonka. Su fórmula ligera permite reaplicaciones durante el día, ideal para perfumar el cuerpo sin saturar. Perfecto para quienes buscan una fragancia envolvente, dulce y sofisticada en un formato práctico.",
+      "img": "images/productos/316/main.jpg",
+      "images": [
+        "images/productos/316/main.jpg",
+        "images/productos/316/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 9.5,
+      "usdSell": 12.02,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -13146,10 +13300,10 @@
           "price": 9.5,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:30.486236+00:00"
+          "lastChecked": "2026-04-29T14:57:02.476888+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -13157,17 +13311,20 @@
       "id": 317,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Lattafa Mayar Natural Intense Feminino 150ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "El Lattafa Mayar Natural Intense Spray Corporal evoca frescura tropical gracias a su apertura frutal-acuática. Salidas de higo verde, tangerina verde, melón y agua de coco refrescan al instante; en el corazón, lirio de agua, loto y jazmín aportan delicadeza floral; en la base, vainilla, sándalo, ambroxan y almizcle entregan calidez suave y duración sobre la piel. Ideal para uso diario, escapadas o momentos de descanso con aroma especial.",
+      "img": "images/productos/317/main.jpg",
+      "images": [
+        "images/productos/317/main.jpg",
+        "images/productos/317/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 10.0,
+      "usdSell": 12.65,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -13178,10 +13335,10 @@
           "price": 10.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:30.846872+00:00"
+          "lastChecked": "2026-04-29T14:57:02.989240+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -13189,17 +13346,20 @@
       "id": 318,
       "cat": "Belleza",
       "calcSub": "cera",
-      "name": "",
+      "name": "Body Splash Victoria's Secret Velvet Petals Feminino 250ml",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Delicado y envolvente, el body splash Velvet Petals de Victoria's Secret pertenece a la familia olfativa floral y ofrece una fragancia irresistible. La apertura presenta exuberantes flores que encantan desde el primer toque. En el corazón destaca la dulzura de las almendras caramelizadas, creando un aroma acogedor y femenino. Por último, el reconfortante sándalo garantiza una base suave y duradera sobre la piel. Ideal para uso diario con un toque sensual y sofisticado.",
+      "img": "images/productos/318/main.jpg",
+      "images": [
+        "images/productos/318/main.jpg",
+        "images/productos/318/2.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 12.0,
+      "usdSell": 15.18,
       "weight": null,
       "activo": false,
       "fechaAlta": "2026-04-29",
@@ -13210,10 +13370,10 @@
           "price": 12.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-04-29T14:56:31.151272+00:00"
+          "lastChecked": "2026-04-29T14:57:03.538356+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     }
@@ -13765,6 +13925,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-29T14:49:43.593808+00:00",
+  "lastSync": "2026-04-29T14:57:04.104208+00:00",
   "lastPriceCheck": null
 }
