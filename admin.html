@@ -909,6 +909,33 @@
       max-width: 380px;
     }
     .confirm-body { padding: 20px 24px; font-size: 14px; line-height: 1.5; color: var(--text-2); }
+
+    /* ── PAGINATION ── */
+    .pagination-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 16px 0 4px;
+      flex-wrap: wrap;
+    }
+    .pg-btn {
+      min-width: 34px;
+      height: 34px;
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-1);
+      cursor: pointer;
+      transition: all .15s;
+      padding: 0 10px;
+    }
+    .pg-btn:hover:not(:disabled) { border-color: var(--green); color: var(--green); }
+    .pg-btn.active { background: var(--green); border-color: var(--green); color: #fff; }
+    .pg-btn:disabled { opacity: .35; cursor: not-allowed; }
+    .pg-ellipsis { font-size: 13px; color: var(--text-3); padding: 0 4px; line-height: 34px; }
   </style>
 </head>
 <body>
@@ -1032,15 +1059,20 @@
       <div class="toolbar">
         <div class="toolbar-search">
           <span class="si">🔍</span>
-          <input type="search" id="prodSearch" placeholder="Buscar producto..." oninput="renderProdTable()" autocomplete="off">
+          <input type="search" id="prodSearch" placeholder="Buscar producto..." oninput="filterProdTable()" autocomplete="off">
         </div>
-        <select id="prodCatFilter" onchange="renderProdTable()">
+        <select id="prodCatFilter" onchange="filterProdTable()">
           <option value="">Todas las categorías</option>
         </select>
-        <select id="prodStatusFilter" onchange="renderProdTable()">
+        <select id="prodStatusFilter" onchange="filterProdTable()">
           <option value="">Todos</option>
           <option value="active">Activos</option>
           <option value="inactive">Inactivos</option>
+        </select>
+        <select id="prodPerPageSelect" onchange="prodPerPage=+this.value; filterProdTable();">
+          <option value="20" selected>20 por página</option>
+          <option value="50">50 por página</option>
+          <option value="100">100 por página</option>
         </select>
       </div>
 
@@ -1059,6 +1091,7 @@
           <tbody id="prodTableBody"></tbody>
         </table>
       </div>
+      <div id="prodPaginationBar" class="pagination-bar"></div>
     </section>
 
     <!-- ─────── PRICES ─────── -->
@@ -2831,6 +2864,10 @@ function catEmoji(c) {
 /* ══════════════════════════════════════
    PRODUCTS TABLE
 ══════════════════════════════════════ */
+let prodPage = 1, prodPerPage = 20;
+
+function filterProdTable() { prodPage = 1; renderProdTable(); }
+
 function renderProdTable() {
   const q   = (document.getElementById('prodSearch')?.value || '').toLowerCase();
   const cat = document.getElementById('prodCatFilter')?.value || '';
@@ -2843,15 +2880,23 @@ function renderProdTable() {
     return matchQ && matchC && matchS;
   });
 
-  document.getElementById('prodSub').textContent = `${list.length} de ${products.length} productos`;
+  const total = list.length;
+  const totalPages = Math.max(1, Math.ceil(total / prodPerPage));
+  if (prodPage > totalPages) prodPage = totalPages;
+
+  document.getElementById('prodSub').textContent = `${total} de ${products.length} productos`;
 
   const tbody = document.getElementById('prodTableBody');
-  if (!list.length) {
+  if (!total) {
     tbody.innerHTML = `<tr><td colspan="6"><div class="empty-msg"><div class="em-icon">🔍</div><p>Sin resultados con ese filtro.</p></div></td></tr>`;
+    renderAdminPagination(0, 0);
     return;
   }
 
-  tbody.innerHTML = list.map(p => {
+  const start = (prodPage - 1) * prodPerPage;
+  const paginated = list.slice(start, start + prodPerPage);
+
+  tbody.innerHTML = paginated.map(p => {
     const price = p.ars ? `$ ${parseInt(p.ars).toLocaleString('es-AR')}` : null;
     return `
       <tr>
@@ -2884,6 +2929,38 @@ function renderProdTable() {
         </td>
       </tr>`;
   }).join('');
+
+  renderAdminPagination(total, totalPages);
+}
+
+function renderAdminPagination(total, totalPages) {
+  const bar = document.getElementById('prodPaginationBar');
+  if (!bar) return;
+  if (totalPages <= 1) { bar.innerHTML = ''; return; }
+  const p = prodPage;
+  let pages = [];
+  if (totalPages <= 7) {
+    for (let i = 1; i <= totalPages; i++) pages.push(i);
+  } else {
+    pages = [1];
+    if (p > 3) pages.push('…');
+    for (let i = Math.max(2, p - 1); i <= Math.min(totalPages - 1, p + 1); i++) pages.push(i);
+    if (p < totalPages - 2) pages.push('…');
+    pages.push(totalPages);
+  }
+  bar.innerHTML =
+    `<button class="pg-btn" onclick="prodSetPage(${p - 1})" ${p === 1 ? 'disabled' : ''}>&#8592;</button>` +
+    pages.map(pg => pg === '…'
+      ? `<span class="pg-ellipsis">…</span>`
+      : `<button class="pg-btn${pg === p ? ' active' : ''}" onclick="prodSetPage(${pg})">${pg}</button>`
+    ).join('') +
+    `<button class="pg-btn" onclick="prodSetPage(${p + 1})" ${p === totalPages ? 'disabled' : ''}>&#8594;</button>`;
+}
+
+function prodSetPage(n) {
+  prodPage = n;
+  renderProdTable();
+  document.getElementById('page-products').scrollIntoView({ behavior: 'smooth' });
 }
 
 function toggleProduct(id, active) {
