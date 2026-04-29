@@ -541,6 +541,7 @@
       flex-direction: column;
       gap: 16px;
     }
+
     .subcats-sidebar {
       display: flex;
       gap: 8px;
@@ -549,9 +550,11 @@
       scrollbar-width: none;
       -webkit-overflow-scrolling: touch;
     }
+
     .subcats-sidebar::-webkit-scrollbar {
       display: none;
     }
+
     .subcat-pill {
       white-space: nowrap;
       padding: 8px 16px;
@@ -565,9 +568,11 @@
       transition: all 0.2s ease;
       user-select: none;
     }
+
     .subcat-pill:hover {
       border-color: var(--text-3);
     }
+
     .subcat-pill.active {
       background: var(--primary);
       color: #fff;
@@ -578,11 +583,13 @@
       .main-content {
         padding: 24px 24px 110px;
       }
+
       .catalog-layout {
         flex-direction: row;
         align-items: flex-start;
         gap: 24px;
       }
+
       .subcats-sidebar {
         flex-direction: column;
         flex-shrink: 0;
@@ -590,11 +597,13 @@
         position: sticky;
         top: 150px;
       }
+
       .subcat-pill {
         text-align: left;
         border-radius: 8px;
         padding: 10px 14px;
       }
+
       .catalog-main {
         flex: 1;
         min-width: 0;
@@ -2020,6 +2029,7 @@
       padding: 24px 0 8px;
       flex-wrap: wrap;
     }
+
     .pg-btn {
       min-width: 36px;
       height: 36px;
@@ -2033,11 +2043,38 @@
       transition: all .15s;
       padding: 0 10px;
     }
-    .pg-btn:hover:not(:disabled) { border-color: var(--green); color: var(--green); }
-    .pg-btn.active { background: var(--green); border-color: var(--green); color: #fff; }
-    .pg-btn:disabled { opacity: .35; cursor: not-allowed; }
-    .pg-ellipsis { font-size: 14px; color: #9ca3af; padding: 0 4px; line-height: 36px; }
-    .perpage-label { font-size: 13px; color: #6b7280; display: flex; align-items: center; gap: 6px; }
+
+    .pg-btn:hover:not(:disabled) {
+      border-color: var(--green);
+      color: var(--green);
+    }
+
+    .pg-btn.active {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+    }
+
+    .pg-btn:disabled {
+      opacity: .35;
+      cursor: not-allowed;
+    }
+
+    .pg-ellipsis {
+      font-size: 14px;
+      color: #9ca3af;
+      padding: 0 4px;
+      line-height: 36px;
+    }
+
+    .perpage-label {
+      font-size: 13px;
+      color: #6b7280;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
     .perpage-label select {
       border: 1.5px solid #e5e7eb;
       border-radius: 6px;
@@ -2247,10 +2284,11 @@
           <div class="guar-text">3 días hábiles desde la recepción. En las mismas condiciones que fue entregado. Flete
             no incluido.</div>
         </div>
+  
         <div class="guar-card">
           <div class="guar-icon">🛡️</div>
           <div class="guar-title">Garantía por falla</div>
-          <div class="guar-text">90 días desde la entrega. Cubre defectos de fábrica únicamente. Cambio directo.</div>
+          <div class="guar-text">30 días desde la entrega. Cubre defectos de fábrica únicamente. Cambio directo.</div>
         </div>
         <div class="guar-card">
           <div class="guar-icon">📸</div>
@@ -2864,30 +2902,30 @@
     function renderSubcategories() {
       const sidebar = document.getElementById('subcatsSidebar');
       if (!sidebar) return;
-      
+
       if (state.cat === 'Todos') {
         sidebar.style.display = 'none';
         return;
       }
-      
+
       const catObj = SETTINGS_CATEGORIES.find(c => c.name === state.cat);
       const subcats = catObj && catObj.subcategories ? catObj.subcategories : [];
-      
+
       // If there are no public subcategories, don't show the sidebar
       if (!subcats || subcats.length === 0) {
         sidebar.style.display = 'none';
         return;
       }
-      
+
       sidebar.style.display = 'flex';
-      
+
       let html = `<button class="subcat-pill ${state.subcat === 'Todos' ? 'active' : ''}" data-id="Todos" onclick="setSubcategory('Todos')">Todas</button>`;
-      
+
       subcats.forEach(sub => {
         const isActive = state.subcat === sub.id ? 'active' : '';
         html += `<button class="subcat-pill ${isActive}" data-id="${sub.id}" onclick="setSubcategory('${sub.id}')">${sub.label}</button>`;
       });
-      
+
       sidebar.innerHTML = html;
     }
 
