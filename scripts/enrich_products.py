@@ -47,6 +47,9 @@ def enrich_product(product: dict, categories: list[dict]) -> None:
         product["enrichError"] = f"Scrape failed: {e}"
         return
 
+    if info.get("name") and not product.get("name"):
+        product["name"] = info["name"]
+
     if info.get("description") and not product.get("desc"):
         product["desc"] = info["description"][:2000]
 
