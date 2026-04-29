@@ -3593,53 +3593,6 @@
       "verifyPrice": true
     },
     {
-      "id": 56,
-      "cat": "Hogar y Cocina",
-      "calcSub": "termo",
-      "name": "Termo 1L con mate",
-      "sub": "",
-      "desc": "Termo de de 1 Litro de acero inoxidable con mate",
-      "img": "images/productos/Photoroom_20250825_100347.jpg",
-      "images": [
-        "images/productos/Photoroom_20250825_100347.jpg"
-      ],
-      "badge": "disponible",
-      "badgeColor": "#25D366",
-      "icon": "📦",
-      "ars": "21300",
-      "usd": 15,
-      "weight": null,
-      "usdSell": 15,
-      "activo": true,
-      "fechaAlta": "2026-04-24",
-      "priceHistory": [
-        {
-          "ars": "21300",
-          "date": "2026-04-24"
-        },
-        {
-          "ars": "21500",
-          "date": "2026-04-28"
-        },
-        {
-          "ars": "21600",
-          "date": "2026-04-28"
-        },
-        {
-          "ars": "21500",
-          "date": "2026-04-28"
-        },
-        {
-          "ars": "21300",
-          "date": "2026-04-29"
-        }
-      ],
-      "referenceLinks": [],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": false
-    },
-    {
       "id": 57,
       "cat": "Consolas",
       "calcSub": "Nintendo",
@@ -21328,6 +21281,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-29T20:22:10.923Z",
+  "lastSync": "2026-04-29T20:25:08.452Z",
   "lastPriceCheck": null
 }
