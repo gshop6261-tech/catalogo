@@ -20,7 +20,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "27700",
+      "ars": "27600",
       "usd": 15.9,
       "weight": null,
       "usdSell": 19.24,
@@ -45,6 +45,10 @@
         },
         {
           "ars": "27700",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "27600",
           "date": "2026-04-28"
         }
       ],
@@ -80,7 +84,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "30700",
+      "ars": "30600",
       "usd": 16.9,
       "weight": null,
       "usdSell": 21.38,
@@ -113,6 +117,10 @@
         },
         {
           "ars": "30700",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "30600",
           "date": "2026-04-28"
         }
       ],
@@ -147,7 +155,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "67800",
+      "ars": "67500",
       "usd": 39,
       "weight": null,
       "usdSell": 47.19,
@@ -185,6 +193,10 @@
         {
           "ars": "67800",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "67500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -215,7 +227,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "72700",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -253,6 +265,10 @@
         {
           "ars": "72700",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "72400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -287,7 +303,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "143500",
+      "ars": "143000",
       "usd": 79,
       "weight": null,
       "usdSell": 99.94,
@@ -320,6 +336,10 @@
         },
         {
           "ars": "143500",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "143000",
           "date": "2026-04-28"
         }
       ],
@@ -355,7 +375,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "65200",
+      "ars": "64900",
       "usd": 37.5,
       "weight": null,
       "usdSell": 45.38,
@@ -384,6 +404,10 @@
         },
         {
           "ars": "65200",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "64900",
           "date": "2026-04-28"
         }
       ],
@@ -475,7 +499,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "482800",
+      "ars": "481100",
       "usd": 278,
       "weight": null,
       "usdSell": 336.38,
@@ -504,6 +528,10 @@
         },
         {
           "ars": "482800",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "481100",
           "date": "2026-04-28"
         }
       ],
@@ -538,7 +566,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "130300",
+      "ars": "129800",
       "usd": 75,
       "weight": null,
       "usdSell": 90.75,
@@ -567,6 +595,10 @@
         },
         {
           "ars": "130300",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "129800",
           "date": "2026-04-28"
         }
       ],
@@ -602,7 +634,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "22200",
+      "ars": "22100",
       "usd": 12.75,
       "weight": null,
       "usdSell": 15.43,
@@ -631,6 +663,10 @@
         },
         {
           "ars": "22200",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "22100",
           "date": "2026-04-28"
         }
       ],
@@ -664,7 +700,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "38200",
+      "ars": "38100",
       "usd": 22,
       "weight": null,
       "usdSell": 26.62,
@@ -693,6 +729,10 @@
         },
         {
           "ars": "38200",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "38100",
           "date": "2026-04-28"
         }
       ],
@@ -728,7 +768,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "83200",
+      "ars": "82900",
       "usd": 47.9,
       "weight": null,
       "usdSell": 57.96,
@@ -757,6 +797,10 @@
         },
         {
           "ars": "83200",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "82900",
           "date": "2026-04-28"
         }
       ],
@@ -787,7 +831,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "29600",
+      "ars": "29500",
       "usd": 17,
       "weight": null,
       "usdSell": 20.57,
@@ -816,6 +860,10 @@
         },
         {
           "ars": "29600",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "29500",
           "date": "2026-04-28"
         }
       ],
@@ -850,7 +898,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "59100",
+      "ars": "58900",
       "usd": 34,
       "weight": 0.5,
       "usdSell": 41.14,
@@ -904,6 +952,10 @@
         {
           "ars": "59100",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "58900",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -939,7 +991,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "105800",
+      "ars": "105400",
       "usd": 60,
       "weight": null,
       "usdSell": 73.7,
@@ -977,6 +1029,10 @@
         {
           "ars": "105800",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "105400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1011,7 +1067,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "114200",
+      "ars": "113800",
       "usd": 62.9,
       "weight": null,
       "usdSell": 79.57,
@@ -1044,6 +1100,10 @@
         },
         {
           "ars": "114200",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "113800",
           "date": "2026-04-28"
         }
       ],
@@ -1079,7 +1139,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "151600",
+      "ars": "151100",
       "usd": 89,
       "weight": null,
       "usdSell": 105.6,
@@ -1125,6 +1185,10 @@
         {
           "ars": "151600",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "151100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1157,7 +1221,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "29600",
+      "ars": "29500",
       "usd": 11.75,
       "weight": null,
       "usdSell": 20.63,
@@ -1199,6 +1263,10 @@
         {
           "ars": "29600",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "29500",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1232,7 +1300,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "86100",
+      "ars": "85800",
       "usd": 47.5,
       "weight": null,
       "usdSell": 59.95,
@@ -1274,6 +1342,10 @@
         {
           "ars": "86100",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "85800",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1305,7 +1377,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "200900",
+      "ars": "200200",
       "usd": 100,
       "weight": null,
       "usdSell": 140,
@@ -1351,6 +1423,10 @@
         {
           "ars": "200900",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "200200",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [],
@@ -1377,7 +1453,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "232500",
+      "ars": "231700",
       "usd": 120,
       "weight": null,
       "usdSell": 162,
@@ -1415,6 +1491,10 @@
         {
           "ars": "232500",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "231700",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1447,7 +1527,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "216700",
+      "ars": "216000",
       "usd": 110,
       "weight": null,
       "usdSell": 151,
@@ -1481,6 +1561,10 @@
         {
           "ars": "216700",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "216000",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1510,7 +1594,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "349500",
+      "ars": "348300",
       "usd": 185,
       "weight": null,
       "usdSell": 243.5,
@@ -1544,6 +1628,10 @@
         {
           "ars": "349500",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "348300",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -1571,10 +1659,10 @@
         "images/productos/26/main.jpg",
         "images/productos/26/2.jpg"
       ],
-      "badge": "disponible",
-      "badgeColor": "#25D366",
+      "badge": "A Pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "9500",
+      "ars": "9400",
       "usd": 4.75,
       "weight": null,
       "usdSell": 6.55,
@@ -1620,20 +1708,24 @@
         {
           "ars": "9500",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "9400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/mascara-capilar-karseell-maca-power-500ml/1314793",
-          "price": 4.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-28T07:57:38.005642+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 27,
@@ -1647,8 +1739,8 @@
         "images/productos/27/main.jpg",
         "images/productos/27/2.jpg"
       ],
-      "badge": "disponible",
-      "badgeColor": "#25D366",
+      "badge": "A Pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "6400",
       "usd": 3.5,
@@ -1693,15 +1785,15 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/cera-capilar-karseell-maca-hair-style-wax-100g/1286113",
-          "price": 3.5,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-28T07:57:38.463720+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 28,
@@ -1718,10 +1810,10 @@
         "images/productos/28/4.jpg",
         "images/productos/28/5.jpg"
       ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
+      "badge": "disponible",
+      "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "294100",
+      "ars": "293100",
       "usd": 162,
       "weight": null,
       "usdSell": 204.93,
@@ -1755,20 +1847,24 @@
         {
           "ars": "294100",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "293100",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/aspiradores/robo-aspirador-xiaomi-robot-vacuum-s40-bhr084aeu-branco/1251340",
-          "price": 162,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-28T07:57:38.958746+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 29,
@@ -1782,10 +1878,10 @@
         "images/productos/29/main.jpg",
         "images/productos/29/2.jpg"
       ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
+      "badge": "disponible",
+      "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "150700",
+      "ars": "150200",
       "usd": 86.75,
       "weight": null,
       "usdSell": 104.97,
@@ -1819,20 +1915,24 @@
         {
           "ars": "150700",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "150200",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/cafeteira-xiaomi-semi-automatic-espresso-machine-bhr9798eu-220v-prata/1197112",
-          "price": 86.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-28T07:57:39.393013+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 30,
@@ -1853,7 +1953,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "143500",
+      "ars": "143000",
       "usd": 79,
       "weight": null,
       "usdSell": 99.94,
@@ -1878,6 +1978,10 @@
         },
         {
           "ars": "143500",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "143000",
           "date": "2026-04-28"
         }
       ],
@@ -1909,7 +2013,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "72700",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -1934,6 +2038,10 @@
         },
         {
           "ars": "72700",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "72400",
           "date": "2026-04-28"
         }
       ],
@@ -1965,7 +2073,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "72700",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -1990,6 +2098,10 @@
         },
         {
           "ars": "72700",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "72400",
           "date": "2026-04-28"
         }
       ],
@@ -2021,7 +2133,7 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "72700",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -2046,6 +2158,10 @@
         },
         {
           "ars": "72700",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "72400",
           "date": "2026-04-28"
         }
       ],
@@ -2077,7 +2193,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "72700",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -2102,6 +2218,10 @@
         },
         {
           "ars": "72700",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "72400",
           "date": "2026-04-28"
         }
       ],
@@ -2133,7 +2253,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "72700",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -2158,6 +2278,10 @@
         },
         {
           "ars": "72700",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "72400",
           "date": "2026-04-28"
         }
       ],
@@ -2189,7 +2313,7 @@
       "badge": "Disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "72700",
+      "ars": "72400",
       "usd": 40,
       "weight": null,
       "usdSell": 50.6,
@@ -2215,6 +2339,10 @@
         {
           "ars": "72700",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "72400",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
@@ -2231,71 +2359,75 @@
       "verifyPrice": true
     },
     {
-      "id": 37,
+      "id": 38,
       "cat": "Celulares",
       "calcSub": "gruesa",
-      "name": "Smartphone Xiaomi Poco C85 Global 128GB 6GB RAM Dual SIM Pantalla 6.9\"",
+      "name": "Smartphone Motorola Moto G15 XT-2521-2 128GB 4GB RAM Dual SIM Pantalla 6.72\"",
       "sub": "",
-      "desc": "El POCO C85 combina el rendimiento y la practicidad con la pantalla IPS IPS de 120 Hz, asegurando imágenes fluidas y colores afilados. Su cámara principal de 50 MP captura fotos detalladas y videos de calidad para la vida cotidiana. Tiene una conexión 4G para la navegación rápida y rápida, así como la certificación IP64, lo que garantiza la resistencia al polvo y las salpicaduras. La batería a largo plazo garantiza más tiempo de uso libre de preocupación, ideal para rutinas intensas.",
-      "img": "images/productos/37/main.jpg",
+      "desc": "El Motorola Moto G15 XT2521-2 combina rendimiento y diseño en un dispositivo accesible. Su pantalla FHD+ de 6.72\\\" ofrece imágenes nítidas, ideal para entretenimiento y navegación. Equipado con el procesador Helio G81 Extreme y 4GB de RAM, garantiza fluidez en tareas diarias. La cámara principal de 50 MP captura fotos detalladas, mientras que la batería de 5200 mAh proporciona autonomía prolongada. Con Android 15 y almacenamiento expandible, es una opción equilibrada para usuarios exigentes.",
+      "img": "images/productos/38/main.jpg",
       "images": [
-        "images/productos/37/main.jpg",
-        "images/productos/37/2.jpg",
-        "images/productos/37/3.jpg",
-        "images/productos/37/4.jpg",
-        "images/productos/37/5.jpg",
-        "images/productos/37/6.jpg"
+        "images/productos/38/main.jpg",
+        "images/productos/38/2.jpg",
+        "images/productos/38/3.jpg",
+        "images/productos/38/4.jpg",
+        "images/productos/38/5.jpg",
+        "images/productos/38/6.jpg"
       ],
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "175100",
-      "usd": 105.45,
+      "ars": "192400",
+      "usd": 116.82,
       "weight": null,
-      "usdSell": 122,
-      "activo": true,
+      "usdSell": 134.5,
+      "activo": false,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
         {
-          "ars": "167900",
+          "ars": "185400",
           "date": "2026-04-23"
         },
         {
-          "ars": "167600",
+          "ars": "185100",
           "date": "2026-04-23"
         },
         {
-          "ars": "164800",
+          "ars": "185400",
+          "date": "2026-04-23"
+        },
+        {
+          "ars": "182500",
           "date": "2026-04-24"
         },
         {
-          "ars": "167600",
+          "ars": "185400",
           "date": "2026-04-24"
         },
         {
-          "ars": "168800",
+          "ars": "192335",
           "date": "2026-04-28"
         },
         {
-          "ars": "174460",
+          "ars": "186700",
           "date": "2026-04-28"
         },
         {
-          "ars": "168800",
+          "ars": "192400",
           "date": "2026-04-28"
         },
         {
-          "ars": "174500",
+          "ars": "193100",
           "date": "2026-04-28"
         },
         {
-          "ars": "175100",
+          "ars": "192400",
           "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
         {
-          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-poco-c85-global-128gb-6gb-ram-dual-sim-tela-69-verde/1268348",
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g15-xt-2521-2-128gb-4gb-ram-dual-sim-tela-672-verde/1212396",
           "price": null,
           "currency": "USD",
           "isPrimary": true
@@ -2309,8 +2441,8 @@
     {
       "id": 39,
       "cat": "Celulares",
-      "calcSub": "nada",
-      "name": "Smartphone Motorola Moto G05 XT-2523-2 128GB 4GB RAM Dual SIM Pantalla 6.67\"",
+      "calcSub": "gruesa",
+      "name": "Smartphone Motorola Moto G05 XT-2523-2 128GB 4GB RAM Dual SIM Pantalla 6.67\" - Rojo",
       "sub": "",
       "desc": "El smartphone Moto G05 combina un rendimiento eficiente y características modernas. Su pantalla LCD IPS de 90Hz ofrece imágenes más fluidas. Equipado con un procesador de 8 núcleos, garantiza una buena respuesta en la multitarea. La cámara principal de 50 MP captura fotos detalladas con calidad. Con conexión 4G, proporciona una navegación estable. La certificación IP54 proporciona resistencia a las salpicaduras y al polvo, mientras que la batería de larga duración permite más tiempo de uso.",
       "img": "images/productos/39/main.jpg",
@@ -2325,10 +2457,10 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "183700",
-      "usd": 128,
+      "ars": "181700",
+      "usd": 110,
       "weight": null,
-      "usdSell": 128,
+      "usdSell": 127,
       "activo": true,
       "fechaAlta": "2026-04-23",
       "priceHistory": [
@@ -2367,11 +2499,19 @@
         {
           "ars": "183700",
           "date": "2026-04-28"
+        },
+        {
+          "ars": "183100",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "181700",
+          "date": "2026-04-28"
         }
       ],
       "referenceLinks": [
         {
-          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g05-xt-2523-2-128gb-4gb-ram-dual-sim-tela-667-verde/1227017",
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g05-xt-2523-2-128gb-4gb-ram-dual-sim-tela-667-vermelho/1213980",
           "price": null,
           "currency": "USD",
           "isPrimary": true
@@ -2379,7 +2519,7 @@
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": false,
+      "verifyPrice": true,
       "publicSub": ""
     },
     {
@@ -2402,7 +2542,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "258800",
+      "ars": "257900",
       "usd": 149,
       "weight": null,
       "usdSell": 180.29,
@@ -2423,6 +2563,10 @@
         },
         {
           "ars": "258800",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "257900",
           "date": "2026-04-28"
         }
       ],
@@ -2459,7 +2603,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "310900",
+      "ars": "309800",
       "usd": 179,
       "weight": null,
       "usdSell": 216.59,
@@ -2480,6 +2624,10 @@
         },
         {
           "ars": "310900",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "309800",
           "date": "2026-04-28"
         }
       ],
@@ -2514,7 +2662,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "588700",
+      "ars": "586600",
       "usd": 339,
       "weight": null,
       "usdSell": 410.19,
@@ -2535,6 +2683,10 @@
         },
         {
           "ars": "588700",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "586600",
           "date": "2026-04-28"
         }
       ],
@@ -2570,7 +2722,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "234500",
+      "ars": "233600",
       "usd": 135,
       "weight": null,
       "usdSell": 163.35,
@@ -2591,6 +2743,10 @@
         },
         {
           "ars": "234500",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "233600",
           "date": "2026-04-28"
         }
       ],
@@ -2626,7 +2782,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1213800",
+      "ars": "1209500",
       "usd": 699,
       "weight": null,
       "usdSell": 845.79,
@@ -2647,6 +2803,10 @@
         },
         {
           "ars": "1213800",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "1209500",
           "date": "2026-04-28"
         }
       ],
@@ -2682,7 +2842,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "998500",
+      "ars": "995000",
       "usd": 575,
       "weight": null,
       "usdSell": 695.75,
@@ -2703,6 +2863,10 @@
         },
         {
           "ars": "998500",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "995000",
           "date": "2026-04-28"
         }
       ],
@@ -2738,7 +2902,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "911600",
+      "ars": "908500",
       "usd": 525,
       "weight": null,
       "usdSell": 635.25,
@@ -2759,6 +2923,10 @@
         },
         {
           "ars": "911600",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "908500",
           "date": "2026-04-28"
         }
       ],
@@ -2795,7 +2963,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "866500",
+      "ars": "863500",
       "usd": 499,
       "weight": null,
       "usdSell": 603.79,
@@ -2816,6 +2984,10 @@
         },
         {
           "ars": "866500",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "863500",
           "date": "2026-04-28"
         }
       ],
@@ -2851,7 +3023,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "755400",
+      "ars": "752700",
       "usd": 435,
       "weight": null,
       "usdSell": 526.35,
@@ -2872,6 +3044,10 @@
         },
         {
           "ars": "755400",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "752700",
           "date": "2026-04-28"
         }
       ],
@@ -2906,7 +3082,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "692900",
+      "ars": "690400",
       "usd": 399,
       "weight": null,
       "usdSell": 482.79,
@@ -2927,6 +3103,10 @@
         },
         {
           "ars": "692900",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "690400",
           "date": "2026-04-28"
         }
       ],
@@ -2963,7 +3143,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "675500",
+      "ars": "673100",
       "usd": 389,
       "weight": null,
       "usdSell": 470.69,
@@ -2984,6 +3164,10 @@
         },
         {
           "ars": "675500",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "673100",
           "date": "2026-04-28"
         }
       ],
@@ -3018,7 +3202,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "519200",
+      "ars": "517400",
       "usd": 299,
       "weight": null,
       "usdSell": 361.79,
@@ -3039,6 +3223,10 @@
         },
         {
           "ars": "519200",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "517400",
           "date": "2026-04-28"
         }
       ],
@@ -3070,7 +3258,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "519200",
+      "ars": "517400",
       "usd": 299,
       "weight": null,
       "usdSell": 361.79,
@@ -3091,6 +3279,10 @@
         },
         {
           "ars": "519200",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "517400",
           "date": "2026-04-28"
         }
       ],
@@ -3122,7 +3314,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "205500",
+      "ars": "204800",
       "usd": 127,
       "weight": null,
       "usdSell": 143.16,
@@ -3143,6 +3335,10 @@
         },
         {
           "ars": "205500",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "204800",
           "date": "2026-04-28"
         }
       ],
@@ -3174,7 +3370,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "505200",
+      "ars": "503400",
       "usd": 320,
       "weight": null,
       "usdSell": 352,
@@ -3191,6 +3387,10 @@
         },
         {
           "ars": "505200",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "503400",
           "date": "2026-04-28"
         }
       ],
@@ -3226,7 +3426,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "287600",
+      "ars": "286600",
       "usd": 180,
       "weight": null,
       "usdSell": 200.4,
@@ -3243,6 +3443,10 @@
         },
         {
           "ars": "287600",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "286600",
           "date": "2026-04-28"
         }
       ],
@@ -3273,11 +3477,11 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "21600",
+      "ars": "21500",
       "usd": 15,
       "weight": null,
       "usdSell": 15,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-24",
       "priceHistory": [
         {
@@ -3290,6 +3494,10 @@
         },
         {
           "ars": "21600",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "21500",
           "date": "2026-04-28"
         }
       ],
@@ -3313,7 +3521,7 @@
       "badge": "A pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1120000",
+      "ars": "1116100",
       "usd": 645,
       "weight": null,
       "usdSell": 780.45,
@@ -3330,6 +3538,10 @@
         },
         {
           "ars": "1120000",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "1116100",
           "date": "2026-04-28"
         }
       ],
@@ -3361,7 +3573,7 @@
       "badge": "A pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1120000",
+      "ars": "1116100",
       "usd": 645,
       "weight": null,
       "usdSell": 780.45,
@@ -3378,6 +3590,10 @@
         },
         {
           "ars": "1120000",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "1116100",
           "date": "2026-04-28"
         }
       ],
@@ -3409,7 +3625,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1126900",
+      "ars": "1123000",
       "usd": 649,
       "weight": null,
       "usdSell": 785.29,
@@ -3426,6 +3642,10 @@
         },
         {
           "ars": "1126900",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "1123000",
           "date": "2026-04-28"
         }
       ],
@@ -3462,7 +3682,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1120000",
+      "ars": "1116100",
       "usd": 645,
       "weight": null,
       "usdSell": 780.45,
@@ -3479,6 +3699,10 @@
         },
         {
           "ars": "1120000",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "1116100",
           "date": "2026-04-28"
         }
       ],
@@ -3514,7 +3738,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1040100",
+      "ars": "1036500",
       "usd": 599,
       "weight": null,
       "usdSell": 724.79,
@@ -3531,6 +3755,10 @@
         },
         {
           "ars": "1040100",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "1036500",
           "date": "2026-04-28"
         }
       ],
@@ -3566,7 +3794,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "1120000",
+      "ars": "1116100",
       "usd": 645,
       "weight": null,
       "usdSell": 780.45,
@@ -3583,6 +3811,10 @@
         },
         {
           "ars": "1120000",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "1116100",
           "date": "2026-04-28"
         }
       ],
@@ -3617,7 +3849,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "640800",
+      "ars": "638500",
       "usd": 369,
       "weight": null,
       "usdSell": 446.49,
@@ -3634,6 +3866,10 @@
         },
         {
           "ars": "640800",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "638500",
           "date": "2026-04-28"
         }
       ],
@@ -3668,7 +3904,7 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "623400",
+      "ars": "621200",
       "usd": 359,
       "weight": null,
       "usdSell": 434.39,
@@ -3685,6 +3921,10 @@
         },
         {
           "ars": "623400",
+          "date": "2026-04-28"
+        },
+        {
+          "ars": "621200",
           "date": "2026-04-28"
         }
       ],
@@ -3714,8 +3954,8 @@
         "images/productos/65/main.jpg",
         "images/productos/65/2.jpg"
       ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
+      "badge": null,
+      "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "9000",
       "usd": 4.75,
@@ -3729,7 +3969,7 @@
           "date": "2026-04-28"
         },
         {
-          "ars": "9100",
+          "ars": "8700",
           "date": "2026-04-28"
         },
         {
@@ -3740,9 +3980,320 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cosmeticos/oleo-reparador-karseell-maca-power-50ml/1310214",
-          "price": null,
+          "price": 4.75,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-04-28T18:53:59.081307+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 66,
+      "cat": "Belleza",
+      "publicSub": "Perfumes",
+      "calcSub": "aceite",
+      "name": "Body Splash Victoria's Secret Mango Temptation 250ml",
+      "sub": "",
+      "desc": "Con un irresistible toque tropical, el bálsamo corporal Mango Temptation de Victoria's Secret es perfecto para quienes desean sentirse ligeras, femeninas y radiantes a diario. Su fragancia floral-frutal combina el jugoso mango con notas de hibisco, creando un aroma dulce, refrescante y cautivador. Aplicado en spray, es ideal para uso diario, dejando la piel ligeramente perfumada y fresca durante todo el día.",
+      "img": "images/productos/66/main.jpg",
+      "images": [
+        "images/productos/66/main.jpg"
+      ],
+      "badge": null,
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "22300",
+      "usd": 11.75,
+      "weight": null,
+      "usdSell": 15.54,
+      "activo": true,
+      "fechaAlta": "2026-04-28",
+      "priceHistory": [
+        {
+          "ars": "22300",
+          "date": "2026-04-28"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/body-splash/body-splash-victorias-secret-mango-temptation-250ml/1359770",
+          "price": 11.75,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-28T18:53:59.660560+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 67,
+      "cat": "Celulares",
+      "publicSub": "",
+      "calcSub": "gruesa",
+      "name": "Smartphone Xiaomi Redmi 15C Global 256GB 8GB RAM Dual SIM Pantalla 6.9\" - Negro",
+      "sub": "",
+      "desc": "El Xiaomi Redmi 15C ofrece una gran pantalla de 6,9\\\" para una experiencia visual envolvente, con diseño moderno y elegante. Su cámara principal de 50 MP toma fotos claras en todo momento, y la batería de larga duración asegura energía para todo el día. Con buen rendimiento y funciones inteligentes, es perfecto para quienes buscan practicidad, estilo y calidad en un solo teléfono.\\ \\",
+      "img": "images/productos/67/main.jpg",
+      "images": [
+        "images/productos/67/main.jpg",
+        "images/productos/67/2.jpg",
+        "images/productos/67/3.jpg",
+        "images/productos/67/4.jpg",
+        "images/productos/67/5.jpg",
+        "images/productos/67/6.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "228500",
+      "usd": 139.75,
+      "weight": null,
+      "usdSell": 159.73,
+      "activo": true,
+      "fechaAlta": "2026-04-28",
+      "priceHistory": [
+        {
+          "ars": "228500",
+          "date": "2026-04-28"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-15c-global-256gb-8gb-ram-dual-sim-tela-69-preto/1255515",
+          "price": 139.75,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-28T20:06:35.084019+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 68,
+      "cat": "Celulares",
+      "publicSub": "",
+      "calcSub": "slim",
+      "name": "Smartphone Motorola Moto G35 5G XT-2433-5 128GB 4GB RAM Dual SIM Pantalla 6.72\" Negro (Caja Slim)",
+      "sub": "",
+      "desc": "El Motorola Moto G35 5G (XT-2433-5) es un smartphone que combina rendimiento eficiente y características avanzadas. Equipado con el procesador Unisoc T760 y 8 GB de RAM (ampliable hasta 24 GB con RAM Boost), ofrece una operación fluida para multitareas y aplicaciones exigentes. Su pantalla IPS LCD de 6,72 pulgadas con resolución FHD+ (2400 x 1080) y tasa de refresco de 120 Hz proporciona imágenes nítidas y desplazamiento suave.",
+      "img": "images/productos/68/main.jpg",
+      "images": [
+        "images/productos/68/main.jpg",
+        "images/productos/68/2.jpg",
+        "images/productos/68/3.jpg",
+        "images/productos/68/4.jpg",
+        "images/productos/68/5.jpg",
+        "images/productos/68/6.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "212500",
+      "usd": 138,
+      "weight": null,
+      "usdSell": 155.04,
+      "activo": true,
+      "fechaAlta": "2026-04-28",
+      "priceHistory": [
+        {
+          "ars": "212500",
+          "date": "2026-04-28"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g35-5g-xt-2433-5-128gb-4gb-ram-dual-sim-tela-672-preto-caixa-slim/1201307",
+          "price": 138,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-28T20:06:36.556307+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": false
+    },
+    {
+      "id": 69,
+      "cat": "Celulares",
+      "publicSub": "",
+      "calcSub": "slim",
+      "name": "Smartphone Samsung Galaxy A36 5G A366E 256GB 8GB RAM Dual SIM Pantalla 6.7\" - Negro (Caja Slim)",
+      "sub": "",
+      "desc": "Durabilidad, rendimiento y estilo en un solo equipo. El Galaxy A36 5G ofrece protección IP67 contra agua y polvo, y pantalla con vidrio Gorilla Glass Victus+. Su procesador Snapdragon 6 Gen 1 y 8 GB de RAM aseguran velocidad, mientras que su cámara de 50 MP y batería de 5.000 mAh con carga rápida lo hacen ideal para cualquier rutina.",
+      "img": "images/productos/69/main.jpg",
+      "images": [
+        "images/productos/69/main.jpg",
+        "images/productos/69/2.jpg",
+        "images/productos/69/3.jpg",
+        "images/productos/69/4.jpg",
+        "images/productos/69/5.jpg",
+        "images/productos/69/6.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "444200",
+      "usd": 282,
+      "weight": null,
+      "usdSell": 310.56,
+      "activo": true,
+      "fechaAlta": "2026-04-28",
+      "priceHistory": [
+        {
+          "ars": "444200",
+          "date": "2026-04-28"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a36-5g-a366e-256gb-8gb-ram-dual-sim-tela-67-preto-caixa-slim/1199369",
+          "price": 282,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-28T20:19:36.599756+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 70,
+      "cat": "Celulares",
+      "publicSub": "",
+      "calcSub": "gruesa",
+      "name": "Smartphone Xiaomi Poco C85 Global 256GB 8GB RAM Dual SIM Pantalla 6.9\" Negro",
+      "sub": "",
+      "desc": "O Xiaomi POCO C85 destaca-se como uma opção de entrada robusta e eficiente para 2026. Com uma tela expansiva de 6.9 polegadas, oferece uma experiência visual ampla para streaming e produtividade. Equipado com 256GB de armazenamento e 8GB de RAM, este modelo garante multitarefa fluida sob o sistema HyperOS. Sua bateria de 5160 mAh proporciona autonomia para o dia todo, sendo ideal para quem busca custo-benefício e alto desempenho em tarefas cotidianas.",
+      "img": "images/productos/70/main.jpg",
+      "images": [
+        "images/productos/70/main.jpg",
+        "images/productos/70/2.jpg",
+        "images/productos/70/3.jpg",
+        "images/productos/70/4.jpg",
+        "images/productos/70/5.jpg",
+        "images/productos/70/6.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "228500",
+      "usd": 139.75,
+      "weight": null,
+      "usdSell": 159.73,
+      "activo": true,
+      "fechaAlta": "2026-04-28",
+      "priceHistory": [
+        {
+          "ars": "228500",
+          "date": "2026-04-28"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-poco-c85-global-256gb-8gb-ram-dual-sim-tela-69-preto/1263398",
+          "price": 139.75,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-28T20:30:32.839634+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 71,
+      "cat": "Celulares",
+      "publicSub": "",
+      "calcSub": "gruesa",
+      "name": "Smartphone Motorola Moto G06 XT-2535-2 128GB 4GB RAM Dual SIM Pantalla 6.88\" Azul",
+      "sub": "",
+      "desc": "El Moto G06 combina un rendimiento eficiente y un diseño moderno para el uso diario. Su pantalla LCD IPS de 120Hz ofrece imágenes fluidas y colores vivos, ideales para la navegación y el entretenimiento. La cámara principal de 50 MP con resolución de 1080p captura fotos claras y detalladas en cualquier entorno. Tiene una conexión 4G para una navegación estable y una batería de larga duración que se mantiene al día con su rutina.",
+      "img": "images/productos/71/main.jpg",
+      "images": [
+        "images/productos/71/main.jpg",
+        "images/productos/71/2.jpg",
+        "images/productos/71/3.jpg",
+        "images/productos/71/4.jpg",
+        "images/productos/71/5.jpg",
+        "images/productos/71/6.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "154900",
+      "usd": 93,
+      "weight": null,
+      "usdSell": 108.3,
+      "activo": true,
+      "fechaAlta": "2026-04-28",
+      "priceHistory": [
+        {
+          "ars": "154900",
+          "date": "2026-04-28"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g06-xt-2535-2-128gb-4gb-ram-dual-sim-tela-688-azul/1316032",
+          "price": 93,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-28T20:44:56.967689+00:00"
+        }
+      ],
+      "status": "enriched",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 72,
+      "cat": "Celulares",
+      "publicSub": "",
+      "calcSub": "gruesa",
+      "name": "Smartphone Xiaomi Poco C85 Global 128GB 6GB RAM Dual SIM Pantalla 6.9\" Negro",
+      "sub": "",
+      "desc": "Celular con pantalla amplia de 6,9\\\" y tasa de 120¿Hz, ideal para videos y redes sociales. Con 6¿GB de RAM, 128¿GB de almacenamiento y procesador Helio G81, ofrece fluidez en el uso diario. Su cámara principal de 50¿MP toma fotos claras, y la batería de 6000¿mAh con carga de 33¿W permite muchas horas de uso. Ideal para quienes buscan un smartphone rápido, con buena cámara y batería duradera.",
+      "img": "images/productos/72/main.jpg",
+      "images": [
+        "images/productos/72/main.jpg",
+        "images/productos/72/2.jpg",
+        "images/productos/72/3.jpg",
+        "images/productos/72/4.jpg",
+        "images/productos/72/5.jpg",
+        "images/productos/72/6.jpg"
+      ],
+      "badge": "disponible",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "184400",
+      "usd": 111.75,
+      "weight": null,
+      "usdSell": 128.93,
+      "activo": true,
+      "fechaAlta": "2026-04-28",
+      "priceHistory": [
+        {
+          "ars": "184400",
+          "date": "2026-04-28"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-poco-c85-global-128gb-6gb-ram-dual-sim-tela-69-preto/1258486",
+          "price": 111.75,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-04-28T20:44:58.173323+00:00"
         }
       ],
       "status": "enriched",
@@ -4146,7 +4697,12 @@
         "id": "belleza",
         "name": "Belleza",
         "icon": "📦",
-        "subcategories": [],
+        "subcategories": [
+          {
+            "id": "Perfumes",
+            "label": "Perfumes"
+          }
+        ],
         "subtypes": [
           {
             "id": "cera",
@@ -4245,16 +4801,6 @@
     "whatsapp": "5491156596187",
     "vendedores": [
       {
-        "id": "1154870326",
-        "nombre": "Carlos",
-        "whatsapp": "5491154870326"
-      },
-      {
-        "id": "ru",
-        "nombre": "Ru",
-        "whatsapp": "5491154125271"
-      },
-      {
         "id": "gab",
         "nombre": "gab",
         "whatsapp": "5491169651009"
@@ -4272,8 +4818,8 @@
         "activo": true
       }
     ],
-    "dollarAuto": 1430,
-    "dollarUpdated": "2026-04-28T07:43:32.866960+00:00",
+    "dollarAuto": 1430.0,
+    "dollarUpdated": "2026-04-29T00:08:27.340210+00:00",
     "dollarManual": null,
     "dollarType": "blue",
     "paymentMethods": [
@@ -4302,6 +4848,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-28T16:18:04.399Z",
+  "lastSync": "2026-04-28T21:30:45.058Z",
   "lastPriceCheck": null
 }
