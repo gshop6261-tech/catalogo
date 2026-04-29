@@ -14909,7 +14909,7 @@
       "usd": 95,
       "usdSell": 110.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -14952,7 +14952,7 @@
       "usd": 95,
       "usdSell": 110.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -14995,7 +14995,7 @@
       "usd": 95,
       "usdSell": 110.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15038,7 +15038,7 @@
       "usd": 95,
       "usdSell": 110.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15082,7 +15082,7 @@
       "usd": 102.75,
       "usdSell": 119.03,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15122,7 +15122,7 @@
       "usd": 103,
       "usdSell": 119.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15162,7 +15162,7 @@
       "usd": 103,
       "usdSell": 119.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15206,7 +15206,7 @@
       "usd": 104,
       "usdSell": 120.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15249,7 +15249,7 @@
       "usd": 122,
       "usdSell": 140.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15293,7 +15293,7 @@
       "usd": 122,
       "usdSell": 140.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15336,7 +15336,7 @@
       "usd": 122,
       "usdSell": 140.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15379,7 +15379,7 @@
       "usd": 122,
       "usdSell": 140.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15422,7 +15422,7 @@
       "usd": 122,
       "usdSell": 140.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15466,7 +15466,7 @@
       "usd": 126,
       "usdSell": 144.6,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15506,7 +15506,7 @@
       "usd": 127,
       "usdSell": 145.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15549,7 +15549,7 @@
       "usd": 129.75,
       "usdSell": 148.73,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15592,7 +15592,7 @@
       "usd": 129.75,
       "usdSell": 148.73,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15636,7 +15636,7 @@
       "usd": 130,
       "usdSell": 149,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15680,7 +15680,7 @@
       "usd": 130,
       "usdSell": 149,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15724,7 +15724,7 @@
       "usd": 130,
       "usdSell": 149,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15761,7 +15761,7 @@
       "usd": 133,
       "usdSell": 152.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15798,7 +15798,7 @@
       "usd": 133,
       "usdSell": 152.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15842,7 +15842,7 @@
       "usd": 133,
       "usdSell": 152.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15886,7 +15886,7 @@
       "usd": 133,
       "usdSell": 152.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15930,7 +15930,7 @@
       "usd": 133,
       "usdSell": 152.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -15974,7 +15974,7 @@
       "usd": 134,
       "usdSell": 153.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16019,7 +16019,7 @@
       "usd": 134,
       "usdSell": 153.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16056,7 +16056,7 @@
       "usd": 139.75,
       "usdSell": 159.73,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16100,7 +16100,7 @@
       "usd": 139.75,
       "usdSell": 159.73,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16144,7 +16144,7 @@
       "usd": 144,
       "usdSell": 164.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16188,7 +16188,7 @@
       "usd": 144,
       "usdSell": 164.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16232,7 +16232,7 @@
       "usd": 144,
       "usdSell": 164.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16276,7 +16276,7 @@
       "usd": 144,
       "usdSell": 164.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16319,7 +16319,7 @@
       "usd": 145,
       "usdSell": 165.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16359,7 +16359,7 @@
       "usd": 153.5,
       "usdSell": 174.85,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16403,7 +16403,7 @@
       "usd": 153.5,
       "usdSell": 174.85,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16443,7 +16443,7 @@
       "usd": 155,
       "usdSell": 176.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16480,7 +16480,7 @@
       "usd": 157,
       "usdSell": 178.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16520,7 +16520,7 @@
       "usd": 157,
       "usdSell": 178.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16564,7 +16564,7 @@
       "usd": 159,
       "usdSell": 180.9,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16609,7 +16609,7 @@
       "usd": 159,
       "usdSell": 180.9,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16653,7 +16653,7 @@
       "usd": 160,
       "usdSell": 182,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16697,7 +16697,7 @@
       "usd": 160,
       "usdSell": 182,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16741,7 +16741,7 @@
       "usd": 160,
       "usdSell": 182,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16781,7 +16781,7 @@
       "usd": 162,
       "usdSell": 184.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16821,7 +16821,7 @@
       "usd": 163,
       "usdSell": 185.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16861,7 +16861,7 @@
       "usd": 165,
       "usdSell": 187.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16901,7 +16901,7 @@
       "usd": 165,
       "usdSell": 187.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16945,7 +16945,7 @@
       "usd": 173,
       "usdSell": 196.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -16989,7 +16989,7 @@
       "usd": 177,
       "usdSell": 200.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17033,7 +17033,7 @@
       "usd": 177,
       "usdSell": 200.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17077,7 +17077,7 @@
       "usd": 180,
       "usdSell": 204,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17121,7 +17121,7 @@
       "usd": 180,
       "usdSell": 204,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17161,7 +17161,7 @@
       "usd": 185,
       "usdSell": 209.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17201,7 +17201,7 @@
       "usd": 185,
       "usdSell": 209.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17245,7 +17245,7 @@
       "usd": 185,
       "usdSell": 209.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17289,7 +17289,7 @@
       "usd": 188,
       "usdSell": 212.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17333,7 +17333,7 @@
       "usd": 188,
       "usdSell": 212.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17377,7 +17377,7 @@
       "usd": 188,
       "usdSell": 212.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17421,7 +17421,7 @@
       "usd": 194,
       "usdSell": 219.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17461,7 +17461,7 @@
       "usd": 222,
       "usdSell": 250.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17501,7 +17501,7 @@
       "usd": 222,
       "usdSell": 250.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17545,7 +17545,7 @@
       "usd": 230,
       "usdSell": 259,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17589,7 +17589,7 @@
       "usd": 243,
       "usdSell": 273.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17629,7 +17629,7 @@
       "usd": 243,
       "usdSell": 273.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17673,7 +17673,7 @@
       "usd": 246,
       "usdSell": 276.6,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17716,7 +17716,7 @@
       "usd": 246,
       "usdSell": 276.6,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17759,7 +17759,7 @@
       "usd": 246,
       "usdSell": 276.6,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17803,7 +17803,7 @@
       "usd": 248,
       "usdSell": 278.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17843,7 +17843,7 @@
       "usd": 253,
       "usdSell": 284.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17883,7 +17883,7 @@
       "usd": 253,
       "usdSell": 284.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17923,7 +17923,7 @@
       "usd": 253,
       "usdSell": 284.3,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -17967,7 +17967,7 @@
       "usd": 258,
       "usdSell": 289.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18011,7 +18011,7 @@
       "usd": 265,
       "usdSell": 297.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18051,7 +18051,7 @@
       "usd": 275,
       "usdSell": 308.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18095,7 +18095,7 @@
       "usd": 282,
       "usdSell": 316.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18138,7 +18138,7 @@
       "usd": 282,
       "usdSell": 316.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18181,7 +18181,7 @@
       "usd": 282,
       "usdSell": 316.2,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18221,7 +18221,7 @@
       "usd": 299,
       "usdSell": 334.9,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18265,7 +18265,7 @@
       "usd": 299,
       "usdSell": 334.9,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18305,7 +18305,7 @@
       "usd": 334,
       "usdSell": 367.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18345,7 +18345,7 @@
       "usd": 334,
       "usdSell": 367.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18385,7 +18385,7 @@
       "usd": 334,
       "usdSell": 367.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18429,7 +18429,7 @@
       "usd": 334,
       "usdSell": 367.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18473,7 +18473,7 @@
       "usd": 338,
       "usdSell": 371.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18517,7 +18517,7 @@
       "usd": 338,
       "usdSell": 371.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18561,7 +18561,7 @@
       "usd": 340,
       "usdSell": 374,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18601,7 +18601,7 @@
       "usd": 340,
       "usdSell": 374,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18646,7 +18646,7 @@
       "usd": 364,
       "usdSell": 400.4,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18690,7 +18690,7 @@
       "usd": 365,
       "usdSell": 401.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18730,7 +18730,7 @@
       "usd": 380,
       "usdSell": 418,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18770,7 +18770,7 @@
       "usd": 380,
       "usdSell": 418,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18810,7 +18810,7 @@
       "usd": 407,
       "usdSell": 447.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18850,7 +18850,7 @@
       "usd": 407,
       "usdSell": 447.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18890,7 +18890,7 @@
       "usd": 407,
       "usdSell": 447.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18930,7 +18930,7 @@
       "usd": 407,
       "usdSell": 447.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -18970,7 +18970,7 @@
       "usd": 407,
       "usdSell": 447.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19010,7 +19010,7 @@
       "usd": 407,
       "usdSell": 447.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19050,7 +19050,7 @@
       "usd": 407,
       "usdSell": 447.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19090,7 +19090,7 @@
       "usd": 407,
       "usdSell": 447.7,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19134,7 +19134,7 @@
       "usd": 440,
       "usdSell": 484,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19174,7 +19174,7 @@
       "usd": 448,
       "usdSell": 492.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19214,7 +19214,7 @@
       "usd": 448,
       "usdSell": 492.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19254,7 +19254,7 @@
       "usd": 448,
       "usdSell": 492.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19294,7 +19294,7 @@
       "usd": 448,
       "usdSell": 492.8,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19338,7 +19338,7 @@
       "usd": 569,
       "usdSell": 625.9,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19382,7 +19382,7 @@
       "usd": 569,
       "usdSell": 625.9,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19426,7 +19426,7 @@
       "usd": 569,
       "usdSell": 625.9,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19470,7 +19470,7 @@
       "usd": 645,
       "usdSell": 709.5,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19510,7 +19510,7 @@
       "usd": 679,
       "usdSell": 746.9,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19554,7 +19554,7 @@
       "usd": 679,
       "usdSell": 746.9,
       "weight": null,
-      "activo": true,
+      "activo": false,
       "fechaAlta": "2026-04-29",
       "priceHistory": [
         {
@@ -19569,1254 +19569,6 @@
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-04-29T17:03:19.384612+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 430,
-      "cat": "Consolas",
-      "calcSub": "playstation",
-      "name": "Jogo Resident Evil Village Golde Edition para PS5",
-      "sub": "",
-      "desc": "El paquete PS5 ofrece la experiencia definitiva de terror y supervivencia. La consola de nueva generación de Sony proporciona gráficos fotorrealistas y tiempos de carga casi inexistentes gracias a su SSD de ultra alta velocidad. Esta versión incluye el aclamado juego Resident Evil Village Gold Edition, que cuenta con el contenido adicional \\\"Expansión de los Winters",
-      "img": "images/productos/430/main.jpg",
-      "images": [
-        "images/productos/430/main.jpg",
-        "images/productos/430/2.jpg",
-        "images/productos/430/3.jpg",
-        "images/productos/430/4.jpg",
-        "images/productos/430/5.jpg",
-        "images/productos/430/6.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 30.75,
-      "usdSell": 50.33,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/playstation/jogo-resident-evil-village-golde-edition-para-ps5/1323658",
-          "price": 30.75,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:02:50.478838+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 431,
-      "cat": "Consolas",
-      "calcSub": "playstation",
-      "name": "Console Sony PlayStation 5 Slim CFI-2115 4K Edição Digital 825GB SSD",
-      "sub": "",
-      "desc": "La PlayStation 5 Slim es una consola compacta y moderna, con un rápido inicio de juegos y del sistema gracias al SSD. Sumérgete en mundos detallados con gráficos ultrarrealistas y sombreado avanzado gracias a la tecnología Ray Tracing. El controlador Dualsense con retroalimentación háptica y disparadores adaptativos aumenta la inmersión y ofrece un juego fluido y receptivo. Diseño único con disipador térmico mejorado para una experiencia de juego eficiente.",
-      "img": "images/productos/431/main.jpg",
-      "images": [
-        "images/productos/431/main.jpg",
-        "images/productos/431/2.jpg",
-        "images/productos/431/3.jpg",
-        "images/productos/431/4.jpg",
-        "images/productos/431/5.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 579.0,
-      "usdSell": 653.4,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/playstation/console-sony-playstation-5-slim-cfi-2115-4k-edicao-digital-825gb-ssd/1301458",
-          "price": 579.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:02:51.585867+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 432,
-      "cat": "Consolas",
-      "calcSub": "playstation",
-      "name": "Console Sony Playstation 5 Slim CFI-2115A 4K 1TB SSD - (HDR Disco)",
-      "sub": "",
-      "desc": "La PlayStation 5 Slim es una consola compacta y moderna, con un rápido inicio de juegos y del sistema gracias al SSD. Sumérgete en mundos detallados con gráficos ultrarrealistas y sombreado avanzado gracias a la tecnología Ray Tracing. El controlador Dualsense con retroalimentación háptica y disparadores adaptativos aumenta la inmersión y ofrece un juego fluido y receptivo. Diseño único con disipador térmico mejorado para una experiencia de juego eficiente.",
-      "img": "images/productos/432/main.jpg",
-      "images": [
-        "images/productos/432/main.jpg",
-        "images/productos/432/2.jpg",
-        "images/productos/432/3.jpg",
-        "images/productos/432/4.jpg",
-        "images/productos/432/5.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 649.0,
-      "usdSell": 730.4,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/playstation/console-sony-playstation-5-slim-cfi-2115a-4k-1tb-ssd-hdr-disco/1301441",
-          "price": 649.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:02:52.511229+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 433,
-      "cat": "Consolas",
-      "calcSub": "playstation",
-      "name": "Console Sony PlayStation 5 Slim CFI-2115A 8K 1TB SSD + Fortnite Flowering Chaos Bundle",
-      "sub": "",
-      "desc": "La PlayStation 5 Slim es una consola compacta y moderna, con un rápido inicio de juegos y del sistema gracias al SSD. Sumérgete en mundos detallados con gráficos ultrarrealistas y sombreado avanzado gracias a la tecnología Ray Tracing. El controlador Dualsense con retroalimentación háptica y disparadores adaptativos aumenta la inmersión y ofrece un juego fluido y receptivo. Diseño único con disipador térmico mejorado para una experiencia de juego eficiente.",
-      "img": "images/productos/433/main.jpg",
-      "images": [
-        "images/productos/433/main.jpg",
-        "images/productos/433/2.jpg",
-        "images/productos/433/3.jpg",
-        "images/productos/433/4.jpg",
-        "images/productos/433/5.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 679.0,
-      "usdSell": 763.4,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/playstation/console-sony-playstation-5-slim-cfi-2115a-8k-1tb-ssd-fortnite-flowering-chaos-bundle/1299328",
-          "price": 679.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:02:53.398304+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 434,
-      "cat": "Consolas",
-      "calcSub": "playstation",
-      "name": "Console Sony Playstation 5 Slim Ghost of Yotei Edição Limitada CFI-2015A 4K 1TB SSD",
-      "sub": "",
-      "desc": "Rendimiento de nueva generación con un estilo único. La PS5 Slim Ghost of Yotei incluye SSD de 1 TB para cargas ultra rápidas, soporte 4K y ray tracing para gráficos realistas. Su edición limitada muestra un diseño temático inspirado en leyendas orientales, con el poder del DualSense, retroalimentación háptica, audio 3D y gatillos adaptativos. Más liviana y compacta, brinda inmersión total en cada juego.",
-      "img": "images/productos/434/main.jpg",
-      "images": [
-        "images/productos/434/main.jpg",
-        "images/productos/434/2.jpg",
-        "images/productos/434/3.jpg",
-        "images/productos/434/4.jpg",
-        "images/productos/434/5.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 719.0,
-      "usdSell": 807.4,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/playstation/console-sony-playstation-5-slim-ghost-of-yotei-edicao-limitada-cfi-2015a-4k-1tb-ssd/1271140",
-          "price": 719.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:02:54.479636+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 435,
-      "cat": "Consolas",
-      "calcSub": "playstation",
-      "name": "Console Sony PlayStation 5 Slim 30º Aniversário Edição Limitada CFI-2015B 4K 1TB SSD US",
-      "sub": "",
-      "desc": "La PlayStation 5 Slim 30th Anniversary Collection celebra tres décadas de innovación con un diseño más compacto y moderno en una edición limitada. Mantenimiento del rendimiento con soporte de trazado de rayos y resolución 4K. Con almacenamiento SSD ultrarrápido, reduce los tiempos de carga y mejora la experiencia. Esta edición especial destaca por un acabado exclusivo, ideal para coleccionistas y fanáticos de la nostalgia, además, es compatible con todos los juegos y accesorios de la línea PS5.",
-      "img": "images/productos/435/main.jpg",
-      "images": [
-        "images/productos/435/main.jpg",
-        "images/productos/435/2.jpg",
-        "images/productos/435/3.jpg",
-        "images/productos/435/4.jpg",
-        "images/productos/435/5.jpg",
-        "images/productos/435/6.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 669.0,
-      "usdSell": 752.4,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/playstation/console-sony-playstation-5-slim-30-aniversario-edicao-limitada-cfi-2015b-4k-1tb-ssd-us/1155716",
-          "price": 669.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:02:55.510556+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 436,
-      "cat": "Consolas",
-      "calcSub": "playstation",
-      "name": "Suporte Vertical Sony para Console Playstation 5 - Preto",
-      "sub": "",
-      "desc": "El soporte vertical de Sony para consola PlayStation 5 está diseñado para ofrecer estabilidad y estilo a tu consola. Con un diseño oficial y elegante, asegura un ajuste perfecto y seguro para la PS5 en posición vertical, optimizando el espacio del entorno. Su construcción robusta proporciona un soporte firme, mientras que el acabado plateado en el borde circundante complementa el aspecto moderno de la consola.",
-      "img": "images/productos/436/main.jpg",
-      "images": [
-        "images/productos/436/main.jpg",
-        "images/productos/436/2.jpg",
-        "images/productos/436/3.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 35.0,
-      "usdSell": 55.0,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/playstation/suporte-vertical-sony-para-console-playstation-5-preto/1130911",
-          "price": 35.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:02:57.022890+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 437,
-      "cat": "Consolas",
-      "calcSub": "playstation",
-      "name": "Console Sony Playstation 5 Slim CFI-2015A 4K 1TB SSD",
-      "sub": "",
-      "desc": "Experimenta un nuevo nivel de juego con PlayStation 5 Slim. Con un SSD ultrarrápido de 1 TB, sumérgete en mundos detallados con gráficos ultrarrealistas y sombreado avanzado gracias a la tecnología Ray Tracing. Sus controles con retroalimentación háptica y disparadores adaptativos aumentan la inmersión, ofreciendo una jugabilidad fluida y responsiva. Todo esto en un diseño elegante y compacto para una experiencia de juego de próxima generación.",
-      "img": "images/productos/437/main.jpg",
-      "images": [
-        "images/productos/437/main.jpg",
-        "images/productos/437/2.jpg",
-        "images/productos/437/3.jpg",
-        "images/productos/437/4.jpg",
-        "images/productos/437/5.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 649.0,
-      "usdSell": 730.4,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/playstation/console-sony-playstation-5-slim-cfi-2015a-4k-1tb-ssd/1040234",
-          "price": 649.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:02:57.716628+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 438,
-      "cat": "Consolas",
-      "calcSub": "playstation",
-      "name": "Console Sony Playstation 5 Slim CFI-2116B Edição Digital 825GB Europeu",
-      "sub": "",
-      "desc": "Rendimiento de nueva generación en formato compacto. La PlayStation 5 Slim edición digital ofrece juegos en 4K hasta 120 Hz con HDR para colores intensos y gráficos realistas. Su SSD ultra rápido reduce los tiempos de carga y al no tener lector de discos, presenta un diseño más liviano y moderno. Totalmente digital, accede a juegos desde la PlayStation Store. Perfecta para quienes buscan potencia, comodidad y experiencias inmersivas en un solo dispositivo.",
-      "img": "images/productos/438/main.jpg",
-      "images": [
-        "images/productos/438/main.jpg",
-        "images/productos/438/2.jpg",
-        "images/productos/438/3.jpg",
-        "images/productos/438/4.jpg",
-        "images/productos/438/5.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 579.0,
-      "usdSell": 653.4,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/playstation/console-sony-playstation-5-slim-cfi-2116b-edicao-digital-825gb-europeu/1034400",
-          "price": 579.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:02:59.172021+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 439,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Armaf Odyssey Wild One Masculino 200ml",
-      "sub": "",
-      "desc": "Compre Desodorante Armaf Odyssey Wild One Masculino 200ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
-      "img": "images/productos/439/main.jpg",
-      "images": [
-        "images/productos/439/main.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 3.5,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-armaf-odyssey-wild-one-masculino-200ml/1357073",
-          "price": 3.5,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:34.543078+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 440,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Armaf Club De Nuit Intense Feminino 200ml",
-      "sub": "",
-      "desc": "Compre Desodorante Armaf Club De Nuit Intense Feminino 200ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
-      "img": "images/productos/440/main.jpg",
-      "images": [
-        "images/productos/440/main.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 3.5,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-armaf-club-de-nuit-intense-feminino-200ml/1357059",
-          "price": 3.5,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:35.071122+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 441,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Armaf Club de Nuit Imperiale Feminino 200ml",
-      "sub": "",
-      "desc": "Compre Desodorante Armaf Club de Nuit Imperiale Feminino 200ml no Paraguai com os melhores preços. Confira na Atacado Connect em Ciudad del Este.",
-      "img": "images/productos/441/main.jpg",
-      "images": [
-        "images/productos/441/main.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 3.5,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-armaf-club-de-nuit-imperiale-feminino-200ml/1357035",
-          "price": 3.5,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:35.596975+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 442,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Qaed Al Fursan Unlimited Unissex 200ml",
-      "sub": "",
-      "desc": "El desodorante Qaed Al Fursan Unlimited de Lattafa es una celebración de la frescura tropical y cremosa. Su apertura rica en coco y frutas cítricas evoluciona hacia un corazón floral blanco exuberante, finalizando con una base reconfortante de vainilla y sándalo. Es una opción ideal para quienes buscan una sensación de limpieza prolongada con un aroma lujoso y soleado, perfecto para el uso diario o para complementar el perfume de la misma línea.",
-      "img": "images/productos/442/main.jpg",
-      "images": [
-        "images/productos/442/main.jpg",
-        "images/productos/442/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 3.0,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-qaed-al-fursan-unlimited-unissex-200ml/1339376",
-          "price": 3.0,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:36.131022+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 443,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Armaf Voyage Bleu Masculino 200ml",
-      "sub": "",
-      "desc": "El Desodorante Armaf Voyage Bleu de 200ml es la esencia de la libertad y la elegancia masculina capturada en un spray de alto rendimiento. Diseñado para el hombre aventurero, su fragancia amaderada aromática combina notas frescas de cítricos y pimienta rosa con un corazón de jengibre y menta, culminando en un fondo sofisticado de sándalo y pachulí. Esta fórmula proporciona una protección duradera contra el mal olor mientras proyecta una estela fresca y vigorizante.",
-      "img": "images/productos/443/main.jpg",
-      "images": [
-        "images/productos/443/main.jpg",
-        "images/productos/443/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.75,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-armaf-voyage-bleu-masculino-200ml/1335118",
-          "price": 2.75,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:36.732773+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 444,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Armaf Tres Jour Feminino 200ml",
-      "sub": "",
-      "desc": "El desodorante Armaf Tres Jour Women de 200ml es la esencia de la sofisticación cotidiana. Inspirado en la fragancia homónima, este spray corporal ofrece una apertura luminosa de flores blancas y notas cítricas que evolucionan hacia un corazón romántico de jazmín y nardo. Diseñado para la mujer moderna, proporciona una protección duradera contra el olor mientras envuelve la piel en una estela fresca y elegante.",
-      "img": "images/productos/444/main.jpg",
-      "images": [
-        "images/productos/444/main.jpg",
-        "images/productos/444/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.75,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-armaf-tres-jour-feminino-200ml/1335101",
-          "price": 2.75,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:37.296976+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 445,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Armaf Odyssey Dubai Chocolate Masculino 200ml",
-      "sub": "",
-      "desc": "Aroma envolvente con carácter gourmand distintivo. El Armaf Odyssey Chocolate ofrece protección desodorante eficaz junto a notas dulces inspiradas en chocolate, equilibradas con matices cálidos y ligeramente amaderados. El formato en spray permite aplicación uniforme y frescura inmediata, manteniendo sensación agradable durante el día. Perfecto para quienes desean presencia intensa en salidas, reuniones o actividades nocturnas.",
-      "img": "images/productos/445/main.jpg",
-      "images": [
-        "images/productos/445/main.jpg",
-        "images/productos/445/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 3.25,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-armaf-odyssey-dubai-chocolate-masculino-200ml/1335064",
-          "price": 3.25,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:37.853547+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 446,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Roll On Armaf Le Parfait Panache Feminino 75ml",
-      "sub": "",
-      "desc": "El Desodorante Armaf Roll On 75ml Le Parfait Panache ofrece una protección eficaz contra el mal olor, manteniéndote fresco y confiado durante todo el día. Con una fragancia sofisticada y envolvente, este desodorante es ideal para quienes buscan un toque de elegancia en su rutina de cuidado personal. Su fórmula suave es adecuada para todo tipo de piel, proporcionando una sensación de comodidad y frescura.",
-      "img": "images/productos/446/main.jpg",
-      "images": [
-        "images/productos/446/main.jpg",
-        "images/productos/446/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.25,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-roll-on-armaf-le-parfait-panache-feminino-75ml/1334999",
-          "price": 2.25,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:38.437794+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 447,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Roll On Armaf Le Parfait Azure Masculino 75ml",
-      "sub": "",
-      "desc": "Frescura definida con aroma moderno y sofisticado. El Armaf Le Parfait Azure Roll On brinda protección eficaz contra olores, manteniendo sensación de limpieza durante horas. Su formato roll on permite aplicación suave, secado rápido y sin residuos. La mezcla de notas aromáticas con matices ligeramente amaderados logra presencia equilibrada y versátil. Ideal para el día a día, oficina o encuentros sociales.",
-      "img": "images/productos/447/main.jpg",
-      "images": [
-        "images/productos/447/main.jpg",
-        "images/productos/447/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.25,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-roll-on-armaf-le-parfait-azure-masculino-75ml/1334982",
-          "price": 2.25,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:38.981505+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 448,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Yara Tous Feminino 200ml",
-      "sub": "",
-      "desc": "Desodorante Lattafa Yara Tous es un spray corporal perfumado unisex que combina notas frutales de mango, coco y maracuyá en la apertura, un corazón floral de jazmín, heliotropo y azahar, y una base suave de vainilla, almizcle y cashmeran que perdura en la piel durante horas. Esta mezcla ofrece sensación refrescante y aroma dulce, dejando la piel perfumada, fresca y con presencia elegante tanto en el uso diario como en momentos especiales donde deseas destacarte con un aroma envolvente.",
-      "img": "images/productos/448/main.jpg",
-      "images": [
-        "images/productos/448/main.jpg",
-        "images/productos/448/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.8,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-yara-tous-feminino-200ml/1313857",
-          "price": 2.8,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:39.535336+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 449,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Mayar Natural Intense Feminino 200ml",
-      "sub": "",
-      "desc": "Lattafa Mayar Natural Intense es un desodorante perfumado inspirado en una fragancia que combina notas de higo, mandarina verde, agua de coco y melón en la apertura, un corazón floral de loto, nenúfar y jazmín, y una base suave de vainilla, sándalo, almizcle y ambroxan que aporta profundidad aromática.  El aroma resultante es fresco, femenino y sofisticado, ofreciendo sensación de frescura y una fragancia agradable para el uso diario o momentos casuales con un toque delicado y duradero.",
-      "img": "images/productos/449/main.jpg",
-      "images": [
-        "images/productos/449/main.jpg",
-        "images/productos/449/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.8,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-mayar-natural-intense-feminino-200ml/1313833",
-          "price": 2.8,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:40.065735+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 450,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Khamrah Qawha Unissex 200ml",
-      "sub": "",
-      "desc": "Lattafa Khamrah Qawha es un spray corporal perfumado con una mezcla cálida y gourmand que inicia con canela, cardamomo y jengibre para una apertura especiada, continúa con un corazón de praliné, frutas confitadas y flores blancas y culmina con una base rica de café, vainilla, haba tonka, benjuí y almizcle que aporta profundidad al aroma. Este aroma combina frescura y dulzura de manera armoniosa, ofreciendo una sensación de frescura duradera y presencia aromática distintiva durante todo el día.",
-      "img": "images/productos/450/main.jpg",
-      "images": [
-        "images/productos/450/main.jpg",
-        "images/productos/450/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.8,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-khamrah-qawha-unissex-200ml/1313826",
-          "price": 2.8,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:40.843576+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 451,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Hayaati Masculino 200ml",
-      "sub": "",
-      "desc": "El Desodorante Lattafa Hayaati es un spray corporal perfumado con una fragancia aromática amaderada adecuada para uso diario tanto por hombres como por mujeres. La apertura ofrece notas frescas de manzana y bergamota, que evolucionan hacia un corazón con matices de canela y maderas aportando carácter. La base de almizcle y vainilla ofrece un toque cálido y envolvente que perdura sobre la piel, manteniendo sensación de frescura y aroma agradable durante el día.",
-      "img": "images/productos/451/main.jpg",
-      "images": [
-        "images/productos/451/main.jpg",
-        "images/productos/451/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.8,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-hayaati-masculino-200ml/1313796",
-          "price": 2.8,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:41.381367+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 452,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Ajwad Pink to Pink Feminino 200ml",
-      "sub": "",
-      "desc": "Lattafa Ajwad Pink to Pink es un desodorante perfumado inspirado en Ajwad Pink to Pink, combinando notas de guayaba, toronja rosa, lichi y pimienta rosa en la apertura, un corazón floral de rosa, peonía y magnolia, y una base dulce y cálida de almizcle, vainilla, ámbar y musgo que aporta profundidad al aroma. Este spray corporal ofrece un perfil olfativo fresco, dulce y sofisticado con presencia duradera en la piel, ideal para uso diario o momentos especiales donde deseas destacar.",
-      "img": "images/productos/452/main.jpg",
-      "images": [
-        "images/productos/452/main.jpg",
-        "images/productos/452/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.8,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-ajwad-pink-to-pink-feminino-200ml/1313758",
-          "price": 2.8,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:41.934699+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 453,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Ajwad Feminino 200ml",
-      "sub": "",
-      "desc": "El Desodorante Lattafa Ajwad, es un spray corporal perfumado con aroma amaderado, floral y frutal que combina dulzura suave con sofisticación. Las notas de salida incluyen acordes frutales ligeros, que evolucionan hacia un corazón floral con rosa y jazmín, y se apoyan en una base cálida de vainilla, ámbar, almizcle y cedro que deja el perfume con profundidad y suavidad sobre la piel. Este desodorante proporciona una fragancia envolvente y elegante que acompaña tu día con sensación de frescura.",
-      "img": "images/productos/453/main.jpg",
-      "images": [
-        "images/productos/453/main.jpg",
-        "images/productos/453/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.8,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-ajwad-feminino-200ml/1313741",
-          "price": 2.8,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:42.442272+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 454,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Qaa'ed Al Shabaab Unissex 200ml",
-      "sub": "",
-      "desc": "Potencia y elegancia en cada aplicación. El desodorante Lattafa Qa’ed Al Shabaab presenta una fragancia masculina impactante, que se abre con notas de osmanthus y ylang-ylang, atraviesa un corazón de cuero y cedro, y culmina en la profunda calidez del oud (agarwood) y ámbar claro. Perfecto para quienes desean perfumarse con carácter y dejar una estela distinguida.",
-      "img": "images/productos/454/main.jpg",
-      "images": [
-        "images/productos/454/main.jpg",
-        "images/productos/454/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.5,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-qaaed-al-shabaab-unissex-200ml/1286311",
-          "price": 2.5,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:43.239194+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 455,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Badee Al Oul Amethyst Unissex 200ml",
-      "sub": "",
-      "desc": "Distinción profunda con carácter oriental. El Desodorante Lattafa Bade’e Al¿Oud¿Amethyst ofrece una fragancia envolvente que inicia con bergamota y pimienta rosa vibrantes, sigue con un corazón floral de rosa turca, rosa búlgara y jazmín, y se posa sobre una base cálida de oud, ámbar y vainilla. Perfecto para quienes desean una perfumación prolongada con presencia elegante e inolvidable.",
-      "img": "images/productos/455/main.jpg",
-      "images": [
-        "images/productos/455/main.jpg",
-        "images/productos/455/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.5,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-badee-al-oul-amethyst-unissex-200ml/1286298",
-          "price": 2.5,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:43.770932+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 456,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Ameer Al Oudh Intense Unissex 200ml",
-      "sub": "",
-      "desc": "Refinamiento oriental que transmite sofisticación y carácter. El desodorante Lattafa Ameer Al Oud Intense fusiona notas amaderadas y oud con dulzura suave de vainilla y azúcar, asentadas sobre un fondo profundo de sándalo y resinas. Perfecto para quienes desean perfumar su cuerpo con una fragancia intensa, seductora y de larga duración, sin perder estilo ni personalidad.",
-      "img": "images/productos/456/main.jpg",
-      "images": [
-        "images/productos/456/main.jpg",
-        "images/productos/456/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.5,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-ameer-al-oudh-intense-unissex-200ml/1286281",
-          "price": 2.5,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:44.370108+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 457,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Ana Abiyedh Feminino 200ml",
-      "sub": "",
-      "desc": "El Desodorante Lattafa Ana Abiyedh ofrece una fragancia elegante. Su salida cítrica de bergamota y naranja brinda frescura inmediata, mientras que el corazón con pera y vainilla aporta suavidad dulce y equilibrio aromático. En la base, almizcle blanco y ámbar entregan profundidad y calidez. Perfecto para quienes desean un aroma limpio, refinado y duradero para el uso diario, combinando protección con personalidad.",
-      "img": "images/productos/457/main.jpg",
-      "images": [
-        "images/productos/457/main.jpg",
-        "images/productos/457/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.5,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-ana-abiyedh-feminino-200ml/1286199",
-          "price": 2.5,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:44.878627+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 458,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Armaf Odyssey Spectra Rainbow Unissex 200ml",
-      "sub": "",
-      "desc": "El desodorante Armaf Odyssey Spectra Rainbow 200 ml ofrece la misma esencia distintiva del perfume de la colección, en un formato práctico para uso diario. Su fragancia oriental especiada mezcla salida fresca y picante, corazón floral envolvente y base cálida con vainilla, ámbar y pachulí. Brinda frescura prolongada y confianza, siendo perfecto para quienes desean protección eficaz con un aroma elegante y actual.",
-      "img": "images/productos/458/main.jpg",
-      "images": [
-        "images/productos/458/main.jpg",
-        "images/productos/458/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 3.25,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-armaf-odyssey-spectra-rainbow-unissex-200ml/1270020",
-          "price": 3.25,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:45.565220+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 459,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Maison Alhambra Your Touch Feminino 200ml",
-      "sub": "",
-      "desc": "Elegancia acogedora con un toque sofisticado. El desodorante Your Touch inicia con cardamomo picante, hoja de violeta, pimienta rosa y menta fresca. Su corazón fusiona canela, lavanda y matices frutales de melón y piña. La base culmina con vainilla cremosa, castaña robusta, maderas nobles y ámbar, dejando un aroma femenino intenso y cálido, ideal para quienes buscan presencia refinada.",
-      "img": "images/productos/459/main.jpg",
-      "images": [
-        "images/productos/459/main.jpg",
-        "images/productos/459/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.9,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-maison-alhambra-your-touch-feminino-200ml/1254211",
-          "price": 2.9,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:46.112690+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 460,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Maison Alhambra Very Velvet Orchid Feminino 200ml",
-      "sub": "",
-      "desc": "Sensualidad dulce con sofisticación floral. El desodorante Maison Alhambra Very Velvet Orchid abre con almendra amarga y rosa, continúa con un corazón frutal de cereza, cereza negra y ámbar, y culmina con la cremosidad gourmand de haba tonka, caramelo y bálsamo de Perú. Aroma femenino, elegante y cautivador, perfecto para quienes buscan una presencia irresistible de día o de noche.",
-      "img": "images/productos/460/main.jpg",
-      "images": [
-        "images/productos/460/main.jpg",
-        "images/productos/460/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.9,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-maison-alhambra-very-velvet-orchid-feminino-200ml/1254198",
-          "price": 2.9,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:46.734584+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 461,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Maison Alhambra Avant Masculino 200ml",
-      "sub": "",
-      "desc": "Frescura elegante con carácter distintivo. El desodorante Maison Alhambra Avant mezcla piña jugosa, bergamota cítrica, grosella negra y manzana en una apertura vibrante. En el corazón, abedul y pachulí se suavizan con jazmín y rosa. La base une almizcle, liquen, ámbar gris y vainilla para un aroma amaderado floral envolvente, ideal para el uso diario de quienes aprecian estilo y presencia.",
-      "img": "images/productos/461/main.jpg",
-      "images": [
-        "images/productos/461/main.jpg",
-        "images/productos/461/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.9,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-maison-alhambra-avant-masculino-200ml/1254129",
-          "price": 2.9,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:47.337698+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 462,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Ameerat Al Arab 200ml",
-      "sub": "",
-      "desc": "El desodorante Lattafa Ameerat Al Arab 200 ml combina elegancia y protección diaria con un aroma que resalta la feminidad. Sus notas cítricas y especiadas se equilibran con toques suaves de aloe vera y almizcle blanco. El fondo amaderado con jazmín y oud aporta intensidad duradera. Ideal para quienes buscan frescura, sofisticación y una presencia marcada en cada momento del día.",
-      "img": "images/productos/462/main.jpg",
-      "images": [
-        "images/productos/462/main.jpg",
-        "images/productos/462/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.8,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-ameerat-al-arab-200ml/1217148",
-          "price": 2.8,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:47.910561+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 463,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Raghba Unissex 200ml",
-      "sub": "",
-      "desc": "El Desodorante Perfumado Raghba de Lattafa ofrece una fragancia oriental unisex que combina notas dulces y amaderadas. La salida presenta vainilla, oud y notas especiadas, proporcionando un inicio cálido y envolvente. En el corazón, matices de almizcle, incienso y azúcar añaden profundidad y un toque dulce. La base está compuesta por sándalo, ámbar y almizcle, asegurando un acabado suave y duradero. Ideal para quienes buscan protección eficaz con una fragancia distintiva y sofisticada.",
-      "img": "images/productos/463/main.jpg",
-      "images": [
-        "images/productos/463/main.jpg",
-        "images/productos/463/2.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 3.2,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-raghba-unissex-200ml/1202045",
-          "price": 3.2,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:48.449552+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 464,
-      "cat": "Belleza",
-      "calcSub": "perfume",
-      "name": "Desodorante Lattafa Fakhar Masculino 200ml",
-      "sub": "",
-      "desc": "Fragancia marcada para quienes buscan frescura con estilo en el día a día. El desodorante Lattafa Fakhar brinda protección contra olores y un aroma sofisticado, con perfil que mezcla notas frescas, especiadas y amaderadas. Su aplicación en spray es práctica y uniforme, ideal para usar después del baño o durante el día. Versátil, se adapta tanto al uso diario como a ocasiones especiales.",
-      "img": "images/productos/464/main.jpg",
-      "images": [
-        "images/productos/464/main.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": null,
-      "usd": 2.9,
-      "usdSell": null,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/desodorantes/desodorante-lattafa-fakhar-masculino-200ml/1174748",
-          "price": 2.9,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-04-29T18:10:48.995248+00:00"
         }
       ],
       "status": "enriched",
@@ -21238,6 +19990,10 @@
           {
             "id": "aceite",
             "label": "aceite"
+          },
+          {
+            "id": "perfume",
+            "label": "Perfume"
           }
         ],
         "rules": [
@@ -21286,6 +20042,22 @@
               {
                 "kind": "percent",
                 "value": 15
+              }
+            ]
+          },
+          {
+            "subtype": "perfume",
+            "type": "none",
+            "op": "<=",
+            "val": 0,
+            "steps": [
+              {
+                "kind": "usd",
+                "value": 3
+              },
+              {
+                "kind": "percent",
+                "value": 10
               }
             ]
           }
@@ -21392,6 +20164,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-29T18:10:49.473102+00:00",
+  "lastSync": "2026-04-29T18:12:53.514Z",
   "lastPriceCheck": null
 }
