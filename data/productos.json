@@ -3991,43 +3991,6 @@
       "verifyPrice": true
     },
     {
-      "id": 66,
-      "cat": "Belleza",
-      "publicSub": "Perfumes",
-      "calcSub": "aceite",
-      "name": "Body Splash Victoria's Secret Mango Temptation 250ml",
-      "sub": "",
-      "desc": "Con un irresistible toque tropical, el bálsamo corporal Mango Temptation de Victoria's Secret es perfecto para quienes desean sentirse ligeras, femeninas y radiantes a diario. Su fragancia floral-frutal combina el jugoso mango con notas de hibisco, creando un aroma dulce, refrescante y cautivador. Aplicado en spray, es ideal para uso diario, dejando la piel ligeramente perfumada y fresca durante todo el día.",
-      "img": null,
-      "images": [],
-      "badge": null,
-      "badgeColor": "#25D366",
-      "icon": "📦",
-      "ars": "22300",
-      "usd": 11.75,
-      "weight": null,
-      "usdSell": 15.54,
-      "activo": true,
-      "fechaAlta": "2026-04-28",
-      "priceHistory": [
-        {
-          "ars": "22300",
-          "date": "2026-04-28"
-        }
-      ],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/body-splash/body-splash-victorias-secret-mango-temptation-250ml/1359770",
-          "price": null,
-          "currency": "USD",
-          "isPrimary": true
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
-    },
-    {
       "id": 67,
       "cat": "Celulares",
       "publicSub": "",
@@ -4845,6 +4808,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-29T02:07:31.557Z",
+  "lastSync": "2026-04-29T02:08:02.140Z",
   "lastPriceCheck": null
 }
