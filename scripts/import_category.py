@@ -71,7 +71,7 @@ def make_pending_product(
         "usd": None,
         "usdSell": None,
         "weight": None,
-        "activo": False,
+        "activo": True,
         "fechaAlta": today,
         "priceHistory": [],
         "referenceLinks": [
