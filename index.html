@@ -2943,6 +2943,15 @@
     }
 
     /* ─── RENDER PRODUCTS ────────────────────────── */
+    function shuffleArray(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
     function renderProducts() {
       const grid = document.getElementById('productsGrid');
       const countEl = document.getElementById('productCount');
@@ -2958,6 +2967,11 @@
           (p.desc && p.desc.toLowerCase().includes(state.query))
         );
       }
+
+      // Separar en disponibles y no disponibles, luego shuffle cada grupo
+      const disponibles = list.filter(p => p.badge && p.badge.toLowerCase() === 'disponible');
+      const noDisponibles = list.filter(p => !p.badge || p.badge.toLowerCase() !== 'disponible');
+      list = [...shuffleArray(disponibles), ...shuffleArray(noDisponibles)];
 
       const total = list.length;
       const totalPages = Math.max(1, Math.ceil(total / state.perPage));
