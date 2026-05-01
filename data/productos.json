@@ -21242,6 +21242,70 @@
       "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
+    },
+    {
+      "id": 479,
+      "cat": "Celulares",
+      "calcSub": "gruesa",
+      "name": "",
+      "sub": "",
+      "desc": "",
+      "img": "",
+      "images": [],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "usdSell": null,
+      "weight": null,
+      "activo": true,
+      "fechaAlta": "2026-05-01",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g86-5g-xt-2527-1-256gb-8gb-ram-dual-sim-tela-667-azul/1304961",
+          "price": 224.0,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-05-01T14:42:05.171073+00:00"
+        }
+      ],
+      "status": "pending",
+      "enrichError": null,
+      "verifyPrice": true
+    },
+    {
+      "id": 480,
+      "cat": "Celulares",
+      "calcSub": "gruesa",
+      "name": "",
+      "sub": "",
+      "desc": "",
+      "img": "",
+      "images": [],
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
+      "icon": "📦",
+      "ars": null,
+      "usd": null,
+      "usdSell": null,
+      "weight": null,
+      "activo": true,
+      "fechaAlta": "2026-05-01",
+      "priceHistory": [],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g86-5g-xt-2527-1-256gb-8gb-ram-dual-sim-tela-667-vermelho/1301557",
+          "price": 224.0,
+          "currency": "USD",
+          "isPrimary": true,
+          "lastChecked": "2026-05-01T14:42:05.502455+00:00"
+        }
+      ],
+      "status": "pending",
+      "enrichError": null,
+      "verifyPrice": true
     }
   ],
   "banners": [
