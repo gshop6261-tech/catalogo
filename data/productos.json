@@ -21247,17 +21247,24 @@
       "id": 479,
       "cat": "Celulares",
       "calcSub": "gruesa",
-      "name": "",
+      "name": "Smartphone Motorola Moto G86 5G XT-2527-1 256GB 8GB RAM Dual SIM Tela 6.67\" - Azul",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Rendimiento equilibrado con conectividad moderna. El Motorola G86 5G cuenta con 8 GB de RAM que aseguran fluidez en multitarea y apps diarias. Sus 256 GB brindan amplio espacio para archivos y contenidos, mientras el 5G garantiza conexión rápida y estable. La pantalla de calidad mejora la experiencia visual. Ideal para comunicación, entretenimiento y uso diario eficiente.",
+      "img": "images/productos/479/main.jpg",
+      "images": [
+        "images/productos/479/main.jpg",
+        "images/productos/479/2.jpg",
+        "images/productos/479/3.jpg",
+        "images/productos/479/4.jpg",
+        "images/productos/479/5.jpg",
+        "images/productos/479/6.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 224.0,
+      "usdSell": 252.4,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-05-01",
@@ -21268,10 +21275,10 @@
           "price": 224.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-05-01T14:42:05.171073+00:00"
+          "lastChecked": "2026-05-01T14:42:07.374220+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -21279,17 +21286,24 @@
       "id": 480,
       "cat": "Celulares",
       "calcSub": "gruesa",
-      "name": "",
+      "name": "Smartphone Motorola Moto G86 5G XT-2527-1 256GB 8GB RAM Dual SIM Tela 6.67\" - Vermelho",
       "sub": "",
-      "desc": "",
-      "img": "",
-      "images": [],
+      "desc": "Equilibrio perfecto entre rendimiento y conectividad. El Motorola G86 5G cuenta con 8 GB de RAM que aseguran fluidez en multitarea y apps diarias. Sus 256 GB brindan amplio espacio para archivos y contenidos, mientras el 5G garantiza conexión rápida y estable. La pantalla de calidad mejora la experiencia visual. Ideal para comunicación, entretenimiento y uso diario eficiente.",
+      "img": "images/productos/480/main.jpg",
+      "images": [
+        "images/productos/480/main.jpg",
+        "images/productos/480/2.jpg",
+        "images/productos/480/3.jpg",
+        "images/productos/480/4.jpg",
+        "images/productos/480/5.jpg",
+        "images/productos/480/6.jpg"
+      ],
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": null,
-      "usdSell": null,
+      "usd": 224.0,
+      "usdSell": 252.4,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-05-01",
@@ -21300,10 +21314,10 @@
           "price": 224.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-05-01T14:42:05.502455+00:00"
+          "lastChecked": "2026-05-01T14:42:08.433451+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     }
@@ -21896,6 +21910,6 @@
       }
     ]
   },
-  "lastSync": "2026-04-30T16:12:08.107634+00:00",
+  "lastSync": "2026-05-01T14:42:09.508781+00:00",
   "lastPriceCheck": "2026-05-01T11:45:53.917303+00:00"
 }
