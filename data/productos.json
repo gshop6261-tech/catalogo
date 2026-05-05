@@ -947,7 +947,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "58300",
-      "usd": 32.0,
+      "usd": 32,
       "weight": 0.5,
       "usdSell": 38.72,
       "activo": true,
@@ -1014,14 +1014,14 @@
           "date": "2026-04-30"
         },
         {
-          "usd": 32.0,
+          "usd": 32,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/compressor-de-ar/compressor-de-ar-2-xiaomi-mi-portatil-electric-air-mjcqb06qw-preto/1010923",
-          "price": 32.0,
+          "price": 32,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:15:15.750524+00:00"
@@ -1997,7 +1997,7 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "148600",
-      "usd": 85.0,
+      "usd": 85,
       "weight": null,
       "usdSell": 102.85,
       "activo": true,
@@ -2040,14 +2040,14 @@
           "date": "2026-04-29"
         },
         {
-          "usd": 85.0,
+          "usd": 85,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cafeteira-chaleira-e-jarra-eletrica/cafeteira-xiaomi-semi-automatic-espresso-machine-bhr9798eu-220v-prata/1197112",
-          "price": 85.0,
+          "price": 85,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:15:21.324114+00:00"
@@ -2876,7 +2876,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "1196800",
-      "usd": 599.0,
+      "usd": 599,
       "weight": null,
       "usdSell": 724.79,
       "activo": true,
@@ -2907,14 +2907,14 @@
           "date": "2026-04-29"
         },
         {
-          "usd": 599.0,
+          "usd": 599,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/cameras-de-acao/camera-de-acao-dji-osmo-pocket-3-estabilizador-creator-combo/1017410",
-          "price": 599.0,
+          "price": 599,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:15:27.840450+00:00"
@@ -4738,7 +4738,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "222500",
-      "usd": 132.0,
+      "usd": 132,
       "usdSell": 148.56,
       "weight": null,
       "activo": true,
@@ -4757,14 +4757,14 @@
           "date": "2026-05-04"
         },
         {
-          "usd": 132.0,
+          "usd": 132,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g35-5g-xt-2433-5-128gb-8gb-ram-dual-sim-tela-672-preto-caixa-slim/1358803",
-          "price": 132.0,
+          "price": 132,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:15:45.285739+00:00"
@@ -6220,7 +6220,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "173600",
-      "usd": 105.0,
+      "usd": 105,
       "usdSell": 119.4,
       "weight": null,
       "activo": true,
@@ -6239,14 +6239,14 @@
           "date": "2026-05-04"
         },
         {
-          "usd": 105.0,
+          "usd": 105,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g05-xt-2523-3-256gb-4gb-ram-dual-sim-tela-667-vermelho-caixa-slim/1210842",
-          "price": 105.0,
+          "price": 105,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:16:05.964866+00:00"
@@ -6277,7 +6277,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "173600",
-      "usd": 105.0,
+      "usd": 105,
       "usdSell": 119.4,
       "weight": null,
       "activo": true,
@@ -6296,14 +6296,14 @@
           "date": "2026-05-04"
         },
         {
-          "usd": 105.0,
+          "usd": 105,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g05-xt-2523-3-256gb-4gb-ram-dual-sim-tela-667-verde-caixa-slim/1210835",
-          "price": 105.0,
+          "price": 105,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:16:06.598687+00:00"
@@ -6334,7 +6334,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "214800",
-      "usd": 130.0,
+      "usd": 130,
       "usdSell": 146.4,
       "weight": null,
       "activo": true,
@@ -6353,14 +6353,14 @@
           "date": "2026-05-04"
         },
         {
-          "usd": 130.0,
+          "usd": 130,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g35-5g-xt-2433-5-128gb-4gb-ram-dual-sim-tela-672-verde-caixa-slim/1201314",
-          "price": 130.0,
+          "price": 130,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:16:07.185050+00:00"
@@ -9204,7 +9204,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "268100",
-      "usd": 165.0,
+      "usd": 165,
       "usdSell": 187.5,
       "weight": null,
       "activo": true,
@@ -9219,14 +9219,14 @@
           "date": "2026-05-01"
         },
         {
-          "usd": 165.0,
+          "usd": 165,
           "date": "2026-05-04"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-15-4g-global-256gb-8gb-ram-dual-sim-tela-69-preto/1284157",
-          "price": 165.0,
+          "price": 165,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:16:44.068395+00:00"
@@ -9308,7 +9308,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "270000",
-      "usd": 165.0,
+      "usd": 165,
       "usdSell": 187.5,
       "weight": null,
       "activo": true,
@@ -9323,14 +9323,14 @@
           "date": "2026-05-01"
         },
         {
-          "usd": 165.0,
+          "usd": 165,
           "date": "2026-05-04"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-15-4g-global-256gb-8gb-ram-dual-sim-tela-69-roxo/1282504",
-          "price": 165.0,
+          "price": 165,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:16:45.045473+00:00"
@@ -9983,7 +9983,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "268500",
-      "usd": 165.0,
+      "usd": 165,
       "usdSell": 187.5,
       "weight": null,
       "activo": true,
@@ -9998,14 +9998,14 @@
           "date": "2026-05-01"
         },
         {
-          "usd": 165.0,
+          "usd": 165,
           "date": "2026-05-04"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-15-4g-global-256gb-8gb-ram-dual-sim-tela-69-cinza-titanio/1257564",
-          "price": 165.0,
+          "price": 165,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:16:52.334498+00:00"
@@ -10035,7 +10035,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "268500",
-      "usd": 165.0,
+      "usd": 165,
       "usdSell": 187.5,
       "weight": null,
       "activo": true,
@@ -10050,14 +10050,14 @@
           "date": "2026-05-01"
         },
         {
-          "usd": 165.0,
+          "usd": 165,
           "date": "2026-05-04"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-15-4g-global-256gb-8gb-ram-dual-sim-tela-69-preto/1257557",
-          "price": 165.0,
+          "price": 165,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:16:52.856810+00:00"
@@ -18185,7 +18185,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "394600",
-      "usd": 253.0,
+      "usd": 253,
       "usdSell": 284.3,
       "weight": null,
       "activo": true,
@@ -18196,18 +18196,18 @@
           "date": "2026-04-29"
         },
         {
-          "usd": 249.0,
+          "usd": 249,
           "date": "2026-05-05"
         },
         {
-          "usd": 253.0,
+          "usd": 253,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-realme-c85-pro-rmx5555-256gb-8gb-ram-dual-sim-nfc-tela-68-verde-anatel/1296617",
-          "price": 253.0,
+          "price": 253,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:18:34.842446+00:00"
@@ -18233,8 +18233,8 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "402300",
-      "usd": 240.0,
-      "usdSell": 270.0,
+      "usd": 240,
+      "usdSell": 270,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -18248,14 +18248,14 @@
           "date": "2026-05-04"
         },
         {
-          "usd": 240.0,
+          "usd": 240,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a26-5g-sm-a266b-256gb-8gb-ram-dual-sim-tela-67-rosa-caixa-slim/1353167",
-          "price": 240.0,
+          "price": 240,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:18:35.487731+00:00"
@@ -18281,8 +18281,8 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "402300",
-      "usd": 240.0,
-      "usdSell": 270.0,
+      "usd": 240,
+      "usdSell": 270,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -18296,14 +18296,14 @@
           "date": "2026-05-04"
         },
         {
-          "usd": 240.0,
+          "usd": 240,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a26-5g-sm-a266b-256gb-8gb-ram-dual-sim-tela-67-branco-caixa-slim/1353150",
-          "price": 240.0,
+          "price": 240,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:18:36.187801+00:00"
@@ -18329,8 +18329,8 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "402300",
-      "usd": 240.0,
-      "usdSell": 270.0,
+      "usd": 240,
+      "usdSell": 270,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -18344,14 +18344,14 @@
           "date": "2026-05-04"
         },
         {
-          "usd": 240.0,
+          "usd": 240,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a26-5g-sm-a266b-256gb-8gb-ram-dual-sim-tela-67-preto-caixa-slim/1353143",
-          "price": 240.0,
+          "price": 240,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:18:36.768014+00:00"
@@ -20050,8 +20050,8 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 565.0,
-      "usdSell": 638.0,
+      "usd": 565,
+      "usdSell": 638,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -20061,18 +20061,18 @@
           "date": "2026-05-04"
         },
         {
-          "usd": 579.0,
+          "usd": 579,
           "date": "2026-05-05"
         },
         {
-          "usd": 565.0,
+          "usd": 565,
           "date": "2026-05-05"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/playstation/console-sony-playstation-5-slim-cfi-2115-4k-edicao-digital-825gb-ssd/1301458",
-          "price": 565.0,
+          "price": 565,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:18:59.256984+00:00"
@@ -21969,7 +21969,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 93.0,
+      "usd": 93,
       "usdSell": 108.3,
       "weight": null,
       "activo": true,
@@ -21978,7 +21978,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g06-xt-2535-2-128gb-4gb-ram-dual-sim-tela-688-verde/1363999",
-          "price": 93.0,
+          "price": 93,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:26.271934+00:00"
@@ -22001,7 +22001,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 93.0,
+      "usd": 93,
       "usdSell": 108.3,
       "weight": null,
       "activo": true,
@@ -22010,7 +22010,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g06-xt-2535-2-128gb-4gb-ram-dual-sim-tela-688-azul/1363982",
-          "price": 93.0,
+          "price": 93,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:26.827969+00:00"
@@ -22036,7 +22036,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 93.0,
+      "usd": 93,
       "usdSell": 108.3,
       "weight": null,
       "activo": true,
@@ -22045,7 +22045,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g06-xt-2535-2-128gb-4gb-ram-dual-sim-tela-688-laranja/1363975",
-          "price": 93.0,
+          "price": 93,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:27.308378+00:00"
@@ -22075,7 +22075,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 97.0,
+      "usd": 97,
       "usdSell": 112.7,
       "weight": null,
       "activo": true,
@@ -22084,7 +22084,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-12-global-128gb-8gb-ram-dual-sim-tela-679-preto/1264777",
-          "price": 97.0,
+          "price": 97,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:27.964463+00:00"
@@ -22110,7 +22110,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 108.0,
+      "usd": 108,
       "usdSell": 124.8,
       "weight": null,
       "activo": true,
@@ -22119,7 +22119,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-a7-pro-global-128gb-4gb-ram-dual-sim-tela-688-preto/1340686",
-          "price": 108.0,
+          "price": 108,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:28.402062+00:00"
@@ -22226,7 +22226,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 117.0,
+      "usd": 117,
       "usdSell": 134.7,
       "weight": null,
       "activo": true,
@@ -22235,7 +22235,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-12-global-256gb-8gb-ram-dual-sim-tela-679-azul/1264579",
-          "price": 117.0,
+          "price": 117,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:29.714513+00:00"
@@ -22265,7 +22265,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 118.0,
+      "usd": 118,
       "usdSell": 135.8,
       "weight": null,
       "activo": true,
@@ -22274,7 +22274,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-12-global-256gb-8gb-ram-dual-sim-tela-679-preto-lacre-pequeno/1164312",
-          "price": 118.0,
+          "price": 118,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:30.432598+00:00"
@@ -22420,7 +22420,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 147.0,
+      "usd": 147,
       "usdSell": 167.7,
       "weight": null,
       "activo": true,
@@ -22429,7 +22429,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-note-12-pro-4g-global-128gb-6gb-ram-dual-sim-tela-667-azul/1002447",
-          "price": 147.0,
+          "price": 147,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:32.646417+00:00"
@@ -22455,7 +22455,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 177.0,
+      "usd": 177,
       "usdSell": 200.7,
       "weight": null,
       "activo": true,
@@ -22464,7 +22464,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-note-15-4g-256gb-8gb-ram-dual-sim-tela-677-roxo-lacre-pequeno/1363944",
-          "price": 177.0,
+          "price": 177,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:33.124646+00:00"
@@ -22529,7 +22529,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 182.0,
+      "usd": 182,
       "usdSell": 206.2,
       "weight": null,
       "activo": true,
@@ -22538,7 +22538,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-note-14-5g-global-256gb-8gb-ram-dual-sim-tela-667-verde/1171686",
-          "price": 182.0,
+          "price": 182,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:34.083632+00:00"
@@ -22568,7 +22568,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 235.0,
+      "usd": 235,
       "usdSell": 264.5,
       "weight": null,
       "activo": true,
@@ -22577,7 +22577,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g86-5g-xt-2527-1-512gb-8gb-ram-dual-sim-tela-67-grafite/1325058",
-          "price": 235.0,
+          "price": 235,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:34.567006+00:00"
@@ -22607,7 +22607,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 299.0,
+      "usd": 299,
       "usdSell": 334.9,
       "weight": null,
       "activo": true,
@@ -22616,7 +22616,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-note-15-pro-5g-global-512gb-8gb-ram-dual-sim-tela-683-titanio/1332131",
-          "price": 299.0,
+          "price": 299,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:35.263812+00:00"
@@ -22646,8 +22646,8 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 330.0,
-      "usdSell": 363.0,
+      "usd": 330,
+      "usdSell": 363,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-05-04",
@@ -22655,7 +22655,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-note-15-pro-5g-global-256gb-8gb-ram-dual-sim-tela-683-azul/1313673",
-          "price": 330.0,
+          "price": 330,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:35.900237+00:00"
@@ -22685,8 +22685,8 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 330.0,
-      "usdSell": 363.0,
+      "usd": 330,
+      "usdSell": 363,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-05-04",
@@ -22694,7 +22694,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-note-15-pro-5g-global-256gb-8gb-ram-dual-sim-tela-683-preto/1313666",
-          "price": 330.0,
+          "price": 330,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:36.334969+00:00"
@@ -22724,7 +22724,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": null,
-      "usd": 365.0,
+      "usd": 365,
       "usdSell": 401.5,
       "weight": null,
       "activo": true,
@@ -22733,7 +22733,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a56-5g-a566e-256gb-8gb-ram-dual-sim-tela-67-verde-caixa-slim/1239706",
-          "price": 365.0,
+          "price": 365,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-05T12:19:37.058345+00:00"
@@ -23317,7 +23317,7 @@
         "activo": true
       }
     ],
-    "dollarAuto": 1405.0,
+    "dollarAuto": 1405,
     "dollarUpdated": "2026-05-05T11:52:25.115838+00:00",
     "dollarManual": null,
     "dollarType": "blue",
@@ -23347,6 +23347,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-04T17:19:42.855802+00:00",
-  "lastPriceCheck": "2026-05-05T12:19:37.800129+00:00"
+  "lastSync": "2026-05-05T13:51:28.683Z",
+  "lastPriceCheck": null
 }
