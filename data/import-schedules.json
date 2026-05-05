@@ -6,4 +6,11 @@
     "badge": "a pedido",
     "badge_color": "#FF9500"
   }
+   {
+    "url": "https://atacadoconnect.com/categoria/beleza?classificacao=Perfumes",
+    "cat": "Belleza",
+    "calc_sub": "perfume",
+    "badge": "a pedido",
+    "badge_color": "#FF9500"
+  }
 ]
