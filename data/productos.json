@@ -17674,8 +17674,8 @@
     {
       "id": 348,
       "cat": "Celulares",
-      "calcSub": "gruesa",
-      "name": "Smartphone Samsung Galaxy A17 SM-A175F 128GB 4GB RAM Dual SIM Tela 6.7\" - Preto (Caixa Slim)",
+      "calcSub": "slim",
+      "name": "Smartphone Samsung Galaxy A17 SM-A175F 128GB 4GB RAM Dual SIM Tela 6.7\" Negro (Caixa Slim)",
       "sub": "",
       "desc": "Eficiencia accesible para el uso diario. El Samsung A17 cuenta con 4 GB de RAM para navegación fluida en apps livianas y tareas cotidianas sin complicaciones. Sus 128 GB brindan espacio para fotos, videos y archivos esenciales, mientras la batería optimizada acompaña por más tiempo. La pantalla amplia facilita la visualización. Ideal para comunicación, estudio y uso básico diario.",
       "img": "images/productos/348/main.jpg",
@@ -17687,12 +17687,12 @@
         "images/productos/348/5.jpg",
         "images/productos/348/6.jpg"
       ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
+      "badge": "disponible",
+      "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "231900",
+      "ars": "226200",
       "usd": 144,
-      "usdSell": 164.4,
+      "usdSell": 161.52,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -17704,20 +17704,24 @@
         {
           "ars": "231900",
           "date": "2026-05-06"
+        },
+        {
+          "ars": "226200",
+          "date": "2026-05-06"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a17-sm-a175f-128gb-4gb-ram-dual-sim-tela-67-preto-caixa-slim/1275933",
-          "price": 144,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:18:15.235877+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 349,
@@ -97496,6 +97500,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-06T16:01:28.295Z",
+  "lastSync": "2026-05-06T16:02:38.885Z",
   "lastPriceCheck": null
 }
