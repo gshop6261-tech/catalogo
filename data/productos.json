@@ -96759,6 +96759,43 @@
       "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
+    },
+    {
+      "id": 2302,
+      "cat": "Celulares",
+      "publicSub": "",
+      "calcSub": "gruesa",
+      "name": "Smartphone Xiaomi Redmi Note 14 4G Global 128GB 6GB RAM Dual SIM Pantalla 6.67\" - Púrpura",
+      "sub": "",
+      "desc": "",
+      "img": null,
+      "images": [],
+      "badge": "DISPONIBLE",
+      "badgeColor": "#25D366",
+      "icon": "📦",
+      "ars": "208600",
+      "usd": 130,
+      "weight": null,
+      "usdSell": 149,
+      "activo": true,
+      "fechaAlta": "2026-05-06",
+      "priceHistory": [
+        {
+          "ars": "208600",
+          "date": "2026-05-06"
+        }
+      ],
+      "referenceLinks": [
+        {
+          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-note-14-4g-global-128gb-6gb-ram-dual-sim-tela-667-roxo-lacre-pequeno/1314595",
+          "price": null,
+          "currency": "USD",
+          "isPrimary": true
+        }
+      ],
+      "status": "pending",
+      "enrichError": null,
+      "verifyPrice": true
     }
   ],
   "banners": [
@@ -97381,6 +97418,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-06T14:50:55.154Z",
+  "lastSync": "2026-05-06T15:20:19.403Z",
   "lastPriceCheck": null
 }
