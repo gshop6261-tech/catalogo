@@ -97493,8 +97493,8 @@
         "activo": true
       }
     ],
-    "dollarAuto": 1400,
-    "dollarUpdated": "2026-05-06T16:00:32.199Z",
+    "dollarAuto": 1400.0,
+    "dollarUpdated": "2026-05-06T20:53:54.331711+00:00",
     "dollarManual": null,
     "dollarType": "blue",
     "paymentMethods": [
