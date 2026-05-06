@@ -4605,8 +4605,8 @@
         "images/productos/71/5.jpg",
         "images/productos/71/6.jpg"
       ],
-      "badge": "disponible",
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "152800",
       "usd": 93,
@@ -4631,10 +4631,9 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g06-xt-2535-2-128gb-4gb-ram-dual-sim-tela-688-azul/1316032",
-          "price": 93,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:16:23.083849+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
@@ -97524,6 +97523,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-06T16:08:55.901Z",
+  "lastSync": "2026-05-06T16:16:06.581Z",
   "lastPriceCheck": null
 }
