@@ -16596,7 +16596,7 @@
     {
       "id": 326,
       "cat": "Celulares",
-      "calcSub": "gruesa",
+      "calcSub": "slim",
       "name": "Smartphone Samsung Galaxy A14 SM-A145P 128GB 4GB RAM Dual SIM Tela 6.6\" - Preto (Caixa Slim)",
       "sub": "",
       "desc": "El celular Samsung Galaxy A14 ofrece batería de 5000 mAh para uso prolongado, junto a pantalla FHD+ LCD PLS de 6,6\\\" para visualización cómoda. Equipado con procesador Helio G80, 4 GB de RAM y 128 GB ampliables vía microSD, permite manejo fluido de aplicaciones básicas. Su cámara triple (50 MP + ultrawide + macro) y la conexión 4G con dos ranuras SIM lo hacen ideal para el día a día.\\ \\ \\ \\",
@@ -16612,9 +16612,9 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "169800",
+      "ars": "165700",
       "usd": 104,
-      "usdSell": 120.4,
+      "usdSell": 118.32,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -16626,20 +16626,24 @@
         {
           "ars": "169800",
           "date": "2026-05-06"
+        },
+        {
+          "ars": "165700",
+          "date": "2026-05-06"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a14-sm-a145p-128gb-4gb-ram-dual-sim-tela-66-preto-caixa-slim/1233711",
-          "price": 104,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:18:04.495433+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 327,
@@ -16952,7 +16956,7 @@
     {
       "id": 333,
       "cat": "Celulares",
-      "calcSub": "gruesa",
+      "calcSub": "slim",
       "name": "Smartphone Samsung Galaxy A16 SM-A165F Global 128GB 4GB RAM Dual SIM Tela 6.7\" - Preto (Caixa Slim)",
       "sub": "",
       "desc": "Pantalla grande con excelente calidad para disfrutar al máximo del día a día. El Galaxy A16 cuenta con una pantalla Super AMOLED de 6,7\\\" con 90 Hz, que garantiza imágenes más fluidas y colores vibrantes. Con un rendimiento equilibrado para aplicaciones y tareas cotidianas, funciona sin problemas, mientras que su cámara de 50 MP captura buenas fotos. La batería de 5000 mAh ofrece una buena autonomía para seguir el ritmo de tu día a día.",
@@ -16964,9 +16968,9 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "205500",
+      "ars": "200500",
       "usd": 127,
-      "usdSell": 145.7,
+      "usdSell": 143.16,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -16978,20 +16982,24 @@
         {
           "ars": "205500",
           "date": "2026-05-06"
+        },
+        {
+          "ars": "200500",
+          "date": "2026-05-06"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a16-sm-a165f-global-128gb-4gb-ram-dual-sim-tela-67-preto-caixa-slim/1351378",
-          "price": 127,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:18:07.507466+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 334,
@@ -17090,7 +17098,7 @@
     {
       "id": 336,
       "cat": "Celulares",
-      "calcSub": "gruesa",
+      "calcSub": "slim",
       "name": "Smartphone Samsung Galaxy A16 SM-A165M 128GB 4GB RAM Dual SIM Tela 6.7\" - Preto (Caixa Slim)",
       "sub": "",
       "desc": "Pantalla amplia con excelente costo-beneficio! El Samsung Galaxy A16 cuenta con 4 GB de RAM para tareas diarias con estabilidad. Su pantalla de 6,7\\\" brinda buena visualización para videos y redes sociales, y los 128 GB ofrecen espacio para fotos y apps esenciales. Con sistema optimizado, uso simple y fluido. Ideal para comunicación, estudio y uso básico diario.",
@@ -17106,9 +17114,9 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "210100",
+      "ars": "205000",
       "usd": 130,
-      "usdSell": 149,
+      "usdSell": 146.4,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -17120,25 +17128,29 @@
         {
           "ars": "210100",
           "date": "2026-05-06"
+        },
+        {
+          "ars": "205000",
+          "date": "2026-05-06"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a16-sm-a165m-128gb-4gb-ram-dual-sim-tela-67-preto-caixa-slim/1149548",
-          "price": 130,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:18:08.972315+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 337,
       "cat": "Celulares",
-      "calcSub": "gruesa",
+      "calcSub": "slim",
       "name": "Smartphone Samsung Galaxy A16 SM-A165M 128GB 4GB RAM Dual SIM Tela 6.7\" - Cinza (Caixa Slim)",
       "sub": "",
       "desc": "Pantalla amplia con uso práctico diario! El Samsung Galaxy A16 cuenta con 4 GB de RAM para tareas básicas con estabilidad. Su pantalla de 6,7\\\" mejora la visualización en videos y redes sociales, y los 128 GB ofrecen espacio para fotos y apps esenciales. Con sistema optimizado, el uso es ágil y sencillo. Ideal para comunicación, estudio y uso cotidiano.",
@@ -17154,9 +17166,9 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "210100",
+      "ars": "205000",
       "usd": 130,
-      "usdSell": 149,
+      "usdSell": 146.4,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -17168,25 +17180,29 @@
         {
           "ars": "210100",
           "date": "2026-05-06"
+        },
+        {
+          "ars": "205000",
+          "date": "2026-05-06"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a16-sm-a165m-128gb-4gb-ram-dual-sim-tela-67-cinza-caixa-slim/1149531",
-          "price": 130,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:18:09.489294+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 338,
       "cat": "Celulares",
-      "calcSub": "gruesa",
+      "calcSub": "slim",
       "name": "Smartphone Samsung Galaxy A16 SM-A165M 128GB 4GB RAM Dual SIM Tela 6.7\" - Verde (Caixa Slim)",
       "sub": "",
       "desc": "El Galaxy A16 aporta tecnología y rendimiento eficiente, equipado con una pantalla Super AMOLED FHD+ de 90 Hz, que ofrece imágenes vibrantes y fluidas. Su triple cámara principal de 50 MP graba en resolución UHD 4K. Con un procesador de 8 núcleos garantiza eficiencia y rápida respuesta en las tareas diarias. La batería de larga duración con inteligencia optimizada sigue tu ritmo y proporciona más horas de uso continuo.",
@@ -17202,9 +17218,9 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "210100",
+      "ars": "205000",
       "usd": 130,
-      "usdSell": 149,
+      "usdSell": 146.4,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -17216,20 +17232,24 @@
         {
           "ars": "210100",
           "date": "2026-05-06"
+        },
+        {
+          "ars": "205000",
+          "date": "2026-05-06"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a16-sm-a165m-128gb-4gb-ram-dual-sim-tela-67-verde-caixa-slim/1149524",
-          "price": 130,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:18:10.022840+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 339,
@@ -18251,7 +18271,7 @@
     {
       "id": 360,
       "cat": "Celulares",
-      "calcSub": "gruesa",
+      "calcSub": "slim",
       "name": "Smartphone Samsung Galaxy A17 SM-A175F 128GB 6GB RAM Dual SIM Tela 6.7\" - Azul (Caixa Slim)",
       "sub": "",
       "desc": "El Galaxy A17 combina estilo y eficiencia con una pantalla Super AMOLED de 90 Hz, que ofrece colores vibrantes y una navegación fluida. Su triple cámara principal de 50MP graba en 1080p, capturando fotos detalladas y videos de calidad. Cuenta con una conexión 4G para un internet estable y rápido, además de la certificación IP54, que garantiza la resistencia contra el polvo y las salpicaduras. Su batería de larga duración asegura horas de uso continuo, ideal para seguir tu rutina con practicidad.",
@@ -18267,9 +18287,9 @@
       "badge": "a pedido",
       "badgeColor": "#FF9500",
       "icon": "📦",
-      "ars": "256700",
+      "ars": "250400",
       "usd": 160,
-      "usdSell": 182,
+      "usdSell": 178.8,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -18281,20 +18301,24 @@
         {
           "ars": "256700",
           "date": "2026-05-06"
+        },
+        {
+          "ars": "250400",
+          "date": "2026-05-06"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-samsung-galaxy-a17-sm-a175f-128gb-6gb-ram-dual-sim-tela-67-azul-caixa-slim/1275988",
-          "price": 160,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:18:21.075363+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 361,
@@ -97500,6 +97524,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-06T16:02:38.885Z",
+  "lastSync": "2026-05-06T16:07:07.847Z",
   "lastPriceCheck": null
 }
