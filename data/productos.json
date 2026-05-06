@@ -97429,8 +97429,8 @@
         "activo": true
       }
     ],
-    "dollarAuto": 1400,
-    "dollarUpdated": "2026-05-06T14:33:39.403Z",
+    "dollarAuto": 1400.0,
+    "dollarUpdated": "2026-05-06T15:54:15.158987+00:00",
     "dollarManual": null,
     "dollarType": "blue",
     "paymentMethods": [
