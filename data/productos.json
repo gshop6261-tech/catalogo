@@ -16957,7 +16957,7 @@
       "id": 333,
       "cat": "Celulares",
       "calcSub": "slim",
-      "name": "Smartphone Samsung Galaxy A16 SM-A165F Global 128GB 4GB RAM Dual SIM Tela 6.7\" - Preto (Caixa Slim)",
+      "name": "Smartphone Samsung Galaxy A16 SM-A165F Global 128GB 4GB RAM Dual SIM Tela 6.7\" - Negro (Caja Slim)",
       "sub": "",
       "desc": "Pantalla grande con excelente calidad para disfrutar al máximo del día a día. El Galaxy A16 cuenta con una pantalla Super AMOLED de 6,7\\\" con 90 Hz, que garantiza imágenes más fluidas y colores vibrantes. Con un rendimiento equilibrado para aplicaciones y tareas cotidianas, funciona sin problemas, mientras que su cámara de 50 MP captura buenas fotos. La batería de 5000 mAh ofrece una buena autonomía para seguir el ritmo de tu día a día.",
       "img": "images/productos/333/main.jpg",
@@ -16965,8 +16965,8 @@
         "images/productos/333/main.jpg",
         "images/productos/333/2.jpg"
       ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
+      "badge": "Disponible",
+      "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "200500",
       "usd": 127,
@@ -97524,6 +97524,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-06T16:07:07.847Z",
+  "lastSync": "2026-05-06T16:08:55.901Z",
   "lastPriceCheck": null
 }
