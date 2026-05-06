@@ -96781,9 +96781,9 @@
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "208600",
-      "usd": 130.0,
+      "usd": 130,
       "weight": null,
-      "usdSell": 149.0,
+      "usdSell": 149,
       "activo": true,
       "fechaAlta": "2026-05-06",
       "priceHistory": [
@@ -96795,7 +96795,7 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-note-14-4g-global-128gb-6gb-ram-dual-sim-tela-667-roxo-lacre-pequeno/1314595",
-          "price": 130.0,
+          "price": 130,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-06T15:56:45.912391+00:00"
@@ -96854,15 +96854,19 @@
       "badge": "disponible",
       "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "221600",
-      "usd": 141,
+      "ars": "226200",
+      "usd": 144,
       "weight": null,
-      "usdSell": 158.28,
+      "usdSell": 161.52,
       "activo": true,
       "fechaAlta": "2026-05-06",
       "priceHistory": [
         {
           "ars": "221600",
+          "date": "2026-05-06"
+        },
+        {
+          "ars": "226200",
           "date": "2026-05-06"
         }
       ],
@@ -97463,7 +97467,7 @@
       }
     ],
     "dollarAuto": 1400,
-    "dollarUpdated": "2026-05-06T14:33:39.403Z",
+    "dollarUpdated": "2026-05-06T16:00:32.199Z",
     "dollarManual": null,
     "dollarType": "blue",
     "paymentMethods": [
@@ -97492,6 +97496,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-06T15:56:47.244936+00:00",
+  "lastSync": "2026-05-06T16:01:28.295Z",
   "lastPriceCheck": null
 }
