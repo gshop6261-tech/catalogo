@@ -7934,7 +7934,7 @@
       "id": 141,
       "cat": "Celulares",
       "calcSub": "gruesa",
-      "name": "Smartphone Xiaomi Redmi A7 Pro Global 128GB 4GB RAM Dual SIM Tela 6.88\" USA - Preto",
+      "name": "Smartphone Xiaomi Redmi A7 Pro Global 128GB 4GB RAM Dual SIM Tela 6.88\" USA - Negro",
       "sub": "",
       "desc": "El Xiaomi Redmi A7 Pro en color Negro es un smartphone enfocado en ofrecer una pantalla amplia y batería de larga duración para el día a día. Con su panel generoso de 6.9 pulgadas y tasa de refresco de 90Hz, proporciona una navegación fluida en redes sociales y videos. Equipado con 128GB de almacenamiento, ofrece espacio suficiente para aplicaciones esenciales y fotos. Su diseño trasero elegante y la batería de 5000 mAh garantizan practicidad y autonomía para usuarios que buscan eficiencia y un aspecto moderno en un dispositivo accesible.",
       "img": "images/productos/141/main.jpg",
@@ -7942,8 +7942,8 @@
         "images/productos/141/main.jpg",
         "images/productos/141/2.jpg"
       ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
+      "badge": "disponible",
+      "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "176000",
       "usd": 108,
@@ -7968,15 +7968,15 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-a7-pro-global-128gb-4gb-ram-dual-sim-tela-688-usa-preto/1347388",
-          "price": 108,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:16:56.892219+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 142,
@@ -97381,6 +97381,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-06T14:47:34.691Z",
+  "lastSync": "2026-05-06T14:50:55.154Z",
   "lastPriceCheck": null
 }
