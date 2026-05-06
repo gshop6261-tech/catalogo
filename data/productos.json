@@ -10096,7 +10096,7 @@
       "id": 184,
       "cat": "Celulares",
       "calcSub": "gruesa",
-      "name": "Smartphone Xiaomi Poco C71 Global 128GB 4GB RAM Dual SIM Tela 6.88\" - Preto",
+      "name": "Smartphone Xiaomi Poco C71 Global 128GB 4GB RAM Dual SIM 6.88\" - Negro",
       "sub": "",
       "desc": "El smartphone Poco C71 ofrece un rendimiento fluido con una pantalla LCD IPS de 120 Hz y un procesador octa-core. La cámara principal de 32 MP graba fotos y videos en 1080p con excelente definición. Su conexión 4G garantiza una navegación estable, mientras que la batería de larga duración sigue el ritmo de tu día. Ideal para aquellos que buscan calidad en la visualización, rendimiento fiable y autonomía para un uso continuo en un diseño moderno y asequible.",
       "img": "images/productos/184/main.jpg",
@@ -10107,12 +10107,12 @@
         "images/productos/184/4.jpg",
         "images/productos/184/5.jpg"
       ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
+      "badge": "disponible",
+      "badgeColor": "#25D366",
       "icon": "📦",
-      "ars": "155500",
-      "usd": 94.75,
-      "usdSell": 110.23,
+      "ars": "175500",
+      "usd": 108.5,
+      "usdSell": 125.35,
       "weight": null,
       "activo": true,
       "fechaAlta": "2026-04-29",
@@ -10128,20 +10128,24 @@
         {
           "ars": "155500",
           "date": "2026-05-06"
+        },
+        {
+          "ars": "175500",
+          "date": "2026-05-06"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-poco-c71-global-128gb-4gb-ram-dual-sim-tela-688-preto/1276459",
-          "price": 94.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:17:14.202152+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": false,
+      "publicSub": ""
     },
     {
       "id": 185,
@@ -11718,7 +11722,7 @@
       "id": 215,
       "cat": "Celulares",
       "calcSub": "gruesa",
-      "name": "Smartphone Xiaomi Poco C71 Global 128GB 4GB RAM Dual SIM Tela 6.88\" - Dourado",
+      "name": "Smartphone Xiaomi Poco C71 Global 128GB 4GB RAM Dual SIM Tela 6.88\" - Dorado",
       "sub": "",
       "desc": "Perfecto para el uso diario. El POCO C71 ofrece una pantalla de 6,88\\\" con tasa de 120 Hz para una experiencia fluida en redes y aplicaciones. Con procesador Unisoc T7250 y 3 GB de RAM, brinda un rendimiento básico con buena autonomía. La cámara de 32 MP captura momentos con nitidez, y su batería de 5.200 mAh dura todo el día. Un modelo moderno y accesible para quienes buscan practicidad.",
       "img": "images/productos/215/main.jpg",
@@ -11756,66 +11760,15 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-poco-c71-global-128gb-4gb-ram-dual-sim-tela-688-dourado/1202731",
-          "price": 94.75,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:17:25.847909+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
-    },
-    {
-      "id": 216,
-      "cat": "Celulares",
-      "calcSub": "gruesa",
-      "name": "Smartphone Xiaomi Poco C71 Global 128GB 4GB RAM Dual SIM Tela 6.88\" - Preto",
-      "sub": "",
-      "desc": "Perfecto para el uso diario. El POCO C71 ofrece una pantalla de 6,88\\\" con tasa de 120 Hz para una experiencia fluida en redes y aplicaciones. Con procesador Unisoc T7250 y 3 GB de RAM, brinda un rendimiento básico con buena autonomía. La cámara de 32 MP captura momentos con nitidez, y su batería de 5.200 mAh dura todo el día. Un modelo moderno y accesible para quienes buscan practicidad.",
-      "img": "images/productos/216/main.jpg",
-      "images": [
-        "images/productos/216/main.jpg",
-        "images/productos/216/2.jpg",
-        "images/productos/216/3.jpg",
-        "images/productos/216/4.jpg",
-        "images/productos/216/5.jpg"
-      ],
-      "badge": "a pedido",
-      "badgeColor": "#FF9500",
-      "icon": "📦",
-      "ars": "155500",
-      "usd": 94.75,
-      "usdSell": 110.23,
-      "weight": null,
-      "activo": true,
-      "fechaAlta": "2026-04-29",
-      "priceHistory": [
-        {
-          "ars": "157600",
-          "date": "2026-04-29"
-        },
-        {
-          "usd": 94.75,
-          "date": "2026-05-04"
-        },
-        {
-          "ars": "155500",
-          "date": "2026-05-06"
-        }
-      ],
-      "referenceLinks": [
-        {
-          "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-poco-c71-global-128gb-4gb-ram-dual-sim-tela-688-preto/1202724",
-          "price": 94.75,
-          "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-05T22:17:26.161852+00:00"
-        }
-      ],
-      "status": "enriched",
-      "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 217,
@@ -97398,8 +97351,8 @@
         "activo": true
       }
     ],
-    "dollarAuto": 1410,
-    "dollarUpdated": "2026-05-06T14:02:34.674Z",
+    "dollarAuto": 1400,
+    "dollarUpdated": "2026-05-06T14:33:39.403Z",
     "dollarManual": null,
     "dollarType": "blue",
     "paymentMethods": [
@@ -97428,6 +97381,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-06T14:04:23.161Z",
+  "lastSync": "2026-05-06T14:47:34.691Z",
   "lastPriceCheck": null
 }
