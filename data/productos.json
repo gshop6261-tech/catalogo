@@ -96767,16 +96767,23 @@
       "calcSub": "gruesa",
       "name": "Smartphone Xiaomi Redmi Note 14 4G Global 128GB 6GB RAM Dual SIM Pantalla 6.67\" - Púrpura",
       "sub": "",
-      "desc": "",
-      "img": null,
-      "images": [],
+      "desc": "El teléfono inteligente Redmi Note 14 combina tecnología y diseño sofisticado para una experiencia de usuario excepcional. Su pantalla AMOLED de 120 Hz ofrece imágenes fluidas. Equipado con un procesador de 8 núcleos, garantiza un rendimiento ágil y eficiente en la multitarea. La conexión de red 4G proporciona Internet estable, mientras que la cámara principal dual de 108 MP con grabación de 1080p captura fotos y vídeos con detalle. Batería de larga duración, te acompaña todo el día.",
+      "img": "images/productos/2302/main.jpg",
+      "images": [
+        "images/productos/2302/main.jpg",
+        "images/productos/2302/2.jpg",
+        "images/productos/2302/3.jpg",
+        "images/productos/2302/4.jpg",
+        "images/productos/2302/5.jpg",
+        "images/productos/2302/6.jpg"
+      ],
       "badge": "DISPONIBLE",
       "badgeColor": "#25D366",
       "icon": "📦",
       "ars": "208600",
-      "usd": 130,
+      "usd": 130.0,
       "weight": null,
-      "usdSell": 149,
+      "usdSell": 149.0,
       "activo": true,
       "fechaAlta": "2026-05-06",
       "priceHistory": [
@@ -96788,12 +96795,13 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-xiaomi-redmi-note-14-4g-global-128gb-6gb-ram-dual-sim-tela-667-roxo-lacre-pequeno/1314595",
-          "price": null,
+          "price": 130.0,
           "currency": "USD",
-          "isPrimary": true
+          "isPrimary": true,
+          "lastChecked": "2026-05-06T15:35:18.161672+00:00"
         }
       ],
-      "status": "pending",
+      "status": "enriched",
       "enrichError": null,
       "verifyPrice": true
     },
@@ -97451,6 +97459,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-06T15:34:38.137Z",
+  "lastSync": "2026-05-06T15:35:19.392607+00:00",
   "lastPriceCheck": null
 }
