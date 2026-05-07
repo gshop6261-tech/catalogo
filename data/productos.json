@@ -97703,8 +97703,8 @@
         "activo": true
       }
     ],
-    "dollarAuto": 1400,
-    "dollarUpdated": "2026-05-07T14:10:08.071Z",
+    "dollarAuto": 1400.0,
+    "dollarUpdated": "2026-05-07T16:26:48.989231+00:00",
     "dollarManual": null,
     "dollarType": "blue",
     "paymentMethods": [
