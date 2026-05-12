@@ -248,8 +248,8 @@
         "images/productos/4/main.jpg",
         "images/productos/4/2.jpg"
       ],
-      "badge": "Disponible",
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "71400",
       "usd": 40,
@@ -306,15 +306,15 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-preto/1354058",
-          "price": 40,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-12T08:14:46.077412+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 5,
@@ -2239,8 +2239,8 @@
         "images/productos/31/main.jpg",
         "images/productos/31/2.jpg"
       ],
-      "badge": "Disponible",
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "71400",
       "usd": 40,
@@ -2285,15 +2285,15 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-azul/1354065",
-          "price": 40,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-12T08:14:59.180039+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 32,
@@ -98055,6 +98055,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-12T12:34:21.114Z",
+  "lastSync": "2026-05-12T12:37:30.637Z",
   "lastPriceCheck": null
 }
