@@ -2375,8 +2375,8 @@
         "images/productos/33/main.jpg",
         "images/productos/33/2.jpg"
       ],
-      "badge": "disponible",
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "71400",
       "usd": 40,
@@ -2421,15 +2421,15 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/caixas-de-som/speaker-portatil-jbl-go-5-rosa/1354089",
-          "price": 40,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-12T08:15:00.272867+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 34,
@@ -98055,6 +98055,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-12T12:37:30.637Z",
+  "lastSync": "2026-05-12T12:38:18.673Z",
   "lastPriceCheck": null
 }
