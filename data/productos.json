@@ -1100,8 +1100,8 @@
         "images/productos/17/6.jpg",
         "images/productos/17/7.jpg"
       ],
-      "badge": "disponible",
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "104000",
       "usd": 60,
@@ -1158,15 +1158,15 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-wireless-para-ps5-vermelho/777018",
-          "price": 60,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-12T08:14:52.209977+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 18,
@@ -1264,8 +1264,8 @@
         "images/productos/19/5.jpg",
         "images/productos/19/6.jpg"
       ],
-      "badge": "disponible",
-      "badgeColor": "#25D366",
+      "badge": "a pedido",
+      "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "148900",
       "usd": 89,
@@ -1330,15 +1330,15 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-sony-dualsense-30-aniversario-edicao-limitada-para-ps5-wireless-japao-cinza/1182422",
-          "price": 89,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-12T08:14:53.459844+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 20,
@@ -1442,7 +1442,7 @@
         "images/productos/21/5.jpg"
       ],
       "badge": "disponible",
-      "badgeColor": "#25D366",
+      "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "84600",
       "usd": 47.5,
@@ -1503,15 +1503,15 @@
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/controles/controle-microsoft-ep2-2992221-sem-fio-para-xbox-series/1314076",
-          "price": 47.5,
+          "price": null,
           "currency": "USD",
-          "isPrimary": true,
-          "lastChecked": "2026-05-12T08:14:54.547059+00:00"
+          "isPrimary": true
         }
       ],
       "status": "enriched",
       "enrichError": null,
-      "verifyPrice": true
+      "verifyPrice": true,
+      "publicSub": ""
     },
     {
       "id": 22,
@@ -4209,7 +4209,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "629600",
-      "usd": 359.0,
+      "usd": 359,
       "weight": null,
       "usdSell": 434.39,
       "activo": true,
@@ -4240,14 +4240,14 @@
           "date": "2026-05-06"
         },
         {
-          "usd": 359.0,
+          "usd": 359,
           "date": "2026-05-11"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/nintendo/console-nintendo-switch-oled-neon-model-64gb-heg-s-kabaa/1212686",
-          "price": 359.0,
+          "price": 359,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-12T08:15:14.690290+00:00"
@@ -17051,7 +17051,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "197700",
-      "usd": 122.0,
+      "usd": 122,
       "usdSell": 140.2,
       "weight": null,
       "activo": true,
@@ -17070,14 +17070,14 @@
           "date": "2026-05-06"
         },
         {
-          "usd": 122.0,
+          "usd": 122,
           "date": "2026-05-12"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-ralme-note-70-rmx5313-128gb-4gb-ram-dual-sim-tela-674-dourado-anatel/1255034",
-          "price": 122.0,
+          "price": 122,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-12T08:17:32.336652+00:00"
@@ -17106,7 +17106,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "197700",
-      "usd": 122.0,
+      "usd": 122,
       "usdSell": 140.2,
       "weight": null,
       "activo": true,
@@ -17125,14 +17125,14 @@
           "date": "2026-05-06"
         },
         {
-          "usd": 122.0,
+          "usd": 122,
           "date": "2026-05-12"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-ralme-note-70-rmx5313-128gb-4gb-ram-dual-sim-tela-674-preto-anatel/1255027",
-          "price": 122.0,
+          "price": 122,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-12T08:17:32.909358+00:00"
@@ -24079,7 +24079,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "355900",
-      "usd": 222.0,
+      "usd": 222,
       "usdSell": 250.2,
       "weight": null,
       "activo": true,
@@ -24094,14 +24094,14 @@
           "date": "2026-05-06"
         },
         {
-          "usd": 222.0,
+          "usd": 222,
           "date": "2026-05-11"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/smartphones/smartphone-motorola-moto-g86-5g-xt-2527-1-256gb-8gb-ram-dual-sim-tela-667-azul/1304961",
-          "price": 222.0,
+          "price": 222,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-12T08:18:53.181516+00:00"
@@ -54819,7 +54819,7 @@
       "badgeColor": "#FF9500",
       "icon": "📦",
       "ars": "59000",
-      "usd": 24.0,
+      "usd": 24,
       "usdSell": 29.7,
       "weight": null,
       "activo": true,
@@ -54830,14 +54830,14 @@
           "date": "2026-05-06"
         },
         {
-          "usd": 24.0,
+          "usd": 24,
           "date": "2026-05-11"
         }
       ],
       "referenceLinks": [
         {
           "url": "https://atacadoconnect.com/produto/perfumes/perfume-miss-armaf-catwalk-eau-de-parfum-feminino-100ml/1193374",
-          "price": 24.0,
+          "price": 24,
           "currency": "USD",
           "isPrimary": true,
           "lastChecked": "2026-05-12T08:25:19.087325+00:00"
@@ -98025,8 +98025,8 @@
         "activo": true
       }
     ],
-    "dollarAuto": 1405.0,
-    "dollarUpdated": "2026-05-12T08:12:42.922394+00:00",
+    "dollarAuto": 1405,
+    "dollarUpdated": "2026-05-12T12:33:04.816Z",
     "dollarManual": null,
     "dollarType": "blue",
     "paymentMethods": [
@@ -98055,6 +98055,6 @@
       }
     ]
   },
-  "lastSync": "2026-05-11T13:23:15.765Z",
-  "lastPriceCheck": "2026-05-12T08:34:30.382011+00:00"
+  "lastSync": "2026-05-12T12:34:21.114Z",
+  "lastPriceCheck": null
 }
