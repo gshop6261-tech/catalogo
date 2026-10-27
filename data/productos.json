@@ -1030,7 +1030,7 @@
           "price": 15.0,
           "currency": "USD",
           "isPrimary": true,
-          "lastChecked": "2026-10-27T17:14:36.530319+00:00"
+          "lastChecked": "2026-10-27T21:42:33.605250+00:00"
         }
       ],
       "status": "enriched",
@@ -110707,5 +110707,5 @@
     ]
   },
   "lastSync": "2026-05-12T17:43:48.752Z",
-  "lastPriceCheck": "2026-10-27T18:06:37.746808+00:00"
+  "lastPriceCheck": "2026-10-27T22:34:41.379272+00:00"
 }
